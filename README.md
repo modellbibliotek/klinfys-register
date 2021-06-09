@@ -12,7 +12,22 @@ I testfasenbörjar vi sannolikt med nedanstående verktyg
 * Snomed CT browser: https://browser.ihtsdotools.org/
 
 # Example settings
-Archetype designer. Make sure you are logged in to the desigen using GitHub first:
+
+**Archetype designer**
+
+Make sure you are logged in to Archetype designer using GitHub first:
 ![image](https://user-images.githubusercontent.com/1034001/121351630-477c3b00-c92c-11eb-92d2-b00a40d15a1e.png)
 
+**Better Studio** (Sandbox)
 
+* Make a (currently free) personal user registration at https://platform.better.care/sandbox (https://platform.better.care/sandbox/register)
+* Await mail response with user/password
+* Log in to the tool and select Administration or go to https://sandbox.better.care/studio/administration/domain-list
+![image](https://user-images.githubusercontent.com/1034001/121383694-eeba9b80-c947-11eb-81dd-d4bc10bbba25.png)
+* Set up a project (you can have several) in our case let's use the shared SFMI tutorial/course account at EHRscape as backend (Only fake patient data allowed - no cliical use!)
+    * Project name: *whatever you like to call it* 
+    * EHR Server URL: https://rest.ehrscape.com/
+    * EHR Server username: SFMI
+    * EHR Server password: *the password used in the course - see invitation email or ask colleague*
+
+![image](https://user-images.githubusercontent.com/1034001/121383318-a69b7900-c947-11eb-8962-0ab98b3ea384.png)
