@@ -24,6 +24,15 @@ language
 				["email"] = <"vesa.peltola@tieto.com">
 			>
 		>
+		["sv"] = <
+			language = <[ISO_639-1::sv]>
+			author = <
+				["name"] = <"Åsa Skagerhult, Carina Sandell">
+				["organisation"] = <"Region Östergötland">
+				["email"] = <"asa.skagerhult@regionostergotland.se, carina.sandell@regionostergotland.se">
+			>
+			accreditation = <"Ackreditering">
+		>
 		["nb"] = <
 			language = <[ISO_639-1::nb]>
 			author = <
@@ -41,7 +50,7 @@ description
 		["organisation"] = <"The Chris O'Brien Lifehouse at RPA">
 		["email"] = <"cailin.lowry@lifehouserpa.org.au">
 	>
-	lifecycle_state = <"published">
+	lifecycle_state = <"in_development">
 	other_contributors = <"Tomas Alme, Norway","Vebjørn Arntzen, Oslo University Hospital, Norway","Koray Atalag, University of Auckland, New Zealand","Heidi Aursand, Oslo universitetssykehus, Norway","Gustavo Bacelar-Silva, Healthcare Designs, Brazil (openEHR Editor)","Silje Ljosland Bakke, Nasjonal IKT HF, Norway (openEHR Editor)","Malin Berg, DIPS ASA, Norway","Lars Bitsch-Larsen, Haukeland University hospital, Norway","Laila Bruun, Oslo universitetssykehus HF, Norway","Margaret Campbell, Queensland Health, Australia","Rong Chen, Cambio Healthcare Systems, Sweden","Lisbeth Dahlhaug, Helse Midt - Norge IT, Norway","Einar Fosse, National Centre for Integrated Care and Telemedicine, Norway","Sebastian Garde, Ocean Informatics, Germany","Christian Ghan, Lifehouse, Australia","Heather Grain, Llewelyn Grain Informatics, Australia","Sam Heard, Ocean Informatics, Australia","Hilde Hollås, DIPS AS, Norway","Evelyn Hovenga, EJSH Consulting, Australia","Lars Karlsen, DIPS ASA, Norway","Lars Morgan Karlsen, DIPS ASA, Norway","Thomas Kilvær, Universitetssykehuset Nord Norge, Norway","Shinji Kobayashi, Kyoto University, Japan","Harmony Kosola, Alberta Health Services, Canada","Liv Laugen, Oslo universitetssykehus, Norway","Heather Leslie, Atomica Informatics, Australia (openEHR Editor)","Siv Marie Lien, DIPS ASA, Norway","Ole Martin Sand, DIPS ASA, Norway","Ian McNicoll, freshEHR Clinical Informatics, United Kingdom (openEHR Editor)","Lars Ivar Mehlum, Nasjonal IKT HF, Norway","Bjoern Naess, DIPS ASA, Norway","Andrej Orel, Marand d.o.o., Slovenia","Jussara Rotzsch, Hospital Alemão Oswaldo Cruz, Brazil","Elisabeth Sagafos, Sykehuset Telemark HF, Norway","Gro-Hilde Severinsen, Norwegian center for ehealthresearch, Norway","Line Silsand, Universitetssykehuset i Nord-Norge, Norway","Trine Strand, Oslo Universitetssykehus (OUS), Norway","Norwegian Review Summary, Nasjonal IKT HF, Norway","Micaela Thierley, Helse Bergen/Haraldsplass sykehus, Norway","Rowan Thomas, St. Vincent's Hospital Melbourne, Australia","John Tore Valand, Haukeland Universitetssjukehus, Norway (Nasjonal IKT redaktør)","Richard Townley-O'Neill, Australian Digital Health Agency, Australia","Gro-Hilde Ulriksen, Norwegian center for ehealthresearch, Norway","Dennis Valk, Code24 BV, Netherlands">
 	details = <
 		["de"] = <
@@ -57,6 +66,18 @@ KOF bzw. BSA kann zur Unterstützung der klinischen Entscheidungsfindung verwend
 			misuse = <"Nicht zur Repräsentation des prozentualen Anteils der Körperoberfläche, der an Verbrennungen oder anderen Hautschäden usw. beteiligt ist. Diese Informationen sollten in separaten spezifischen Archetypen zur Beurteilung von Verbrennungen erfasst werden.
 
 Nicht zu verwenden, um die angepasste Körperoberflächenfläche aufzuzeichnen, z.B. eine Berechnung der KOF/BSA einer Person mit Gliedmaßenamputation, basierend auf anderen Körperteilmessungen und einem Algorithmus - verwenden Sie OBSERVATION.body_surface_area-adjusted.">
+		>
+		["sv"] = <
+			language = <[ISO_639-1::sv]>
+			purpose = <"Att registrera arean av en människas uppmätta eller beräknade kroppsyta.">
+			keywords = <"kropp","yta","area","kroppsyta">
+			use = <"Används för att registrera arean av en människas uppmätta eller beräknade kroppsyta.
+Kan användas som beslutsstöd i kliniska sammanhang, exempelvis:
+- avgöra dosering av cellgifter och andra läkemedel med ett lågt terapeutiskt index
+- beräkning av hjärtminutvolym (indexerat)
+- beräkning av krav på intravenösa vätskor">
+			misuse = <"Ska inte användas för att registrera hur stor del i procent av kroppsytan som rör brännskada eller annan hudskada. Sådan information registreras i arketyper som är särskilt utformade för bedömning av brännskada.
+">
 		>
 		["fi"] = <
 			language = <[ISO_639-1::fi]>
@@ -123,9 +144,9 @@ Wang Y, Moss J, Thisted R. Predictors of body surface area. J Clin Anesth. 1992;
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"C3362CD4E1C6A0A7484CBD220AA6A306">
-		["build_uid"] = <"a148404b-53c7-44fa-b5e8-6f84e04863d0">
-		["revision"] = <"1.1.3">
+		["MD5-CAM-1.0.1"] = <"6909F693B43BB74AC5EDB3156A12598B">
+		["build_uid"] = <"273a11d5-ee50-4fcb-ab41-ac9ec50d672b">
+		["revision"] = <"1.1.4-alpha">
 	>
 
 definition
@@ -605,6 +626,107 @@ ontology
 					text = <"Störfaktoren">
 					description = <"Aufzeichnung aller Probleme oder Faktoren, die sich auf die Messung oder Berechnung der Körperoberfläche auswirken können.">
 					comment = <"Zum Beispiel: Feststellung von Gliedmaßenamputationen; oder Hautkrankheiten.">
+				>
+			>
+		>
+		["sv"] = <
+			items = <
+				["at0000"] = <
+					text = <"Kroppsyta">
+					description = <"Den uppmätta eller beräknade kroppsytan på en människa. 
+(Tvådimensionell mätning av kroppens yttre lager.)">
+					comment = <"Kan även kallas BSA (body surface area).">
+				>
+				["at0001"] = <
+					text = <"Event Series">
+					description = <"@ internal @">
+				>
+				["at0002"] = <
+					text = <"Ospecificerad händelse">
+					description = <"Ospecificerad standardhändelse vid en tidpunkt eller inom ett tidsintervall som explicit kan definieras i en mall eller genereras automatiskt av vissa IT-system.">
+				>
+				["at0003"] = <
+					text = <"Tree">
+					description = <"@ internal @">
+				>
+				["at0004"] = <
+					text = <"Kroppsyta">
+					description = <"Den uppmätta eller beräknade kroppsytan på en människa. 
+(Tvådimensionell mätning av kroppens yttre lager.)">
+					comment = <"Till exempel: '1.81 m2'">
+				>
+				["at0005"] = <
+					text = <"Tree">
+					description = <"@ internal @">
+				>
+				["at0006"] = <
+					text = <"Formel">
+					description = <"Formel som användes för att beräkna kroppsytan.">
+					comment = <"Till exempel: Mosteller, DuBois & DuBois, Haycock eller Boyd.">
+				>
+				["at0007"] = <
+					text = <"Tilläggsinformation">
+					description = <"Plats för att infoga tilläggsinformation som krävs för lokala anpassningar eller anpassning till andra referensmodeller eller formella krav.">
+					comment = <"Exempelvis lokala informationskrav eller metadata för anpassning till FHIR- eller CIMI-motsvarigheter.">
+				>
+				["at0008"] = <
+					text = <"Mätinstrument">
+					description = <"Mätinstrument som använts för att mäta eller göra en uppskattning av kroppsytan.">
+				>
+				["at0009"] = <
+					text = <"Metod">
+					description = <"Metoden som användes för att registrera kroppsytan i patientjournalen.">
+				>
+				["at0010"] = <
+					text = <"Automatisk registrering">
+					description = <"Ytan registrerades automatiskt utan manuella åtgärder av klinikern.">
+				>
+				["at0011"] = <
+					text = <"Manuell registrering">
+					description = <"Klinikern registrerade ytan manuellt.">
+				>
+				["at0012"] = <
+					text = <"DuBois och DuBois">
+					description = <"DuBois & DuBois-formeln användes för att beräkna kroppsytan.">
+				>
+				["at0013"] = <
+					text = <"Mosteller">
+					description = <"Mosteller-formeln användes för att beräkna kroppsytan.">
+				>
+				["at0014"] = <
+					text = <"Haycock">
+					description = <"Haycock-formeln användes för att beräkna kroppsytan.">
+				>
+				["at0015"] = <
+					text = <"Gehan & George">
+					description = <"Gehan & George-formeln användes för att beräkna kroppsytan.">
+				>
+				["at0016"] = <
+					text = <"Boyd">
+					description = <"Boyd-formeln användes för att beräkna kroppsytan.">
+				>
+				["at0017"] = <
+					text = <"Fujimoto">
+					description = <"Fujimoto-formeln användes för att beräkna kroppsytan.">
+				>
+				["at0018"] = <
+					text = <"Takihara">
+					description = <"Takihara-formeln användes för att beräkna kroppsytan.">
+				>
+				["at0019"] = <
+					text = <"Kommentar">
+					description = <"Kommentarer avseende mätningen som inte beskrivs i övriga fält.">
+				>
+				["at0020"] = <
+					text = <"Tree">
+					description = <"@ internal @">
+				>
+				["at0021"] = <
+					text = <"Möjliga felkällor">
+					description = <"Beskrivning av faktorer och felkällor som kan påverka mätningen eller beräkningen av kroppsytan.
+
+">
+					comment = <"Till exempel: notera amputationer eller hudsjukdomar.">
 				>
 			>
 		>
