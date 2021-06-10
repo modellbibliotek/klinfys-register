@@ -11,7 +11,7 @@ I testfasenbörjar vi sannolikt med nedanstående verktyg
 * Better Studio - Create GUI/forms and queries, e.g. using https://tools.better.care/sandbox/studio/login Please also save some useful example forms (zip files) in the /forms subdirectory
 * Snomed CT browser: https://browser.ihtsdotools.org/
 
-# Example setup and settings
+## Example setup and settings
 
 **Archetype designer**
 
