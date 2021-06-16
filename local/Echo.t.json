@@ -24,9 +24,9 @@
       "Sign off" : "",
       "Speciality" : "",
       "User roles" : "",
-      "MD5-CAM-1.0.1" : "b8ec58515915814d2c3ceb130fbe7124",
+      "MD5-CAM-1.0.1" : "5e7330a0a8c2ece4e25d0dca4a873391",
       "PARENT:MD5-CAM-1.0.1" : "641B268BE8805CEB8DC21AB82C53AB3F",
-      "sem_ver" : "0.3.4",
+      "sem_ver" : "0.4.0",
       "build_uid" : ""
     },
     "details" : {
@@ -4123,7 +4123,7 @@
           "at0000.1" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0000.1",
-            "text" : "3.1 Vänster förmaksvolym, kammarsystole",
+            "text" : "Vänster förmak, sluttsystole, diameter",
             "description" : "Bilddiagnostiskt resultat som ett enskilt värde eller, genom nästning, en grupp av värden.",
             "comment" : "399235004 |vänster förmaks systoliska volym| \n"
           }
@@ -4379,7 +4379,7 @@
           "at0000.1" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0000.1",
-            "text" : "1.4 Septumtjocklek, diastole PLAX",
+            "text" : "1.4 Septumtjocklek, diastole PLAX (IVSd PLAX)",
             "description" : "Bilddiagnostiskt resultat som ett enskilt värde eller, genom nästning, en grupp av värden."
           }
         }
@@ -4634,8 +4634,9 @@
           "at0000.1" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0000.1",
-            "text" : "1.1 Vänsterkammar-diameter, diastole PLAX",
-            "description" : "Bilddiagnostiskt resultat som ett enskilt värde eller, genom nästning, en grupp av värden."
+            "text" : "1.1 Vänsterkammar-diameter, diastole PLAX (LVEDd PLAX)",
+            "description" : "Bilddiagnostiskt resultat som ett enskilt värde eller, genom nästning, en grupp av värden.",
+            "comment" : "55431000052104 |vänster kammares innerdiameter i slutdiastole|\n"
           }
         }
       },
@@ -4889,7 +4890,7 @@
           "at0000.1" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0000.1",
-            "text" : "1.5 Bakväggstjocklek, diastole PLAX",
+            "text" : "1.5 Bakväggstjocklek, diastole PLAX (LVPWd PLAX)",
             "description" : "Bilddiagnostiskt resultat som ett enskilt värde eller, genom nästning, en grupp av värden."
           }
         }
@@ -5144,7 +5145,7 @@
           "at0000.1" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0000.1",
-            "text" : "1.3 Vänsterkammar-diameter, systole  PLAX",
+            "text" : "1.3 Vänsterkammar-diameter, systole  PLAX (LVESd  PLAX)",
             "description" : "Bilddiagnostiskt resultat som ett enskilt värde eller, genom nästning, en grupp av värden."
           }
         }
@@ -5772,7 +5773,7 @@
           "at0000.1" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0000.1",
-            "text" : "1.9 Vänster kammares ejektionsfraktion",
+            "text" : "1.9 Vänster kammares ejektionsfraktion (LVEF)",
             "description" : "Bilddiagnostiskt resultat som ett enskilt värde eller, genom nästning, en grupp av värden."
           }
         }
@@ -6258,7 +6259,14 @@
             "description" : "Ergebnis der Bildgebung als Einzelwert oder als eine verschachtelte Gruppe von Ergebniswerten."
           }
         },
-        "sv" : { }
+        "sv" : {
+          "at0000.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0000.1",
+            "text" : "1.6 Vänsterkammarvolym, diastole (LVEDvol)",
+            "description" : "Bilddiagnostiskt resultat som ett enskilt värde eller, genom nästning, en grupp av värden."
+          }
+        }
       },
       "termBindings" : { },
       "terminologyExtracts" : { },
@@ -6506,7 +6514,14 @@
             "description" : "Ergebnis der Bildgebung als Einzelwert oder als eine verschachtelte Gruppe von Ergebniswerten."
           }
         },
-        "sv" : { }
+        "sv" : {
+          "at0000.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0000.1",
+            "text" : "1.8 Vänsterkammarvolym, systole (LVESvol)",
+            "description" : "Bilddiagnostiskt resultat som ett enskilt värde eller, genom nästning, en grupp av värden."
+          }
+        }
       },
       "termBindings" : { },
       "terminologyExtracts" : { },
@@ -6754,7 +6769,14 @@
             "description" : "Ergebnis der Bildgebung als Einzelwert oder als eine verschachtelte Gruppe von Ergebniswerten."
           }
         },
-        "sv" : { }
+        "sv" : {
+          "at0000.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0000.1",
+            "text" : "3.3 Vänster förmaksarea, kammarsystole (LA area 4C)",
+            "description" : "Bilddiagnostiskt resultat som ett enskilt värde eller, genom nästning, en grupp av värden."
+          }
+        }
       },
       "termBindings" : { },
       "terminologyExtracts" : { },
@@ -6982,7 +7004,14 @@
             "description" : "Ergebnis der Bildgebung als Einzelwert oder als eine verschachtelte Gruppe von Ergebniswerten."
           }
         },
-        "sv" : { }
+        "sv" : {
+          "at0000.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0000.1",
+            "text" : "TY RV Dilatation (basal)",
+            "description" : "Bilddiagnostiskt resultat som ett enskilt värde eller, genom nästning, en grupp av värden."
+          }
+        }
       },
       "termBindings" : { },
       "terminologyExtracts" : { },
@@ -7230,7 +7259,14 @@
             "description" : "Ergebnis der Bildgebung als Einzelwert oder als eine verschachtelte Gruppe von Ergebniswerten."
           }
         },
-        "sv" : { }
+        "sv" : {
+          "at0000.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0000.1",
+            "text" : "2.3 Longitudinell AV-plans- rörlighet högerkammare (TAPSE)",
+            "description" : "Bilddiagnostiskt resultat som ett enskilt värde eller, genom nästning, en grupp av värden."
+          }
+        }
       },
       "termBindings" : { },
       "terminologyExtracts" : { },
@@ -7478,7 +7514,14 @@
             "description" : "Ergebnis der Bildgebung als Einzelwert oder als eine verschachtelte Gruppe von Ergebniswerten."
           }
         },
-        "sv" : { }
+        "sv" : {
+          "at0000.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0000.1",
+            "text" : "TY MAPSE lateral",
+            "description" : "Bilddiagnostiskt resultat som ett enskilt värde eller, genom nästning, en grupp av värden."
+          }
+        }
       },
       "termBindings" : { },
       "terminologyExtracts" : { },
@@ -7731,7 +7774,14 @@
             "description" : "Ergebnis der Bildgebung als Einzelwert oder als eine verschachtelte Gruppe von Ergebniswerten."
           }
         },
-        "sv" : { }
+        "sv" : {
+          "at0000.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0000.1",
+            "text" : "Perikardiell effusion",
+            "description" : "Bilddiagnostiskt resultat som ett enskilt värde eller, genom nästning, en grupp av värden."
+          }
+        }
       },
       "termBindings" : { },
       "terminologyExtracts" : { },
@@ -8193,7 +8243,14 @@
             "description" : "Ergebnis der Bildgebung als Einzelwert oder als eine verschachtelte Gruppe von Ergebniswerten."
           }
         },
-        "sv" : { }
+        "sv" : {
+          "at0000.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0000.1",
+            "text" : "TY Vena cava Durchmesser",
+            "description" : "Bilddiagnostiskt resultat som ett enskilt värde eller, genom nästning, en grupp av värden."
+          }
+        }
       },
       "termBindings" : { },
       "terminologyExtracts" : { },
@@ -8421,7 +8478,14 @@
             "description" : "Ergebnis der Bildgebung als Einzelwert oder als eine verschachtelte Gruppe von Ergebniswerten."
           }
         },
-        "sv" : { }
+        "sv" : {
+          "at0000.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0000.1",
+            "text" : "TY Vena cava atemreagibel (>50% Abnahme unter Inspiration)",
+            "description" : "Bilddiagnostiskt resultat som ett enskilt värde eller, genom nästning, en grupp av värden."
+          }
+        }
       },
       "termBindings" : { },
       "terminologyExtracts" : { },
@@ -8669,7 +8733,15 @@
             "description" : "Ergebnis der Bildgebung als Einzelwert oder als eine verschachtelte Gruppe von Ergebniswerten."
           }
         },
-        "sv" : { }
+        "sv" : {
+          "at0000.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0000.1",
+            "text" : "3.1 Vänster förmaksvolym, kammarsystole (LA volym (biplan))",
+            "description" : "Bilddiagnostiskt resultat som ett enskilt värde eller, genom nästning, en grupp av värden.",
+            "comment" : "399235004 |vänster förmaks systoliska volym|\n"
+          }
+        }
       },
       "termBindings" : { },
       "terminologyExtracts" : { },
@@ -8910,7 +8982,14 @@
             "description" : "Ergebnis der Bildgebung als Einzelwert oder als eine verschachtelte Gruppe von Ergebniswerten."
           }
         },
-        "sv" : { }
+        "sv" : {
+          "at0000.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0000.1",
+            "text" : "3.2 Vänster förmaksvolymindex (LA volym (biplan))",
+            "description" : "Bilddiagnostiskt resultat som ett enskilt värde eller, genom nästning, en grupp av värden."
+          }
+        }
       },
       "termBindings" : { },
       "terminologyExtracts" : { },
@@ -9151,7 +9230,14 @@
             "description" : "Ergebnis der Bildgebung als Einzelwert oder als eine verschachtelte Gruppe von Ergebniswerten."
           }
         },
-        "sv" : { }
+        "sv" : {
+          "at0000.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0000.1",
+            "text" : "3.4 Höger förmaksarea (RA area 4C)",
+            "description" : "Bilddiagnostiskt resultat som ett enskilt värde eller, genom nästning, en grupp av värden."
+          }
+        }
       },
       "termBindings" : { },
       "terminologyExtracts" : { },
@@ -9392,7 +9478,14 @@
             "description" : "Ergebnis der Bildgebung als Einzelwert oder als eine verschachtelte Gruppe von Ergebniswerten."
           }
         },
-        "sv" : { }
+        "sv" : {
+          "at0000.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0000.1",
+            "text" : "TY Rechtsatriale Fläche / Körperoberfläche (RA-Flächen-Index)",
+            "description" : "Bilddiagnostiskt resultat som ett enskilt värde eller, genom nästning, en grupp av värden."
+          }
+        }
       },
       "termBindings" : { },
       "terminologyExtracts" : { },
@@ -9612,7 +9705,14 @@
             "description" : "Ergebnis der Bildgebung als Einzelwert oder als eine verschachtelte Gruppe von Ergebniswerten."
           }
         },
-        "sv" : { }
+        "sv" : {
+          "at0000.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0000.1",
+            "text" : "TY Mitralklappen-Doppler (PW)",
+            "description" : "Bilddiagnostiskt resultat som ett enskilt värde eller, genom nästning, en grupp av värden."
+          }
+        }
       },
       "termBindings" : { },
       "terminologyExtracts" : { },
@@ -9860,7 +9960,14 @@
             "description" : "Ergebnis der Bildgebung als Einzelwert oder als eine verschachtelte Gruppe von Ergebniswerten."
           }
         },
-        "sv" : { }
+        "sv" : {
+          "at0000.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0000.1",
+            "text" : "4.1 Mitralis E-våg (E)",
+            "description" : "Bilddiagnostiskt resultat som ett enskilt värde eller, genom nästning, en grupp av värden."
+          }
+        }
       },
       "termBindings" : { },
       "terminologyExtracts" : { },
@@ -10108,7 +10215,14 @@
             "description" : "Ergebnis der Bildgebung als Einzelwert oder als eine verschachtelte Gruppe von Ergebniswerten."
           }
         },
-        "sv" : { }
+        "sv" : {
+          "at0000.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0000.1",
+            "text" : "4.2 Mitralis A-våg (A)",
+            "description" : "Bilddiagnostiskt resultat som ett enskilt värde eller, genom nästning, en grupp av värden."
+          }
+        }
       },
       "termBindings" : { },
       "terminologyExtracts" : { },
@@ -10364,7 +10478,14 @@
             "description" : "Ergebnis der Bildgebung als Einzelwert oder als eine verschachtelte Gruppe von Ergebniswerten."
           }
         },
-        "sv" : { }
+        "sv" : {
+          "at0000.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0000.1",
+            "text" : "Vävnadsdoppler",
+            "description" : "Bilddiagnostiskt resultat som ett enskilt värde eller, genom nästning, en grupp av värden."
+          }
+        }
       },
       "termBindings" : { },
       "terminologyExtracts" : { },
@@ -10605,7 +10726,14 @@
             "description" : "Ergebnis der Bildgebung als Einzelwert oder als eine verschachtelte Gruppe von Ergebniswerten."
           }
         },
-        "sv" : { }
+        "sv" : {
+          "at0000.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0000.1",
+            "text" : "4.9 Vävnadsdoppler e´(lat)",
+            "description" : "Bilddiagnostiskt resultat som ett enskilt värde eller, genom nästning, en grupp av värden."
+          }
+        }
       },
       "termBindings" : { },
       "terminologyExtracts" : { },
@@ -10846,7 +10974,14 @@
             "description" : "Ergebnis der Bildgebung als Einzelwert oder als eine verschachtelte Gruppe von Ergebniswerten."
           }
         },
-        "sv" : { }
+        "sv" : {
+          "at0000.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0000.1",
+            "text" : "4.12 Vävnadsdoppler a' (lat)",
+            "description" : "Bilddiagnostiskt resultat som ett enskilt värde eller, genom nästning, en grupp av värden."
+          }
+        }
       },
       "termBindings" : { },
       "terminologyExtracts" : { },
@@ -11087,7 +11222,14 @@
             "description" : "Ergebnis der Bildgebung als Einzelwert oder als eine verschachtelte Gruppe von Ergebniswerten."
           }
         },
-        "sv" : { }
+        "sv" : {
+          "at0000.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0000.1",
+            "text" : "TY S (lateral)",
+            "description" : "Bilddiagnostiskt resultat som ett enskilt värde eller, genom nästning, en grupp av värden."
+          }
+        }
       },
       "termBindings" : { },
       "terminologyExtracts" : { },
@@ -11328,7 +11470,14 @@
             "description" : "Ergebnis der Bildgebung als Einzelwert oder als eine verschachtelte Gruppe von Ergebniswerten."
           }
         },
-        "sv" : { }
+        "sv" : {
+          "at0000.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0000.1",
+            "text" : "4.8 Vävnadsdoppler e´(sept)",
+            "description" : "Bilddiagnostiskt resultat som ett enskilt värde eller, genom nästning, en grupp av värden."
+          }
+        }
       },
       "termBindings" : { },
       "terminologyExtracts" : { },
@@ -11569,7 +11718,14 @@
             "description" : "Ergebnis der Bildgebung als Einzelwert oder als eine verschachtelte Gruppe von Ergebniswerten."
           }
         },
-        "sv" : { }
+        "sv" : {
+          "at0000.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0000.1",
+            "text" : "4.11 Vävnadsdoppler a' (sept)",
+            "description" : "Bilddiagnostiskt resultat som ett enskilt värde eller, genom nästning, en grupp av värden."
+          }
+        }
       },
       "termBindings" : { },
       "terminologyExtracts" : { },
@@ -11810,7 +11966,14 @@
             "description" : "Ergebnis der Bildgebung als Einzelwert oder als eine verschachtelte Gruppe von Ergebniswerten."
           }
         },
-        "sv" : { }
+        "sv" : {
+          "at0000.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0000.1",
+            "text" : "TY S (medial)",
+            "description" : "Bilddiagnostiskt resultat som ett enskilt värde eller, genom nästning, en grupp av värden."
+          }
+        }
       },
       "termBindings" : { },
       "terminologyExtracts" : { },
@@ -12030,7 +12193,14 @@
             "description" : "Ergebnis der Bildgebung als Einzelwert oder als eine verschachtelte Gruppe von Ergebniswerten."
           }
         },
-        "sv" : { }
+        "sv" : {
+          "at0000.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0000.1",
+            "text" : "Lungvenflöde",
+            "description" : "Bilddiagnostiskt resultat som ett enskilt värde eller, genom nästning, en grupp av värden."
+          }
+        }
       },
       "termBindings" : { },
       "terminologyExtracts" : { },
@@ -12271,7 +12441,14 @@
             "description" : "Ergebnis der Bildgebung als Einzelwert oder als eine verschachtelte Gruppe von Ergebniswerten."
           }
         },
-        "sv" : { }
+        "sv" : {
+          "at0000.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0000.1",
+            "text" : "4.13 Lungvenflöde systole (PVs)",
+            "description" : "Bilddiagnostiskt resultat som ett enskilt värde eller, genom nästning, en grupp av värden."
+          }
+        }
       },
       "termBindings" : { },
       "terminologyExtracts" : { },
@@ -12512,7 +12689,14 @@
             "description" : "Ergebnis der Bildgebung als Einzelwert oder als eine verschachtelte Gruppe von Ergebniswerten."
           }
         },
-        "sv" : { }
+        "sv" : {
+          "at0000.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0000.1",
+            "text" : "4.14 Lungvenflöde diastole (PVd)",
+            "description" : "Bilddiagnostiskt resultat som ett enskilt värde eller, genom nästning, en grupp av värden."
+          }
+        }
       },
       "termBindings" : { },
       "terminologyExtracts" : { },
@@ -12750,7 +12934,14 @@
             "description" : "Ergebnis der Bildgebung als Einzelwert oder als eine verschachtelte Gruppe von Ergebniswerten."
           }
         },
-        "sv" : { }
+        "sv" : {
+          "at0000.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0000.1",
+            "text" : "Hjärtklaffar",
+            "description" : "Bilddiagnostiskt resultat som ett enskilt värde eller, genom nästning, en grupp av värden."
+          }
+        }
       },
       "termBindings" : { },
       "terminologyExtracts" : { },
