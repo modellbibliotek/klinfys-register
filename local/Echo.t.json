@@ -24,9 +24,9 @@
       "Sign off" : "",
       "Speciality" : "",
       "User roles" : "",
-      "MD5-CAM-1.0.1" : "aa18039712305e89fc8381384a4cba41",
+      "MD5-CAM-1.0.1" : "30f8fa6ded22aef579f17702103ac953",
       "PARENT:MD5-CAM-1.0.1" : "641B268BE8805CEB8DC21AB82C53AB3F",
-      "sem_ver" : "0.2.0",
+      "sem_ver" : "0.3.0",
       "build_uid" : ""
     },
     "details" : {
@@ -490,7 +490,8 @@
       "attributeCustomizations" : {
         "items" : {
           "aliases" : {
-            "en" : "items"
+            "en" : "items",
+            "sv" : "items"
           }
         }
       }
@@ -503,7 +504,7 @@
           "at0000.1" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0000.1",
-            "text" : "Rhythmus und Frequenz",
+            "text" : "Rytm och frekvens",
             "description" : "A generic section header which should be renamed in a template to suit a specific clinical context."
           }
         },
@@ -551,7 +552,7 @@
           "at0000.1" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0000.1",
-            "text" : "Rhythmus und Frequenz",
+            "text" : "Rytm och frekvens",
             "description" : "En allmän avsnittsrubrik som döps om i en openEHR-mall för att passa in i en specifik klinisk kontext."
           }
         },
@@ -3567,7 +3568,7 @@
       "references" : { },
       "conversionDetails" : { },
       "otherDetails" : {
-        "PARENT:MD5-CAM-1.0.1" : "603A5F60C26B4415285A6F29EC8035A1"
+        "PARENT:MD5-CAM-1.0.1" : "40D40305DD4FF8737FB606E15BF84BD2"
       },
       "details" : {
         "de" : {
@@ -3596,6 +3597,20 @@
           "keywords" : [ ],
           "use" : "To record imaging results as a single value or as a nested group of result values. Normally used in conjunction with a parent Imaging examination (Observation) archetype.\r\n\r\nAs well as a single result value, the archetype also allows for a specific anatomical location and further nesting of result values to be captured. The pattern also allows for local clusters to be accommodated.",
           "copyright" : "© openEHR Foundation",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "sv" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "sv"
+          },
+          "purpose" : "För registrering av fynd från bilddiagnostik som ett enskilt värde eller, genom nästning, en grupp av värden.",
+          "keywords" : [ ],
+          "use" : "Används för att registrera resultat från bilddiagnostik som ett enskilt värde eller, genom nästning, en grupp av värden. Normalt används den i kombination med arketyp-föräldern Imaging examination - Bilddiagnostisk undersökning.\r\n\r\nFörutom ett enskilt värde, tillåter arketypen även registrering av en specifik anatomisk lokalisation och ytterligare nestning av resultatvärden. Mönstret gör det också möjligt att registrera lokala kluster.",
           "originalResourceUri" : { },
           "otherDetails" : { }
         }
@@ -3750,7 +3765,8 @@
             "text" : "Dimensionen (Parasternal Lange Achse)",
             "description" : "Ergebnis der Bildgebung als Einzelwert oder als eine verschachtelte Gruppe von Ergebniswerten."
           }
-        }
+        },
+        "sv" : { }
       },
       "termBindings" : { },
       "terminologyExtracts" : { },
@@ -3782,6 +3798,20 @@
         "email" : "wellmann.ramona@mh-hannover.de"
       },
       "otherDetails" : { }
+    }, {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "sv"
+      },
+      "author" : {
+        "name" : "Carina Sandell",
+        "organisation" : "Region Östergötland",
+        "email" : "carina.sandell@regionostergotland.se"
+      },
+      "otherDetails" : { }
     } ]
   }, {
     "@type" : "TEMPLATE_OVERLAY",
@@ -3794,7 +3824,7 @@
       "references" : { },
       "conversionDetails" : { },
       "otherDetails" : {
-        "PARENT:MD5-CAM-1.0.1" : "603A5F60C26B4415285A6F29EC8035A1"
+        "PARENT:MD5-CAM-1.0.1" : "40D40305DD4FF8737FB606E15BF84BD2"
       },
       "details" : {
         "de" : {
@@ -3823,6 +3853,20 @@
           "keywords" : [ ],
           "use" : "To record imaging results as a single value or as a nested group of result values. Normally used in conjunction with a parent Imaging examination (Observation) archetype.\r\n\r\nAs well as a single result value, the archetype also allows for a specific anatomical location and further nesting of result values to be captured. The pattern also allows for local clusters to be accommodated.",
           "copyright" : "© openEHR Foundation",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "sv" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "sv"
+          },
+          "purpose" : "För registrering av fynd från bilddiagnostik som ett enskilt värde eller, genom nästning, en grupp av värden.",
+          "keywords" : [ ],
+          "use" : "Används för att registrera resultat från bilddiagnostik som ett enskilt värde eller, genom nästning, en grupp av värden. Normalt används den i kombination med arketyp-föräldern Imaging examination - Bilddiagnostisk undersökning.\r\n\r\nFörutom ett enskilt värde, tillåter arketypen även registrering av en specifik anatomisk lokalisation och ytterligare nestning av resultatvärden. Mönstret gör det också möjligt att registrera lokala kluster.",
           "originalResourceUri" : { },
           "otherDetails" : { }
         }
@@ -3969,7 +4013,8 @@
             "text" : "Durchmesser Aortenwurzel (diastolisch) (AoW)",
             "description" : "Ergebnis der Bildgebung als Einzelwert oder als eine verschachtelte Gruppe von Ergebniswerten."
           }
-        }
+        },
+        "sv" : { }
       },
       "termBindings" : { },
       "terminologyExtracts" : { },
@@ -4001,6 +4046,20 @@
         "email" : "wellmann.ramona@mh-hannover.de"
       },
       "otherDetails" : { }
+    }, {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "sv"
+      },
+      "author" : {
+        "name" : "Carina Sandell",
+        "organisation" : "Region Östergötland",
+        "email" : "carina.sandell@regionostergotland.se"
+      },
+      "otherDetails" : { }
     } ]
   }, {
     "@type" : "TEMPLATE_OVERLAY",
@@ -4013,7 +4072,7 @@
       "references" : { },
       "conversionDetails" : { },
       "otherDetails" : {
-        "PARENT:MD5-CAM-1.0.1" : "603A5F60C26B4415285A6F29EC8035A1"
+        "PARENT:MD5-CAM-1.0.1" : "40D40305DD4FF8737FB606E15BF84BD2"
       },
       "details" : {
         "de" : {
@@ -4042,6 +4101,20 @@
           "keywords" : [ ],
           "use" : "To record imaging results as a single value or as a nested group of result values. Normally used in conjunction with a parent Imaging examination (Observation) archetype.\r\n\r\nAs well as a single result value, the archetype also allows for a specific anatomical location and further nesting of result values to be captured. The pattern also allows for local clusters to be accommodated.",
           "copyright" : "© openEHR Foundation",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "sv" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "sv"
+          },
+          "purpose" : "För registrering av fynd från bilddiagnostik som ett enskilt värde eller, genom nästning, en grupp av värden.",
+          "keywords" : [ ],
+          "use" : "Används för att registrera resultat från bilddiagnostik som ett enskilt värde eller, genom nästning, en grupp av värden. Normalt används den i kombination med arketyp-föräldern Imaging examination - Bilddiagnostisk undersökning.\r\n\r\nFörutom ett enskilt värde, tillåter arketypen även registrering av en specifik anatomisk lokalisation och ytterligare nestning av resultatvärden. Mönstret gör det också möjligt att registrera lokala kluster.",
           "originalResourceUri" : { },
           "otherDetails" : { }
         }
@@ -4188,7 +4261,8 @@
             "text" : "Linker Vorhof (endsystolisch) (LA diam)",
             "description" : "Ergebnis der Bildgebung als Einzelwert oder als eine verschachtelte Gruppe von Ergebniswerten."
           }
-        }
+        },
+        "sv" : { }
       },
       "termBindings" : { },
       "terminologyExtracts" : { },
@@ -4220,6 +4294,20 @@
         "email" : "wellmann.ramona@mh-hannover.de"
       },
       "otherDetails" : { }
+    }, {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "sv"
+      },
+      "author" : {
+        "name" : "Carina Sandell",
+        "organisation" : "Region Östergötland",
+        "email" : "carina.sandell@regionostergotland.se"
+      },
+      "otherDetails" : { }
     } ]
   }, {
     "@type" : "TEMPLATE_OVERLAY",
@@ -4232,7 +4320,7 @@
       "references" : { },
       "conversionDetails" : { },
       "otherDetails" : {
-        "PARENT:MD5-CAM-1.0.1" : "603A5F60C26B4415285A6F29EC8035A1"
+        "PARENT:MD5-CAM-1.0.1" : "40D40305DD4FF8737FB606E15BF84BD2"
       },
       "details" : {
         "de" : {
@@ -4261,6 +4349,20 @@
           "keywords" : [ ],
           "use" : "To record imaging results as a single value or as a nested group of result values. Normally used in conjunction with a parent Imaging examination (Observation) archetype.\r\n\r\nAs well as a single result value, the archetype also allows for a specific anatomical location and further nesting of result values to be captured. The pattern also allows for local clusters to be accommodated.",
           "copyright" : "© openEHR Foundation",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "sv" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "sv"
+          },
+          "purpose" : "För registrering av fynd från bilddiagnostik som ett enskilt värde eller, genom nästning, en grupp av värden.",
+          "keywords" : [ ],
+          "use" : "Används för att registrera resultat från bilddiagnostik som ett enskilt värde eller, genom nästning, en grupp av värden. Normalt används den i kombination med arketyp-föräldern Imaging examination - Bilddiagnostisk undersökning.\r\n\r\nFörutom ett enskilt värde, tillåter arketypen även registrering av en specifik anatomisk lokalisation och ytterligare nestning av resultatvärden. Mönstret gör det också möjligt att registrera lokala kluster.",
           "originalResourceUri" : { },
           "otherDetails" : { }
         }
@@ -4407,7 +4509,8 @@
             "text" : "Interventrikuläres Septum (enddiastolisch) (IVSd)",
             "description" : "Ergebnis der Bildgebung als Einzelwert oder als eine verschachtelte Gruppe von Ergebniswerten."
           }
-        }
+        },
+        "sv" : { }
       },
       "termBindings" : { },
       "terminologyExtracts" : { },
@@ -4439,6 +4542,20 @@
         "email" : "wellmann.ramona@mh-hannover.de"
       },
       "otherDetails" : { }
+    }, {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "sv"
+      },
+      "author" : {
+        "name" : "Carina Sandell",
+        "organisation" : "Region Östergötland",
+        "email" : "carina.sandell@regionostergotland.se"
+      },
+      "otherDetails" : { }
     } ]
   }, {
     "@type" : "TEMPLATE_OVERLAY",
@@ -4451,7 +4568,7 @@
       "references" : { },
       "conversionDetails" : { },
       "otherDetails" : {
-        "PARENT:MD5-CAM-1.0.1" : "603A5F60C26B4415285A6F29EC8035A1"
+        "PARENT:MD5-CAM-1.0.1" : "40D40305DD4FF8737FB606E15BF84BD2"
       },
       "details" : {
         "de" : {
@@ -4480,6 +4597,20 @@
           "keywords" : [ ],
           "use" : "To record imaging results as a single value or as a nested group of result values. Normally used in conjunction with a parent Imaging examination (Observation) archetype.\r\n\r\nAs well as a single result value, the archetype also allows for a specific anatomical location and further nesting of result values to be captured. The pattern also allows for local clusters to be accommodated.",
           "copyright" : "© openEHR Foundation",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "sv" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "sv"
+          },
+          "purpose" : "För registrering av fynd från bilddiagnostik som ett enskilt värde eller, genom nästning, en grupp av värden.",
+          "keywords" : [ ],
+          "use" : "Används för att registrera resultat från bilddiagnostik som ett enskilt värde eller, genom nästning, en grupp av värden. Normalt används den i kombination med arketyp-föräldern Imaging examination - Bilddiagnostisk undersökning.\r\n\r\nFörutom ett enskilt värde, tillåter arketypen även registrering av en specifik anatomisk lokalisation och ytterligare nestning av resultatvärden. Mönstret gör det också möjligt att registrera lokala kluster.",
           "originalResourceUri" : { },
           "otherDetails" : { }
         }
@@ -4626,7 +4757,8 @@
             "text" : "Linksventrikulärer enddiastolischer Diameter (LVEDd)",
             "description" : "Ergebnis der Bildgebung als Einzelwert oder als eine verschachtelte Gruppe von Ergebniswerten."
           }
-        }
+        },
+        "sv" : { }
       },
       "termBindings" : { },
       "terminologyExtracts" : { },
@@ -4658,6 +4790,20 @@
         "email" : "wellmann.ramona@mh-hannover.de"
       },
       "otherDetails" : { }
+    }, {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "sv"
+      },
+      "author" : {
+        "name" : "Carina Sandell",
+        "organisation" : "Region Östergötland",
+        "email" : "carina.sandell@regionostergotland.se"
+      },
+      "otherDetails" : { }
     } ]
   }, {
     "@type" : "TEMPLATE_OVERLAY",
@@ -4670,7 +4816,7 @@
       "references" : { },
       "conversionDetails" : { },
       "otherDetails" : {
-        "PARENT:MD5-CAM-1.0.1" : "603A5F60C26B4415285A6F29EC8035A1"
+        "PARENT:MD5-CAM-1.0.1" : "40D40305DD4FF8737FB606E15BF84BD2"
       },
       "details" : {
         "de" : {
@@ -4699,6 +4845,20 @@
           "keywords" : [ ],
           "use" : "To record imaging results as a single value or as a nested group of result values. Normally used in conjunction with a parent Imaging examination (Observation) archetype.\r\n\r\nAs well as a single result value, the archetype also allows for a specific anatomical location and further nesting of result values to be captured. The pattern also allows for local clusters to be accommodated.",
           "copyright" : "© openEHR Foundation",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "sv" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "sv"
+          },
+          "purpose" : "För registrering av fynd från bilddiagnostik som ett enskilt värde eller, genom nästning, en grupp av värden.",
+          "keywords" : [ ],
+          "use" : "Används för att registrera resultat från bilddiagnostik som ett enskilt värde eller, genom nästning, en grupp av värden. Normalt används den i kombination med arketyp-föräldern Imaging examination - Bilddiagnostisk undersökning.\r\n\r\nFörutom ett enskilt värde, tillåter arketypen även registrering av en specifik anatomisk lokalisation och ytterligare nestning av resultatvärden. Mönstret gör det också möjligt att registrera lokala kluster.",
           "originalResourceUri" : { },
           "otherDetails" : { }
         }
@@ -4845,7 +5005,8 @@
             "text" : "Linksventrikuläre posteriore Wand (LVPWd)",
             "description" : "Ergebnis der Bildgebung als Einzelwert oder als eine verschachtelte Gruppe von Ergebniswerten."
           }
-        }
+        },
+        "sv" : { }
       },
       "termBindings" : { },
       "terminologyExtracts" : { },
@@ -4877,6 +5038,20 @@
         "email" : "wellmann.ramona@mh-hannover.de"
       },
       "otherDetails" : { }
+    }, {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "sv"
+      },
+      "author" : {
+        "name" : "Carina Sandell",
+        "organisation" : "Region Östergötland",
+        "email" : "carina.sandell@regionostergotland.se"
+      },
+      "otherDetails" : { }
     } ]
   }, {
     "@type" : "TEMPLATE_OVERLAY",
@@ -4889,7 +5064,7 @@
       "references" : { },
       "conversionDetails" : { },
       "otherDetails" : {
-        "PARENT:MD5-CAM-1.0.1" : "603A5F60C26B4415285A6F29EC8035A1"
+        "PARENT:MD5-CAM-1.0.1" : "40D40305DD4FF8737FB606E15BF84BD2"
       },
       "details" : {
         "de" : {
@@ -4918,6 +5093,20 @@
           "keywords" : [ ],
           "use" : "To record imaging results as a single value or as a nested group of result values. Normally used in conjunction with a parent Imaging examination (Observation) archetype.\r\n\r\nAs well as a single result value, the archetype also allows for a specific anatomical location and further nesting of result values to be captured. The pattern also allows for local clusters to be accommodated.",
           "copyright" : "© openEHR Foundation",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "sv" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "sv"
+          },
+          "purpose" : "För registrering av fynd från bilddiagnostik som ett enskilt värde eller, genom nästning, en grupp av värden.",
+          "keywords" : [ ],
+          "use" : "Används för att registrera resultat från bilddiagnostik som ett enskilt värde eller, genom nästning, en grupp av värden. Normalt används den i kombination med arketyp-föräldern Imaging examination - Bilddiagnostisk undersökning.\r\n\r\nFörutom ett enskilt värde, tillåter arketypen även registrering av en specifik anatomisk lokalisation och ytterligare nestning av resultatvärden. Mönstret gör det också möjligt att registrera lokala kluster.",
           "originalResourceUri" : { },
           "otherDetails" : { }
         }
@@ -5064,7 +5253,8 @@
             "text" : "Linksventrikulärer endsystolischer Diameter (LVEDs)",
             "description" : "Ergebnis der Bildgebung als Einzelwert oder als eine verschachtelte Gruppe von Ergebniswerten."
           }
-        }
+        },
+        "sv" : { }
       },
       "termBindings" : { },
       "terminologyExtracts" : { },
@@ -5096,6 +5286,20 @@
         "email" : "wellmann.ramona@mh-hannover.de"
       },
       "otherDetails" : { }
+    }, {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "sv"
+      },
+      "author" : {
+        "name" : "Carina Sandell",
+        "organisation" : "Region Östergötland",
+        "email" : "carina.sandell@regionostergotland.se"
+      },
+      "otherDetails" : { }
     } ]
   }, {
     "@type" : "TEMPLATE_OVERLAY",
@@ -5108,7 +5312,7 @@
       "references" : { },
       "conversionDetails" : { },
       "otherDetails" : {
-        "PARENT:MD5-CAM-1.0.1" : "603A5F60C26B4415285A6F29EC8035A1"
+        "PARENT:MD5-CAM-1.0.1" : "40D40305DD4FF8737FB606E15BF84BD2"
       },
       "details" : {
         "de" : {
@@ -5137,6 +5341,20 @@
           "keywords" : [ ],
           "use" : "To record imaging results as a single value or as a nested group of result values. Normally used in conjunction with a parent Imaging examination (Observation) archetype.\r\n\r\nAs well as a single result value, the archetype also allows for a specific anatomical location and further nesting of result values to be captured. The pattern also allows for local clusters to be accommodated.",
           "copyright" : "© openEHR Foundation",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "sv" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "sv"
+          },
+          "purpose" : "För registrering av fynd från bilddiagnostik som ett enskilt värde eller, genom nästning, en grupp av värden.",
+          "keywords" : [ ],
+          "use" : "Används för att registrera resultat från bilddiagnostik som ett enskilt värde eller, genom nästning, en grupp av värden. Normalt används den i kombination med arketyp-föräldern Imaging examination - Bilddiagnostisk undersökning.\r\n\r\nFörutom ett enskilt värde, tillåter arketypen även registrering av en specifik anatomisk lokalisation och ytterligare nestning av resultatvärden. Mönstret gör det också möjligt att registrera lokala kluster.",
           "originalResourceUri" : { },
           "otherDetails" : { }
         }
@@ -5363,7 +5581,8 @@
             "text" : "2-D Messungen (4CH und 2CH apikal, subkostal)",
             "description" : "Ergebnis der Bildgebung als Einzelwert oder als eine verschachtelte Gruppe von Ergebniswerten."
           }
-        }
+        },
+        "sv" : { }
       },
       "termBindings" : { },
       "terminologyExtracts" : { },
@@ -5395,6 +5614,20 @@
         "email" : "wellmann.ramona@mh-hannover.de"
       },
       "otherDetails" : { }
+    }, {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "sv"
+      },
+      "author" : {
+        "name" : "Carina Sandell",
+        "organisation" : "Region Östergötland",
+        "email" : "carina.sandell@regionostergotland.se"
+      },
+      "otherDetails" : { }
     } ]
   }, {
     "@type" : "TEMPLATE_OVERLAY",
@@ -5407,7 +5640,7 @@
       "references" : { },
       "conversionDetails" : { },
       "otherDetails" : {
-        "PARENT:MD5-CAM-1.0.1" : "603A5F60C26B4415285A6F29EC8035A1"
+        "PARENT:MD5-CAM-1.0.1" : "40D40305DD4FF8737FB606E15BF84BD2"
       },
       "details" : {
         "de" : {
@@ -5436,6 +5669,20 @@
           "keywords" : [ ],
           "use" : "To record imaging results as a single value or as a nested group of result values. Normally used in conjunction with a parent Imaging examination (Observation) archetype.\r\n\r\nAs well as a single result value, the archetype also allows for a specific anatomical location and further nesting of result values to be captured. The pattern also allows for local clusters to be accommodated.",
           "copyright" : "© openEHR Foundation",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "sv" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "sv"
+          },
+          "purpose" : "För registrering av fynd från bilddiagnostik som ett enskilt värde eller, genom nästning, en grupp av värden.",
+          "keywords" : [ ],
+          "use" : "Används för att registrera resultat från bilddiagnostik som ett enskilt värde eller, genom nästning, en grupp av värden. Normalt används den i kombination med arketyp-föräldern Imaging examination - Bilddiagnostisk undersökning.\r\n\r\nFörutom ett enskilt värde, tillåter arketypen även registrering av en specifik anatomisk lokalisation och ytterligare nestning av resultatvärden. Mönstret gör det också möjligt att registrera lokala kluster.",
           "originalResourceUri" : { },
           "otherDetails" : { }
         }
@@ -5620,7 +5867,8 @@
             "text" : "Methode",
             "description" : "Zusätzliche Informationen über das Ergebnis, die nicht im Ergebnisfeld erfasst wurden."
           }
-        }
+        },
+        "sv" : { }
       },
       "termBindings" : { },
       "terminologyExtracts" : { },
@@ -5652,6 +5900,20 @@
         "email" : "wellmann.ramona@mh-hannover.de"
       },
       "otherDetails" : { }
+    }, {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "sv"
+      },
+      "author" : {
+        "name" : "Carina Sandell",
+        "organisation" : "Region Östergötland",
+        "email" : "carina.sandell@regionostergotland.se"
+      },
+      "otherDetails" : { }
     } ]
   }, {
     "@type" : "TEMPLATE_OVERLAY",
@@ -5664,7 +5926,7 @@
       "references" : { },
       "conversionDetails" : { },
       "otherDetails" : {
-        "PARENT:MD5-CAM-1.0.1" : "603A5F60C26B4415285A6F29EC8035A1"
+        "PARENT:MD5-CAM-1.0.1" : "40D40305DD4FF8737FB606E15BF84BD2"
       },
       "details" : {
         "de" : {
@@ -5693,6 +5955,20 @@
           "keywords" : [ ],
           "use" : "To record imaging results as a single value or as a nested group of result values. Normally used in conjunction with a parent Imaging examination (Observation) archetype.\r\n\r\nAs well as a single result value, the archetype also allows for a specific anatomical location and further nesting of result values to be captured. The pattern also allows for local clusters to be accommodated.",
           "copyright" : "© openEHR Foundation",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "sv" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "sv"
+          },
+          "purpose" : "För registrering av fynd från bilddiagnostik som ett enskilt värde eller, genom nästning, en grupp av värden.",
+          "keywords" : [ ],
+          "use" : "Används för att registrera resultat från bilddiagnostik som ett enskilt värde eller, genom nästning, en grupp av värden. Normalt används den i kombination med arketyp-föräldern Imaging examination - Bilddiagnostisk undersökning.\r\n\r\nFörutom ett enskilt värde, tillåter arketypen även registrering av en specifik anatomisk lokalisation och ytterligare nestning av resultatvärden. Mönstret gör det också möjligt att registrera lokala kluster.",
           "originalResourceUri" : { },
           "otherDetails" : { }
         }
@@ -5819,7 +6095,8 @@
             "text" : "Linksventrikuläre Funktion",
             "description" : "Ergebnis der Bildgebung als Einzelwert oder als eine verschachtelte Gruppe von Ergebniswerten."
           }
-        }
+        },
+        "sv" : { }
       },
       "termBindings" : { },
       "terminologyExtracts" : { },
@@ -5851,6 +6128,20 @@
         "email" : "wellmann.ramona@mh-hannover.de"
       },
       "otherDetails" : { }
+    }, {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "sv"
+      },
+      "author" : {
+        "name" : "Carina Sandell",
+        "organisation" : "Region Östergötland",
+        "email" : "carina.sandell@regionostergotland.se"
+      },
+      "otherDetails" : { }
     } ]
   }, {
     "@type" : "TEMPLATE_OVERLAY",
@@ -5863,7 +6154,7 @@
       "references" : { },
       "conversionDetails" : { },
       "otherDetails" : {
-        "PARENT:MD5-CAM-1.0.1" : "603A5F60C26B4415285A6F29EC8035A1"
+        "PARENT:MD5-CAM-1.0.1" : "40D40305DD4FF8737FB606E15BF84BD2"
       },
       "details" : {
         "de" : {
@@ -5892,6 +6183,20 @@
           "keywords" : [ ],
           "use" : "To record imaging results as a single value or as a nested group of result values. Normally used in conjunction with a parent Imaging examination (Observation) archetype.\r\n\r\nAs well as a single result value, the archetype also allows for a specific anatomical location and further nesting of result values to be captured. The pattern also allows for local clusters to be accommodated.",
           "copyright" : "© openEHR Foundation",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "sv" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "sv"
+          },
+          "purpose" : "För registrering av fynd från bilddiagnostik som ett enskilt värde eller, genom nästning, en grupp av värden.",
+          "keywords" : [ ],
+          "use" : "Används för att registrera resultat från bilddiagnostik som ett enskilt värde eller, genom nästning, en grupp av värden. Normalt används den i kombination med arketyp-föräldern Imaging examination - Bilddiagnostisk undersökning.\r\n\r\nFörutom ett enskilt värde, tillåter arketypen även registrering av en specifik anatomisk lokalisation och ytterligare nestning av resultatvärden. Mönstret gör det också möjligt att registrera lokala kluster.",
           "originalResourceUri" : { },
           "otherDetails" : { }
         }
@@ -6038,7 +6343,8 @@
             "text" : "Linksventrikuläres enddiastolisches Volumen (LVEDV)",
             "description" : "Ergebnis der Bildgebung als Einzelwert oder als eine verschachtelte Gruppe von Ergebniswerten."
           }
-        }
+        },
+        "sv" : { }
       },
       "termBindings" : { },
       "terminologyExtracts" : { },
@@ -6070,6 +6376,20 @@
         "email" : "wellmann.ramona@mh-hannover.de"
       },
       "otherDetails" : { }
+    }, {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "sv"
+      },
+      "author" : {
+        "name" : "Carina Sandell",
+        "organisation" : "Region Östergötland",
+        "email" : "carina.sandell@regionostergotland.se"
+      },
+      "otherDetails" : { }
     } ]
   }, {
     "@type" : "TEMPLATE_OVERLAY",
@@ -6082,7 +6402,7 @@
       "references" : { },
       "conversionDetails" : { },
       "otherDetails" : {
-        "PARENT:MD5-CAM-1.0.1" : "603A5F60C26B4415285A6F29EC8035A1"
+        "PARENT:MD5-CAM-1.0.1" : "40D40305DD4FF8737FB606E15BF84BD2"
       },
       "details" : {
         "de" : {
@@ -6111,6 +6431,20 @@
           "keywords" : [ ],
           "use" : "To record imaging results as a single value or as a nested group of result values. Normally used in conjunction with a parent Imaging examination (Observation) archetype.\r\n\r\nAs well as a single result value, the archetype also allows for a specific anatomical location and further nesting of result values to be captured. The pattern also allows for local clusters to be accommodated.",
           "copyright" : "© openEHR Foundation",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "sv" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "sv"
+          },
+          "purpose" : "För registrering av fynd från bilddiagnostik som ett enskilt värde eller, genom nästning, en grupp av värden.",
+          "keywords" : [ ],
+          "use" : "Används för att registrera resultat från bilddiagnostik som ett enskilt värde eller, genom nästning, en grupp av värden. Normalt används den i kombination med arketyp-föräldern Imaging examination - Bilddiagnostisk undersökning.\r\n\r\nFörutom ett enskilt värde, tillåter arketypen även registrering av en specifik anatomisk lokalisation och ytterligare nestning av resultatvärden. Mönstret gör det också möjligt att registrera lokala kluster.",
           "originalResourceUri" : { },
           "otherDetails" : { }
         }
@@ -6257,7 +6591,8 @@
             "text" : "Linksventrikuläres endsystolisches Volumen (LVESV)",
             "description" : "Ergebnis der Bildgebung als Einzelwert oder als eine verschachtelte Gruppe von Ergebniswerten."
           }
-        }
+        },
+        "sv" : { }
       },
       "termBindings" : { },
       "terminologyExtracts" : { },
@@ -6289,6 +6624,20 @@
         "email" : "wellmann.ramona@mh-hannover.de"
       },
       "otherDetails" : { }
+    }, {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "sv"
+      },
+      "author" : {
+        "name" : "Carina Sandell",
+        "organisation" : "Region Östergötland",
+        "email" : "carina.sandell@regionostergotland.se"
+      },
+      "otherDetails" : { }
     } ]
   }, {
     "@type" : "TEMPLATE_OVERLAY",
@@ -6301,7 +6650,7 @@
       "references" : { },
       "conversionDetails" : { },
       "otherDetails" : {
-        "PARENT:MD5-CAM-1.0.1" : "603A5F60C26B4415285A6F29EC8035A1"
+        "PARENT:MD5-CAM-1.0.1" : "40D40305DD4FF8737FB606E15BF84BD2"
       },
       "details" : {
         "de" : {
@@ -6330,6 +6679,20 @@
           "keywords" : [ ],
           "use" : "To record imaging results as a single value or as a nested group of result values. Normally used in conjunction with a parent Imaging examination (Observation) archetype.\r\n\r\nAs well as a single result value, the archetype also allows for a specific anatomical location and further nesting of result values to be captured. The pattern also allows for local clusters to be accommodated.",
           "copyright" : "© openEHR Foundation",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "sv" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "sv"
+          },
+          "purpose" : "För registrering av fynd från bilddiagnostik som ett enskilt värde eller, genom nästning, en grupp av värden.",
+          "keywords" : [ ],
+          "use" : "Används för att registrera resultat från bilddiagnostik som ett enskilt värde eller, genom nästning, en grupp av värden. Normalt används den i kombination med arketyp-föräldern Imaging examination - Bilddiagnostisk undersökning.\r\n\r\nFörutom ett enskilt värde, tillåter arketypen även registrering av en specifik anatomisk lokalisation och ytterligare nestning av resultatvärden. Mönstret gör det också möjligt att registrera lokala kluster.",
           "originalResourceUri" : { },
           "otherDetails" : { }
         }
@@ -6476,7 +6839,8 @@
             "text" : "Linksatriale Fläche 4-Kammer- Blick (endsystolisch) (LA-Fläche (4CH))",
             "description" : "Ergebnis der Bildgebung als Einzelwert oder als eine verschachtelte Gruppe von Ergebniswerten."
           }
-        }
+        },
+        "sv" : { }
       },
       "termBindings" : { },
       "terminologyExtracts" : { },
@@ -6508,6 +6872,20 @@
         "email" : "wellmann.ramona@mh-hannover.de"
       },
       "otherDetails" : { }
+    }, {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "sv"
+      },
+      "author" : {
+        "name" : "Carina Sandell",
+        "organisation" : "Region Östergötland",
+        "email" : "carina.sandell@regionostergotland.se"
+      },
+      "otherDetails" : { }
     } ]
   }, {
     "@type" : "TEMPLATE_OVERLAY",
@@ -6520,7 +6898,7 @@
       "references" : { },
       "conversionDetails" : { },
       "otherDetails" : {
-        "PARENT:MD5-CAM-1.0.1" : "603A5F60C26B4415285A6F29EC8035A1"
+        "PARENT:MD5-CAM-1.0.1" : "40D40305DD4FF8737FB606E15BF84BD2"
       },
       "details" : {
         "de" : {
@@ -6549,6 +6927,20 @@
           "keywords" : [ ],
           "use" : "To record imaging results as a single value or as a nested group of result values. Normally used in conjunction with a parent Imaging examination (Observation) archetype.\r\n\r\nAs well as a single result value, the archetype also allows for a specific anatomical location and further nesting of result values to be captured. The pattern also allows for local clusters to be accommodated.",
           "copyright" : "© openEHR Foundation",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "sv" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "sv"
+          },
+          "purpose" : "För registrering av fynd från bilddiagnostik som ett enskilt värde eller, genom nästning, en grupp av värden.",
+          "keywords" : [ ],
+          "use" : "Används för att registrera resultat från bilddiagnostik som ett enskilt värde eller, genom nästning, en grupp av värden. Normalt används den i kombination med arketyp-föräldern Imaging examination - Bilddiagnostisk undersökning.\r\n\r\nFörutom ett enskilt värde, tillåter arketypen även registrering av en specifik anatomisk lokalisation och ytterligare nestning av resultatvärden. Mönstret gör det också möjligt att registrera lokala kluster.",
           "originalResourceUri" : { },
           "otherDetails" : { }
         }
@@ -6675,7 +7067,8 @@
             "text" : "RV Dilatation (basal)",
             "description" : "Ergebnis der Bildgebung als Einzelwert oder als eine verschachtelte Gruppe von Ergebniswerten."
           }
-        }
+        },
+        "sv" : { }
       },
       "termBindings" : { },
       "terminologyExtracts" : { },
@@ -6707,6 +7100,20 @@
         "email" : "wellmann.ramona@mh-hannover.de"
       },
       "otherDetails" : { }
+    }, {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "sv"
+      },
+      "author" : {
+        "name" : "Carina Sandell",
+        "organisation" : "Region Östergötland",
+        "email" : "carina.sandell@regionostergotland.se"
+      },
+      "otherDetails" : { }
     } ]
   }, {
     "@type" : "TEMPLATE_OVERLAY",
@@ -6719,7 +7126,7 @@
       "references" : { },
       "conversionDetails" : { },
       "otherDetails" : {
-        "PARENT:MD5-CAM-1.0.1" : "603A5F60C26B4415285A6F29EC8035A1"
+        "PARENT:MD5-CAM-1.0.1" : "40D40305DD4FF8737FB606E15BF84BD2"
       },
       "details" : {
         "de" : {
@@ -6748,6 +7155,20 @@
           "keywords" : [ ],
           "use" : "To record imaging results as a single value or as a nested group of result values. Normally used in conjunction with a parent Imaging examination (Observation) archetype.\r\n\r\nAs well as a single result value, the archetype also allows for a specific anatomical location and further nesting of result values to be captured. The pattern also allows for local clusters to be accommodated.",
           "copyright" : "© openEHR Foundation",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "sv" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "sv"
+          },
+          "purpose" : "För registrering av fynd från bilddiagnostik som ett enskilt värde eller, genom nästning, en grupp av värden.",
+          "keywords" : [ ],
+          "use" : "Används för att registrera resultat från bilddiagnostik som ett enskilt värde eller, genom nästning, en grupp av värden. Normalt används den i kombination med arketyp-föräldern Imaging examination - Bilddiagnostisk undersökning.\r\n\r\nFörutom ett enskilt värde, tillåter arketypen även registrering av en specifik anatomisk lokalisation och ytterligare nestning av resultatvärden. Mönstret gör det också möjligt att registrera lokala kluster.",
           "originalResourceUri" : { },
           "otherDetails" : { }
         }
@@ -6894,7 +7315,8 @@
             "text" : "TAPSE",
             "description" : "Ergebnis der Bildgebung als Einzelwert oder als eine verschachtelte Gruppe von Ergebniswerten."
           }
-        }
+        },
+        "sv" : { }
       },
       "termBindings" : { },
       "terminologyExtracts" : { },
@@ -6926,6 +7348,20 @@
         "email" : "wellmann.ramona@mh-hannover.de"
       },
       "otherDetails" : { }
+    }, {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "sv"
+      },
+      "author" : {
+        "name" : "Carina Sandell",
+        "organisation" : "Region Östergötland",
+        "email" : "carina.sandell@regionostergotland.se"
+      },
+      "otherDetails" : { }
     } ]
   }, {
     "@type" : "TEMPLATE_OVERLAY",
@@ -6938,7 +7374,7 @@
       "references" : { },
       "conversionDetails" : { },
       "otherDetails" : {
-        "PARENT:MD5-CAM-1.0.1" : "603A5F60C26B4415285A6F29EC8035A1"
+        "PARENT:MD5-CAM-1.0.1" : "40D40305DD4FF8737FB606E15BF84BD2"
       },
       "details" : {
         "de" : {
@@ -6967,6 +7403,20 @@
           "keywords" : [ ],
           "use" : "To record imaging results as a single value or as a nested group of result values. Normally used in conjunction with a parent Imaging examination (Observation) archetype.\r\n\r\nAs well as a single result value, the archetype also allows for a specific anatomical location and further nesting of result values to be captured. The pattern also allows for local clusters to be accommodated.",
           "copyright" : "© openEHR Foundation",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "sv" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "sv"
+          },
+          "purpose" : "För registrering av fynd från bilddiagnostik som ett enskilt värde eller, genom nästning, en grupp av värden.",
+          "keywords" : [ ],
+          "use" : "Används för att registrera resultat från bilddiagnostik som ett enskilt värde eller, genom nästning, en grupp av värden. Normalt används den i kombination med arketyp-föräldern Imaging examination - Bilddiagnostisk undersökning.\r\n\r\nFörutom ett enskilt värde, tillåter arketypen även registrering av en specifik anatomisk lokalisation och ytterligare nestning av resultatvärden. Mönstret gör det också möjligt att registrera lokala kluster.",
           "originalResourceUri" : { },
           "otherDetails" : { }
         }
@@ -7113,7 +7563,8 @@
             "text" : "MAPSE lateral",
             "description" : "Ergebnis der Bildgebung als Einzelwert oder als eine verschachtelte Gruppe von Ergebniswerten."
           }
-        }
+        },
+        "sv" : { }
       },
       "termBindings" : { },
       "terminologyExtracts" : { },
@@ -7145,6 +7596,20 @@
         "email" : "wellmann.ramona@mh-hannover.de"
       },
       "otherDetails" : { }
+    }, {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "sv"
+      },
+      "author" : {
+        "name" : "Carina Sandell",
+        "organisation" : "Region Östergötland",
+        "email" : "carina.sandell@regionostergotland.se"
+      },
+      "otherDetails" : { }
     } ]
   }, {
     "@type" : "TEMPLATE_OVERLAY",
@@ -7157,7 +7622,7 @@
       "references" : { },
       "conversionDetails" : { },
       "otherDetails" : {
-        "PARENT:MD5-CAM-1.0.1" : "603A5F60C26B4415285A6F29EC8035A1"
+        "PARENT:MD5-CAM-1.0.1" : "40D40305DD4FF8737FB606E15BF84BD2"
       },
       "details" : {
         "de" : {
@@ -7186,6 +7651,20 @@
           "keywords" : [ ],
           "use" : "To record imaging results as a single value or as a nested group of result values. Normally used in conjunction with a parent Imaging examination (Observation) archetype.\r\n\r\nAs well as a single result value, the archetype also allows for a specific anatomical location and further nesting of result values to be captured. The pattern also allows for local clusters to be accommodated.",
           "copyright" : "© openEHR Foundation",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "sv" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "sv"
+          },
+          "purpose" : "För registrering av fynd från bilddiagnostik som ett enskilt värde eller, genom nästning, en grupp av värden.",
+          "keywords" : [ ],
+          "use" : "Används för att registrera resultat från bilddiagnostik som ett enskilt värde eller, genom nästning, en grupp av värden. Normalt används den i kombination med arketyp-föräldern Imaging examination - Bilddiagnostisk undersökning.\r\n\r\nFörutom ett enskilt värde, tillåter arketypen även registrering av en specifik anatomisk lokalisation och ytterligare nestning av resultatvärden. Mönstret gör det också möjligt att registrera lokala kluster.",
           "originalResourceUri" : { },
           "otherDetails" : { }
         }
@@ -7337,7 +7816,8 @@
             "text" : "Perikarderguss",
             "description" : "Ergebnis der Bildgebung als Einzelwert oder als eine verschachtelte Gruppe von Ergebniswerten."
           }
-        }
+        },
+        "sv" : { }
       },
       "termBindings" : { },
       "terminologyExtracts" : { },
@@ -7369,6 +7849,20 @@
         "email" : "wellmann.ramona@mh-hannover.de"
       },
       "otherDetails" : { }
+    }, {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "sv"
+      },
+      "author" : {
+        "name" : "Carina Sandell",
+        "organisation" : "Region Östergötland",
+        "email" : "carina.sandell@regionostergotland.se"
+      },
+      "otherDetails" : { }
     } ]
   }, {
     "@type" : "TEMPLATE_OVERLAY",
@@ -7381,7 +7875,7 @@
       "references" : { },
       "conversionDetails" : { },
       "otherDetails" : {
-        "PARENT:MD5-CAM-1.0.1" : "603A5F60C26B4415285A6F29EC8035A1"
+        "PARENT:MD5-CAM-1.0.1" : "40D40305DD4FF8737FB606E15BF84BD2"
       },
       "details" : {
         "de" : {
@@ -7410,6 +7904,20 @@
           "keywords" : [ ],
           "use" : "To record imaging results as a single value or as a nested group of result values. Normally used in conjunction with a parent Imaging examination (Observation) archetype.\r\n\r\nAs well as a single result value, the archetype also allows for a specific anatomical location and further nesting of result values to be captured. The pattern also allows for local clusters to be accommodated.",
           "copyright" : "© openEHR Foundation",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "sv" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "sv"
+          },
+          "purpose" : "För registrering av fynd från bilddiagnostik som ett enskilt värde eller, genom nästning, en grupp av värden.",
+          "keywords" : [ ],
+          "use" : "Används för att registrera resultat från bilddiagnostik som ett enskilt värde eller, genom nästning, en grupp av värden. Normalt används den i kombination med arketyp-föräldern Imaging examination - Bilddiagnostisk undersökning.\r\n\r\nFörutom ett enskilt värde, tillåter arketypen även registrering av en specifik anatomisk lokalisation och ytterligare nestning av resultatvärden. Mönstret gör det också möjligt att registrera lokala kluster.",
           "originalResourceUri" : { },
           "otherDetails" : { }
         }
@@ -7522,7 +8030,8 @@
       "conceptCode" : "at0000",
       "termDefinitions" : {
         "en" : { },
-        "de" : { }
+        "de" : { },
+        "sv" : { }
       },
       "termBindings" : { },
       "terminologyExtracts" : { },
@@ -7554,6 +8063,20 @@
         "email" : "wellmann.ramona@mh-hannover.de"
       },
       "otherDetails" : { }
+    }, {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "sv"
+      },
+      "author" : {
+        "name" : "Carina Sandell",
+        "organisation" : "Region Östergötland",
+        "email" : "carina.sandell@regionostergotland.se"
+      },
+      "otherDetails" : { }
     } ]
   }, {
     "@type" : "TEMPLATE_OVERLAY",
@@ -7566,7 +8089,7 @@
       "references" : { },
       "conversionDetails" : { },
       "otherDetails" : {
-        "PARENT:MD5-CAM-1.0.1" : "603A5F60C26B4415285A6F29EC8035A1"
+        "PARENT:MD5-CAM-1.0.1" : "40D40305DD4FF8737FB606E15BF84BD2"
       },
       "details" : {
         "de" : {
@@ -7595,6 +8118,20 @@
           "keywords" : [ ],
           "use" : "To record imaging results as a single value or as a nested group of result values. Normally used in conjunction with a parent Imaging examination (Observation) archetype.\r\n\r\nAs well as a single result value, the archetype also allows for a specific anatomical location and further nesting of result values to be captured. The pattern also allows for local clusters to be accommodated.",
           "copyright" : "© openEHR Foundation",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "sv" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "sv"
+          },
+          "purpose" : "För registrering av fynd från bilddiagnostik som ett enskilt värde eller, genom nästning, en grupp av värden.",
+          "keywords" : [ ],
+          "use" : "Används för att registrera resultat från bilddiagnostik som ett enskilt värde eller, genom nästning, en grupp av värden. Normalt används den i kombination med arketyp-föräldern Imaging examination - Bilddiagnostisk undersökning.\r\n\r\nFörutom ett enskilt värde, tillåter arketypen även registrering av en specifik anatomisk lokalisation och ytterligare nestning av resultatvärden. Mönstret gör det också möjligt att registrera lokala kluster.",
           "originalResourceUri" : { },
           "otherDetails" : { }
         }
@@ -7741,7 +8278,8 @@
             "text" : "Vena cava Durchmesser",
             "description" : "Ergebnis der Bildgebung als Einzelwert oder als eine verschachtelte Gruppe von Ergebniswerten."
           }
-        }
+        },
+        "sv" : { }
       },
       "termBindings" : { },
       "terminologyExtracts" : { },
@@ -7773,6 +8311,20 @@
         "email" : "wellmann.ramona@mh-hannover.de"
       },
       "otherDetails" : { }
+    }, {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "sv"
+      },
+      "author" : {
+        "name" : "Carina Sandell",
+        "organisation" : "Region Östergötland",
+        "email" : "carina.sandell@regionostergotland.se"
+      },
+      "otherDetails" : { }
     } ]
   }, {
     "@type" : "TEMPLATE_OVERLAY",
@@ -7785,7 +8337,7 @@
       "references" : { },
       "conversionDetails" : { },
       "otherDetails" : {
-        "PARENT:MD5-CAM-1.0.1" : "603A5F60C26B4415285A6F29EC8035A1"
+        "PARENT:MD5-CAM-1.0.1" : "40D40305DD4FF8737FB606E15BF84BD2"
       },
       "details" : {
         "de" : {
@@ -7814,6 +8366,20 @@
           "keywords" : [ ],
           "use" : "To record imaging results as a single value or as a nested group of result values. Normally used in conjunction with a parent Imaging examination (Observation) archetype.\r\n\r\nAs well as a single result value, the archetype also allows for a specific anatomical location and further nesting of result values to be captured. The pattern also allows for local clusters to be accommodated.",
           "copyright" : "© openEHR Foundation",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "sv" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "sv"
+          },
+          "purpose" : "För registrering av fynd från bilddiagnostik som ett enskilt värde eller, genom nästning, en grupp av värden.",
+          "keywords" : [ ],
+          "use" : "Används för att registrera resultat från bilddiagnostik som ett enskilt värde eller, genom nästning, en grupp av värden. Normalt används den i kombination med arketyp-föräldern Imaging examination - Bilddiagnostisk undersökning.\r\n\r\nFörutom ett enskilt värde, tillåter arketypen även registrering av en specifik anatomisk lokalisation och ytterligare nestning av resultatvärden. Mönstret gör det också möjligt att registrera lokala kluster.",
           "originalResourceUri" : { },
           "otherDetails" : { }
         }
@@ -7940,7 +8506,8 @@
             "text" : "Vena cava atemreagibel (>50% Abnahme unter Inspiration)",
             "description" : "Ergebnis der Bildgebung als Einzelwert oder als eine verschachtelte Gruppe von Ergebniswerten."
           }
-        }
+        },
+        "sv" : { }
       },
       "termBindings" : { },
       "terminologyExtracts" : { },
@@ -7972,6 +8539,20 @@
         "email" : "wellmann.ramona@mh-hannover.de"
       },
       "otherDetails" : { }
+    }, {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "sv"
+      },
+      "author" : {
+        "name" : "Carina Sandell",
+        "organisation" : "Region Östergötland",
+        "email" : "carina.sandell@regionostergotland.se"
+      },
+      "otherDetails" : { }
     } ]
   }, {
     "@type" : "TEMPLATE_OVERLAY",
@@ -7984,7 +8565,7 @@
       "references" : { },
       "conversionDetails" : { },
       "otherDetails" : {
-        "PARENT:MD5-CAM-1.0.1" : "603A5F60C26B4415285A6F29EC8035A1"
+        "PARENT:MD5-CAM-1.0.1" : "40D40305DD4FF8737FB606E15BF84BD2"
       },
       "details" : {
         "de" : {
@@ -8013,6 +8594,20 @@
           "keywords" : [ ],
           "use" : "To record imaging results as a single value or as a nested group of result values. Normally used in conjunction with a parent Imaging examination (Observation) archetype.\r\n\r\nAs well as a single result value, the archetype also allows for a specific anatomical location and further nesting of result values to be captured. The pattern also allows for local clusters to be accommodated.",
           "copyright" : "© openEHR Foundation",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "sv" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "sv"
+          },
+          "purpose" : "För registrering av fynd från bilddiagnostik som ett enskilt värde eller, genom nästning, en grupp av värden.",
+          "keywords" : [ ],
+          "use" : "Används för att registrera resultat från bilddiagnostik som ett enskilt värde eller, genom nästning, en grupp av värden. Normalt används den i kombination med arketyp-föräldern Imaging examination - Bilddiagnostisk undersökning.\r\n\r\nFörutom ett enskilt värde, tillåter arketypen även registrering av en specifik anatomisk lokalisation och ytterligare nestning av resultatvärden. Mönstret gör det också möjligt att registrera lokala kluster.",
           "originalResourceUri" : { },
           "otherDetails" : { }
         }
@@ -8159,7 +8754,8 @@
             "text" : "Linksatriales Volumen biplan (LA-Volumen)",
             "description" : "Ergebnis der Bildgebung als Einzelwert oder als eine verschachtelte Gruppe von Ergebniswerten."
           }
-        }
+        },
+        "sv" : { }
       },
       "termBindings" : { },
       "terminologyExtracts" : { },
@@ -8191,6 +8787,20 @@
         "email" : "wellmann.ramona@mh-hannover.de"
       },
       "otherDetails" : { }
+    }, {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "sv"
+      },
+      "author" : {
+        "name" : "Carina Sandell",
+        "organisation" : "Region Östergötland",
+        "email" : "carina.sandell@regionostergotland.se"
+      },
+      "otherDetails" : { }
     } ]
   }, {
     "@type" : "TEMPLATE_OVERLAY",
@@ -8203,7 +8813,7 @@
       "references" : { },
       "conversionDetails" : { },
       "otherDetails" : {
-        "PARENT:MD5-CAM-1.0.1" : "603A5F60C26B4415285A6F29EC8035A1"
+        "PARENT:MD5-CAM-1.0.1" : "40D40305DD4FF8737FB606E15BF84BD2"
       },
       "details" : {
         "de" : {
@@ -8232,6 +8842,20 @@
           "keywords" : [ ],
           "use" : "To record imaging results as a single value or as a nested group of result values. Normally used in conjunction with a parent Imaging examination (Observation) archetype.\r\n\r\nAs well as a single result value, the archetype also allows for a specific anatomical location and further nesting of result values to be captured. The pattern also allows for local clusters to be accommodated.",
           "copyright" : "© openEHR Foundation",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "sv" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "sv"
+          },
+          "purpose" : "För registrering av fynd från bilddiagnostik som ett enskilt värde eller, genom nästning, en grupp av värden.",
+          "keywords" : [ ],
+          "use" : "Används för att registrera resultat från bilddiagnostik som ett enskilt värde eller, genom nästning, en grupp av värden. Normalt används den i kombination med arketyp-föräldern Imaging examination - Bilddiagnostisk undersökning.\r\n\r\nFörutom ett enskilt värde, tillåter arketypen även registrering av en specifik anatomisk lokalisation och ytterligare nestning av resultatvärden. Mönstret gör det också möjligt att registrera lokala kluster.",
           "originalResourceUri" : { },
           "otherDetails" : { }
         }
@@ -8371,7 +8995,8 @@
             "text" : "Linksatriales Volumen / Körperoberfläche (LA-Volumen-Index)",
             "description" : "Ergebnis der Bildgebung als Einzelwert oder als eine verschachtelte Gruppe von Ergebniswerten."
           }
-        }
+        },
+        "sv" : { }
       },
       "termBindings" : { },
       "terminologyExtracts" : { },
@@ -8403,6 +9028,20 @@
         "email" : "wellmann.ramona@mh-hannover.de"
       },
       "otherDetails" : { }
+    }, {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "sv"
+      },
+      "author" : {
+        "name" : "Carina Sandell",
+        "organisation" : "Region Östergötland",
+        "email" : "carina.sandell@regionostergotland.se"
+      },
+      "otherDetails" : { }
     } ]
   }, {
     "@type" : "TEMPLATE_OVERLAY",
@@ -8415,7 +9054,7 @@
       "references" : { },
       "conversionDetails" : { },
       "otherDetails" : {
-        "PARENT:MD5-CAM-1.0.1" : "603A5F60C26B4415285A6F29EC8035A1"
+        "PARENT:MD5-CAM-1.0.1" : "40D40305DD4FF8737FB606E15BF84BD2"
       },
       "details" : {
         "de" : {
@@ -8444,6 +9083,20 @@
           "keywords" : [ ],
           "use" : "To record imaging results as a single value or as a nested group of result values. Normally used in conjunction with a parent Imaging examination (Observation) archetype.\r\n\r\nAs well as a single result value, the archetype also allows for a specific anatomical location and further nesting of result values to be captured. The pattern also allows for local clusters to be accommodated.",
           "copyright" : "© openEHR Foundation",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "sv" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "sv"
+          },
+          "purpose" : "För registrering av fynd från bilddiagnostik som ett enskilt värde eller, genom nästning, en grupp av värden.",
+          "keywords" : [ ],
+          "use" : "Används för att registrera resultat från bilddiagnostik som ett enskilt värde eller, genom nästning, en grupp av värden. Normalt används den i kombination med arketyp-föräldern Imaging examination - Bilddiagnostisk undersökning.\r\n\r\nFörutom ett enskilt värde, tillåter arketypen även registrering av en specifik anatomisk lokalisation och ytterligare nestning av resultatvärden. Mönstret gör det också möjligt att registrera lokala kluster.",
           "originalResourceUri" : { },
           "otherDetails" : { }
         }
@@ -8583,7 +9236,8 @@
             "text" : "Rechtsatriale Fläche (RA-Fläche)",
             "description" : "Ergebnis der Bildgebung als Einzelwert oder als eine verschachtelte Gruppe von Ergebniswerten."
           }
-        }
+        },
+        "sv" : { }
       },
       "termBindings" : { },
       "terminologyExtracts" : { },
@@ -8615,6 +9269,20 @@
         "email" : "wellmann.ramona@mh-hannover.de"
       },
       "otherDetails" : { }
+    }, {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "sv"
+      },
+      "author" : {
+        "name" : "Carina Sandell",
+        "organisation" : "Region Östergötland",
+        "email" : "carina.sandell@regionostergotland.se"
+      },
+      "otherDetails" : { }
     } ]
   }, {
     "@type" : "TEMPLATE_OVERLAY",
@@ -8627,7 +9295,7 @@
       "references" : { },
       "conversionDetails" : { },
       "otherDetails" : {
-        "PARENT:MD5-CAM-1.0.1" : "603A5F60C26B4415285A6F29EC8035A1"
+        "PARENT:MD5-CAM-1.0.1" : "40D40305DD4FF8737FB606E15BF84BD2"
       },
       "details" : {
         "de" : {
@@ -8656,6 +9324,20 @@
           "keywords" : [ ],
           "use" : "To record imaging results as a single value or as a nested group of result values. Normally used in conjunction with a parent Imaging examination (Observation) archetype.\r\n\r\nAs well as a single result value, the archetype also allows for a specific anatomical location and further nesting of result values to be captured. The pattern also allows for local clusters to be accommodated.",
           "copyright" : "© openEHR Foundation",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "sv" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "sv"
+          },
+          "purpose" : "För registrering av fynd från bilddiagnostik som ett enskilt värde eller, genom nästning, en grupp av värden.",
+          "keywords" : [ ],
+          "use" : "Används för att registrera resultat från bilddiagnostik som ett enskilt värde eller, genom nästning, en grupp av värden. Normalt används den i kombination med arketyp-föräldern Imaging examination - Bilddiagnostisk undersökning.\r\n\r\nFörutom ett enskilt värde, tillåter arketypen även registrering av en specifik anatomisk lokalisation och ytterligare nestning av resultatvärden. Mönstret gör det också möjligt att registrera lokala kluster.",
           "originalResourceUri" : { },
           "otherDetails" : { }
         }
@@ -8795,7 +9477,8 @@
             "text" : "Rechtsatriale Fläche / Körperoberfläche (RA-Flächen-Index)",
             "description" : "Ergebnis der Bildgebung als Einzelwert oder als eine verschachtelte Gruppe von Ergebniswerten."
           }
-        }
+        },
+        "sv" : { }
       },
       "termBindings" : { },
       "terminologyExtracts" : { },
@@ -8827,6 +9510,20 @@
         "email" : "wellmann.ramona@mh-hannover.de"
       },
       "otherDetails" : { }
+    }, {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "sv"
+      },
+      "author" : {
+        "name" : "Carina Sandell",
+        "organisation" : "Region Östergötland",
+        "email" : "carina.sandell@regionostergotland.se"
+      },
+      "otherDetails" : { }
     } ]
   }, {
     "@type" : "TEMPLATE_OVERLAY",
@@ -8839,7 +9536,7 @@
       "references" : { },
       "conversionDetails" : { },
       "otherDetails" : {
-        "PARENT:MD5-CAM-1.0.1" : "603A5F60C26B4415285A6F29EC8035A1"
+        "PARENT:MD5-CAM-1.0.1" : "40D40305DD4FF8737FB606E15BF84BD2"
       },
       "details" : {
         "de" : {
@@ -8868,6 +9565,20 @@
           "keywords" : [ ],
           "use" : "To record imaging results as a single value or as a nested group of result values. Normally used in conjunction with a parent Imaging examination (Observation) archetype.\r\n\r\nAs well as a single result value, the archetype also allows for a specific anatomical location and further nesting of result values to be captured. The pattern also allows for local clusters to be accommodated.",
           "copyright" : "© openEHR Foundation",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "sv" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "sv"
+          },
+          "purpose" : "För registrering av fynd från bilddiagnostik som ett enskilt värde eller, genom nästning, en grupp av värden.",
+          "keywords" : [ ],
+          "use" : "Används för att registrera resultat från bilddiagnostik som ett enskilt värde eller, genom nästning, en grupp av värden. Normalt används den i kombination med arketyp-föräldern Imaging examination - Bilddiagnostisk undersökning.\r\n\r\nFörutom ett enskilt värde, tillåter arketypen även registrering av en specifik anatomisk lokalisation och ytterligare nestning av resultatvärden. Mönstret gör det också möjligt att registrera lokala kluster.",
           "originalResourceUri" : { },
           "otherDetails" : { }
         }
@@ -8986,7 +9697,8 @@
             "text" : "Mitralklappen-Doppler (PW)",
             "description" : "Ergebnis der Bildgebung als Einzelwert oder als eine verschachtelte Gruppe von Ergebniswerten."
           }
-        }
+        },
+        "sv" : { }
       },
       "termBindings" : { },
       "terminologyExtracts" : { },
@@ -9018,6 +9730,20 @@
         "email" : "wellmann.ramona@mh-hannover.de"
       },
       "otherDetails" : { }
+    }, {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "sv"
+      },
+      "author" : {
+        "name" : "Carina Sandell",
+        "organisation" : "Region Östergötland",
+        "email" : "carina.sandell@regionostergotland.se"
+      },
+      "otherDetails" : { }
     } ]
   }, {
     "@type" : "TEMPLATE_OVERLAY",
@@ -9030,7 +9756,7 @@
       "references" : { },
       "conversionDetails" : { },
       "otherDetails" : {
-        "PARENT:MD5-CAM-1.0.1" : "603A5F60C26B4415285A6F29EC8035A1"
+        "PARENT:MD5-CAM-1.0.1" : "40D40305DD4FF8737FB606E15BF84BD2"
       },
       "details" : {
         "de" : {
@@ -9059,6 +9785,20 @@
           "keywords" : [ ],
           "use" : "To record imaging results as a single value or as a nested group of result values. Normally used in conjunction with a parent Imaging examination (Observation) archetype.\r\n\r\nAs well as a single result value, the archetype also allows for a specific anatomical location and further nesting of result values to be captured. The pattern also allows for local clusters to be accommodated.",
           "copyright" : "© openEHR Foundation",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "sv" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "sv"
+          },
+          "purpose" : "För registrering av fynd från bilddiagnostik som ett enskilt värde eller, genom nästning, en grupp av värden.",
+          "keywords" : [ ],
+          "use" : "Används för att registrera resultat från bilddiagnostik som ett enskilt värde eller, genom nästning, en grupp av värden. Normalt används den i kombination med arketyp-föräldern Imaging examination - Bilddiagnostisk undersökning.\r\n\r\nFörutom ett enskilt värde, tillåter arketypen även registrering av en specifik anatomisk lokalisation och ytterligare nestning av resultatvärden. Mönstret gör det också möjligt att registrera lokala kluster.",
           "originalResourceUri" : { },
           "otherDetails" : { }
         }
@@ -9205,7 +9945,8 @@
             "text" : "E-Welle",
             "description" : "Ergebnis der Bildgebung als Einzelwert oder als eine verschachtelte Gruppe von Ergebniswerten."
           }
-        }
+        },
+        "sv" : { }
       },
       "termBindings" : { },
       "terminologyExtracts" : { },
@@ -9237,6 +9978,20 @@
         "email" : "wellmann.ramona@mh-hannover.de"
       },
       "otherDetails" : { }
+    }, {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "sv"
+      },
+      "author" : {
+        "name" : "Carina Sandell",
+        "organisation" : "Region Östergötland",
+        "email" : "carina.sandell@regionostergotland.se"
+      },
+      "otherDetails" : { }
     } ]
   }, {
     "@type" : "TEMPLATE_OVERLAY",
@@ -9249,7 +10004,7 @@
       "references" : { },
       "conversionDetails" : { },
       "otherDetails" : {
-        "PARENT:MD5-CAM-1.0.1" : "603A5F60C26B4415285A6F29EC8035A1"
+        "PARENT:MD5-CAM-1.0.1" : "40D40305DD4FF8737FB606E15BF84BD2"
       },
       "details" : {
         "de" : {
@@ -9278,6 +10033,20 @@
           "keywords" : [ ],
           "use" : "To record imaging results as a single value or as a nested group of result values. Normally used in conjunction with a parent Imaging examination (Observation) archetype.\r\n\r\nAs well as a single result value, the archetype also allows for a specific anatomical location and further nesting of result values to be captured. The pattern also allows for local clusters to be accommodated.",
           "copyright" : "© openEHR Foundation",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "sv" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "sv"
+          },
+          "purpose" : "För registrering av fynd från bilddiagnostik som ett enskilt värde eller, genom nästning, en grupp av värden.",
+          "keywords" : [ ],
+          "use" : "Används för att registrera resultat från bilddiagnostik som ett enskilt värde eller, genom nästning, en grupp av värden. Normalt används den i kombination med arketyp-föräldern Imaging examination - Bilddiagnostisk undersökning.\r\n\r\nFörutom ett enskilt värde, tillåter arketypen även registrering av en specifik anatomisk lokalisation och ytterligare nestning av resultatvärden. Mönstret gör det också möjligt att registrera lokala kluster.",
           "originalResourceUri" : { },
           "otherDetails" : { }
         }
@@ -9424,7 +10193,8 @@
             "text" : "A-Welle",
             "description" : "Ergebnis der Bildgebung als Einzelwert oder als eine verschachtelte Gruppe von Ergebniswerten."
           }
-        }
+        },
+        "sv" : { }
       },
       "termBindings" : { },
       "terminologyExtracts" : { },
@@ -9456,6 +10226,20 @@
         "email" : "wellmann.ramona@mh-hannover.de"
       },
       "otherDetails" : { }
+    }, {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "sv"
+      },
+      "author" : {
+        "name" : "Carina Sandell",
+        "organisation" : "Region Östergötland",
+        "email" : "carina.sandell@regionostergotland.se"
+      },
+      "otherDetails" : { }
     } ]
   }, {
     "@type" : "TEMPLATE_OVERLAY",
@@ -9468,7 +10252,7 @@
       "references" : { },
       "conversionDetails" : { },
       "otherDetails" : {
-        "PARENT:MD5-CAM-1.0.1" : "603A5F60C26B4415285A6F29EC8035A1"
+        "PARENT:MD5-CAM-1.0.1" : "40D40305DD4FF8737FB606E15BF84BD2"
       },
       "details" : {
         "de" : {
@@ -9497,6 +10281,20 @@
           "keywords" : [ ],
           "use" : "To record imaging results as a single value or as a nested group of result values. Normally used in conjunction with a parent Imaging examination (Observation) archetype.\r\n\r\nAs well as a single result value, the archetype also allows for a specific anatomical location and further nesting of result values to be captured. The pattern also allows for local clusters to be accommodated.",
           "copyright" : "© openEHR Foundation",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "sv" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "sv"
+          },
+          "purpose" : "För registrering av fynd från bilddiagnostik som ett enskilt värde eller, genom nästning, en grupp av värden.",
+          "keywords" : [ ],
+          "use" : "Används för att registrera resultat från bilddiagnostik som ett enskilt värde eller, genom nästning, en grupp av värden. Normalt används den i kombination med arketyp-föräldern Imaging examination - Bilddiagnostisk undersökning.\r\n\r\nFörutom ett enskilt värde, tillåter arketypen även registrering av en specifik anatomisk lokalisation och ytterligare nestning av resultatvärden. Mönstret gör det också möjligt att registrera lokala kluster.",
           "originalResourceUri" : { },
           "otherDetails" : { }
         }
@@ -9651,7 +10449,8 @@
             "text" : "Gewebe-Doppler (TDI)",
             "description" : "Ergebnis der Bildgebung als Einzelwert oder als eine verschachtelte Gruppe von Ergebniswerten."
           }
-        }
+        },
+        "sv" : { }
       },
       "termBindings" : { },
       "terminologyExtracts" : { },
@@ -9683,6 +10482,20 @@
         "email" : "wellmann.ramona@mh-hannover.de"
       },
       "otherDetails" : { }
+    }, {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "sv"
+      },
+      "author" : {
+        "name" : "Carina Sandell",
+        "organisation" : "Region Östergötland",
+        "email" : "carina.sandell@regionostergotland.se"
+      },
+      "otherDetails" : { }
     } ]
   }, {
     "@type" : "TEMPLATE_OVERLAY",
@@ -9695,7 +10508,7 @@
       "references" : { },
       "conversionDetails" : { },
       "otherDetails" : {
-        "PARENT:MD5-CAM-1.0.1" : "603A5F60C26B4415285A6F29EC8035A1"
+        "PARENT:MD5-CAM-1.0.1" : "40D40305DD4FF8737FB606E15BF84BD2"
       },
       "details" : {
         "de" : {
@@ -9724,6 +10537,20 @@
           "keywords" : [ ],
           "use" : "To record imaging results as a single value or as a nested group of result values. Normally used in conjunction with a parent Imaging examination (Observation) archetype.\r\n\r\nAs well as a single result value, the archetype also allows for a specific anatomical location and further nesting of result values to be captured. The pattern also allows for local clusters to be accommodated.",
           "copyright" : "© openEHR Foundation",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "sv" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "sv"
+          },
+          "purpose" : "För registrering av fynd från bilddiagnostik som ett enskilt värde eller, genom nästning, en grupp av värden.",
+          "keywords" : [ ],
+          "use" : "Används för att registrera resultat från bilddiagnostik som ett enskilt värde eller, genom nästning, en grupp av värden. Normalt används den i kombination med arketyp-föräldern Imaging examination - Bilddiagnostisk undersökning.\r\n\r\nFörutom ett enskilt värde, tillåter arketypen även registrering av en specifik anatomisk lokalisation och ytterligare nestning av resultatvärden. Mönstret gör det också möjligt att registrera lokala kluster.",
           "originalResourceUri" : { },
           "otherDetails" : { }
         }
@@ -9863,7 +10690,8 @@
             "text" : "E-Welle (lateral)",
             "description" : "Ergebnis der Bildgebung als Einzelwert oder als eine verschachtelte Gruppe von Ergebniswerten."
           }
-        }
+        },
+        "sv" : { }
       },
       "termBindings" : { },
       "terminologyExtracts" : { },
@@ -9895,6 +10723,20 @@
         "email" : "wellmann.ramona@mh-hannover.de"
       },
       "otherDetails" : { }
+    }, {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "sv"
+      },
+      "author" : {
+        "name" : "Carina Sandell",
+        "organisation" : "Region Östergötland",
+        "email" : "carina.sandell@regionostergotland.se"
+      },
+      "otherDetails" : { }
     } ]
   }, {
     "@type" : "TEMPLATE_OVERLAY",
@@ -9907,7 +10749,7 @@
       "references" : { },
       "conversionDetails" : { },
       "otherDetails" : {
-        "PARENT:MD5-CAM-1.0.1" : "603A5F60C26B4415285A6F29EC8035A1"
+        "PARENT:MD5-CAM-1.0.1" : "40D40305DD4FF8737FB606E15BF84BD2"
       },
       "details" : {
         "de" : {
@@ -9936,6 +10778,20 @@
           "keywords" : [ ],
           "use" : "To record imaging results as a single value or as a nested group of result values. Normally used in conjunction with a parent Imaging examination (Observation) archetype.\r\n\r\nAs well as a single result value, the archetype also allows for a specific anatomical location and further nesting of result values to be captured. The pattern also allows for local clusters to be accommodated.",
           "copyright" : "© openEHR Foundation",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "sv" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "sv"
+          },
+          "purpose" : "För registrering av fynd från bilddiagnostik som ett enskilt värde eller, genom nästning, en grupp av värden.",
+          "keywords" : [ ],
+          "use" : "Används för att registrera resultat från bilddiagnostik som ett enskilt värde eller, genom nästning, en grupp av värden. Normalt används den i kombination med arketyp-föräldern Imaging examination - Bilddiagnostisk undersökning.\r\n\r\nFörutom ett enskilt värde, tillåter arketypen även registrering av en specifik anatomisk lokalisation och ytterligare nestning av resultatvärden. Mönstret gör det också möjligt att registrera lokala kluster.",
           "originalResourceUri" : { },
           "otherDetails" : { }
         }
@@ -10075,7 +10931,8 @@
             "text" : "A-Welle (lateral)",
             "description" : "Ergebnis der Bildgebung als Einzelwert oder als eine verschachtelte Gruppe von Ergebniswerten."
           }
-        }
+        },
+        "sv" : { }
       },
       "termBindings" : { },
       "terminologyExtracts" : { },
@@ -10107,6 +10964,20 @@
         "email" : "wellmann.ramona@mh-hannover.de"
       },
       "otherDetails" : { }
+    }, {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "sv"
+      },
+      "author" : {
+        "name" : "Carina Sandell",
+        "organisation" : "Region Östergötland",
+        "email" : "carina.sandell@regionostergotland.se"
+      },
+      "otherDetails" : { }
     } ]
   }, {
     "@type" : "TEMPLATE_OVERLAY",
@@ -10119,7 +10990,7 @@
       "references" : { },
       "conversionDetails" : { },
       "otherDetails" : {
-        "PARENT:MD5-CAM-1.0.1" : "603A5F60C26B4415285A6F29EC8035A1"
+        "PARENT:MD5-CAM-1.0.1" : "40D40305DD4FF8737FB606E15BF84BD2"
       },
       "details" : {
         "de" : {
@@ -10148,6 +11019,20 @@
           "keywords" : [ ],
           "use" : "To record imaging results as a single value or as a nested group of result values. Normally used in conjunction with a parent Imaging examination (Observation) archetype.\r\n\r\nAs well as a single result value, the archetype also allows for a specific anatomical location and further nesting of result values to be captured. The pattern also allows for local clusters to be accommodated.",
           "copyright" : "© openEHR Foundation",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "sv" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "sv"
+          },
+          "purpose" : "För registrering av fynd från bilddiagnostik som ett enskilt värde eller, genom nästning, en grupp av värden.",
+          "keywords" : [ ],
+          "use" : "Används för att registrera resultat från bilddiagnostik som ett enskilt värde eller, genom nästning, en grupp av värden. Normalt används den i kombination med arketyp-föräldern Imaging examination - Bilddiagnostisk undersökning.\r\n\r\nFörutom ett enskilt värde, tillåter arketypen även registrering av en specifik anatomisk lokalisation och ytterligare nestning av resultatvärden. Mönstret gör det också möjligt att registrera lokala kluster.",
           "originalResourceUri" : { },
           "otherDetails" : { }
         }
@@ -10287,7 +11172,8 @@
             "text" : "S (lateral)",
             "description" : "Ergebnis der Bildgebung als Einzelwert oder als eine verschachtelte Gruppe von Ergebniswerten."
           }
-        }
+        },
+        "sv" : { }
       },
       "termBindings" : { },
       "terminologyExtracts" : { },
@@ -10319,6 +11205,20 @@
         "email" : "wellmann.ramona@mh-hannover.de"
       },
       "otherDetails" : { }
+    }, {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "sv"
+      },
+      "author" : {
+        "name" : "Carina Sandell",
+        "organisation" : "Region Östergötland",
+        "email" : "carina.sandell@regionostergotland.se"
+      },
+      "otherDetails" : { }
     } ]
   }, {
     "@type" : "TEMPLATE_OVERLAY",
@@ -10331,7 +11231,7 @@
       "references" : { },
       "conversionDetails" : { },
       "otherDetails" : {
-        "PARENT:MD5-CAM-1.0.1" : "603A5F60C26B4415285A6F29EC8035A1"
+        "PARENT:MD5-CAM-1.0.1" : "40D40305DD4FF8737FB606E15BF84BD2"
       },
       "details" : {
         "de" : {
@@ -10360,6 +11260,20 @@
           "keywords" : [ ],
           "use" : "To record imaging results as a single value or as a nested group of result values. Normally used in conjunction with a parent Imaging examination (Observation) archetype.\r\n\r\nAs well as a single result value, the archetype also allows for a specific anatomical location and further nesting of result values to be captured. The pattern also allows for local clusters to be accommodated.",
           "copyright" : "© openEHR Foundation",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "sv" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "sv"
+          },
+          "purpose" : "För registrering av fynd från bilddiagnostik som ett enskilt värde eller, genom nästning, en grupp av värden.",
+          "keywords" : [ ],
+          "use" : "Används för att registrera resultat från bilddiagnostik som ett enskilt värde eller, genom nästning, en grupp av värden. Normalt används den i kombination med arketyp-föräldern Imaging examination - Bilddiagnostisk undersökning.\r\n\r\nFörutom ett enskilt värde, tillåter arketypen även registrering av en specifik anatomisk lokalisation och ytterligare nestning av resultatvärden. Mönstret gör det också möjligt att registrera lokala kluster.",
           "originalResourceUri" : { },
           "otherDetails" : { }
         }
@@ -10499,7 +11413,8 @@
             "text" : "E-Welle (medial)",
             "description" : "Ergebnis der Bildgebung als Einzelwert oder als eine verschachtelte Gruppe von Ergebniswerten."
           }
-        }
+        },
+        "sv" : { }
       },
       "termBindings" : { },
       "terminologyExtracts" : { },
@@ -10531,6 +11446,20 @@
         "email" : "wellmann.ramona@mh-hannover.de"
       },
       "otherDetails" : { }
+    }, {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "sv"
+      },
+      "author" : {
+        "name" : "Carina Sandell",
+        "organisation" : "Region Östergötland",
+        "email" : "carina.sandell@regionostergotland.se"
+      },
+      "otherDetails" : { }
     } ]
   }, {
     "@type" : "TEMPLATE_OVERLAY",
@@ -10543,7 +11472,7 @@
       "references" : { },
       "conversionDetails" : { },
       "otherDetails" : {
-        "PARENT:MD5-CAM-1.0.1" : "603A5F60C26B4415285A6F29EC8035A1"
+        "PARENT:MD5-CAM-1.0.1" : "40D40305DD4FF8737FB606E15BF84BD2"
       },
       "details" : {
         "de" : {
@@ -10572,6 +11501,20 @@
           "keywords" : [ ],
           "use" : "To record imaging results as a single value or as a nested group of result values. Normally used in conjunction with a parent Imaging examination (Observation) archetype.\r\n\r\nAs well as a single result value, the archetype also allows for a specific anatomical location and further nesting of result values to be captured. The pattern also allows for local clusters to be accommodated.",
           "copyright" : "© openEHR Foundation",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "sv" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "sv"
+          },
+          "purpose" : "För registrering av fynd från bilddiagnostik som ett enskilt värde eller, genom nästning, en grupp av värden.",
+          "keywords" : [ ],
+          "use" : "Används för att registrera resultat från bilddiagnostik som ett enskilt värde eller, genom nästning, en grupp av värden. Normalt används den i kombination med arketyp-föräldern Imaging examination - Bilddiagnostisk undersökning.\r\n\r\nFörutom ett enskilt värde, tillåter arketypen även registrering av en specifik anatomisk lokalisation och ytterligare nestning av resultatvärden. Mönstret gör det också möjligt att registrera lokala kluster.",
           "originalResourceUri" : { },
           "otherDetails" : { }
         }
@@ -10711,7 +11654,8 @@
             "text" : "A-Welle (medial)",
             "description" : "Ergebnis der Bildgebung als Einzelwert oder als eine verschachtelte Gruppe von Ergebniswerten."
           }
-        }
+        },
+        "sv" : { }
       },
       "termBindings" : { },
       "terminologyExtracts" : { },
@@ -10743,6 +11687,20 @@
         "email" : "wellmann.ramona@mh-hannover.de"
       },
       "otherDetails" : { }
+    }, {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "sv"
+      },
+      "author" : {
+        "name" : "Carina Sandell",
+        "organisation" : "Region Östergötland",
+        "email" : "carina.sandell@regionostergotland.se"
+      },
+      "otherDetails" : { }
     } ]
   }, {
     "@type" : "TEMPLATE_OVERLAY",
@@ -10755,7 +11713,7 @@
       "references" : { },
       "conversionDetails" : { },
       "otherDetails" : {
-        "PARENT:MD5-CAM-1.0.1" : "603A5F60C26B4415285A6F29EC8035A1"
+        "PARENT:MD5-CAM-1.0.1" : "40D40305DD4FF8737FB606E15BF84BD2"
       },
       "details" : {
         "de" : {
@@ -10784,6 +11742,20 @@
           "keywords" : [ ],
           "use" : "To record imaging results as a single value or as a nested group of result values. Normally used in conjunction with a parent Imaging examination (Observation) archetype.\r\n\r\nAs well as a single result value, the archetype also allows for a specific anatomical location and further nesting of result values to be captured. The pattern also allows for local clusters to be accommodated.",
           "copyright" : "© openEHR Foundation",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "sv" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "sv"
+          },
+          "purpose" : "För registrering av fynd från bilddiagnostik som ett enskilt värde eller, genom nästning, en grupp av värden.",
+          "keywords" : [ ],
+          "use" : "Används för att registrera resultat från bilddiagnostik som ett enskilt värde eller, genom nästning, en grupp av värden. Normalt används den i kombination med arketyp-föräldern Imaging examination - Bilddiagnostisk undersökning.\r\n\r\nFörutom ett enskilt värde, tillåter arketypen även registrering av en specifik anatomisk lokalisation och ytterligare nestning av resultatvärden. Mönstret gör det också möjligt att registrera lokala kluster.",
           "originalResourceUri" : { },
           "otherDetails" : { }
         }
@@ -10923,7 +11895,8 @@
             "text" : "S (medial)",
             "description" : "Ergebnis der Bildgebung als Einzelwert oder als eine verschachtelte Gruppe von Ergebniswerten."
           }
-        }
+        },
+        "sv" : { }
       },
       "termBindings" : { },
       "terminologyExtracts" : { },
@@ -10955,6 +11928,20 @@
         "email" : "wellmann.ramona@mh-hannover.de"
       },
       "otherDetails" : { }
+    }, {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "sv"
+      },
+      "author" : {
+        "name" : "Carina Sandell",
+        "organisation" : "Region Östergötland",
+        "email" : "carina.sandell@regionostergotland.se"
+      },
+      "otherDetails" : { }
     } ]
   }, {
     "@type" : "TEMPLATE_OVERLAY",
@@ -10967,7 +11954,7 @@
       "references" : { },
       "conversionDetails" : { },
       "otherDetails" : {
-        "PARENT:MD5-CAM-1.0.1" : "603A5F60C26B4415285A6F29EC8035A1"
+        "PARENT:MD5-CAM-1.0.1" : "40D40305DD4FF8737FB606E15BF84BD2"
       },
       "details" : {
         "de" : {
@@ -10996,6 +11983,20 @@
           "keywords" : [ ],
           "use" : "To record imaging results as a single value or as a nested group of result values. Normally used in conjunction with a parent Imaging examination (Observation) archetype.\r\n\r\nAs well as a single result value, the archetype also allows for a specific anatomical location and further nesting of result values to be captured. The pattern also allows for local clusters to be accommodated.",
           "copyright" : "© openEHR Foundation",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "sv" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "sv"
+          },
+          "purpose" : "För registrering av fynd från bilddiagnostik som ett enskilt värde eller, genom nästning, en grupp av värden.",
+          "keywords" : [ ],
+          "use" : "Används för att registrera resultat från bilddiagnostik som ett enskilt värde eller, genom nästning, en grupp av värden. Normalt används den i kombination med arketyp-föräldern Imaging examination - Bilddiagnostisk undersökning.\r\n\r\nFörutom ett enskilt värde, tillåter arketypen även registrering av en specifik anatomisk lokalisation och ytterligare nestning av resultatvärden. Mönstret gör det också möjligt att registrera lokala kluster.",
           "originalResourceUri" : { },
           "otherDetails" : { }
         }
@@ -11114,7 +12115,8 @@
             "text" : "Pulmonalvenöser Fluss",
             "description" : "Ergebnis der Bildgebung als Einzelwert oder als eine verschachtelte Gruppe von Ergebniswerten."
           }
-        }
+        },
+        "sv" : { }
       },
       "termBindings" : { },
       "terminologyExtracts" : { },
@@ -11146,6 +12148,20 @@
         "email" : "wellmann.ramona@mh-hannover.de"
       },
       "otherDetails" : { }
+    }, {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "sv"
+      },
+      "author" : {
+        "name" : "Carina Sandell",
+        "organisation" : "Region Östergötland",
+        "email" : "carina.sandell@regionostergotland.se"
+      },
+      "otherDetails" : { }
     } ]
   }, {
     "@type" : "TEMPLATE_OVERLAY",
@@ -11158,7 +12174,7 @@
       "references" : { },
       "conversionDetails" : { },
       "otherDetails" : {
-        "PARENT:MD5-CAM-1.0.1" : "603A5F60C26B4415285A6F29EC8035A1"
+        "PARENT:MD5-CAM-1.0.1" : "40D40305DD4FF8737FB606E15BF84BD2"
       },
       "details" : {
         "de" : {
@@ -11187,6 +12203,20 @@
           "keywords" : [ ],
           "use" : "To record imaging results as a single value or as a nested group of result values. Normally used in conjunction with a parent Imaging examination (Observation) archetype.\r\n\r\nAs well as a single result value, the archetype also allows for a specific anatomical location and further nesting of result values to be captured. The pattern also allows for local clusters to be accommodated.",
           "copyright" : "© openEHR Foundation",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "sv" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "sv"
+          },
+          "purpose" : "För registrering av fynd från bilddiagnostik som ett enskilt värde eller, genom nästning, en grupp av värden.",
+          "keywords" : [ ],
+          "use" : "Används för att registrera resultat från bilddiagnostik som ett enskilt värde eller, genom nästning, en grupp av värden. Normalt används den i kombination med arketyp-föräldern Imaging examination - Bilddiagnostisk undersökning.\r\n\r\nFörutom ett enskilt värde, tillåter arketypen även registrering av en specifik anatomisk lokalisation och ytterligare nestning av resultatvärden. Mönstret gör det också möjligt att registrera lokala kluster.",
           "originalResourceUri" : { },
           "otherDetails" : { }
         }
@@ -11326,7 +12356,8 @@
             "text" : "Pulmonalvenöse systolische Geschwindigkeit (PVsVel)",
             "description" : "Ergebnis der Bildgebung als Einzelwert oder als eine verschachtelte Gruppe von Ergebniswerten."
           }
-        }
+        },
+        "sv" : { }
       },
       "termBindings" : { },
       "terminologyExtracts" : { },
@@ -11358,6 +12389,20 @@
         "email" : "wellmann.ramona@mh-hannover.de"
       },
       "otherDetails" : { }
+    }, {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "sv"
+      },
+      "author" : {
+        "name" : "Carina Sandell",
+        "organisation" : "Region Östergötland",
+        "email" : "carina.sandell@regionostergotland.se"
+      },
+      "otherDetails" : { }
     } ]
   }, {
     "@type" : "TEMPLATE_OVERLAY",
@@ -11370,7 +12415,7 @@
       "references" : { },
       "conversionDetails" : { },
       "otherDetails" : {
-        "PARENT:MD5-CAM-1.0.1" : "603A5F60C26B4415285A6F29EC8035A1"
+        "PARENT:MD5-CAM-1.0.1" : "40D40305DD4FF8737FB606E15BF84BD2"
       },
       "details" : {
         "de" : {
@@ -11399,6 +12444,20 @@
           "keywords" : [ ],
           "use" : "To record imaging results as a single value or as a nested group of result values. Normally used in conjunction with a parent Imaging examination (Observation) archetype.\r\n\r\nAs well as a single result value, the archetype also allows for a specific anatomical location and further nesting of result values to be captured. The pattern also allows for local clusters to be accommodated.",
           "copyright" : "© openEHR Foundation",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "sv" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "sv"
+          },
+          "purpose" : "För registrering av fynd från bilddiagnostik som ett enskilt värde eller, genom nästning, en grupp av värden.",
+          "keywords" : [ ],
+          "use" : "Används för att registrera resultat från bilddiagnostik som ett enskilt värde eller, genom nästning, en grupp av värden. Normalt används den i kombination med arketyp-föräldern Imaging examination - Bilddiagnostisk undersökning.\r\n\r\nFörutom ett enskilt värde, tillåter arketypen även registrering av en specifik anatomisk lokalisation och ytterligare nestning av resultatvärden. Mönstret gör det också möjligt att registrera lokala kluster.",
           "originalResourceUri" : { },
           "otherDetails" : { }
         }
@@ -11538,7 +12597,8 @@
             "text" : "Pulmonalvenöse diastolische Geschwindigkeit (PVdVel)",
             "description" : "Ergebnis der Bildgebung als Einzelwert oder als eine verschachtelte Gruppe von Ergebniswerten."
           }
-        }
+        },
+        "sv" : { }
       },
       "termBindings" : { },
       "terminologyExtracts" : { },
@@ -11570,6 +12630,20 @@
         "email" : "wellmann.ramona@mh-hannover.de"
       },
       "otherDetails" : { }
+    }, {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "sv"
+      },
+      "author" : {
+        "name" : "Carina Sandell",
+        "organisation" : "Region Östergötland",
+        "email" : "carina.sandell@regionostergotland.se"
+      },
+      "otherDetails" : { }
     } ]
   }, {
     "@type" : "TEMPLATE_OVERLAY",
@@ -11582,7 +12656,7 @@
       "references" : { },
       "conversionDetails" : { },
       "otherDetails" : {
-        "PARENT:MD5-CAM-1.0.1" : "603A5F60C26B4415285A6F29EC8035A1"
+        "PARENT:MD5-CAM-1.0.1" : "40D40305DD4FF8737FB606E15BF84BD2"
       },
       "details" : {
         "de" : {
@@ -11611,6 +12685,20 @@
           "keywords" : [ ],
           "use" : "To record imaging results as a single value or as a nested group of result values. Normally used in conjunction with a parent Imaging examination (Observation) archetype.\r\n\r\nAs well as a single result value, the archetype also allows for a specific anatomical location and further nesting of result values to be captured. The pattern also allows for local clusters to be accommodated.",
           "copyright" : "© openEHR Foundation",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "sv" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "sv"
+          },
+          "purpose" : "För registrering av fynd från bilddiagnostik som ett enskilt värde eller, genom nästning, en grupp av värden.",
+          "keywords" : [ ],
+          "use" : "Används för att registrera resultat från bilddiagnostik som ett enskilt värde eller, genom nästning, en grupp av värden. Normalt används den i kombination med arketyp-föräldern Imaging examination - Bilddiagnostisk undersökning.\r\n\r\nFörutom ett enskilt värde, tillåter arketypen även registrering av en specifik anatomisk lokalisation och ytterligare nestning av resultatvärden. Mönstret gör det också möjligt att registrera lokala kluster.",
           "originalResourceUri" : { },
           "otherDetails" : { }
         }
@@ -11747,7 +12835,8 @@
             "text" : "Herzklappen",
             "description" : "Ergebnis der Bildgebung als Einzelwert oder als eine verschachtelte Gruppe von Ergebniswerten."
           }
-        }
+        },
+        "sv" : { }
       },
       "termBindings" : { },
       "terminologyExtracts" : { },
@@ -11779,6 +12868,20 @@
         "email" : "wellmann.ramona@mh-hannover.de"
       },
       "otherDetails" : { }
+    }, {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "sv"
+      },
+      "author" : {
+        "name" : "Carina Sandell",
+        "organisation" : "Region Östergötland",
+        "email" : "carina.sandell@regionostergotland.se"
+      },
+      "otherDetails" : { }
     } ]
   }, {
     "@type" : "TEMPLATE_OVERLAY",
@@ -11791,7 +12894,7 @@
       "references" : { },
       "conversionDetails" : { },
       "otherDetails" : {
-        "PARENT:MD5-CAM-1.0.1" : "603A5F60C26B4415285A6F29EC8035A1"
+        "PARENT:MD5-CAM-1.0.1" : "40D40305DD4FF8737FB606E15BF84BD2"
       },
       "details" : {
         "de" : {
@@ -11820,6 +12923,20 @@
           "keywords" : [ ],
           "use" : "To record imaging results as a single value or as a nested group of result values. Normally used in conjunction with a parent Imaging examination (Observation) archetype.\r\n\r\nAs well as a single result value, the archetype also allows for a specific anatomical location and further nesting of result values to be captured. The pattern also allows for local clusters to be accommodated.",
           "copyright" : "© openEHR Foundation",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "sv" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "sv"
+          },
+          "purpose" : "För registrering av fynd från bilddiagnostik som ett enskilt värde eller, genom nästning, en grupp av värden.",
+          "keywords" : [ ],
+          "use" : "Används för att registrera resultat från bilddiagnostik som ett enskilt värde eller, genom nästning, en grupp av värden. Normalt används den i kombination med arketyp-föräldern Imaging examination - Bilddiagnostisk undersökning.\r\n\r\nFörutom ett enskilt värde, tillåter arketypen även registrering av en specifik anatomisk lokalisation och ytterligare nestning av resultatvärden. Mönstret gör det också möjligt att registrera lokala kluster.",
           "originalResourceUri" : { },
           "otherDetails" : { }
         }
@@ -11938,7 +13055,8 @@
             "text" : "Mitralklappe",
             "description" : "Ergebnis der Bildgebung als Einzelwert oder als eine verschachtelte Gruppe von Ergebniswerten."
           }
-        }
+        },
+        "sv" : { }
       },
       "termBindings" : { },
       "terminologyExtracts" : { },
@@ -11970,6 +13088,20 @@
         "email" : "wellmann.ramona@mh-hannover.de"
       },
       "otherDetails" : { }
+    }, {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "sv"
+      },
+      "author" : {
+        "name" : "Carina Sandell",
+        "organisation" : "Region Östergötland",
+        "email" : "carina.sandell@regionostergotland.se"
+      },
+      "otherDetails" : { }
     } ]
   }, {
     "@type" : "TEMPLATE_OVERLAY",
@@ -11982,7 +13114,7 @@
       "references" : { },
       "conversionDetails" : { },
       "otherDetails" : {
-        "PARENT:MD5-CAM-1.0.1" : "603A5F60C26B4415285A6F29EC8035A1"
+        "PARENT:MD5-CAM-1.0.1" : "40D40305DD4FF8737FB606E15BF84BD2"
       },
       "details" : {
         "de" : {
@@ -12011,6 +13143,20 @@
           "keywords" : [ ],
           "use" : "To record imaging results as a single value or as a nested group of result values. Normally used in conjunction with a parent Imaging examination (Observation) archetype.\r\n\r\nAs well as a single result value, the archetype also allows for a specific anatomical location and further nesting of result values to be captured. The pattern also allows for local clusters to be accommodated.",
           "copyright" : "© openEHR Foundation",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "sv" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "sv"
+          },
+          "purpose" : "För registrering av fynd från bilddiagnostik som ett enskilt värde eller, genom nästning, en grupp av värden.",
+          "keywords" : [ ],
+          "use" : "Används för att registrera resultat från bilddiagnostik som ett enskilt värde eller, genom nästning, en grupp av värden. Normalt används den i kombination med arketyp-föräldern Imaging examination - Bilddiagnostisk undersökning.\r\n\r\nFörutom ett enskilt värde, tillåter arketypen även registrering av en specifik anatomisk lokalisation och ytterligare nestning av resultatvärden. Mönstret gör det också möjligt att registrera lokala kluster.",
           "originalResourceUri" : { },
           "otherDetails" : { }
         }
@@ -12137,7 +13283,8 @@
             "text" : "Mitralklappeninsuffizienz (MI)",
             "description" : "Ergebnis der Bildgebung als Einzelwert oder als eine verschachtelte Gruppe von Ergebniswerten."
           }
-        }
+        },
+        "sv" : { }
       },
       "termBindings" : { },
       "terminologyExtracts" : { },
@@ -12169,6 +13316,20 @@
         "email" : "wellmann.ramona@mh-hannover.de"
       },
       "otherDetails" : { }
+    }, {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "sv"
+      },
+      "author" : {
+        "name" : "Carina Sandell",
+        "organisation" : "Region Östergötland",
+        "email" : "carina.sandell@regionostergotland.se"
+      },
+      "otherDetails" : { }
     } ]
   }, {
     "@type" : "TEMPLATE_OVERLAY",
@@ -12181,7 +13342,7 @@
       "references" : { },
       "conversionDetails" : { },
       "otherDetails" : {
-        "PARENT:MD5-CAM-1.0.1" : "603A5F60C26B4415285A6F29EC8035A1"
+        "PARENT:MD5-CAM-1.0.1" : "40D40305DD4FF8737FB606E15BF84BD2"
       },
       "details" : {
         "de" : {
@@ -12210,6 +13371,20 @@
           "keywords" : [ ],
           "use" : "To record imaging results as a single value or as a nested group of result values. Normally used in conjunction with a parent Imaging examination (Observation) archetype.\r\n\r\nAs well as a single result value, the archetype also allows for a specific anatomical location and further nesting of result values to be captured. The pattern also allows for local clusters to be accommodated.",
           "copyright" : "© openEHR Foundation",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "sv" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "sv"
+          },
+          "purpose" : "För registrering av fynd från bilddiagnostik som ett enskilt värde eller, genom nästning, en grupp av värden.",
+          "keywords" : [ ],
+          "use" : "Används för att registrera resultat från bilddiagnostik som ett enskilt värde eller, genom nästning, en grupp av värden. Normalt används den i kombination med arketyp-föräldern Imaging examination - Bilddiagnostisk undersökning.\r\n\r\nFörutom ett enskilt värde, tillåter arketypen även registrering av en specifik anatomisk lokalisation och ytterligare nestning av resultatvärden. Mönstret gör det också möjligt att registrera lokala kluster.",
           "originalResourceUri" : { },
           "otherDetails" : { }
         }
@@ -12336,7 +13511,8 @@
             "text" : "Mitralklappenstenose (MS)",
             "description" : "Ergebnis der Bildgebung als Einzelwert oder als eine verschachtelte Gruppe von Ergebniswerten."
           }
-        }
+        },
+        "sv" : { }
       },
       "termBindings" : { },
       "terminologyExtracts" : { },
@@ -12368,6 +13544,20 @@
         "email" : "wellmann.ramona@mh-hannover.de"
       },
       "otherDetails" : { }
+    }, {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "sv"
+      },
+      "author" : {
+        "name" : "Carina Sandell",
+        "organisation" : "Region Östergötland",
+        "email" : "carina.sandell@regionostergotland.se"
+      },
+      "otherDetails" : { }
     } ]
   }, {
     "@type" : "TEMPLATE_OVERLAY",
@@ -12380,7 +13570,7 @@
       "references" : { },
       "conversionDetails" : { },
       "otherDetails" : {
-        "PARENT:MD5-CAM-1.0.1" : "603A5F60C26B4415285A6F29EC8035A1"
+        "PARENT:MD5-CAM-1.0.1" : "40D40305DD4FF8737FB606E15BF84BD2"
       },
       "details" : {
         "de" : {
@@ -12409,6 +13599,20 @@
           "keywords" : [ ],
           "use" : "To record imaging results as a single value or as a nested group of result values. Normally used in conjunction with a parent Imaging examination (Observation) archetype.\r\n\r\nAs well as a single result value, the archetype also allows for a specific anatomical location and further nesting of result values to be captured. The pattern also allows for local clusters to be accommodated.",
           "copyright" : "© openEHR Foundation",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "sv" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "sv"
+          },
+          "purpose" : "För registrering av fynd från bilddiagnostik som ett enskilt värde eller, genom nästning, en grupp av värden.",
+          "keywords" : [ ],
+          "use" : "Används för att registrera resultat från bilddiagnostik som ett enskilt värde eller, genom nästning, en grupp av värden. Normalt används den i kombination med arketyp-föräldern Imaging examination - Bilddiagnostisk undersökning.\r\n\r\nFörutom ett enskilt värde, tillåter arketypen även registrering av en specifik anatomisk lokalisation och ytterligare nestning av resultatvärden. Mönstret gör det också möjligt att registrera lokala kluster.",
           "originalResourceUri" : { },
           "otherDetails" : { }
         }
@@ -12527,7 +13731,8 @@
             "text" : "Aortenklappe",
             "description" : "Ergebnis der Bildgebung als Einzelwert oder als eine verschachtelte Gruppe von Ergebniswerten."
           }
-        }
+        },
+        "sv" : { }
       },
       "termBindings" : { },
       "terminologyExtracts" : { },
@@ -12559,6 +13764,20 @@
         "email" : "wellmann.ramona@mh-hannover.de"
       },
       "otherDetails" : { }
+    }, {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "sv"
+      },
+      "author" : {
+        "name" : "Carina Sandell",
+        "organisation" : "Region Östergötland",
+        "email" : "carina.sandell@regionostergotland.se"
+      },
+      "otherDetails" : { }
     } ]
   }, {
     "@type" : "TEMPLATE_OVERLAY",
@@ -12571,7 +13790,7 @@
       "references" : { },
       "conversionDetails" : { },
       "otherDetails" : {
-        "PARENT:MD5-CAM-1.0.1" : "603A5F60C26B4415285A6F29EC8035A1"
+        "PARENT:MD5-CAM-1.0.1" : "40D40305DD4FF8737FB606E15BF84BD2"
       },
       "details" : {
         "de" : {
@@ -12600,6 +13819,20 @@
           "keywords" : [ ],
           "use" : "To record imaging results as a single value or as a nested group of result values. Normally used in conjunction with a parent Imaging examination (Observation) archetype.\r\n\r\nAs well as a single result value, the archetype also allows for a specific anatomical location and further nesting of result values to be captured. The pattern also allows for local clusters to be accommodated.",
           "copyright" : "© openEHR Foundation",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "sv" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "sv"
+          },
+          "purpose" : "För registrering av fynd från bilddiagnostik som ett enskilt värde eller, genom nästning, en grupp av värden.",
+          "keywords" : [ ],
+          "use" : "Används för att registrera resultat från bilddiagnostik som ett enskilt värde eller, genom nästning, en grupp av värden. Normalt används den i kombination med arketyp-föräldern Imaging examination - Bilddiagnostisk undersökning.\r\n\r\nFörutom ett enskilt värde, tillåter arketypen även registrering av en specifik anatomisk lokalisation och ytterligare nestning av resultatvärden. Mönstret gör det också möjligt att registrera lokala kluster.",
           "originalResourceUri" : { },
           "otherDetails" : { }
         }
@@ -12726,7 +13959,8 @@
             "text" : "Aortenklappeninsuffizienz (AI)",
             "description" : "Ergebnis der Bildgebung als Einzelwert oder als eine verschachtelte Gruppe von Ergebniswerten."
           }
-        }
+        },
+        "sv" : { }
       },
       "termBindings" : { },
       "terminologyExtracts" : { },
@@ -12758,6 +13992,20 @@
         "email" : "wellmann.ramona@mh-hannover.de"
       },
       "otherDetails" : { }
+    }, {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "sv"
+      },
+      "author" : {
+        "name" : "Carina Sandell",
+        "organisation" : "Region Östergötland",
+        "email" : "carina.sandell@regionostergotland.se"
+      },
+      "otherDetails" : { }
     } ]
   }, {
     "@type" : "TEMPLATE_OVERLAY",
@@ -12770,7 +14018,7 @@
       "references" : { },
       "conversionDetails" : { },
       "otherDetails" : {
-        "PARENT:MD5-CAM-1.0.1" : "603A5F60C26B4415285A6F29EC8035A1"
+        "PARENT:MD5-CAM-1.0.1" : "40D40305DD4FF8737FB606E15BF84BD2"
       },
       "details" : {
         "de" : {
@@ -12799,6 +14047,20 @@
           "keywords" : [ ],
           "use" : "To record imaging results as a single value or as a nested group of result values. Normally used in conjunction with a parent Imaging examination (Observation) archetype.\r\n\r\nAs well as a single result value, the archetype also allows for a specific anatomical location and further nesting of result values to be captured. The pattern also allows for local clusters to be accommodated.",
           "copyright" : "© openEHR Foundation",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "sv" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "sv"
+          },
+          "purpose" : "För registrering av fynd från bilddiagnostik som ett enskilt värde eller, genom nästning, en grupp av värden.",
+          "keywords" : [ ],
+          "use" : "Används för att registrera resultat från bilddiagnostik som ett enskilt värde eller, genom nästning, en grupp av värden. Normalt används den i kombination med arketyp-föräldern Imaging examination - Bilddiagnostisk undersökning.\r\n\r\nFörutom ett enskilt värde, tillåter arketypen även registrering av en specifik anatomisk lokalisation och ytterligare nestning av resultatvärden. Mönstret gör det också möjligt att registrera lokala kluster.",
           "originalResourceUri" : { },
           "otherDetails" : { }
         }
@@ -12925,7 +14187,8 @@
             "text" : "Aortenklappenstenose (AS)",
             "description" : "Ergebnis der Bildgebung als Einzelwert oder als eine verschachtelte Gruppe von Ergebniswerten."
           }
-        }
+        },
+        "sv" : { }
       },
       "termBindings" : { },
       "terminologyExtracts" : { },
@@ -12957,6 +14220,20 @@
         "email" : "wellmann.ramona@mh-hannover.de"
       },
       "otherDetails" : { }
+    }, {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "sv"
+      },
+      "author" : {
+        "name" : "Carina Sandell",
+        "organisation" : "Region Östergötland",
+        "email" : "carina.sandell@regionostergotland.se"
+      },
+      "otherDetails" : { }
     } ]
   }, {
     "@type" : "TEMPLATE_OVERLAY",
@@ -12969,7 +14246,7 @@
       "references" : { },
       "conversionDetails" : { },
       "otherDetails" : {
-        "PARENT:MD5-CAM-1.0.1" : "603A5F60C26B4415285A6F29EC8035A1"
+        "PARENT:MD5-CAM-1.0.1" : "40D40305DD4FF8737FB606E15BF84BD2"
       },
       "details" : {
         "de" : {
@@ -12998,6 +14275,20 @@
           "keywords" : [ ],
           "use" : "To record imaging results as a single value or as a nested group of result values. Normally used in conjunction with a parent Imaging examination (Observation) archetype.\r\n\r\nAs well as a single result value, the archetype also allows for a specific anatomical location and further nesting of result values to be captured. The pattern also allows for local clusters to be accommodated.",
           "copyright" : "© openEHR Foundation",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "sv" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "sv"
+          },
+          "purpose" : "För registrering av fynd från bilddiagnostik som ett enskilt värde eller, genom nästning, en grupp av värden.",
+          "keywords" : [ ],
+          "use" : "Används för att registrera resultat från bilddiagnostik som ett enskilt värde eller, genom nästning, en grupp av värden. Normalt används den i kombination med arketyp-föräldern Imaging examination - Bilddiagnostisk undersökning.\r\n\r\nFörutom ett enskilt värde, tillåter arketypen även registrering av en specifik anatomisk lokalisation och ytterligare nestning av resultatvärden. Mönstret gör det också möjligt att registrera lokala kluster.",
           "originalResourceUri" : { },
           "otherDetails" : { }
         }
@@ -13107,7 +14398,8 @@
             "text" : "Pulmonalklappe",
             "description" : "Ergebnis der Bildgebung als Einzelwert oder als eine verschachtelte Gruppe von Ergebniswerten."
           }
-        }
+        },
+        "sv" : { }
       },
       "termBindings" : { },
       "terminologyExtracts" : { },
@@ -13139,6 +14431,20 @@
         "email" : "wellmann.ramona@mh-hannover.de"
       },
       "otherDetails" : { }
+    }, {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "sv"
+      },
+      "author" : {
+        "name" : "Carina Sandell",
+        "organisation" : "Region Östergötland",
+        "email" : "carina.sandell@regionostergotland.se"
+      },
+      "otherDetails" : { }
     } ]
   }, {
     "@type" : "TEMPLATE_OVERLAY",
@@ -13151,7 +14457,7 @@
       "references" : { },
       "conversionDetails" : { },
       "otherDetails" : {
-        "PARENT:MD5-CAM-1.0.1" : "603A5F60C26B4415285A6F29EC8035A1"
+        "PARENT:MD5-CAM-1.0.1" : "40D40305DD4FF8737FB606E15BF84BD2"
       },
       "details" : {
         "de" : {
@@ -13180,6 +14486,20 @@
           "keywords" : [ ],
           "use" : "To record imaging results as a single value or as a nested group of result values. Normally used in conjunction with a parent Imaging examination (Observation) archetype.\r\n\r\nAs well as a single result value, the archetype also allows for a specific anatomical location and further nesting of result values to be captured. The pattern also allows for local clusters to be accommodated.",
           "copyright" : "© openEHR Foundation",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "sv" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "sv"
+          },
+          "purpose" : "För registrering av fynd från bilddiagnostik som ett enskilt värde eller, genom nästning, en grupp av värden.",
+          "keywords" : [ ],
+          "use" : "Används för att registrera resultat från bilddiagnostik som ett enskilt värde eller, genom nästning, en grupp av värden. Normalt används den i kombination med arketyp-föräldern Imaging examination - Bilddiagnostisk undersökning.\r\n\r\nFörutom ett enskilt värde, tillåter arketypen även registrering av en specifik anatomisk lokalisation och ytterligare nestning av resultatvärden. Mönstret gör det också möjligt att registrera lokala kluster.",
           "originalResourceUri" : { },
           "otherDetails" : { }
         }
@@ -13306,7 +14626,8 @@
             "text" : "Pulmonalklappeninsuffizienz (PI)",
             "description" : "Ergebnis der Bildgebung als Einzelwert oder als eine verschachtelte Gruppe von Ergebniswerten."
           }
-        }
+        },
+        "sv" : { }
       },
       "termBindings" : { },
       "terminologyExtracts" : { },
@@ -13338,6 +14659,20 @@
         "email" : "wellmann.ramona@mh-hannover.de"
       },
       "otherDetails" : { }
+    }, {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "sv"
+      },
+      "author" : {
+        "name" : "Carina Sandell",
+        "organisation" : "Region Östergötland",
+        "email" : "carina.sandell@regionostergotland.se"
+      },
+      "otherDetails" : { }
     } ]
   }, {
     "@type" : "TEMPLATE_OVERLAY",
@@ -13350,7 +14685,7 @@
       "references" : { },
       "conversionDetails" : { },
       "otherDetails" : {
-        "PARENT:MD5-CAM-1.0.1" : "603A5F60C26B4415285A6F29EC8035A1"
+        "PARENT:MD5-CAM-1.0.1" : "40D40305DD4FF8737FB606E15BF84BD2"
       },
       "details" : {
         "de" : {
@@ -13379,6 +14714,20 @@
           "keywords" : [ ],
           "use" : "To record imaging results as a single value or as a nested group of result values. Normally used in conjunction with a parent Imaging examination (Observation) archetype.\r\n\r\nAs well as a single result value, the archetype also allows for a specific anatomical location and further nesting of result values to be captured. The pattern also allows for local clusters to be accommodated.",
           "copyright" : "© openEHR Foundation",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "sv" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "sv"
+          },
+          "purpose" : "För registrering av fynd från bilddiagnostik som ett enskilt värde eller, genom nästning, en grupp av värden.",
+          "keywords" : [ ],
+          "use" : "Används för att registrera resultat från bilddiagnostik som ett enskilt värde eller, genom nästning, en grupp av värden. Normalt används den i kombination med arketyp-föräldern Imaging examination - Bilddiagnostisk undersökning.\r\n\r\nFörutom ett enskilt värde, tillåter arketypen även registrering av en specifik anatomisk lokalisation och ytterligare nestning av resultatvärden. Mönstret gör det också möjligt att registrera lokala kluster.",
           "originalResourceUri" : { },
           "otherDetails" : { }
         }
@@ -13488,7 +14837,8 @@
             "text" : "Trikuspidalklappe",
             "description" : "Ergebnis der Bildgebung als Einzelwert oder als eine verschachtelte Gruppe von Ergebniswerten."
           }
-        }
+        },
+        "sv" : { }
       },
       "termBindings" : { },
       "terminologyExtracts" : { },
@@ -13520,6 +14870,20 @@
         "email" : "wellmann.ramona@mh-hannover.de"
       },
       "otherDetails" : { }
+    }, {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "sv"
+      },
+      "author" : {
+        "name" : "Carina Sandell",
+        "organisation" : "Region Östergötland",
+        "email" : "carina.sandell@regionostergotland.se"
+      },
+      "otherDetails" : { }
     } ]
   }, {
     "@type" : "TEMPLATE_OVERLAY",
@@ -13532,7 +14896,7 @@
       "references" : { },
       "conversionDetails" : { },
       "otherDetails" : {
-        "PARENT:MD5-CAM-1.0.1" : "603A5F60C26B4415285A6F29EC8035A1"
+        "PARENT:MD5-CAM-1.0.1" : "40D40305DD4FF8737FB606E15BF84BD2"
       },
       "details" : {
         "de" : {
@@ -13561,6 +14925,20 @@
           "keywords" : [ ],
           "use" : "To record imaging results as a single value or as a nested group of result values. Normally used in conjunction with a parent Imaging examination (Observation) archetype.\r\n\r\nAs well as a single result value, the archetype also allows for a specific anatomical location and further nesting of result values to be captured. The pattern also allows for local clusters to be accommodated.",
           "copyright" : "© openEHR Foundation",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "sv" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "sv"
+          },
+          "purpose" : "För registrering av fynd från bilddiagnostik som ett enskilt värde eller, genom nästning, en grupp av värden.",
+          "keywords" : [ ],
+          "use" : "Används för att registrera resultat från bilddiagnostik som ett enskilt värde eller, genom nästning, en grupp av värden. Normalt används den i kombination med arketyp-föräldern Imaging examination - Bilddiagnostisk undersökning.\r\n\r\nFörutom ett enskilt värde, tillåter arketypen även registrering av en specifik anatomisk lokalisation och ytterligare nestning av resultatvärden. Mönstret gör det också möjligt att registrera lokala kluster.",
           "originalResourceUri" : { },
           "otherDetails" : { }
         }
@@ -13687,7 +15065,8 @@
             "text" : "Trikuspidalklappeninsuffizienz (TI)",
             "description" : "Ergebnis der Bildgebung als Einzelwert oder als eine verschachtelte Gruppe von Ergebniswerten."
           }
-        }
+        },
+        "sv" : { }
       },
       "termBindings" : { },
       "terminologyExtracts" : { },
@@ -13717,6 +15096,20 @@
         "name" : "Ramona Wellmann",
         "organisation" : "Medizinische Hochschule Hannover",
         "email" : "wellmann.ramona@mh-hannover.de"
+      },
+      "otherDetails" : { }
+    }, {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "sv"
+      },
+      "author" : {
+        "name" : "Carina Sandell",
+        "organisation" : "Region Östergötland",
+        "email" : "carina.sandell@regionostergotland.se"
       },
       "otherDetails" : { }
     } ]
