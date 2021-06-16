@@ -24,9 +24,9 @@
       "Sign off" : "",
       "Speciality" : "",
       "User roles" : "",
-      "MD5-CAM-1.0.1" : "3a005c620bbf519a94eeb0ea86b7c429",
+      "MD5-CAM-1.0.1" : "b8ec58515915814d2c3ceb130fbe7124",
       "PARENT:MD5-CAM-1.0.1" : "641B268BE8805CEB8DC21AB82C53AB3F",
-      "sem_ver" : "0.3.2",
+      "sem_ver" : "0.3.3",
       "build_uid" : ""
     },
     "details" : {
@@ -3609,7 +3609,14 @@
             "description" : "Ergebnis der Bildgebung als Einzelwert oder als eine verschachtelte Gruppe von Ergebniswerten."
           }
         },
-        "sv" : { }
+        "sv" : {
+          "at0000.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0000.1",
+            "text" : "TY Dimensionen (Parasternal Lange Achse)",
+            "description" : "Bilddiagnostiskt resultat som ett enskilt värde eller, genom nästning, en grupp av värden."
+          }
+        }
       },
       "termBindings" : { },
       "terminologyExtracts" : { },
@@ -5133,7 +5140,14 @@
             "description" : "Ergebnis der Bildgebung als Einzelwert oder als eine verschachtelte Gruppe von Ergebniswerten."
           }
         },
-        "sv" : { }
+        "sv" : {
+          "at0000.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0000.1",
+            "text" : "1.3 Vänsterkammar-diameter, systole  PLAX",
+            "description" : "Bilddiagnostiskt resultat som ett enskilt värde eller, genom nästning, en grupp av värden."
+          }
+        }
       },
       "termBindings" : { },
       "terminologyExtracts" : { },
@@ -5461,7 +5475,14 @@
             "description" : "Ergebnis der Bildgebung als Einzelwert oder als eine verschachtelte Gruppe von Ergebniswerten."
           }
         },
-        "sv" : { }
+        "sv" : {
+          "at0000.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0000.1",
+            "text" : "TY 2-D Messungen (4CH und 2CH apikal, subkostal)",
+            "description" : "Bilddiagnostiskt resultat som ett enskilt värde eller, genom nästning, en grupp av värden."
+          }
+        }
       },
       "termBindings" : { },
       "terminologyExtracts" : { },
@@ -5747,7 +5768,14 @@
             "description" : "Zusätzliche Informationen über das Ergebnis, die nicht im Ergebnisfeld erfasst wurden."
           }
         },
-        "sv" : { }
+        "sv" : {
+          "at0000.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0000.1",
+            "text" : "1.9 Vänster kammares ejektionsfraktion",
+            "description" : "Bilddiagnostiskt resultat som ett enskilt värde eller, genom nästning, en grupp av värden."
+          }
+        }
       },
       "termBindings" : { },
       "terminologyExtracts" : { },
@@ -5975,7 +6003,14 @@
             "description" : "Ergebnis der Bildgebung als Einzelwert oder als eine verschachtelte Gruppe von Ergebniswerten."
           }
         },
-        "sv" : { }
+        "sv" : {
+          "at0000.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0000.1",
+            "text" : "TY Linksventrikuläre Funktion",
+            "description" : "Bilddiagnostiskt resultat som ett enskilt värde eller, genom nästning, en grupp av värden."
+          }
+        }
       },
       "termBindings" : { },
       "terminologyExtracts" : { },
