@@ -24,9 +24,9 @@
       "Sign off" : "",
       "Speciality" : "",
       "User roles" : "",
-      "MD5-CAM-1.0.1" : "8d5fac4de8542dd8581bd418aa49f912",
+      "MD5-CAM-1.0.1" : "3a005c620bbf519a94eeb0ea86b7c429",
       "PARENT:MD5-CAM-1.0.1" : "641B268BE8805CEB8DC21AB82C53AB3F",
-      "sem_ver" : "0.3.1",
+      "sem_ver" : "0.3.2",
       "build_uid" : ""
     },
     "details" : {
@@ -1113,44 +1113,9 @@
                     }, {
                       "@type" : "C_COMPLEX_OBJECT",
                       "rmTypeName" : "ELEMENT",
-                      "occurrences" : "0..1",
                       "nodeId" : "at1030.1",
-                      "attributes" : [ {
-                        "@type" : "C_ATTRIBUTE",
-                        "rmAttributeName" : "value",
-                        "children" : [ {
-                          "@type" : "C_COMPLEX_OBJECT",
-                          "rmTypeName" : "DV_TEXT",
-                          "attributes" : [ {
-                            "@type" : "C_ATTRIBUTE",
-                            "rmAttributeName" : "value",
-                            "existence" : "0..1",
-                            "children" : [ {
-                              "@type" : "C_STRING",
-                              "constraint" : [ "Schrittmacher", "kein Schrittmacher" ]
-                            } ]
-                          } ],
-                          "attributeTuples" : [ ]
-                        } ]
-                      } ],
-                      "attributeTuples" : [ ],
-                      "attributeCustomizations" : {
-                        "null_flavour" : {
-                          "aliases" : {
-                            "ar-sy" : "null_flavour",
-                            "es-co" : "null_flavour",
-                            "en" : "null_flavour",
-                            "de" : "null_flavour",
-                            "ru" : "null_flavour",
-                            "pt-br" : "null_flavour",
-                            "sv" : "null_flavour",
-                            "es" : "null_flavour",
-                            "fi" : "null_flavour",
-                            "nb" : "null_flavour",
-                            "nl" : "null_flavour"
-                          }
-                        }
-                      }
+                      "attributes" : [ ],
+                      "attributeTuples" : [ ]
                     }, {
                       "@type" : "C_COMPLEX_OBJECT",
                       "rmTypeName" : "ELEMENT",
@@ -1158,67 +1123,6 @@
                       "nodeId" : "at1022.1",
                       "attributes" : [ ],
                       "attributeTuples" : [ ]
-                    }, {
-                      "@type" : "C_COMPLEX_OBJECT",
-                      "rmTypeName" : "ELEMENT",
-                      "nodeId" : "at1023.1",
-                      "attributes" : [ {
-                        "@type" : "C_ATTRIBUTE",
-                        "rmAttributeName" : "name",
-                        "children" : [ {
-                          "@type" : "C_COMPLEX_OBJECT",
-                          "rmTypeName" : "DV_CODED_TEXT",
-                          "attributes" : [ {
-                            "@type" : "C_ATTRIBUTE",
-                            "rmAttributeName" : "defining_code",
-                            "children" : [ {
-                              "@type" : "C_TERMINOLOGY_CODE",
-                              "rmTypeName" : "CODE_PHRASE",
-                              "occurrences" : "1..1",
-                              "terminologyId" : {
-                                "value" : "local"
-                              },
-                              "constraint" : [ "at1058" ]
-                            } ]
-                          } ],
-                          "attributeTuples" : [ ]
-                        } ]
-                      }, {
-                        "@type" : "C_ATTRIBUTE",
-                        "rmAttributeName" : "value",
-                        "children" : [ {
-                          "@type" : "C_COMPLEX_OBJECT",
-                          "rmTypeName" : "DV_TEXT",
-                          "attributes" : [ {
-                            "@type" : "C_ATTRIBUTE",
-                            "rmAttributeName" : "value",
-                            "existence" : "0..1",
-                            "children" : [ {
-                              "@type" : "C_STRING",
-                              "constraint" : [ "Sinusrhythmus", "Vorhofflimmern", "Anderer Rhythmus", "Schrittmacherstimulation" ]
-                            } ]
-                          } ],
-                          "attributeTuples" : [ ]
-                        } ]
-                      } ],
-                      "attributeTuples" : [ ],
-                      "attributeCustomizations" : {
-                        "null_flavour" : {
-                          "aliases" : {
-                            "ar-sy" : "null_flavour",
-                            "es-co" : "null_flavour",
-                            "en" : "null_flavour",
-                            "de" : "null_flavour",
-                            "ru" : "null_flavour",
-                            "pt-br" : "null_flavour",
-                            "sv" : "null_flavour",
-                            "es" : "null_flavour",
-                            "fi" : "null_flavour",
-                            "nb" : "null_flavour",
-                            "nl" : "null_flavour"
-                          }
-                        }
-                      }
                     }, {
                       "@type" : "C_COMPLEX_OBJECT",
                       "rmTypeName" : "ELEMENT",
@@ -1749,13 +1653,6 @@
             "text" : "Herzfrequenz",
             "description" : "*The rate and associated attributes for a pulse or heart beat. (en)"
           },
-          "at1030.1" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at1030.1",
-            "text" : "Schrittmacher",
-            "description" : "*Description of the character of the pulse or heart beat.(en)",
-            "comment" : "*Coding with a terminology is desired, where possible. For example: full, thready, bounding, slow rising, or collapsing. Multiple terms may be recorded.(en)"
-          },
           "at1059.1" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at1059.1",
@@ -1783,12 +1680,6 @@
             "text" : "Herzfrequenz",
             "description" : "*The rate and associated attributes for a pulse or heart beat. (en)"
           },
-          "at1030.1" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at1030.1",
-            "text" : "Schrittmacher",
-            "description" : "*Description of the character of the pulse or heart beat.(en)"
-          },
           "at1059.1" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at1059.1",
@@ -1814,13 +1705,6 @@
             "code" : "at0000.1",
             "text" : "Herzfrequenz",
             "description" : "The rate and associated attributes for a pulse or heart beat."
-          },
-          "at1030.1" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at1030.1",
-            "text" : "Schrittmacher",
-            "description" : "Description of the character of the pulse or heart beat.",
-            "comment" : "Coding with a terminology is desired, where possible. For example: full, thready, bounding, slow rising, or collapsing. Multiple terms may be recorded."
           },
           "at1059.1" : {
             "@type" : "ARCHETYPE_TERM",
@@ -1849,13 +1733,6 @@
             "text" : "Herzfrequenz",
             "description" : "Die Frequenz und zugehörige Attribute für die Puls- oder Herzfrequenz."
           },
-          "at1030.1" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at1030.1",
-            "text" : "Schrittmacher",
-            "description" : "Beschreibung des Merkmals der Puls- oder Herzfrequenz.",
-            "comment" : "Die Kodierung mit einer Terminologie ist, wenn möglich, erwünscht. Zum Beispiel: kräftig, schwach, hämmernd, langsam ansteigend oder kollabierend. Mehrere Begriffe können dokumentiert werden."
-          },
           "at1059.1" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at1059.1",
@@ -1883,13 +1760,6 @@
             "text" : "Herzfrequenz",
             "description" : "*The rate and associated attributes for a pulse or heart beat. (en)"
           },
-          "at1030.1" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at1030.1",
-            "text" : "Schrittmacher",
-            "description" : "*Description of the character of the pulse or heart beat.(en)",
-            "comment" : "*Coding with a terminology is desired, where possible. For example: full, thready, bounding, slow rising, or collapsing. Multiple terms may be recorded.(en)"
-          },
           "at1059.1" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at1059.1",
@@ -1916,13 +1786,6 @@
             "code" : "at0000.1",
             "text" : "Herzfrequenz",
             "description" : "*The rate and associated attributes for a pulse or heart beat. (en)"
-          },
-          "at1030.1" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at1030.1",
-            "text" : "Schrittmacher",
-            "description" : "Descrição da característica do pulso ou batimento cardíaco.",
-            "comment" : "A codificação com uma terminologia é desejada, quando possível. Por exemplo: cheio, filiforme, delimitado, aumento lento ou em colapso. Múltiplos termos podem ser registrados."
           },
           "at1059.1" : {
             "@type" : "ARCHETYPE_TERM",
@@ -1952,31 +1815,31 @@
             "description" : "Hjärtslagens eller pulsens frekvens och tillhörande attribut.",
             "comment" : "Ändrad med Revert till texten från arketypen. "
           },
-          "at1030.1" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at1030.1",
-            "text" : "Schrittmacher",
-            "description" : "Beskrivning av pulsens eller hjärtslagets karaktär.",
-            "comment" : "Kodning med en terminologi är önskvärd, om det är tillämpligt. Exempelvis *full, trådfin, kraftig, långsamt stigande eller Corrigans puls."
-          },
           "at1059.1" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at1059.1",
-            "text" : "Weitere Informationen zu Schrittmacher",
+            "text" : "Ytterligare information om pacemaker",
             "description" : "Ytterligare beskrivning av fynden från puls eller hjärtslag som inte beskrivits i andra fält."
           },
           "at1030.2" : {
             "@type" : "ARCHETYPE_TERM",
-            "code" : "at1030.1",
-            "text" : "Schrittmacher",
+            "code" : "at1030.2",
+            "text" : "Pacemaker",
             "description" : "Beskrivning av pulsens eller hjärtslagets karaktär.",
             "comment" : "Kodning med en terminologi är önskvärd, om det är tillämpligt. Exempelvis *full, trådfin, kraftig, långsamt stigande eller Corrigans puls."
           },
           "at1059.2" : {
             "@type" : "ARCHETYPE_TERM",
-            "code" : "at1059.1",
-            "text" : "Weitere Informationen zu Schrittmacher",
+            "code" : "at1059.2",
+            "text" : "Ytterligare information om pacemaker",
             "description" : "Ytterligare beskrivning av fynden från puls eller hjärtslag som inte beskrivits i andra fält."
+          },
+          "at1030.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at1030.1",
+            "text" : "Pacemaker",
+            "description" : "Beskrivning av pulsens eller hjärtslagets karaktär.",
+            "comment" : "Kodning med en terminologi är önskvärd, om det är tillämpligt. Exempelvis *full, trådfin, kraftig, långsamt stigande eller Corrigans puls."
           }
         },
         "es" : {
@@ -1985,13 +1848,6 @@
             "code" : "at0000.1",
             "text" : "Herzfrequenz",
             "description" : "*The rate and associated attributes for a pulse or heart beat. (en)"
-          },
-          "at1030.1" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at1030.1",
-            "text" : "Schrittmacher",
-            "description" : "Descripción del carácter del pulso o latidos del corazón.",
-            "comment" : "*Coding with a terminology is desired, where possible. For example: full, thready, bounding, slow rising, or collapsing. Multiple terms may be recorded.(en)"
           },
           "at1059.1" : {
             "@type" : "ARCHETYPE_TERM",
@@ -2020,13 +1876,6 @@
             "text" : "Herzfrequenz",
             "description" : "*The rate and associated attributes for a pulse or heart beat. (en)"
           },
-          "at1030.1" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at1030.1",
-            "text" : "Schrittmacher",
-            "description" : "Kuvaus pulssin tai sykkeen luonteesta.",
-            "comment" : "Coding with a terminology is desired, where possible. For example: full, thready, bounding, slow rising, or collapsing. Multiple terms may be recorded."
-          },
           "at1059.1" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at1059.1",
@@ -2054,13 +1903,6 @@
             "text" : "Herzfrequenz",
             "description" : "Måling av puls/hjertefrekvens, eller eksplisitt puls eller hjertefrekvens, og beskrivelse av tilhørende egenskaper."
           },
-          "at1030.1" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at1030.1",
-            "text" : "Schrittmacher",
-            "description" : "Tekstlig beskrivelse av pulsens eller hjerteslag karakter.",
-            "comment" : "Koding med en terminologi er en fordel der det er mulig. Flere svar skal kunne registreres. Eksempler: Tydelig, svak, overfladisk."
-          },
           "at1059.1" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at1059.1",
@@ -2087,13 +1929,6 @@
             "code" : "at0000.1",
             "text" : "Herzfrequenz",
             "description" : "De frequentie en bijbehorende eigenschappen van de pols- of hartfrequentie."
-          },
-          "at1030.1" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at1030.1",
-            "text" : "Schrittmacher",
-            "description" : "Beschrijving van het karakter van een pols- of hartslag.",
-            "comment" : "Coderen met een terminologie is gewenst, waar mogelijk. Bijvoorbeeld: vol, zwak, collaberend, \t\r\ntraag stijgend of instortend. Er kunnen meerdere termen worden vastgelegd."
           },
           "at1059.1" : {
             "@type" : "ARCHETYPE_TERM",
@@ -2532,7 +2367,7 @@
           "at0000.1" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0000.1",
-            "text" : "Ergebnis",
+            "text" : "Resultat",
             "description" : "En allmän avsnittsrubrik som döps om i en openEHR-mall för att passa in i en specifik klinisk kontext."
           }
         },
@@ -3027,7 +2862,14 @@
           "attributeTuples" : [ ]
         } ]
       } ],
-      "attributeTuples" : [ ]
+      "attributeTuples" : [ ],
+      "attributeCustomizations" : {
+        "protocol" : {
+          "aliases" : {
+            "sv" : "protocol"
+          }
+        }
+      }
     },
     "terminology" : {
       "@type" : "ARCHETYPE_TERMINOLOGY",
@@ -4015,7 +3857,14 @@
             "description" : "Ergebnis der Bildgebung als Einzelwert oder als eine verschachtelte Gruppe von Ergebniswerten."
           }
         },
-        "sv" : { }
+        "sv" : {
+          "at0000.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0000.1",
+            "text" : "6.5 AoV vmax",
+            "description" : "Bilddiagnostiskt resultat som ett enskilt värde eller, genom nästning, en grupp av värden."
+          }
+        }
       },
       "termBindings" : { },
       "terminologyExtracts" : { },
@@ -4263,7 +4112,15 @@
             "description" : "Ergebnis der Bildgebung als Einzelwert oder als eine verschachtelte Gruppe von Ergebniswerten."
           }
         },
-        "sv" : { }
+        "sv" : {
+          "at0000.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0000.1",
+            "text" : "3.1 Vänster förmaksvolym, kammarsystole",
+            "description" : "Bilddiagnostiskt resultat som ett enskilt värde eller, genom nästning, en grupp av värden.",
+            "comment" : "399235004 |vänster förmaks systoliska volym| \n"
+          }
+        }
       },
       "termBindings" : { },
       "terminologyExtracts" : { },
@@ -4511,7 +4368,14 @@
             "description" : "Ergebnis der Bildgebung als Einzelwert oder als eine verschachtelte Gruppe von Ergebniswerten."
           }
         },
-        "sv" : { }
+        "sv" : {
+          "at0000.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0000.1",
+            "text" : "1.4 Septumtjocklek, diastole PLAX",
+            "description" : "Bilddiagnostiskt resultat som ett enskilt värde eller, genom nästning, en grupp av värden."
+          }
+        }
       },
       "termBindings" : { },
       "terminologyExtracts" : { },
@@ -4759,7 +4623,14 @@
             "description" : "Ergebnis der Bildgebung als Einzelwert oder als eine verschachtelte Gruppe von Ergebniswerten."
           }
         },
-        "sv" : { }
+        "sv" : {
+          "at0000.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0000.1",
+            "text" : "1.1 Vänsterkammar-diameter, diastole PLAX",
+            "description" : "Bilddiagnostiskt resultat som ett enskilt värde eller, genom nästning, en grupp av värden."
+          }
+        }
       },
       "termBindings" : { },
       "terminologyExtracts" : { },
@@ -5007,7 +4878,14 @@
             "description" : "Ergebnis der Bildgebung als Einzelwert oder als eine verschachtelte Gruppe von Ergebniswerten."
           }
         },
-        "sv" : { }
+        "sv" : {
+          "at0000.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0000.1",
+            "text" : "1.5 Bakväggstjocklek, diastole PLAX",
+            "description" : "Bilddiagnostiskt resultat som ett enskilt värde eller, genom nästning, en grupp av värden."
+          }
+        }
       },
       "termBindings" : { },
       "terminologyExtracts" : { },
