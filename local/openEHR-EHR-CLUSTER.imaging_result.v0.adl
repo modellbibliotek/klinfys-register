@@ -45,7 +45,7 @@ Neben einem einzelnen Ergebniswert ermöglicht der Archetyp auch die Dokumentati
 			purpose = <"För registrering av fynd från bilddiagnostik som ett enskilt värde eller, genom nästning, en grupp av värden.">
 			use = <"Används för att registrera resultat från bilddiagnostik som ett enskilt värde eller, genom nästning, en grupp av värden. Normalt används den i kombination med arketyp-föräldern Imaging examination - Bilddiagnostisk undersökning.
 
-Förutom ett enskilt värde, tillåter arketypen även registrering av en specifik anatomisk lokation och ytterligare nestning av resultatvärden. Mönstret gör det också möjligt att registrera lokala kluster.">
+Förutom ett enskilt värde, tillåter arketypen även registrering av en specifik anatomisk lokalisation och ytterligare nestning av resultatvärden. Mönstret gör det också möjligt att registrera lokala kluster.">
 		>
 		["en"] = <
 			language = <[ISO_639-1::en]>
@@ -62,7 +62,7 @@ As well as a single result value, the archetype also allows for a specific anato
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"5A00E79F91B721DD4D165ED397887111">
+		["MD5-CAM-1.0.1"] = <"40D40305DD4FF8737FB606E15BF84BD2">
 		["build_uid"] = <"91df90cd-392d-4bc2-862f-a9074fe920eb">
 		["revision"] = <"0.0.1-alpha">
 	>
@@ -301,12 +301,12 @@ ontology
 					description = <"Ytterligare detaljer om ett enstaka resultat.">
 				>
 				["at0013"] = <
-					text = <"Anatomisk lokation">
-					description = <"Detaljer om den enskilda anatomiska lokationen som resultatet refererar till. Där mer fingranulär framställning av Anatomisk lokation krävs.">
+					text = <"Anatomisk lokalisation">
+					description = <"Detaljer om den enskilda anatomiska lokalisationen som resultatet refererar till. Där mer fingranulär framställning av Anatomisk lokalisation krävs.">
 				>
 				["at0014"] = <
 					text = <"Ytterligare detaljer">
-					description = <"Ytterligare detaljer om det enskida värde eller, genom nästning, gruppen av värden.">
+					description = <"Ytterligare detaljer om det enskilda värde eller, genom nästning, gruppen av värden.">
 				>
 			>
 		>
