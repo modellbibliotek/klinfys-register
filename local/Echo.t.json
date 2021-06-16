@@ -24,9 +24,9 @@
       "Sign off" : "",
       "Speciality" : "",
       "User roles" : "",
-      "MD5-CAM-1.0.1" : "30f8fa6ded22aef579f17702103ac953",
+      "MD5-CAM-1.0.1" : "8d5fac4de8542dd8581bd418aa49f912",
       "PARENT:MD5-CAM-1.0.1" : "641B268BE8805CEB8DC21AB82C53AB3F",
-      "sem_ver" : "0.3.0",
+      "sem_ver" : "0.3.1",
       "build_uid" : ""
     },
     "details" : {
@@ -504,7 +504,7 @@
           "at0000.1" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0000.1",
-            "text" : "Rytm och frekvens",
+            "text" : "Rythm and Frequency",
             "description" : "A generic section header which should be renamed in a template to suit a specific clinical context."
           }
         },
@@ -1948,8 +1948,9 @@
           "at0000.1" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0000.1",
-            "text" : "Herzfrequenz",
-            "description" : "Hjärtslagens eller pulsens frekvens och tillhörande attribut."
+            "text" : "Puls/Hjärtfrekvens",
+            "description" : "Hjärtslagens eller pulsens frekvens och tillhörande attribut.",
+            "comment" : "Ändrad med Revert till texten från arketypen. "
           },
           "at1030.1" : {
             "@type" : "ARCHETYPE_TERM",
