@@ -24,9 +24,9 @@
       "Sign off" : "",
       "Speciality" : "",
       "User roles" : "",
-      "MD5-CAM-1.0.1" : "2a138e7433f8a3b217d1aa6b5338bcf5",
+      "MD5-CAM-1.0.1" : "beb2c9c3f4f0be91e3ed404748d1f523",
       "PARENT:MD5-CAM-1.0.1" : "641B268BE8805CEB8DC21AB82C53AB3F",
-      "sem_ver" : "1.0.0",
+      "sem_ver" : "2.0.0",
       "build_uid" : ""
     },
     "details" : {
@@ -3751,8 +3751,7 @@
                 "rmAttributeName" : "value",
                 "children" : [ {
                   "@type" : "C_COMPLEX_OBJECT",
-                  "rmTypeName" : "DV_CODED_TEXT",
-                  "occurrences" : "1..1",
+                  "rmTypeName" : "DV_TEXT",
                   "defaultValue" : {
                     "defining_code" : {
                       "terminology_id" : {
@@ -3762,27 +3761,10 @@
                       "code_string" : "250908004",
                       "@type" : "CODE_PHRASE"
                     },
-                    "value" : "vänster kammares ejektionsfraktion",
+                    "value" : "",
                     "@type" : "DV_CODED_TEXT"
                   },
-                  "attributes" : [ {
-                    "@type" : "C_ATTRIBUTE",
-                    "rmAttributeName" : "defining_code",
-                    "children" : [ {
-                      "@type" : "C_TERMINOLOGY_CODE",
-                      "rmTypeName" : "TERMINOLOGY_CODE",
-                      "terminologyId" : {
-                        "value" : "http://snomed.info/sct/"
-                      },
-                      "constraint" : [ ],
-                      "selectedTerminologies" : [ "http://snomed.info/sct/" ],
-                      "includedExternalTerminologyCodes" : [ {
-                        "terminologyId" : "http://snomed.info/sct/",
-                        "code" : "250908004",
-                        "value" : "vänster kammares ejektionsfraktion"
-                      } ]
-                    } ]
-                  } ],
+                  "attributes" : [ ],
                   "attributeTuples" : [ ]
                 } ]
               } ],
@@ -3913,7 +3895,7 @@
           "at0000.1" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0000.1",
-            "text" : "Ejektionsfraktion (AoV vmax)",
+            "text" : "FEL!! - Aortahastighet (AoV vmax)",
             "description" : "Bilddiagnostiskt resultat som ett enskilt värde eller, genom nästning, en grupp av värden."
           }
         }
@@ -4170,7 +4152,7 @@
             "code" : "at0000.1",
             "text" : "Vänster förmak, sluttsystole, diameter",
             "description" : "Bilddiagnostiskt resultat som ett enskilt värde eller, genom nästning, en grupp av värden.",
-            "comment" : "399235004 |vänster förmaks systoliska volym| \n"
+            "comment" : "\n"
           }
         }
       },
@@ -5702,6 +5684,51 @@
             "children" : [ {
               "@type" : "C_COMPLEX_OBJECT",
               "rmTypeName" : "ELEMENT",
+              "nodeId" : "at0015.1",
+              "attributes" : [ {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "value",
+                "children" : [ {
+                  "@type" : "C_COMPLEX_OBJECT",
+                  "rmTypeName" : "DV_CODED_TEXT",
+                  "occurrences" : "1..1",
+                  "defaultValue" : {
+                    "defining_code" : {
+                      "terminology_id" : {
+                        "value" : "http://snomed.info/sct/",
+                        "@type" : "TERMINOLOGY_ID"
+                      },
+                      "code_string" : "250908004",
+                      "@type" : "CODE_PHRASE"
+                    },
+                    "value" : "vänster kammares ejektionsfraktion",
+                    "@type" : "DV_CODED_TEXT"
+                  },
+                  "attributes" : [ {
+                    "@type" : "C_ATTRIBUTE",
+                    "rmAttributeName" : "defining_code",
+                    "children" : [ {
+                      "@type" : "C_TERMINOLOGY_CODE",
+                      "rmTypeName" : "TERMINOLOGY_CODE",
+                      "terminologyId" : {
+                        "value" : "http://snomed.info/sct/"
+                      },
+                      "constraint" : [ ],
+                      "selectedTerminologies" : [ "http://snomed.info/sct/" ],
+                      "includedExternalTerminologyCodes" : [ {
+                        "terminologyId" : "http://snomed.info/sct/",
+                        "code" : "250908004",
+                        "value" : "vänster kammares ejektionsfraktion"
+                      } ]
+                    } ]
+                  } ],
+                  "attributeTuples" : [ ]
+                } ]
+              } ],
+              "attributeTuples" : [ ]
+            }, {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "ELEMENT",
               "nodeId" : "at0002.1",
               "attributes" : [ {
                 "@type" : "C_ATTRIBUTE",
@@ -5710,8 +5737,20 @@
                 "children" : [ {
                   "@type" : "C_COMPLEX_OBJECT",
                   "rmTypeName" : "DV_QUANTITY",
-                  "occurrences" : "0..1",
-                  "attributes" : [ ],
+                  "occurrences" : "1..1",
+                  "attributes" : [ {
+                    "@type" : "C_ATTRIBUTE",
+                    "rmAttributeName" : "property",
+                    "children" : [ {
+                      "@type" : "C_TERMINOLOGY_CODE",
+                      "rmTypeName" : "TERMINOLOGY_CODE",
+                      "occurrences" : "1..1",
+                      "terminologyId" : {
+                        "value" : "openehr"
+                      },
+                      "constraint" : [ "507" ]
+                    } ]
+                  } ],
                   "attributeTuples" : [ {
                     "@type" : "C_ATTRIBUTE_TUPLE",
                     "members" : [ {
@@ -5722,15 +5761,37 @@
                       "@type" : "C_ATTRIBUTE",
                       "rmAttributeName" : "magnitude",
                       "children" : [ ]
+                    }, {
+                      "@type" : "C_ATTRIBUTE",
+                      "rmAttributeName" : "precision",
+                      "children" : [ ]
                     } ],
                     "tuples" : [ {
                       "@type" : "C_PRIMITIVE_TUPLE",
                       "members" : [ {
                         "@type" : "C_STRING",
+                        "rmTypeName" : "STRING",
                         "constraint" : [ "%" ]
                       }, {
                         "@type" : "C_REAL",
-                        "constraint" : [ ]
+                        "rmTypeName" : "REAL",
+                        "constraint" : [ {
+                          "lowerIncluded" : false,
+                          "upperIncluded" : false,
+                          "lowerUnbounded" : true,
+                          "upperUnbounded" : true
+                        } ]
+                      }, {
+                        "@type" : "C_INTEGER",
+                        "rmTypeName" : "INTEGER",
+                        "constraint" : [ {
+                          "lower" : 0,
+                          "upper" : 0,
+                          "lowerIncluded" : true,
+                          "upperIncluded" : true,
+                          "lowerUnbounded" : false,
+                          "upperUnbounded" : false
+                        } ]
                       } ]
                     } ]
                   } ]
