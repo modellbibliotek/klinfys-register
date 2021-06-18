@@ -62,7 +62,7 @@ As well as a single result value, the archetype also allows for a specific anato
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"c0cc3f7db156cd8f43cacf37e28c4119">
+		["MD5-CAM-1.0.1"] = <"57dabe0a49fe4f07f8ee625eda43c076">
 		["build_uid"] = <"91df90cd-392d-4bc2-862f-a9074fe920eb">
 		["ip_acknowledgements"] = <"This artefact includes content from SNOMED Clinical Terms® (SNOMED CT®) which is copyrighted material of the International Health Terminology Standards Development Organisation (IHTSDO). Where an implementation of this artefact makes use of SNOMED CT content, the implementer must have the appropriate SNOMED CT Affiliate license - for more information contact http://www.snomed.org/snomed-ct/get-snomedct or info@snomed.org.">
 		["revision"] = <"0.0.1-alpha">
@@ -188,7 +188,7 @@ ontology
 				["at0015"] = <
 					text = <"Result name">
 					description = <"The name of the result.">
-					comment = <"The value for this element is normally supplied in a template, in a specialisation, or at run-time to reflect the actual result. Coding with an external terminology is strongly recommended, such as LOINC, SNOMED CT, or local lab terminologies.">
+					comment = <"The value for this element is normally supplied in a template, in a specialisation, or at run-time to reflect the actual result. Coding with an external terminology is strongly recommended, such as LOINC, SNOMED CT, or local terminologies.">
 				>
 			>
 		>
@@ -258,7 +258,7 @@ ontology
 				["at0015"] = <
 					text = <"*Result name (en)">
 					description = <"*The name of the result. (en)">
-					comment = <"*The value for this element is normally supplied in a template, in a specialisation, or at run-time to reflect the actual result. Coding with an external terminology is strongly recommended, such as LOINC, SNOMED CT, or local lab terminologies. (en)">
+					comment = <"*The value for this element is normally supplied in a template, in a specialisation, or at run-time to reflect the actual result. Coding with an external terminology is strongly recommended, such as LOINC, SNOMED CT, or local terminologies. (en)">
 				>
 			>
 		>
@@ -327,7 +327,7 @@ ontology
 				["at0015"] = <
 					text = <"Resultatets namn">
 					description = <"Namn på resultat">
-					comment = <"*The value for this element is normally supplied in a template, in a specialisation, or at run-time to reflect the actual result. Coding with an external terminology is strongly recommended, such as LOINC, SNOMED CT, or local lab terminologies. (en)">
+					comment = <"*The value for this element is normally supplied in a template, in a specialisation, or at run-time to reflect the actual result. Coding with an external terminology is strongly recommended, such as LOINC, SNOMED CT, or local terminologies. (en)">
 				>
 			>
 		>
