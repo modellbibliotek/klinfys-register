@@ -22,8 +22,7 @@ Make sure you are logged in to Archetype designer using GitHub first:
 
 * Make a (currently free) personal user registration at https://sandbox.better.care/studio/login
 (for info material see https://platform.better.care/sandbox)
-* Await mail response with user/password
-* Log in to the tool https://sandbox.better.care/studio/ and select Administration (or go straight to https://sandbox.better.care/studio/administration/domain-list) 
+* If not already logged in, log in to the tool https://sandbox.better.care/studio/ and select Administration (or go straight to https://sandbox.better.care/studio/administration/domain-list) 
 
 ![image](https://user-images.githubusercontent.com/1034001/121383694-eeba9b80-c947-11eb-81dd-d4bc10bbba25.png)
 * Set up a project (you can have several) in our case let's use the shared SFMI tutorial/course account at EHRscape as backend (Only fake patient data allowed - no clinical use!)
