@@ -20,7 +20,8 @@ Make sure you are logged in to Archetype designer using GitHub first:
 
 **Better Studio** (Sandbox)
 
-* Make a (currently free) personal user registration at https://platform.better.care/sandbox (https://platform.better.care/sandbox/register)
+* Make a (currently free) personal user registration at https://sandbox.better.care/studio/login
+(for info material see https://platform.better.care/sandbox)
 * Await mail response with user/password
 * Log in to the tool https://sandbox.better.care/studio/ and select Administration (or go straight to https://sandbox.better.care/studio/administration/domain-list) 
 
