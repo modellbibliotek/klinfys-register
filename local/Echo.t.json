@@ -24,9 +24,9 @@
       "Sign off" : "",
       "Speciality" : "",
       "User roles" : "",
-      "MD5-CAM-1.0.1" : "7a0669c185c58936b62b07a30490e039",
+      "MD5-CAM-1.0.1" : "86e89f78cb406d71deb262aeb22e618e",
       "PARENT:MD5-CAM-1.0.1" : "641B268BE8805CEB8DC21AB82C53AB3F",
-      "sem_ver" : "3.0.0",
+      "sem_ver" : "3.1.0",
       "build_uid" : ""
     },
     "details" : {
@@ -3920,40 +3920,6 @@
             }, {
               "@type" : "C_COMPLEX_OBJECT",
               "rmTypeName" : "ELEMENT",
-              "nodeId" : "at0015.2",
-              "attributes" : [ {
-                "@type" : "C_ATTRIBUTE",
-                "rmAttributeName" : "value",
-                "children" : [ {
-                  "@type" : "C_COMPLEX_OBJECT",
-                  "rmTypeName" : "DV_CODED_TEXT",
-                  "occurrences" : "1..1",
-                  "attributes" : [ {
-                    "@type" : "C_ATTRIBUTE",
-                    "rmAttributeName" : "defining_code",
-                    "children" : [ {
-                      "@type" : "C_TERMINOLOGY_CODE",
-                      "rmTypeName" : "TERMINOLOGY_CODE",
-                      "terminologyId" : {
-                        "value" : "local_terms"
-                      },
-                      "constraint" : [ ],
-                      "selectedTerminologies" : [ "local_terms" ],
-                      "limitToList" : false,
-                      "includedExternalTerminologyCodes" : [ {
-                        "terminologyId" : "local_terms",
-                        "code" : "55441000052105",
-                        "value" : "interventrikulära septums slutdiastoliska tjocklek"
-                      } ]
-                    } ]
-                  } ],
-                  "attributeTuples" : [ ]
-                } ]
-              } ],
-              "attributeTuples" : [ ]
-            }, {
-              "@type" : "C_COMPLEX_OBJECT",
-              "rmTypeName" : "ELEMENT",
               "nodeId" : "at0002.1",
               "attributes" : [ {
                 "@type" : "C_ATTRIBUTE",
@@ -4063,13 +4029,6 @@
             "code" : "at0000.1",
             "text" : "Interventrikuläres Septum (enddiastolisch) (IVSd)",
             "description" : "Imaging result as a single value or as a nested group result."
-          },
-          "at0015.2" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0015.1",
-            "text" : "Result name (2)",
-            "description" : "The name of the result.",
-            "comment" : "The value for this element is normally supplied in a template, in a specialisation, or at run-time to reflect the actual result. Coding with an external terminology is strongly recommended, such as LOINC, SNOMED CT, or local terminologies."
           }
         },
         "de" : {
@@ -4078,13 +4037,6 @@
             "code" : "at0000.1",
             "text" : "Interventrikuläres Septum (enddiastolisch) (IVSd)",
             "description" : "Ergebnis der Bildgebung als Einzelwert oder als eine verschachtelte Gruppe von Ergebniswerten."
-          },
-          "at0015.2" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0015.1",
-            "text" : "*Result name (en) (2)",
-            "description" : "*The name of the result. (en)",
-            "comment" : "*The value for this element is normally supplied in a template, in a specialisation, or at run-time to reflect the actual result. Coding with an external terminology is strongly recommended, such as LOINC, SNOMED CT, or local terminologies. (en)"
           }
         },
         "sv" : {
@@ -4094,13 +4046,6 @@
             "text" : "1.4 Septumtjocklek, diastole PLAX (IVSd PLAX)",
             "description" : "Bilddiagnostiskt resultat som ett enskilt värde eller, genom nästning, en grupp av värden.",
             "comment" : "55441000052105 |interventrikulära septums slutdiastoliska tjocklek|"
-          },
-          "at0015.2" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0015.2",
-            "text" : "Resultatets namn (2)",
-            "description" : "Namn på resultat",
-            "comment" : "*The value for this element is normally supplied in a template, in a specialisation, or at run-time to reflect the actual result. Coding with an external terminology is strongly recommended, such as LOINC, SNOMED CT, or local terminologies. (en)"
           }
         }
       },
