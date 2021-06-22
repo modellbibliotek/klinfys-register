@@ -24,9 +24,9 @@
       "Sign off" : "",
       "Speciality" : "",
       "User roles" : "",
-      "MD5-CAM-1.0.1" : "e887dce3f926a27c1728f45c2f16ef4a",
+      "MD5-CAM-1.0.1" : "ac198a702e5344b237cb0151cf91a003",
       "PARENT:MD5-CAM-1.0.1" : "641B268BE8805CEB8DC21AB82C53AB3F",
-      "sem_ver" : "8.0.1",
+      "sem_ver" : "8.1.0",
       "build_uid" : "56e5e75a-ec2b-4fc9-b84e-c28b8c35b012"
     },
     "details" : {
@@ -4480,26 +4480,14 @@
                       } ]
                     } ]
                   } ],
-                  "attributeTuples" : [ ]
-                } ]
-              } ],
-              "attributeTuples" : [ ]
-            }, {
-              "@type" : "C_COMPLEX_OBJECT",
-              "rmTypeName" : "ELEMENT",
-              "nodeId" : "at0015.2",
-              "attributes" : [ {
-                "@type" : "C_ATTRIBUTE",
-                "rmAttributeName" : "value",
-                "children" : [ {
-                  "@type" : "C_COMPLEX_OBJECT",
-                  "rmTypeName" : "DV_TEXT",
-                  "defaultValue" : {
-                    "value" : "LVEDd PLAX",
-                    "@type" : "DV_TEXT"
-                  },
-                  "attributes" : [ ],
-                  "attributeTuples" : [ ]
+                  "attributeTuples" : [ ],
+                  "attributeCustomizations" : {
+                    "mappings" : {
+                      "aliases" : {
+                        "sv" : "mappings"
+                      }
+                    }
+                  }
                 } ]
               } ],
               "attributeTuples" : [ ]
@@ -4547,15 +4535,7 @@
                   } ]
                 } ]
               } ],
-              "attributeTuples" : [ ],
-              "attributeCustomizations" : {
-                "null_flavour" : {
-                  "aliases" : {
-                    "en" : "null_flavour",
-                    "de" : "null_flavour"
-                  }
-                }
-              }
+              "attributeTuples" : [ ]
             }, {
               "@type" : "C_COMPLEX_OBJECT",
               "rmTypeName" : "ELEMENT",
@@ -4615,13 +4595,6 @@
             "code" : "at0000.1",
             "text" : "Linksventrikulärer enddiastolischer Diameter (LVEDd)",
             "description" : "Imaging result as a single value or as a nested group result."
-          },
-          "at0015.2" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0015.1",
-            "text" : "Result name (2)",
-            "description" : "The name of the result.",
-            "comment" : "The value for this element is normally supplied in a template, in a specialisation, or at run-time to reflect the actual result. Coding with an external terminology is strongly recommended, such as LOINC, SNOMED CT, or local terminologies."
           }
         },
         "de" : {
@@ -4630,13 +4603,6 @@
             "code" : "at0000.1",
             "text" : "Linksventrikulärer enddiastolischer Diameter (LVEDd)",
             "description" : "Ergebnis der Bildgebung als Einzelwert oder als eine verschachtelte Gruppe von Ergebniswerten."
-          },
-          "at0015.2" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0015.1",
-            "text" : "*Result name (en) (2)",
-            "description" : "*The name of the result. (en)",
-            "comment" : "*The value for this element is normally supplied in a template, in a specialisation, or at run-time to reflect the actual result. Coding with an external terminology is strongly recommended, such as LOINC, SNOMED CT, or local terminologies. (en)"
           }
         },
         "sv" : {
@@ -4654,18 +4620,11 @@
             "description" : "Namn på resultat",
             "comment" : "*The value for this element is normally supplied in a template, in a specialisation, or at run-time to reflect the actual result. Coding with an external terminology is strongly recommended, such as LOINC, SNOMED CT, or local terminologies. (en)"
           },
-          "at0015.2" : {
+          "at0002.1" : {
             "@type" : "ARCHETYPE_TERM",
-            "code" : "at0015.2",
-            "text" : "Benämning",
-            "description" : "Namn på resultat",
-            "comment" : "*The value for this element is normally supplied in a template, in a specialisation, or at run-time to reflect the actual result. Coding with an external terminology is strongly recommended, such as LOINC, SNOMED CT, or local terminologies. (en)"
-          },
-          "at0001.1" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0001.1",
+            "code" : "at0002.1",
             "text" : "LVEDd PLAX",
-            "description" : "Specifikt och detaljerat resultat från bilddiagnostik, som inkluderar såväl resultatvärdet som ytterligare information som kan vara användbar vid klinisk bedömning."
+            "description" : "Faktiskt värde från bilddiagnostiken. Namnet på detta element kan ersättas i en mall eller kan genereras automatiskt av vissa IT-system för att återspegla det faktiska resultatet, det kommer ofta att vara kodat."
           }
         }
       },
@@ -4921,6 +4880,12 @@
             "code" : "at0000.1",
             "text" : "1.5 Bakväggstjocklek, diastole PLAX (LVPWd PLAX)",
             "description" : "Bilddiagnostiskt resultat som ett enskilt värde eller, genom nästning, en grupp av värden."
+          },
+          "at0002.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0002.1",
+            "text" : "LVPWd PLAX",
+            "description" : "Faktiskt värde från bilddiagnostiken. Namnet på detta element kan ersättas i en mall eller kan genereras automatiskt av vissa IT-system för att återspegla det faktiska resultatet, det kommer ofta att vara kodat."
           }
         }
       },
