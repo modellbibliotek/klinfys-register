@@ -24,9 +24,9 @@
       "Sign off" : "",
       "Speciality" : "",
       "User roles" : "",
-      "MD5-CAM-1.0.1" : "69b3ba552a80212b3dafed779a8ae255",
+      "MD5-CAM-1.0.1" : "0d099a74d17e481639c078b87207692f",
       "PARENT:MD5-CAM-1.0.1" : "641B268BE8805CEB8DC21AB82C53AB3F",
-      "sem_ver" : "5.0.0",
+      "sem_ver" : "5.0.1",
       "build_uid" : ""
     },
     "details" : {
@@ -291,7 +291,7 @@
         "at0000.1" : {
           "@type" : "ARCHETYPE_TERM",
           "code" : "at0000.1",
-          "text" : "Ekokardiografirapport",
+          "text" : "Kardiografirapport",
           "description" : "Dokument för att kommunicera information till andra, vanligen som svar på en begäran från en annan part."
         }
       }
@@ -769,7 +769,7 @@
                               "terminologyId" : {
                                 "value" : "local"
                               },
-                              "constraint" : [ "ac0.55" ],
+                              "constraint" : [ "ac0.61" ],
                               "selectedTerminologies" : [ ]
                             } ]
                           } ],
@@ -1326,10 +1326,10 @@
             "code" : "ac0.45",
             "description" : ""
           },
-          "ac0.55" : {
+          "ac0.61" : {
             "@type" : "ARCHETYPE_TERM",
             "text" : "*(Synthesized) (en)",
-            "code" : "ac0.55",
+            "code" : "ac0.61",
             "description" : ""
           }
         },
@@ -1370,10 +1370,10 @@
             "code" : "ac0.45",
             "description" : ""
           },
-          "ac0.55" : {
+          "ac0.61" : {
             "@type" : "ARCHETYPE_TERM",
             "text" : "*(Synthesized) (en)",
-            "code" : "ac0.55",
+            "code" : "ac0.61",
             "description" : ""
           }
         },
@@ -1414,10 +1414,10 @@
             "code" : "ac0.45",
             "description" : ""
           },
-          "ac0.55" : {
+          "ac0.61" : {
             "@type" : "ARCHETYPE_TERM",
             "text" : "(Synthesized)",
-            "code" : "ac0.55",
+            "code" : "ac0.61",
             "description" : ""
           }
         },
@@ -1458,10 +1458,10 @@
             "code" : "ac0.45",
             "description" : ""
           },
-          "ac0.55" : {
+          "ac0.61" : {
             "@type" : "ARCHETYPE_TERM",
             "text" : "*(Synthesized) (en)",
-            "code" : "ac0.55",
+            "code" : "ac0.61",
             "description" : ""
           }
         },
@@ -1502,10 +1502,10 @@
             "code" : "ac0.45",
             "description" : ""
           },
-          "ac0.55" : {
+          "ac0.61" : {
             "@type" : "ARCHETYPE_TERM",
             "text" : "*(Synthesized) (en)",
-            "code" : "ac0.55",
+            "code" : "ac0.61",
             "description" : ""
           }
         },
@@ -1546,10 +1546,10 @@
             "code" : "ac0.45",
             "description" : ""
           },
-          "ac0.55" : {
+          "ac0.61" : {
             "@type" : "ARCHETYPE_TERM",
             "text" : "*(Synthesized) (en)",
-            "code" : "ac0.55",
+            "code" : "ac0.61",
             "description" : ""
           }
         },
@@ -1591,10 +1591,10 @@
             "code" : "ac0.45",
             "description" : ""
           },
-          "ac0.55" : {
+          "ac0.61" : {
             "@type" : "ARCHETYPE_TERM",
             "text" : "*(Synthesized) (en)",
-            "code" : "ac0.55",
+            "code" : "ac0.61",
             "description" : ""
           }
         },
@@ -1635,10 +1635,10 @@
             "code" : "ac0.45",
             "description" : ""
           },
-          "ac0.55" : {
+          "ac0.61" : {
             "@type" : "ARCHETYPE_TERM",
             "text" : "*(Synthesized) (en)",
-            "code" : "ac0.55",
+            "code" : "ac0.61",
             "description" : ""
           }
         },
@@ -1679,10 +1679,10 @@
             "code" : "ac0.45",
             "description" : ""
           },
-          "ac0.55" : {
+          "ac0.61" : {
             "@type" : "ARCHETYPE_TERM",
             "text" : "*(Synthesized) (en)",
-            "code" : "ac0.55",
+            "code" : "ac0.61",
             "description" : ""
           }
         },
@@ -1723,10 +1723,10 @@
             "code" : "ac0.45",
             "description" : ""
           },
-          "ac0.55" : {
+          "ac0.61" : {
             "@type" : "ARCHETYPE_TERM",
             "text" : "*(Synthesized) (en)",
-            "code" : "ac0.55",
+            "code" : "ac0.61",
             "description" : ""
           }
         },
@@ -1767,10 +1767,10 @@
             "code" : "ac0.45",
             "description" : ""
           },
-          "ac0.55" : {
+          "ac0.61" : {
             "@type" : "ARCHETYPE_TERM",
             "text" : "*(Synthesized) (en)",
-            "code" : "ac0.55",
+            "code" : "ac0.61",
             "description" : ""
           }
         }
@@ -2046,6 +2046,36 @@
         "ac0.55" : {
           "@type" : "VALUE_SET",
           "id" : "ac0.55",
+          "members" : [ "at1058" ]
+        },
+        "ac0.56" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.56",
+          "members" : [ "at1058" ]
+        },
+        "ac0.57" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.57",
+          "members" : [ "at1058" ]
+        },
+        "ac0.58" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.58",
+          "members" : [ "at1058" ]
+        },
+        "ac0.59" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.59",
+          "members" : [ "at1058" ]
+        },
+        "ac0.60" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.60",
+          "members" : [ "at1058" ]
+        },
+        "ac0.61" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.61",
           "members" : [ "at1058" ]
         }
       }
