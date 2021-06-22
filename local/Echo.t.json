@@ -24,9 +24,9 @@
       "Sign off" : "",
       "Speciality" : "",
       "User roles" : "",
-      "MD5-CAM-1.0.1" : "86e89f78cb406d71deb262aeb22e618e",
+      "MD5-CAM-1.0.1" : "b6d45e835f4cbd80d578b87a690ab2b5",
       "PARENT:MD5-CAM-1.0.1" : "641B268BE8805CEB8DC21AB82C53AB3F",
-      "sem_ver" : "3.1.0",
+      "sem_ver" : "4.0.0",
       "build_uid" : ""
     },
     "details" : {
@@ -4169,7 +4169,7 @@
         "children" : [ {
           "@type" : "C_COMPLEX_OBJECT",
           "rmTypeName" : "CLUSTER",
-          "nodeId" : "at0001",
+          "nodeId" : "at0001.1",
           "attributes" : [ {
             "@type" : "C_ATTRIBUTE",
             "rmAttributeName" : "items",
@@ -4394,6 +4394,12 @@
             "text" : "Benämning",
             "description" : "Namn på resultat",
             "comment" : "*The value for this element is normally supplied in a template, in a specialisation, or at run-time to reflect the actual result. Coding with an external terminology is strongly recommended, such as LOINC, SNOMED CT, or local terminologies. (en)"
+          },
+          "at0001.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0001.1",
+            "text" : "LVEDd PLAX",
+            "description" : "Specifikt och detaljerat resultat från bilddiagnostik, som inkluderar såväl resultatvärdet som ytterligare information som kan vara användbar vid klinisk bedömning."
           }
         }
       },
