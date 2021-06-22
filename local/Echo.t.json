@@ -24,9 +24,9 @@
       "Sign off" : "",
       "Speciality" : "",
       "User roles" : "",
-      "MD5-CAM-1.0.1" : "e8f72a1fbbebedffef776f4857901513",
+      "MD5-CAM-1.0.1" : "53a84cb5f31876b2f3f1a303d3af5e7c",
       "PARENT:MD5-CAM-1.0.1" : "641B268BE8805CEB8DC21AB82C53AB3F",
-      "sem_ver" : "8.1.2",
+      "sem_ver" : "9.0.0",
       "build_uid" : "56e5e75a-ec2b-4fc9-b84e-c28b8c35b012"
     },
     "details" : {
@@ -2894,7 +2894,6 @@
                     }, {
                       "@type" : "C_COMPLEX_OBJECT",
                       "rmTypeName" : "ELEMENT",
-                      "occurrences" : "1..1",
                       "nodeId" : "at0005.1",
                       "attributes" : [ {
                         "@type" : "C_ATTRIBUTE",
@@ -2916,12 +2915,12 @@
                               "selectedTerminologies" : [ "http://snomed.info/sct/" ],
                               "includedExternalTerminologyCodes" : [ {
                                 "terminologyId" : "http://snomed.info/sct/",
-                                "code" : "40701008",
-                                "value" : "ultraljudsundersökning, aktivitet"
-                              }, {
-                                "terminologyId" : "http://snomed.info/sct/",
                                 "code" : "312250003",
                                 "value" : "magnetresonanstomografi, aktivitet"
+                              }, {
+                                "terminologyId" : "http://snomed.info/sct/",
+                                "code" : "40701008",
+                                "value" : "ultraljudsundersökning, aktivitet"
                               }, {
                                 "terminologyId" : "http://snomed.info/sct/",
                                 "code" : "312251004",
@@ -2944,6 +2943,18 @@
                           "@type" : "C_COMPLEX_OBJECT",
                           "rmTypeName" : "DV_CODED_TEXT",
                           "occurrences" : "1..1",
+                          "defaultValue" : {
+                            "defining_code" : {
+                              "terminology_id" : {
+                                "value" : "http://snomed.info/sct/",
+                                "@type" : "TERMINOLOGY_ID"
+                              },
+                              "code_string" : "80891009",
+                              "@type" : "CODE_PHRASE"
+                            },
+                            "value" : "hjärta, struktur",
+                            "@type" : "DV_CODED_TEXT"
+                          },
                           "attributes" : [ {
                             "@type" : "C_ATTRIBUTE",
                             "rmAttributeName" : "defining_code",
