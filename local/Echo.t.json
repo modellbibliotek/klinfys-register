@@ -24,9 +24,9 @@
       "Sign off" : "",
       "Speciality" : "",
       "User roles" : "",
-      "MD5-CAM-1.0.1" : "b6d45e835f4cbd80d578b87a690ab2b5",
+      "MD5-CAM-1.0.1" : "69b3ba552a80212b3dafed779a8ae255",
       "PARENT:MD5-CAM-1.0.1" : "641B268BE8805CEB8DC21AB82C53AB3F",
-      "sem_ver" : "4.0.0",
+      "sem_ver" : "5.0.0",
       "build_uid" : ""
     },
     "details" : {
@@ -699,7 +699,21 @@
                     }, {
                       "@type" : "C_COMPLEX_OBJECT",
                       "rmTypeName" : "ELEMENT",
+                      "occurrences" : "0..0",
                       "nodeId" : "at1030.1",
+                      "attributes" : [ ],
+                      "attributeTuples" : [ ]
+                    }, {
+                      "@type" : "C_COMPLEX_OBJECT",
+                      "rmTypeName" : "ELEMENT",
+                      "occurrences" : "0..0",
+                      "nodeId" : "at1022.1",
+                      "attributes" : [ ],
+                      "attributeTuples" : [ ]
+                    }, {
+                      "@type" : "C_COMPLEX_OBJECT",
+                      "rmTypeName" : "ELEMENT",
+                      "nodeId" : "at1023.1",
                       "attributes" : [ {
                         "@type" : "C_ATTRIBUTE",
                         "rmAttributeName" : "value",
@@ -714,28 +728,32 @@
                               "@type" : "C_TERMINOLOGY_CODE",
                               "rmTypeName" : "TERMINOLOGY_CODE",
                               "terminologyId" : {
-                                "value" : "local_set"
+                                "value" : "http://snomed.info/sct/"
                               },
                               "constraint" : [ ],
-                              "selectedTerminologies" : [ "local_set" ]
+                              "selectedTerminologies" : [ "http://snomed.info/sct/" ],
+                              "includedExternalTerminologyCodes" : [ {
+                                "terminologyId" : "http://snomed.info/sct/",
+                                "code" : "426285000",
+                                "value" : "EKG: normal sinusrytm"
+                              }, {
+                                "terminologyId" : "http://snomed.info/sct/",
+                                "code" : "164889003",
+                                "value" : "EKG: förmaksflimme"
+                              }, {
+                                "terminologyId" : "http://snomed.info/sct/",
+                                "code" : "55641000052108",
+                                "value" : "EKG: onormal rytm"
+                              }, {
+                                "terminologyId" : "http://snomed.info/sct/",
+                                "code" : "426453001",
+                                "value" : "EKG: pacemakerstimulerad rytm"
+                              } ]
                             } ]
                           } ],
                           "attributeTuples" : [ ]
                         } ]
-                      } ],
-                      "attributeTuples" : [ ]
-                    }, {
-                      "@type" : "C_COMPLEX_OBJECT",
-                      "rmTypeName" : "ELEMENT",
-                      "occurrences" : "0..0",
-                      "nodeId" : "at1022.1",
-                      "attributes" : [ ],
-                      "attributeTuples" : [ ]
-                    }, {
-                      "@type" : "C_COMPLEX_OBJECT",
-                      "rmTypeName" : "ELEMENT",
-                      "nodeId" : "at1023.1",
-                      "attributes" : [ {
+                      }, {
                         "@type" : "C_ATTRIBUTE",
                         "rmAttributeName" : "name",
                         "children" : [ {
@@ -751,7 +769,7 @@
                               "terminologyId" : {
                                 "value" : "local"
                               },
-                              "constraint" : [ "ac0.16" ],
+                              "constraint" : [ "ac0.55" ],
                               "selectedTerminologies" : [ ]
                             } ]
                           } ],
@@ -1045,6 +1063,28 @@
                       "nodeId" : "at1023.2",
                       "attributes" : [ {
                         "@type" : "C_ATTRIBUTE",
+                        "rmAttributeName" : "name",
+                        "children" : [ {
+                          "@type" : "C_COMPLEX_OBJECT",
+                          "rmTypeName" : "DV_CODED_TEXT",
+                          "attributes" : [ {
+                            "@type" : "C_ATTRIBUTE",
+                            "rmAttributeName" : "defining_code",
+                            "children" : [ {
+                              "@type" : "C_TERMINOLOGY_CODE",
+                              "rmTypeName" : "TERMINOLOGY_CODE",
+                              "occurrences" : "1..1",
+                              "terminologyId" : {
+                                "value" : "local"
+                              },
+                              "constraint" : [ "ac0.45" ],
+                              "selectedTerminologies" : [ ]
+                            } ]
+                          } ],
+                          "attributeTuples" : [ ]
+                        } ]
+                      }, {
+                        "@type" : "C_ATTRIBUTE",
                         "rmAttributeName" : "value",
                         "children" : [ {
                           "@type" : "C_COMPLEX_OBJECT",
@@ -1078,28 +1118,6 @@
                                 "code" : "426453001",
                                 "value" : "EKG: pacemakerstimulerad rytm"
                               } ]
-                            } ]
-                          } ],
-                          "attributeTuples" : [ ]
-                        } ]
-                      }, {
-                        "@type" : "C_ATTRIBUTE",
-                        "rmAttributeName" : "name",
-                        "children" : [ {
-                          "@type" : "C_COMPLEX_OBJECT",
-                          "rmTypeName" : "DV_CODED_TEXT",
-                          "attributes" : [ {
-                            "@type" : "C_ATTRIBUTE",
-                            "rmAttributeName" : "defining_code",
-                            "children" : [ {
-                              "@type" : "C_TERMINOLOGY_CODE",
-                              "rmTypeName" : "TERMINOLOGY_CODE",
-                              "occurrences" : "1..1",
-                              "terminologyId" : {
-                                "value" : "local"
-                              },
-                              "constraint" : [ "ac0.45" ],
-                              "selectedTerminologies" : [ ]
                             } ]
                           } ],
                           "attributeTuples" : [ ]
@@ -1296,12 +1314,6 @@
             "text" : "*Rhythm(en)",
             "description" : "*Specific conclusion about the rhythm of the pulse or heartbeat, drawn from a combination of the heart rate, pattern and other characteristics observed on examination.(en)"
           },
-          "ac0.16" : {
-            "@type" : "ARCHETYPE_TERM",
-            "text" : "*(Synthesized) (en)",
-            "code" : "ac0.16",
-            "description" : ""
-          },
           "at1023.2" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at1023",
@@ -1312,6 +1324,12 @@
             "@type" : "ARCHETYPE_TERM",
             "text" : "*(Synthesized) (en)",
             "code" : "ac0.45",
+            "description" : ""
+          },
+          "ac0.55" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.55",
             "description" : ""
           }
         },
@@ -1340,12 +1358,6 @@
             "text" : "*Rhythm(en)",
             "description" : "*Specific conclusion about the rhythm of the pulse or heartbeat, drawn from a combination of the heart rate, pattern and other characteristics observed on examination.(en)"
           },
-          "ac0.16" : {
-            "@type" : "ARCHETYPE_TERM",
-            "text" : "*(Synthesized) (en)",
-            "code" : "ac0.16",
-            "description" : ""
-          },
           "at1023.2" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at1023",
@@ -1356,6 +1368,12 @@
             "@type" : "ARCHETYPE_TERM",
             "text" : "*(Synthesized) (en)",
             "code" : "ac0.45",
+            "description" : ""
+          },
+          "ac0.55" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.55",
             "description" : ""
           }
         },
@@ -1384,12 +1402,6 @@
             "text" : "Rhythm",
             "description" : "Specific conclusion about the rhythm of the pulse or heartbeat, drawn from a combination of the heart rate, pattern and other characteristics observed on examination."
           },
-          "ac0.16" : {
-            "@type" : "ARCHETYPE_TERM",
-            "text" : "(Synthesized)",
-            "code" : "ac0.16",
-            "description" : ""
-          },
           "at1023.2" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at1023",
@@ -1400,6 +1412,12 @@
             "@type" : "ARCHETYPE_TERM",
             "text" : "(Synthesized)",
             "code" : "ac0.45",
+            "description" : ""
+          },
+          "ac0.55" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "(Synthesized)",
+            "code" : "ac0.55",
             "description" : ""
           }
         },
@@ -1428,12 +1446,6 @@
             "text" : "Rhythmus",
             "description" : "Spezifische Schlussfolgerung über den Rhythmus der Puls- oder der Herzfrequenz, die sich aus einer Kombination von Herzfrequenz, dem Verlaufsmuster und anderen bei der Untersuchung beobachteten Merkmalen ergibt."
           },
-          "ac0.16" : {
-            "@type" : "ARCHETYPE_TERM",
-            "text" : "*(Synthesized) (en)",
-            "code" : "ac0.16",
-            "description" : ""
-          },
           "at1023.2" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at1023",
@@ -1444,6 +1456,12 @@
             "@type" : "ARCHETYPE_TERM",
             "text" : "*(Synthesized) (en)",
             "code" : "ac0.45",
+            "description" : ""
+          },
+          "ac0.55" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.55",
             "description" : ""
           }
         },
@@ -1472,12 +1490,6 @@
             "text" : "*Rhythm(en)",
             "description" : "*Specific conclusion about the rhythm of the pulse or heartbeat, drawn from a combination of the heart rate, pattern and other characteristics observed on examination.(en)"
           },
-          "ac0.16" : {
-            "@type" : "ARCHETYPE_TERM",
-            "text" : "*(Synthesized) (en)",
-            "code" : "ac0.16",
-            "description" : ""
-          },
           "at1023.2" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at1023",
@@ -1488,6 +1500,12 @@
             "@type" : "ARCHETYPE_TERM",
             "text" : "*(Synthesized) (en)",
             "code" : "ac0.45",
+            "description" : ""
+          },
+          "ac0.55" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.55",
             "description" : ""
           }
         },
@@ -1516,12 +1534,6 @@
             "text" : "Ritmo",
             "description" : "Conclusão específica sobre o ritmo do pulso ou batimento cardíaco, extraído de uma combinação da freqüência cardíaca, padrão e outras características observadas no exame."
           },
-          "ac0.16" : {
-            "@type" : "ARCHETYPE_TERM",
-            "text" : "*(Synthesized) (en)",
-            "code" : "ac0.16",
-            "description" : ""
-          },
           "at1023.2" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at1023",
@@ -1532,6 +1544,12 @@
             "@type" : "ARCHETYPE_TERM",
             "text" : "*(Synthesized) (en)",
             "code" : "ac0.45",
+            "description" : ""
+          },
+          "ac0.55" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.55",
             "description" : ""
           }
         },
@@ -1555,24 +1573,11 @@
             "text" : "Ytterligare kommentar, information om pacemaker etc.",
             "description" : "Ytterligare beskrivning av fynden från puls eller hjärtslag som inte beskrivits i andra fält."
           },
-          "at1030.1" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at1030.1",
-            "text" : "Pacemaker",
-            "description" : "Beskrivning av pulsens eller hjärtslagets karaktär.",
-            "comment" : "Kodning med en terminologi är önskvärd, om det är tillämpligt. Exempelvis *full, trådfin, kraftig, långsamt stigande eller Corrigans puls."
-          },
           "at1023.1" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at1023.1",
             "text" : "Rytm",
             "description" : "Specifik slutsats om pulsens eller hjärtslagens rytm, härledd från en kombination av hjärtfrekvens, mönster och andra egenskaper som observerats vid undersökningen."
-          },
-          "ac0.16" : {
-            "@type" : "ARCHETYPE_TERM",
-            "text" : "*(Synthesized) (en)",
-            "code" : "ac0.16",
-            "description" : ""
           },
           "at1023.2" : {
             "@type" : "ARCHETYPE_TERM",
@@ -1584,6 +1589,12 @@
             "@type" : "ARCHETYPE_TERM",
             "text" : "*(Synthesized) (en)",
             "code" : "ac0.45",
+            "description" : ""
+          },
+          "ac0.55" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.55",
             "description" : ""
           }
         },
@@ -1612,12 +1623,6 @@
             "text" : "Ritmo",
             "description" : "Conclusión específica sobre el ritmo del pulso o latidos, derivado de la combinación de la frecuencia, el patrón, y otras características observadas durante la examinación."
           },
-          "ac0.16" : {
-            "@type" : "ARCHETYPE_TERM",
-            "text" : "*(Synthesized) (en)",
-            "code" : "ac0.16",
-            "description" : ""
-          },
           "at1023.2" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at1023",
@@ -1628,6 +1633,12 @@
             "@type" : "ARCHETYPE_TERM",
             "text" : "*(Synthesized) (en)",
             "code" : "ac0.45",
+            "description" : ""
+          },
+          "ac0.55" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.55",
             "description" : ""
           }
         },
@@ -1656,12 +1667,6 @@
             "text" : "Rytmi",
             "description" : "Nimenomainen johtopäätös pulssin tai sykkeen rytmistä, perustuu sykkeeseen, sykkeen ominaisuuksiin ja muihin tutkimuksessa havaittuihin ominaispiirteisiin."
           },
-          "ac0.16" : {
-            "@type" : "ARCHETYPE_TERM",
-            "text" : "*(Synthesized) (en)",
-            "code" : "ac0.16",
-            "description" : ""
-          },
           "at1023.2" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at1023",
@@ -1672,6 +1677,12 @@
             "@type" : "ARCHETYPE_TERM",
             "text" : "*(Synthesized) (en)",
             "code" : "ac0.45",
+            "description" : ""
+          },
+          "ac0.55" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.55",
             "description" : ""
           }
         },
@@ -1700,12 +1711,6 @@
             "text" : "Rytme",
             "description" : "Spesifik konklusjon om pulsrytme eller hjerteslag, hentet fra en kombinasjon av hjertefrekvens, mønster og andre karakteristika som observeres."
           },
-          "ac0.16" : {
-            "@type" : "ARCHETYPE_TERM",
-            "text" : "*(Synthesized) (en)",
-            "code" : "ac0.16",
-            "description" : ""
-          },
           "at1023.2" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at1023",
@@ -1716,6 +1721,12 @@
             "@type" : "ARCHETYPE_TERM",
             "text" : "*(Synthesized) (en)",
             "code" : "ac0.45",
+            "description" : ""
+          },
+          "ac0.55" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.55",
             "description" : ""
           }
         },
@@ -1744,12 +1755,6 @@
             "text" : "Ritme",
             "description" : "Specifieke conclusies over het ritme van de pols- of hartslag, getrokken uit een combinatie van hartfrequentie, patroon en andere eigenschappen waargenomen bij onderzoek."
           },
-          "ac0.16" : {
-            "@type" : "ARCHETYPE_TERM",
-            "text" : "*(Synthesized) (en)",
-            "code" : "ac0.16",
-            "description" : ""
-          },
           "at1023.2" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at1023",
@@ -1760,6 +1765,12 @@
             "@type" : "ARCHETYPE_TERM",
             "text" : "*(Synthesized) (en)",
             "code" : "ac0.45",
+            "description" : ""
+          },
+          "ac0.55" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.55",
             "description" : ""
           }
         }
@@ -1985,6 +1996,56 @@
         "ac0.45" : {
           "@type" : "VALUE_SET",
           "id" : "ac0.45",
+          "members" : [ "at1058" ]
+        },
+        "ac0.46" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.46",
+          "members" : [ "at1058" ]
+        },
+        "ac0.47" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.47",
+          "members" : [ "at1058" ]
+        },
+        "ac0.48" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.48",
+          "members" : [ "at1058" ]
+        },
+        "ac0.49" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.49",
+          "members" : [ "at1058" ]
+        },
+        "ac0.50" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.50",
+          "members" : [ "at1058" ]
+        },
+        "ac0.51" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.51",
+          "members" : [ "at1058" ]
+        },
+        "ac0.52" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.52",
+          "members" : [ "at1058" ]
+        },
+        "ac0.53" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.53",
+          "members" : [ "at1058" ]
+        },
+        "ac0.54" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.54",
+          "members" : [ "at1058" ]
+        },
+        "ac0.55" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.55",
           "members" : [ "at1058" ]
         }
       }
@@ -4377,7 +4438,7 @@
           "at0000.1" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0000.1",
-            "text" : "1.1 Vänsterkammar-diameter, diastole PLAX (LVEDd PLAX)",
+            "text" : "1.1 Vänsterkammar-diameter, diastole PLAX",
             "description" : "Bilddiagnostiskt resultat som ett enskilt värde eller, genom nästning, en grupp av värden.",
             "comment" : "55431000052104 |vänster kammares innerdiameter i slutdiastole|\n"
           },
