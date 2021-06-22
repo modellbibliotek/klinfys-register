@@ -24,9 +24,9 @@
       "Sign off" : "",
       "Speciality" : "",
       "User roles" : "",
-      "MD5-CAM-1.0.1" : "ac198a702e5344b237cb0151cf91a003",
+      "MD5-CAM-1.0.1" : "e8f72a1fbbebedffef776f4857901513",
       "PARENT:MD5-CAM-1.0.1" : "641B268BE8805CEB8DC21AB82C53AB3F",
-      "sem_ver" : "8.1.0",
+      "sem_ver" : "8.1.1",
       "build_uid" : "56e5e75a-ec2b-4fc9-b84e-c28b8c35b012"
     },
     "details" : {
@@ -3887,7 +3887,7 @@
                         "value" : "local_terms"
                       },
                       "constraint" : [ ],
-                      "selectedTerminologies" : [ "local_terms" ]
+                      "selectedTerminologies" : [ ]
                     } ]
                   } ],
                   "attributeTuples" : [ ]
