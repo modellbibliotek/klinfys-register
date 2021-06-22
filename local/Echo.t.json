@@ -24,10 +24,10 @@
       "Sign off" : "",
       "Speciality" : "",
       "User roles" : "",
-      "MD5-CAM-1.0.1" : "0d099a74d17e481639c078b87207692f",
+      "MD5-CAM-1.0.1" : "a0ff0ce645f72863265153499e6fe584",
       "PARENT:MD5-CAM-1.0.1" : "641B268BE8805CEB8DC21AB82C53AB3F",
-      "sem_ver" : "5.0.1",
-      "build_uid" : ""
+      "sem_ver" : "6.0.0",
+      "build_uid" : "56e5e75a-ec2b-4fc9-b84e-c28b8c35b012"
     },
     "details" : {
       "en" : {
@@ -769,7 +769,7 @@
                               "terminologyId" : {
                                 "value" : "local"
                               },
-                              "constraint" : [ "ac0.61" ],
+                              "constraint" : [ "ac0.69" ],
                               "selectedTerminologies" : [ ]
                             } ]
                           } ],
@@ -1326,10 +1326,10 @@
             "code" : "ac0.45",
             "description" : ""
           },
-          "ac0.61" : {
+          "ac0.69" : {
             "@type" : "ARCHETYPE_TERM",
             "text" : "*(Synthesized) (en)",
-            "code" : "ac0.61",
+            "code" : "ac0.69",
             "description" : ""
           }
         },
@@ -1370,10 +1370,10 @@
             "code" : "ac0.45",
             "description" : ""
           },
-          "ac0.61" : {
+          "ac0.69" : {
             "@type" : "ARCHETYPE_TERM",
             "text" : "*(Synthesized) (en)",
-            "code" : "ac0.61",
+            "code" : "ac0.69",
             "description" : ""
           }
         },
@@ -1414,10 +1414,10 @@
             "code" : "ac0.45",
             "description" : ""
           },
-          "ac0.61" : {
+          "ac0.69" : {
             "@type" : "ARCHETYPE_TERM",
             "text" : "(Synthesized)",
-            "code" : "ac0.61",
+            "code" : "ac0.69",
             "description" : ""
           }
         },
@@ -1458,10 +1458,10 @@
             "code" : "ac0.45",
             "description" : ""
           },
-          "ac0.61" : {
+          "ac0.69" : {
             "@type" : "ARCHETYPE_TERM",
             "text" : "*(Synthesized) (en)",
-            "code" : "ac0.61",
+            "code" : "ac0.69",
             "description" : ""
           }
         },
@@ -1502,10 +1502,10 @@
             "code" : "ac0.45",
             "description" : ""
           },
-          "ac0.61" : {
+          "ac0.69" : {
             "@type" : "ARCHETYPE_TERM",
             "text" : "*(Synthesized) (en)",
-            "code" : "ac0.61",
+            "code" : "ac0.69",
             "description" : ""
           }
         },
@@ -1546,10 +1546,10 @@
             "code" : "ac0.45",
             "description" : ""
           },
-          "ac0.61" : {
+          "ac0.69" : {
             "@type" : "ARCHETYPE_TERM",
             "text" : "*(Synthesized) (en)",
-            "code" : "ac0.61",
+            "code" : "ac0.69",
             "description" : ""
           }
         },
@@ -1591,10 +1591,10 @@
             "code" : "ac0.45",
             "description" : ""
           },
-          "ac0.61" : {
+          "ac0.69" : {
             "@type" : "ARCHETYPE_TERM",
             "text" : "*(Synthesized) (en)",
-            "code" : "ac0.61",
+            "code" : "ac0.69",
             "description" : ""
           }
         },
@@ -1635,10 +1635,10 @@
             "code" : "ac0.45",
             "description" : ""
           },
-          "ac0.61" : {
+          "ac0.69" : {
             "@type" : "ARCHETYPE_TERM",
             "text" : "*(Synthesized) (en)",
-            "code" : "ac0.61",
+            "code" : "ac0.69",
             "description" : ""
           }
         },
@@ -1679,10 +1679,10 @@
             "code" : "ac0.45",
             "description" : ""
           },
-          "ac0.61" : {
+          "ac0.69" : {
             "@type" : "ARCHETYPE_TERM",
             "text" : "*(Synthesized) (en)",
-            "code" : "ac0.61",
+            "code" : "ac0.69",
             "description" : ""
           }
         },
@@ -1723,10 +1723,10 @@
             "code" : "ac0.45",
             "description" : ""
           },
-          "ac0.61" : {
+          "ac0.69" : {
             "@type" : "ARCHETYPE_TERM",
             "text" : "*(Synthesized) (en)",
-            "code" : "ac0.61",
+            "code" : "ac0.69",
             "description" : ""
           }
         },
@@ -1767,10 +1767,10 @@
             "code" : "ac0.45",
             "description" : ""
           },
-          "ac0.61" : {
+          "ac0.69" : {
             "@type" : "ARCHETYPE_TERM",
             "text" : "*(Synthesized) (en)",
-            "code" : "ac0.61",
+            "code" : "ac0.69",
             "description" : ""
           }
         }
@@ -2076,6 +2076,46 @@
         "ac0.61" : {
           "@type" : "VALUE_SET",
           "id" : "ac0.61",
+          "members" : [ "at1058" ]
+        },
+        "ac0.62" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.62",
+          "members" : [ "at1058" ]
+        },
+        "ac0.63" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.63",
+          "members" : [ "at1058" ]
+        },
+        "ac0.64" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.64",
+          "members" : [ "at1058" ]
+        },
+        "ac0.65" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.65",
+          "members" : [ "at1058" ]
+        },
+        "ac0.66" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.66",
+          "members" : [ "at1058" ]
+        },
+        "ac0.67" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.67",
+          "members" : [ "at1058" ]
+        },
+        "ac0.68" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.68",
+          "members" : [ "at1058" ]
+        },
+        "ac0.69" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.69",
           "members" : [ "at1058" ]
         }
       }
@@ -2661,7 +2701,8 @@
       "references" : { },
       "conversionDetails" : { },
       "otherDetails" : {
-        "PARENT:MD5-CAM-1.0.1" : "847AC71CC14B84C9B8301B05BB371A38"
+        "PARENT:MD5-CAM-1.0.1" : "847AC71CC14B84C9B8301B05BB371A38",
+        "ip_acknowledgements" : "This artefact includes content from SNOMED Clinical Terms® (SNOMED CT®) which is copyrighted material of the International Health Terminology Standards Development Organisation (IHTSDO). Where an implementation of this artefact makes use of SNOMED CT content, the implementer must have the appropriate SNOMED CT Affiliate license - for more information contact http://www.snomed.org/snomed-ct/get-snomedct or info@snomed.org."
       },
       "details" : {
         "de" : {
@@ -2771,14 +2812,40 @@
                         "rmAttributeName" : "value",
                         "children" : [ {
                           "@type" : "C_COMPLEX_OBJECT",
-                          "rmTypeName" : "DV_TEXT",
+                          "rmTypeName" : "DV_CODED_TEXT",
+                          "occurrences" : "1..1",
                           "attributes" : [ {
                             "@type" : "C_ATTRIBUTE",
-                            "rmAttributeName" : "value",
-                            "existence" : "0..1",
+                            "rmAttributeName" : "defining_code",
                             "children" : [ {
-                              "@type" : "C_STRING",
-                              "constraint" : [ "TTE-Transthorakale Echokardiographie" ]
+                              "@type" : "C_TERMINOLOGY_CODE",
+                              "rmTypeName" : "TERMINOLOGY_CODE",
+                              "terminologyId" : {
+                                "value" : "http://snomed.info/sct/"
+                              },
+                              "constraint" : [ ],
+                              "selectedTerminologies" : [ "http://snomed.info/sct/" ],
+                              "includedExternalTerminologyCodes" : [ {
+                                "terminologyId" : "http://snomed.info/sct/",
+                                "code" : "40701008",
+                                "value" : "ekokardiografi"
+                              }, {
+                                "terminologyId" : "http://snomed.info/sct/",
+                                "code" : "433236007",
+                                "value" : "transtorakal ekokardiografi"
+                              }, {
+                                "terminologyId" : "http://snomed.info/sct/",
+                                "code" : "105376000",
+                                "value" : "transesofageal ekokardiografi"
+                              }, {
+                                "terminologyId" : "http://snomed.info/sct/",
+                                "code" : "241620005",
+                                "value" : "kardiell magnetresonanstomografi"
+                              }, {
+                                "terminologyId" : "http://snomed.info/sct/",
+                                "code" : "241547009",
+                                "value" : "datortomografi av hjärtat"
+                              } ]
                             } ]
                           } ],
                           "attributeTuples" : [ ]
@@ -2795,14 +2862,65 @@
                         "rmAttributeName" : "value",
                         "children" : [ {
                           "@type" : "C_COMPLEX_OBJECT",
-                          "rmTypeName" : "DV_TEXT",
+                          "rmTypeName" : "DV_CODED_TEXT",
+                          "occurrences" : "1..1",
                           "attributes" : [ {
                             "@type" : "C_ATTRIBUTE",
-                            "rmAttributeName" : "value",
-                            "existence" : "0..1",
+                            "rmAttributeName" : "defining_code",
                             "children" : [ {
-                              "@type" : "C_STRING",
-                              "constraint" : [ "Ultraschall" ]
+                              "@type" : "C_TERMINOLOGY_CODE",
+                              "rmTypeName" : "TERMINOLOGY_CODE",
+                              "terminologyId" : {
+                                "value" : "http://snomed.info/sct/"
+                              },
+                              "constraint" : [ ],
+                              "selectedTerminologies" : [ "http://snomed.info/sct/" ],
+                              "includedExternalTerminologyCodes" : [ {
+                                "terminologyId" : "http://snomed.info/sct/",
+                                "code" : "40701008",
+                                "value" : "ultraljudsundersökning, aktivitet"
+                              }, {
+                                "terminologyId" : "http://snomed.info/sct/",
+                                "code" : "312250003",
+                                "value" : "magnetresonanstomografi, aktivitet"
+                              }, {
+                                "terminologyId" : "http://snomed.info/sct/",
+                                "code" : "312251004",
+                                "value" : "datortomografi, aktivitet"
+                              } ]
+                            } ]
+                          } ],
+                          "attributeTuples" : [ ]
+                        } ]
+                      } ],
+                      "attributeTuples" : [ ]
+                    }, {
+                      "@type" : "C_COMPLEX_OBJECT",
+                      "rmTypeName" : "ELEMENT",
+                      "nodeId" : "at0055.1",
+                      "attributes" : [ {
+                        "@type" : "C_ATTRIBUTE",
+                        "rmAttributeName" : "value",
+                        "children" : [ {
+                          "@type" : "C_COMPLEX_OBJECT",
+                          "rmTypeName" : "DV_CODED_TEXT",
+                          "occurrences" : "1..1",
+                          "attributes" : [ {
+                            "@type" : "C_ATTRIBUTE",
+                            "rmAttributeName" : "defining_code",
+                            "children" : [ {
+                              "@type" : "C_TERMINOLOGY_CODE",
+                              "rmTypeName" : "TERMINOLOGY_CODE",
+                              "terminologyId" : {
+                                "value" : "http://snomed.info/sct/"
+                              },
+                              "constraint" : [ ],
+                              "selectedTerminologies" : [ "http://snomed.info/sct/" ],
+                              "includedExternalTerminologyCodes" : [ {
+                                "terminologyId" : "http://snomed.info/sct/",
+                                "code" : "80891009",
+                                "value" : "hjärta, struktur"
+                              } ]
                             } ]
                           } ],
                           "attributeTuples" : [ ]
@@ -3034,7 +3152,18 @@
       },
       "termBindings" : { },
       "terminologyExtracts" : { },
-      "valueSets" : { }
+      "valueSets" : {
+        "ac0.3" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.3",
+          "members" : [ "ac0.2" ]
+        },
+        "ac0.4" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.4",
+          "members" : [ "ac0.2" ]
+        }
+      }
     },
     "adlVersion" : "1.4",
     "buildUid" : "6c348d26-896c-47ac-a556-7b57ddfd1d4e",
