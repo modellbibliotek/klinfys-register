@@ -62,7 +62,7 @@ As well as a single result value, the archetype also allows for a specific anato
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"57dabe0a49fe4f07f8ee625eda43c076">
+		["MD5-CAM-1.0.1"] = <"ee652b5b5dc5b10e609a6271f3c9906f">
 		["build_uid"] = <"91df90cd-392d-4bc2-862f-a9074fe920eb">
 		["ip_acknowledgements"] = <"This artefact includes content from SNOMED Clinical Terms® (SNOMED CT®) which is copyrighted material of the International Health Terminology Standards Development Organisation (IHTSDO). Where an implementation of this artefact makes use of SNOMED CT content, the implementer must have the appropriate SNOMED CT Affiliate license - for more information contact http://www.snomed.org/snomed-ct/get-snomedct or info@snomed.org.">
 		["revision"] = <"0.0.1-alpha">
@@ -73,7 +73,7 @@ definition
 		items cardinality matches {1..*; unordered} matches {
 			CLUSTER[at0001] occurrences matches {0..1} matches {    -- Imaging result
 				items cardinality matches {1..*; unordered} matches {
-					ELEMENT[at0015] occurrences matches {0..1} matches {    -- Result name
+					ELEMENT[at0015] occurrences matches {0..*} matches {    -- Result name
 						value matches {
 							DV_TEXT matches {*}
 						}
