@@ -32,3 +32,15 @@ Make sure you are logged in to Archetype designer using GitHub first:
     * EHR Server password: *the password used in the course - see invitation email or ask colleague*
 
 ![image](https://user-images.githubusercontent.com/1034001/121383318-a69b7900-c947-11eb-8962-0ab98b3ea384.png)
+
+## Test patients available in EHRScape's SFMI domain
+
+To list (fake) test patients and some demographic basic facts the following query can be run in https://sandbox.better.care/studio/aql-builder
+```
+SELECT e/ehr_id/value AS ehr_id,
+       e/ehr_status/Subject/external_ref/id/value AS patient_id,
+       e/ehr_status/other_details/items[at0001]/value/value as sex,
+       e/ehr_status/other_details/items[at0002]/value/value as date_of_birth
+FROM EHR e
+```
+An example result file (.csv) is provided in this directory.
