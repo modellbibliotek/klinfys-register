@@ -24,9 +24,9 @@
       "Sign off" : "",
       "Speciality" : "",
       "User roles" : "",
-      "MD5-CAM-1.0.1" : "beb2c9c3f4f0be91e3ed404748d1f523",
+      "MD5-CAM-1.0.1" : "8ff6471ca505dd0e53a2277b441bc300",
       "PARENT:MD5-CAM-1.0.1" : "641B268BE8805CEB8DC21AB82C53AB3F",
-      "sem_ver" : "2.0.0",
+      "sem_ver" : "2.0.1",
       "build_uid" : ""
     },
     "details" : {
@@ -1114,7 +1114,29 @@
                       "@type" : "C_COMPLEX_OBJECT",
                       "rmTypeName" : "ELEMENT",
                       "nodeId" : "at1030.1",
-                      "attributes" : [ ],
+                      "attributes" : [ {
+                        "@type" : "C_ATTRIBUTE",
+                        "rmAttributeName" : "value",
+                        "children" : [ {
+                          "@type" : "C_COMPLEX_OBJECT",
+                          "rmTypeName" : "DV_CODED_TEXT",
+                          "occurrences" : "1..1",
+                          "attributes" : [ {
+                            "@type" : "C_ATTRIBUTE",
+                            "rmAttributeName" : "defining_code",
+                            "children" : [ {
+                              "@type" : "C_TERMINOLOGY_CODE",
+                              "rmTypeName" : "TERMINOLOGY_CODE",
+                              "terminologyId" : {
+                                "value" : "local_set"
+                              },
+                              "constraint" : [ ],
+                              "selectedTerminologies" : [ "local_set" ]
+                            } ]
+                          } ],
+                          "attributeTuples" : [ ]
+                        } ]
+                      } ],
                       "attributeTuples" : [ ]
                     }, {
                       "@type" : "C_COMPLEX_OBJECT",
@@ -1122,6 +1144,34 @@
                       "occurrences" : "0..0",
                       "nodeId" : "at1022.1",
                       "attributes" : [ ],
+                      "attributeTuples" : [ ]
+                    }, {
+                      "@type" : "C_COMPLEX_OBJECT",
+                      "rmTypeName" : "ELEMENT",
+                      "nodeId" : "at1023.1",
+                      "attributes" : [ {
+                        "@type" : "C_ATTRIBUTE",
+                        "rmAttributeName" : "name",
+                        "children" : [ {
+                          "@type" : "C_COMPLEX_OBJECT",
+                          "rmTypeName" : "DV_CODED_TEXT",
+                          "attributes" : [ {
+                            "@type" : "C_ATTRIBUTE",
+                            "rmAttributeName" : "defining_code",
+                            "children" : [ {
+                              "@type" : "C_TERMINOLOGY_CODE",
+                              "rmTypeName" : "TERMINOLOGY_CODE",
+                              "occurrences" : "1..1",
+                              "terminologyId" : {
+                                "value" : "local"
+                              },
+                              "constraint" : [ "ac0.16" ],
+                              "selectedTerminologies" : [ ]
+                            } ]
+                          } ],
+                          "attributeTuples" : [ ]
+                        } ]
+                      } ],
                       "attributeTuples" : [ ]
                     }, {
                       "@type" : "C_COMPLEX_OBJECT",
@@ -1671,6 +1721,18 @@
             "code" : "at1059.1",
             "text" : "Weitere Informationen zu Schrittmacher",
             "description" : "*Additional narrative about the pulse or heart beat findings not captured in other fields.(en)"
+          },
+          "at1023.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at1023.1",
+            "text" : "*Rhythm(en)",
+            "description" : "*Specific conclusion about the rhythm of the pulse or heartbeat, drawn from a combination of the heart rate, pattern and other characteristics observed on examination.(en)"
+          },
+          "ac0.16" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.16",
+            "description" : ""
           }
         },
         "es-co" : {
@@ -1697,6 +1759,18 @@
             "code" : "at1059.1",
             "text" : "Weitere Informationen zu Schrittmacher",
             "description" : "*Additional narrative about the pulse or heart beat findings not captured in other fields.(en)"
+          },
+          "at1023.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at1023.1",
+            "text" : "*Rhythm(en)",
+            "description" : "*Specific conclusion about the rhythm of the pulse or heartbeat, drawn from a combination of the heart rate, pattern and other characteristics observed on examination.(en)"
+          },
+          "ac0.16" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.16",
+            "description" : ""
           }
         },
         "en" : {
@@ -1724,6 +1798,18 @@
             "code" : "at1059.1",
             "text" : "Weitere Informationen zu Schrittmacher",
             "description" : "Additional narrative about the pulse or heart beat findings not captured in other fields."
+          },
+          "at1023.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at1023.1",
+            "text" : "Rhythm",
+            "description" : "Specific conclusion about the rhythm of the pulse or heartbeat, drawn from a combination of the heart rate, pattern and other characteristics observed on examination."
+          },
+          "ac0.16" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "(Synthesized)",
+            "code" : "ac0.16",
+            "description" : ""
           }
         },
         "de" : {
@@ -1751,6 +1837,18 @@
             "code" : "at1059.1",
             "text" : "Weitere Informationen zu Schrittmacher",
             "description" : "Zusätzliche Informationen über die Puls- oder die Herzfrequenz, die in anderen Bereichen nicht erfasst wurden."
+          },
+          "at1023.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at1023.1",
+            "text" : "Rhythmus",
+            "description" : "Spezifische Schlussfolgerung über den Rhythmus der Puls- oder der Herzfrequenz, die sich aus einer Kombination von Herzfrequenz, dem Verlaufsmuster und anderen bei der Untersuchung beobachteten Merkmalen ergibt."
+          },
+          "ac0.16" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.16",
+            "description" : ""
           }
         },
         "ru" : {
@@ -1778,6 +1876,18 @@
             "code" : "at1059.1",
             "text" : "Weitere Informationen zu Schrittmacher",
             "description" : "*Additional narrative about the pulse or heart beat findings not captured in other fields.(en)"
+          },
+          "at1023.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at1023.1",
+            "text" : "*Rhythm(en)",
+            "description" : "*Specific conclusion about the rhythm of the pulse or heartbeat, drawn from a combination of the heart rate, pattern and other characteristics observed on examination.(en)"
+          },
+          "ac0.16" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.16",
+            "description" : ""
           }
         },
         "pt-br" : {
@@ -1805,6 +1915,18 @@
             "code" : "at1059.1",
             "text" : "Weitere Informationen zu Schrittmacher",
             "description" : "Narrativa adicional sobre o pulso ou batimento cardíaco achados não capturados em outros campos."
+          },
+          "at1023.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at1023.1",
+            "text" : "Ritmo",
+            "description" : "Conclusão específica sobre o ritmo do pulso ou batimento cardíaco, extraído de uma combinação da freqüência cardíaca, padrão e outras características observadas no exame."
+          },
+          "ac0.16" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.16",
+            "description" : ""
           }
         },
         "sv" : {
@@ -1840,6 +1962,18 @@
             "text" : "Pacemaker",
             "description" : "Beskrivning av pulsens eller hjärtslagets karaktär.",
             "comment" : "Kodning med en terminologi är önskvärd, om det är tillämpligt. Exempelvis *full, trådfin, kraftig, långsamt stigande eller Corrigans puls."
+          },
+          "at1023.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at1023.1",
+            "text" : "Rytm",
+            "description" : "Specifik slutsats om pulsens eller hjärtslagens rytm, härledd från en kombination av hjärtfrekvens, mönster och andra egenskaper som observerats vid undersökningen."
+          },
+          "ac0.16" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.16",
+            "description" : ""
           }
         },
         "es" : {
@@ -1867,6 +2001,18 @@
             "code" : "at1059.1",
             "text" : "Weitere Informationen zu Schrittmacher",
             "description" : "Información narrativa adicional sobre hallazgos del pulso o latidos que no fueron registrados en otros campos."
+          },
+          "at1023.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at1023.1",
+            "text" : "Ritmo",
+            "description" : "Conclusión específica sobre el ritmo del pulso o latidos, derivado de la combinación de la frecuencia, el patrón, y otras características observadas durante la examinación."
+          },
+          "ac0.16" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.16",
+            "description" : ""
           }
         },
         "fi" : {
@@ -1894,6 +2040,18 @@
             "code" : "at1059.1",
             "text" : "Weitere Informationen zu Schrittmacher",
             "description" : "Pulssi- tai sykelöydösten kertomusmuodossa olevat lisätiedot, joita ei voida ilmoittaa muissa kentissä."
+          },
+          "at1023.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at1023.1",
+            "text" : "Rytmi",
+            "description" : "Nimenomainen johtopäätös pulssin tai sykkeen rytmistä, perustuu sykkeeseen, sykkeen ominaisuuksiin ja muihin tutkimuksessa havaittuihin ominaispiirteisiin."
+          },
+          "ac0.16" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.16",
+            "description" : ""
           }
         },
         "nb" : {
@@ -1921,6 +2079,18 @@
             "code" : "at1059.1",
             "text" : "Weitere Informationen zu Schrittmacher",
             "description" : "Ytterligere fritekst om målingen som ikke er dekket av andre felt."
+          },
+          "at1023.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at1023.1",
+            "text" : "Rytme",
+            "description" : "Spesifik konklusjon om pulsrytme eller hjerteslag, hentet fra en kombinasjon av hjertefrekvens, mønster og andre karakteristika som observeres."
+          },
+          "ac0.16" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.16",
+            "description" : ""
           }
         },
         "nl" : {
@@ -1948,12 +2118,105 @@
             "code" : "at1059.1",
             "text" : "Weitere Informationen zu Schrittmacher",
             "description" : "Extra beschrijving van pols- of hartfrequentie bevindingen die niet passen binnen andere velden."
+          },
+          "at1023.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at1023.1",
+            "text" : "Ritme",
+            "description" : "Specifieke conclusies over het ritme van de pols- of hartslag, getrokken uit een combinatie van hartfrequentie, patroon en andere eigenschappen waargenomen bij onderzoek."
+          },
+          "ac0.16" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.16",
+            "description" : ""
           }
         }
       },
       "termBindings" : { },
       "terminologyExtracts" : { },
-      "valueSets" : { }
+      "valueSets" : {
+        "ac0.1" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.1",
+          "members" : [ "at1058" ]
+        },
+        "ac0.2" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.2",
+          "members" : [ "at1058" ]
+        },
+        "ac0.3" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.3",
+          "members" : [ "at1058" ]
+        },
+        "ac0.4" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.4",
+          "members" : [ "at1058" ]
+        },
+        "ac0.5" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.5",
+          "members" : [ "at1057", "at1058" ]
+        },
+        "ac0.6" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.6",
+          "members" : [ "at1057", "at1058" ]
+        },
+        "ac0.7" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.7",
+          "members" : [ "at1058" ]
+        },
+        "ac0.8" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.8",
+          "members" : [ "at1058" ]
+        },
+        "ac0.9" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.9",
+          "members" : [ "at1057", "at1058" ]
+        },
+        "ac0.10" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.10",
+          "members" : [ "at1057", "at1058" ]
+        },
+        "ac0.11" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.11",
+          "members" : [ "at1057", "at1058" ]
+        },
+        "ac0.12" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.12",
+          "members" : [ "at1057", "at1058" ]
+        },
+        "ac0.13" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.13",
+          "members" : [ "at1058" ]
+        },
+        "ac0.14" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.14",
+          "members" : [ "at1058" ]
+        },
+        "ac0.15" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.15",
+          "members" : [ "at1058" ]
+        },
+        "ac0.16" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.16",
+          "members" : [ "at1058" ]
+        }
+      }
     },
     "adlVersion" : "1.4",
     "buildUid" : "faf59c32-a8b5-4369-b7f0-578b834271d5",
@@ -3411,7 +3674,7 @@
       "references" : { },
       "conversionDetails" : { },
       "otherDetails" : {
-        "PARENT:MD5-CAM-1.0.1" : "0461cc0417ec17c2820eccf6616e2a8c"
+        "PARENT:MD5-CAM-1.0.1" : "57dabe0a49fe4f07f8ee625eda43c076"
       },
       "details" : {
         "de" : {
@@ -3531,7 +3794,7 @@
             }, {
               "@type" : "C_ARCHETYPE_ROOT",
               "rmTypeName" : "CLUSTER",
-              "occurrences" : "0..1",
+              "occurrences" : "0..*",
               "nodeId" : "at0012.1",
               "attributes" : [ ],
               "attributeTuples" : [ ],
@@ -3674,7 +3937,7 @@
       "references" : { },
       "conversionDetails" : { },
       "otherDetails" : {
-        "PARENT:MD5-CAM-1.0.1" : "0461cc0417ec17c2820eccf6616e2a8c"
+        "PARENT:MD5-CAM-1.0.1" : "57dabe0a49fe4f07f8ee625eda43c076"
       },
       "details" : {
         "de" : {
@@ -3743,33 +4006,6 @@
             "@type" : "C_ATTRIBUTE",
             "rmAttributeName" : "items",
             "children" : [ {
-              "@type" : "C_COMPLEX_OBJECT",
-              "rmTypeName" : "ELEMENT",
-              "nodeId" : "at0015.1",
-              "attributes" : [ {
-                "@type" : "C_ATTRIBUTE",
-                "rmAttributeName" : "value",
-                "children" : [ {
-                  "@type" : "C_COMPLEX_OBJECT",
-                  "rmTypeName" : "DV_TEXT",
-                  "defaultValue" : {
-                    "defining_code" : {
-                      "terminology_id" : {
-                        "value" : "http://snomed.info/sct/",
-                        "@type" : "TERMINOLOGY_ID"
-                      },
-                      "code_string" : "250908004",
-                      "@type" : "CODE_PHRASE"
-                    },
-                    "value" : "",
-                    "@type" : "DV_CODED_TEXT"
-                  },
-                  "attributes" : [ ],
-                  "attributeTuples" : [ ]
-                } ]
-              } ],
-              "attributeTuples" : [ ]
-            }, {
               "@type" : "C_COMPLEX_OBJECT",
               "rmTypeName" : "ELEMENT",
               "nodeId" : "at0002.1",
@@ -3895,7 +4131,7 @@
           "at0000.1" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0000.1",
-            "text" : "FEL!! - Aortahastighet (AoV vmax)",
+            "text" : "TY Durchmesser Aortenwurzel (diastolisch) (AoW)",
             "description" : "Bilddiagnostiskt resultat som ett enskilt värde eller, genom nästning, en grupp av värden."
           }
         }
@@ -3956,7 +4192,7 @@
       "references" : { },
       "conversionDetails" : { },
       "otherDetails" : {
-        "PARENT:MD5-CAM-1.0.1" : "0461cc0417ec17c2820eccf6616e2a8c"
+        "PARENT:MD5-CAM-1.0.1" : "57dabe0a49fe4f07f8ee625eda43c076"
       },
       "details" : {
         "de" : {
@@ -4152,7 +4388,7 @@
             "code" : "at0000.1",
             "text" : "Vänster förmak, sluttsystole, diameter",
             "description" : "Bilddiagnostiskt resultat som ett enskilt värde eller, genom nästning, en grupp av värden.",
-            "comment" : "\n"
+            "comment" : "399235004 |vänster förmaks systoliska volym| \n"
           }
         }
       },
@@ -4212,7 +4448,7 @@
       "references" : { },
       "conversionDetails" : { },
       "otherDetails" : {
-        "PARENT:MD5-CAM-1.0.1" : "0461cc0417ec17c2820eccf6616e2a8c"
+        "PARENT:MD5-CAM-1.0.1" : "57dabe0a49fe4f07f8ee625eda43c076"
       },
       "details" : {
         "de" : {
@@ -4281,51 +4517,6 @@
             "@type" : "C_ATTRIBUTE",
             "rmAttributeName" : "items",
             "children" : [ {
-              "@type" : "C_COMPLEX_OBJECT",
-              "rmTypeName" : "ELEMENT",
-              "nodeId" : "at0015.1",
-              "attributes" : [ {
-                "@type" : "C_ATTRIBUTE",
-                "rmAttributeName" : "value",
-                "children" : [ {
-                  "@type" : "C_COMPLEX_OBJECT",
-                  "rmTypeName" : "DV_CODED_TEXT",
-                  "occurrences" : "1..1",
-                  "defaultValue" : {
-                    "defining_code" : {
-                      "terminology_id" : {
-                        "value" : "http://snomed.info/sct/",
-                        "@type" : "TERMINOLOGY_ID"
-                      },
-                      "code_string" : "55441000052105",
-                      "@type" : "CODE_PHRASE"
-                    },
-                    "value" : "interventrikulära septums slutdiastoliska tjocklek",
-                    "@type" : "DV_CODED_TEXT"
-                  },
-                  "attributes" : [ {
-                    "@type" : "C_ATTRIBUTE",
-                    "rmAttributeName" : "defining_code",
-                    "children" : [ {
-                      "@type" : "C_TERMINOLOGY_CODE",
-                      "rmTypeName" : "TERMINOLOGY_CODE",
-                      "terminologyId" : {
-                        "value" : "http://snomed.info/sct/"
-                      },
-                      "constraint" : [ ],
-                      "selectedTerminologies" : [ "http://snomed.info/sct/" ],
-                      "includedExternalTerminologyCodes" : [ {
-                        "terminologyId" : "http://snomed.info/sct/",
-                        "code" : "55441000052105",
-                        "value" : "interventrikulära septums slutdiastoliska tjocklek"
-                      } ]
-                    } ]
-                  } ],
-                  "attributeTuples" : [ ]
-                } ]
-              } ],
-              "attributeTuples" : [ ]
-            }, {
               "@type" : "C_COMPLEX_OBJECT",
               "rmTypeName" : "ELEMENT",
               "nodeId" : "at0002.1",
@@ -4451,8 +4642,9 @@
           "at0000.1" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0000.1",
-            "text" : "Septumtjocklek, diastole PLAX (IVSd PLAX)",
-            "description" : "Bilddiagnostiskt resultat som ett enskilt värde eller, genom nästning, en grupp av värden."
+            "text" : "1.4 Septumtjocklek, diastole PLAX (IVSd PLAX)",
+            "description" : "Bilddiagnostiskt resultat som ett enskilt värde eller, genom nästning, en grupp av värden.",
+            "comment" : "55441000052105 |interventrikulära septums slutdiastoliska tjocklek|"
           }
         }
       },
@@ -4512,7 +4704,7 @@
       "references" : { },
       "conversionDetails" : { },
       "otherDetails" : {
-        "PARENT:MD5-CAM-1.0.1" : "0461cc0417ec17c2820eccf6616e2a8c"
+        "PARENT:MD5-CAM-1.0.1" : "57dabe0a49fe4f07f8ee625eda43c076"
       },
       "details" : {
         "de" : {
@@ -4768,7 +4960,7 @@
       "references" : { },
       "conversionDetails" : { },
       "otherDetails" : {
-        "PARENT:MD5-CAM-1.0.1" : "0461cc0417ec17c2820eccf6616e2a8c"
+        "PARENT:MD5-CAM-1.0.1" : "57dabe0a49fe4f07f8ee625eda43c076"
       },
       "details" : {
         "de" : {
@@ -5023,7 +5215,7 @@
       "references" : { },
       "conversionDetails" : { },
       "otherDetails" : {
-        "PARENT:MD5-CAM-1.0.1" : "0461cc0417ec17c2820eccf6616e2a8c"
+        "PARENT:MD5-CAM-1.0.1" : "57dabe0a49fe4f07f8ee625eda43c076"
       },
       "details" : {
         "de" : {
@@ -5278,7 +5470,7 @@
       "references" : { },
       "conversionDetails" : { },
       "otherDetails" : {
-        "PARENT:MD5-CAM-1.0.1" : "0461cc0417ec17c2820eccf6616e2a8c"
+        "PARENT:MD5-CAM-1.0.1" : "57dabe0a49fe4f07f8ee625eda43c076"
       },
       "details" : {
         "de" : {
@@ -5613,7 +5805,7 @@
       "references" : { },
       "conversionDetails" : { },
       "otherDetails" : {
-        "PARENT:MD5-CAM-1.0.1" : "0461cc0417ec17c2820eccf6616e2a8c"
+        "PARENT:MD5-CAM-1.0.1" : "57dabe0a49fe4f07f8ee625eda43c076"
       },
       "details" : {
         "de" : {
@@ -5684,51 +5876,6 @@
             "children" : [ {
               "@type" : "C_COMPLEX_OBJECT",
               "rmTypeName" : "ELEMENT",
-              "nodeId" : "at0015.1",
-              "attributes" : [ {
-                "@type" : "C_ATTRIBUTE",
-                "rmAttributeName" : "value",
-                "children" : [ {
-                  "@type" : "C_COMPLEX_OBJECT",
-                  "rmTypeName" : "DV_CODED_TEXT",
-                  "occurrences" : "1..1",
-                  "defaultValue" : {
-                    "defining_code" : {
-                      "terminology_id" : {
-                        "value" : "http://snomed.info/sct/",
-                        "@type" : "TERMINOLOGY_ID"
-                      },
-                      "code_string" : "250908004",
-                      "@type" : "CODE_PHRASE"
-                    },
-                    "value" : "vänster kammares ejektionsfraktion",
-                    "@type" : "DV_CODED_TEXT"
-                  },
-                  "attributes" : [ {
-                    "@type" : "C_ATTRIBUTE",
-                    "rmAttributeName" : "defining_code",
-                    "children" : [ {
-                      "@type" : "C_TERMINOLOGY_CODE",
-                      "rmTypeName" : "TERMINOLOGY_CODE",
-                      "terminologyId" : {
-                        "value" : "http://snomed.info/sct/"
-                      },
-                      "constraint" : [ ],
-                      "selectedTerminologies" : [ "http://snomed.info/sct/" ],
-                      "includedExternalTerminologyCodes" : [ {
-                        "terminologyId" : "http://snomed.info/sct/",
-                        "code" : "250908004",
-                        "value" : "vänster kammares ejektionsfraktion"
-                      } ]
-                    } ]
-                  } ],
-                  "attributeTuples" : [ ]
-                } ]
-              } ],
-              "attributeTuples" : [ ]
-            }, {
-              "@type" : "C_COMPLEX_OBJECT",
-              "rmTypeName" : "ELEMENT",
               "nodeId" : "at0002.1",
               "attributes" : [ {
                 "@type" : "C_ATTRIBUTE",
@@ -5737,20 +5884,8 @@
                 "children" : [ {
                   "@type" : "C_COMPLEX_OBJECT",
                   "rmTypeName" : "DV_QUANTITY",
-                  "occurrences" : "1..1",
-                  "attributes" : [ {
-                    "@type" : "C_ATTRIBUTE",
-                    "rmAttributeName" : "property",
-                    "children" : [ {
-                      "@type" : "C_TERMINOLOGY_CODE",
-                      "rmTypeName" : "TERMINOLOGY_CODE",
-                      "occurrences" : "1..1",
-                      "terminologyId" : {
-                        "value" : "openehr"
-                      },
-                      "constraint" : [ "507" ]
-                    } ]
-                  } ],
+                  "occurrences" : "0..1",
+                  "attributes" : [ ],
                   "attributeTuples" : [ {
                     "@type" : "C_ATTRIBUTE_TUPLE",
                     "members" : [ {
@@ -5761,37 +5896,15 @@
                       "@type" : "C_ATTRIBUTE",
                       "rmAttributeName" : "magnitude",
                       "children" : [ ]
-                    }, {
-                      "@type" : "C_ATTRIBUTE",
-                      "rmAttributeName" : "precision",
-                      "children" : [ ]
                     } ],
                     "tuples" : [ {
                       "@type" : "C_PRIMITIVE_TUPLE",
                       "members" : [ {
                         "@type" : "C_STRING",
-                        "rmTypeName" : "STRING",
                         "constraint" : [ "%" ]
                       }, {
                         "@type" : "C_REAL",
-                        "rmTypeName" : "REAL",
-                        "constraint" : [ {
-                          "lowerIncluded" : false,
-                          "upperIncluded" : false,
-                          "lowerUnbounded" : true,
-                          "upperUnbounded" : true
-                        } ]
-                      }, {
-                        "@type" : "C_INTEGER",
-                        "rmTypeName" : "INTEGER",
-                        "constraint" : [ {
-                          "lower" : 0,
-                          "upper" : 0,
-                          "lowerIncluded" : true,
-                          "upperIncluded" : true,
-                          "lowerUnbounded" : false,
-                          "upperUnbounded" : false
-                        } ]
+                        "constraint" : [ ]
                       } ]
                     } ]
                   } ]
@@ -5985,7 +6098,7 @@
       "references" : { },
       "conversionDetails" : { },
       "otherDetails" : {
-        "PARENT:MD5-CAM-1.0.1" : "0461cc0417ec17c2820eccf6616e2a8c"
+        "PARENT:MD5-CAM-1.0.1" : "57dabe0a49fe4f07f8ee625eda43c076"
       },
       "details" : {
         "de" : {
@@ -6220,7 +6333,7 @@
       "references" : { },
       "conversionDetails" : { },
       "otherDetails" : {
-        "PARENT:MD5-CAM-1.0.1" : "0461cc0417ec17c2820eccf6616e2a8c"
+        "PARENT:MD5-CAM-1.0.1" : "57dabe0a49fe4f07f8ee625eda43c076"
       },
       "details" : {
         "de" : {
@@ -6475,7 +6588,7 @@
       "references" : { },
       "conversionDetails" : { },
       "otherDetails" : {
-        "PARENT:MD5-CAM-1.0.1" : "0461cc0417ec17c2820eccf6616e2a8c"
+        "PARENT:MD5-CAM-1.0.1" : "57dabe0a49fe4f07f8ee625eda43c076"
       },
       "details" : {
         "de" : {
@@ -6730,7 +6843,7 @@
       "references" : { },
       "conversionDetails" : { },
       "otherDetails" : {
-        "PARENT:MD5-CAM-1.0.1" : "0461cc0417ec17c2820eccf6616e2a8c"
+        "PARENT:MD5-CAM-1.0.1" : "57dabe0a49fe4f07f8ee625eda43c076"
       },
       "details" : {
         "de" : {
@@ -6985,7 +7098,7 @@
       "references" : { },
       "conversionDetails" : { },
       "otherDetails" : {
-        "PARENT:MD5-CAM-1.0.1" : "0461cc0417ec17c2820eccf6616e2a8c"
+        "PARENT:MD5-CAM-1.0.1" : "57dabe0a49fe4f07f8ee625eda43c076"
       },
       "details" : {
         "de" : {
@@ -7220,7 +7333,7 @@
       "references" : { },
       "conversionDetails" : { },
       "otherDetails" : {
-        "PARENT:MD5-CAM-1.0.1" : "0461cc0417ec17c2820eccf6616e2a8c"
+        "PARENT:MD5-CAM-1.0.1" : "57dabe0a49fe4f07f8ee625eda43c076"
       },
       "details" : {
         "de" : {
@@ -7475,7 +7588,7 @@
       "references" : { },
       "conversionDetails" : { },
       "otherDetails" : {
-        "PARENT:MD5-CAM-1.0.1" : "0461cc0417ec17c2820eccf6616e2a8c"
+        "PARENT:MD5-CAM-1.0.1" : "57dabe0a49fe4f07f8ee625eda43c076"
       },
       "details" : {
         "de" : {
@@ -7730,7 +7843,7 @@
       "references" : { },
       "conversionDetails" : { },
       "otherDetails" : {
-        "PARENT:MD5-CAM-1.0.1" : "0461cc0417ec17c2820eccf6616e2a8c"
+        "PARENT:MD5-CAM-1.0.1" : "57dabe0a49fe4f07f8ee625eda43c076"
       },
       "details" : {
         "de" : {
@@ -7990,7 +8103,7 @@
       "references" : { },
       "conversionDetails" : { },
       "otherDetails" : {
-        "PARENT:MD5-CAM-1.0.1" : "0461cc0417ec17c2820eccf6616e2a8c"
+        "PARENT:MD5-CAM-1.0.1" : "57dabe0a49fe4f07f8ee625eda43c076"
       },
       "details" : {
         "de" : {
@@ -8204,7 +8317,7 @@
       "references" : { },
       "conversionDetails" : { },
       "otherDetails" : {
-        "PARENT:MD5-CAM-1.0.1" : "0461cc0417ec17c2820eccf6616e2a8c"
+        "PARENT:MD5-CAM-1.0.1" : "57dabe0a49fe4f07f8ee625eda43c076"
       },
       "details" : {
         "de" : {
@@ -8459,7 +8572,7 @@
       "references" : { },
       "conversionDetails" : { },
       "otherDetails" : {
-        "PARENT:MD5-CAM-1.0.1" : "0461cc0417ec17c2820eccf6616e2a8c"
+        "PARENT:MD5-CAM-1.0.1" : "57dabe0a49fe4f07f8ee625eda43c076"
       },
       "details" : {
         "de" : {
@@ -8694,7 +8807,7 @@
       "references" : { },
       "conversionDetails" : { },
       "otherDetails" : {
-        "PARENT:MD5-CAM-1.0.1" : "0461cc0417ec17c2820eccf6616e2a8c"
+        "PARENT:MD5-CAM-1.0.1" : "57dabe0a49fe4f07f8ee625eda43c076"
       },
       "details" : {
         "de" : {
@@ -8950,7 +9063,7 @@
       "references" : { },
       "conversionDetails" : { },
       "otherDetails" : {
-        "PARENT:MD5-CAM-1.0.1" : "0461cc0417ec17c2820eccf6616e2a8c"
+        "PARENT:MD5-CAM-1.0.1" : "57dabe0a49fe4f07f8ee625eda43c076"
       },
       "details" : {
         "de" : {
@@ -9198,7 +9311,7 @@
       "references" : { },
       "conversionDetails" : { },
       "otherDetails" : {
-        "PARENT:MD5-CAM-1.0.1" : "0461cc0417ec17c2820eccf6616e2a8c"
+        "PARENT:MD5-CAM-1.0.1" : "57dabe0a49fe4f07f8ee625eda43c076"
       },
       "details" : {
         "de" : {
@@ -9446,7 +9559,7 @@
       "references" : { },
       "conversionDetails" : { },
       "otherDetails" : {
-        "PARENT:MD5-CAM-1.0.1" : "0461cc0417ec17c2820eccf6616e2a8c"
+        "PARENT:MD5-CAM-1.0.1" : "57dabe0a49fe4f07f8ee625eda43c076"
       },
       "details" : {
         "de" : {
@@ -9694,7 +9807,7 @@
       "references" : { },
       "conversionDetails" : { },
       "otherDetails" : {
-        "PARENT:MD5-CAM-1.0.1" : "0461cc0417ec17c2820eccf6616e2a8c"
+        "PARENT:MD5-CAM-1.0.1" : "57dabe0a49fe4f07f8ee625eda43c076"
       },
       "details" : {
         "de" : {
@@ -9921,7 +10034,7 @@
       "references" : { },
       "conversionDetails" : { },
       "otherDetails" : {
-        "PARENT:MD5-CAM-1.0.1" : "0461cc0417ec17c2820eccf6616e2a8c"
+        "PARENT:MD5-CAM-1.0.1" : "57dabe0a49fe4f07f8ee625eda43c076"
       },
       "details" : {
         "de" : {
@@ -10176,7 +10289,7 @@
       "references" : { },
       "conversionDetails" : { },
       "otherDetails" : {
-        "PARENT:MD5-CAM-1.0.1" : "0461cc0417ec17c2820eccf6616e2a8c"
+        "PARENT:MD5-CAM-1.0.1" : "57dabe0a49fe4f07f8ee625eda43c076"
       },
       "details" : {
         "de" : {
@@ -10431,7 +10544,7 @@
       "references" : { },
       "conversionDetails" : { },
       "otherDetails" : {
-        "PARENT:MD5-CAM-1.0.1" : "0461cc0417ec17c2820eccf6616e2a8c"
+        "PARENT:MD5-CAM-1.0.1" : "57dabe0a49fe4f07f8ee625eda43c076"
       },
       "details" : {
         "de" : {
@@ -10694,7 +10807,7 @@
       "references" : { },
       "conversionDetails" : { },
       "otherDetails" : {
-        "PARENT:MD5-CAM-1.0.1" : "0461cc0417ec17c2820eccf6616e2a8c"
+        "PARENT:MD5-CAM-1.0.1" : "57dabe0a49fe4f07f8ee625eda43c076"
       },
       "details" : {
         "de" : {
@@ -10942,7 +11055,7 @@
       "references" : { },
       "conversionDetails" : { },
       "otherDetails" : {
-        "PARENT:MD5-CAM-1.0.1" : "0461cc0417ec17c2820eccf6616e2a8c"
+        "PARENT:MD5-CAM-1.0.1" : "57dabe0a49fe4f07f8ee625eda43c076"
       },
       "details" : {
         "de" : {
@@ -11190,7 +11303,7 @@
       "references" : { },
       "conversionDetails" : { },
       "otherDetails" : {
-        "PARENT:MD5-CAM-1.0.1" : "0461cc0417ec17c2820eccf6616e2a8c"
+        "PARENT:MD5-CAM-1.0.1" : "57dabe0a49fe4f07f8ee625eda43c076"
       },
       "details" : {
         "de" : {
@@ -11438,7 +11551,7 @@
       "references" : { },
       "conversionDetails" : { },
       "otherDetails" : {
-        "PARENT:MD5-CAM-1.0.1" : "0461cc0417ec17c2820eccf6616e2a8c"
+        "PARENT:MD5-CAM-1.0.1" : "57dabe0a49fe4f07f8ee625eda43c076"
       },
       "details" : {
         "de" : {
@@ -11686,7 +11799,7 @@
       "references" : { },
       "conversionDetails" : { },
       "otherDetails" : {
-        "PARENT:MD5-CAM-1.0.1" : "0461cc0417ec17c2820eccf6616e2a8c"
+        "PARENT:MD5-CAM-1.0.1" : "57dabe0a49fe4f07f8ee625eda43c076"
       },
       "details" : {
         "de" : {
@@ -11934,7 +12047,7 @@
       "references" : { },
       "conversionDetails" : { },
       "otherDetails" : {
-        "PARENT:MD5-CAM-1.0.1" : "0461cc0417ec17c2820eccf6616e2a8c"
+        "PARENT:MD5-CAM-1.0.1" : "57dabe0a49fe4f07f8ee625eda43c076"
       },
       "details" : {
         "de" : {
@@ -12182,7 +12295,7 @@
       "references" : { },
       "conversionDetails" : { },
       "otherDetails" : {
-        "PARENT:MD5-CAM-1.0.1" : "0461cc0417ec17c2820eccf6616e2a8c"
+        "PARENT:MD5-CAM-1.0.1" : "57dabe0a49fe4f07f8ee625eda43c076"
       },
       "details" : {
         "de" : {
@@ -12409,7 +12522,7 @@
       "references" : { },
       "conversionDetails" : { },
       "otherDetails" : {
-        "PARENT:MD5-CAM-1.0.1" : "0461cc0417ec17c2820eccf6616e2a8c"
+        "PARENT:MD5-CAM-1.0.1" : "57dabe0a49fe4f07f8ee625eda43c076"
       },
       "details" : {
         "de" : {
@@ -12657,7 +12770,7 @@
       "references" : { },
       "conversionDetails" : { },
       "otherDetails" : {
-        "PARENT:MD5-CAM-1.0.1" : "0461cc0417ec17c2820eccf6616e2a8c"
+        "PARENT:MD5-CAM-1.0.1" : "57dabe0a49fe4f07f8ee625eda43c076"
       },
       "details" : {
         "de" : {
@@ -12905,7 +13018,7 @@
       "references" : { },
       "conversionDetails" : { },
       "otherDetails" : {
-        "PARENT:MD5-CAM-1.0.1" : "0461cc0417ec17c2820eccf6616e2a8c"
+        "PARENT:MD5-CAM-1.0.1" : "57dabe0a49fe4f07f8ee625eda43c076"
       },
       "details" : {
         "de" : {
@@ -13150,7 +13263,7 @@
       "references" : { },
       "conversionDetails" : { },
       "otherDetails" : {
-        "PARENT:MD5-CAM-1.0.1" : "0461cc0417ec17c2820eccf6616e2a8c"
+        "PARENT:MD5-CAM-1.0.1" : "57dabe0a49fe4f07f8ee625eda43c076"
       },
       "details" : {
         "de" : {
@@ -13370,7 +13483,7 @@
       "references" : { },
       "conversionDetails" : { },
       "otherDetails" : {
-        "PARENT:MD5-CAM-1.0.1" : "0461cc0417ec17c2820eccf6616e2a8c"
+        "PARENT:MD5-CAM-1.0.1" : "57dabe0a49fe4f07f8ee625eda43c076"
       },
       "details" : {
         "de" : {
@@ -13598,7 +13711,7 @@
       "references" : { },
       "conversionDetails" : { },
       "otherDetails" : {
-        "PARENT:MD5-CAM-1.0.1" : "0461cc0417ec17c2820eccf6616e2a8c"
+        "PARENT:MD5-CAM-1.0.1" : "57dabe0a49fe4f07f8ee625eda43c076"
       },
       "details" : {
         "de" : {
@@ -13826,7 +13939,7 @@
       "references" : { },
       "conversionDetails" : { },
       "otherDetails" : {
-        "PARENT:MD5-CAM-1.0.1" : "0461cc0417ec17c2820eccf6616e2a8c"
+        "PARENT:MD5-CAM-1.0.1" : "57dabe0a49fe4f07f8ee625eda43c076"
       },
       "details" : {
         "de" : {
@@ -14046,7 +14159,7 @@
       "references" : { },
       "conversionDetails" : { },
       "otherDetails" : {
-        "PARENT:MD5-CAM-1.0.1" : "0461cc0417ec17c2820eccf6616e2a8c"
+        "PARENT:MD5-CAM-1.0.1" : "57dabe0a49fe4f07f8ee625eda43c076"
       },
       "details" : {
         "de" : {
@@ -14274,7 +14387,7 @@
       "references" : { },
       "conversionDetails" : { },
       "otherDetails" : {
-        "PARENT:MD5-CAM-1.0.1" : "0461cc0417ec17c2820eccf6616e2a8c"
+        "PARENT:MD5-CAM-1.0.1" : "57dabe0a49fe4f07f8ee625eda43c076"
       },
       "details" : {
         "de" : {
@@ -14502,7 +14615,7 @@
       "references" : { },
       "conversionDetails" : { },
       "otherDetails" : {
-        "PARENT:MD5-CAM-1.0.1" : "0461cc0417ec17c2820eccf6616e2a8c"
+        "PARENT:MD5-CAM-1.0.1" : "57dabe0a49fe4f07f8ee625eda43c076"
       },
       "details" : {
         "de" : {
@@ -14713,7 +14826,7 @@
       "references" : { },
       "conversionDetails" : { },
       "otherDetails" : {
-        "PARENT:MD5-CAM-1.0.1" : "0461cc0417ec17c2820eccf6616e2a8c"
+        "PARENT:MD5-CAM-1.0.1" : "57dabe0a49fe4f07f8ee625eda43c076"
       },
       "details" : {
         "de" : {
@@ -14941,7 +15054,7 @@
       "references" : { },
       "conversionDetails" : { },
       "otherDetails" : {
-        "PARENT:MD5-CAM-1.0.1" : "0461cc0417ec17c2820eccf6616e2a8c"
+        "PARENT:MD5-CAM-1.0.1" : "57dabe0a49fe4f07f8ee625eda43c076"
       },
       "details" : {
         "de" : {
@@ -15152,7 +15265,7 @@
       "references" : { },
       "conversionDetails" : { },
       "otherDetails" : {
-        "PARENT:MD5-CAM-1.0.1" : "0461cc0417ec17c2820eccf6616e2a8c"
+        "PARENT:MD5-CAM-1.0.1" : "57dabe0a49fe4f07f8ee625eda43c076"
       },
       "details" : {
         "de" : {
