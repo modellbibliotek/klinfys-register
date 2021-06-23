@@ -24,9 +24,9 @@
       "Sign off" : "",
       "Speciality" : "",
       "User roles" : "",
-      "MD5-CAM-1.0.1" : "cfee218137e9f2493de02c2119ab4851",
+      "MD5-CAM-1.0.1" : "a3157babe4400848871f4ea2e47d6930",
       "PARENT:MD5-CAM-1.0.1" : "641B268BE8805CEB8DC21AB82C53AB3F",
-      "sem_ver" : "11.0.1",
+      "sem_ver" : "11.0.2",
       "build_uid" : "56e5e75a-ec2b-4fc9-b84e-c28b8c35b012"
     },
     "details" : {
@@ -4492,6 +4492,12 @@
             "text" : "1.4 Septumtjocklek, diastole PLAX (IVSd PLAX)",
             "description" : "Bilddiagnostiskt resultat som ett enskilt värde eller, genom nästning, en grupp av värden.",
             "comment" : "55441000052105 |interventrikulära septums slutdiastoliska tjocklek|"
+          },
+          "at0002.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0002.1",
+            "text" : "IVSd PLAX",
+            "description" : "Faktiskt värde från bilddiagnostiken. Namnet på detta element kan ersättas i en mall eller kan genereras automatiskt av vissa IT-system för att återspegla det faktiska resultatet, det kommer ofta att vara kodat."
           }
         }
       },
@@ -5329,6 +5335,12 @@
             "code" : "at0000.1",
             "text" : "1.3 Vänsterkammar-diameter, systole  PLAX (LVESd  PLAX)",
             "description" : "Bilddiagnostiskt resultat som ett enskilt värde eller, genom nästning, en grupp av värden."
+          },
+          "at0002.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0002.1",
+            "text" : "LVESd  PLAX",
+            "description" : "Faktiskt värde från bilddiagnostiken. Namnet på detta element kan ersättas i en mall eller kan genereras automatiskt av vissa IT-system för att återspegla det faktiska resultatet, det kommer ofta att vara kodat."
           }
         }
       },
@@ -6486,6 +6498,12 @@
             "code" : "at0000.1",
             "text" : "1.6 Vänsterkammarvolym, diastole (LVEDvol)",
             "description" : "Bilddiagnostiskt resultat som ett enskilt värde eller, genom nästning, en grupp av värden."
+          },
+          "at0002.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0002.1",
+            "text" : "LVEDvol",
+            "description" : "Faktiskt värde från bilddiagnostiken. Namnet på detta element kan ersättas i en mall eller kan genereras automatiskt av vissa IT-system för att återspegla det faktiska resultatet, det kommer ofta att vara kodat."
           }
         }
       },
@@ -6741,6 +6759,12 @@
             "code" : "at0000.1",
             "text" : "1.8 Vänsterkammarvolym, systole (LVESvol)",
             "description" : "Bilddiagnostiskt resultat som ett enskilt värde eller, genom nästning, en grupp av värden."
+          },
+          "at0002.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0002.1",
+            "text" : "LVESvol",
+            "description" : "Faktiskt värde från bilddiagnostiken. Namnet på detta element kan ersättas i en mall eller kan genereras automatiskt av vissa IT-system för att återspegla det faktiska resultatet, det kommer ofta att vara kodat."
           }
         }
       },
