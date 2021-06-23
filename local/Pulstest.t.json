@@ -24,7 +24,7 @@
       "custodian_namespace" : "",
       "sem_ver" : "0.1.0",
       "build_uid" : "",
-      "MD5-CAM-1.0.1" : "99ab998e127fa9b99ffc357fa8df528e",
+      "MD5-CAM-1.0.1" : "215528eca6d71ba82655455d0e02dc2a",
       "PARENT:MD5-CAM-1.0.1" : "8F3156560D39B12C8362DF26A4C575BD"
     },
     "details" : {
@@ -370,7 +370,162 @@
       "otherDetails" : {
         "PARENT:MD5-CAM-1.0.1" : "8FE80F3E80C594AAF99D3BA540A53D73"
       },
-      "details" : { }
+      "details" : {
+        "de" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "de"
+          },
+          "purpose" : "Eine generische Abschnittsüberschrift eines Templates, welche entsprechend dem spezifischen klinischen Kontext umbenannt werden sollte.",
+          "keywords" : [ "Abschnitt", "Template", "Überschrift", "Ad hoc", "Abschnittsüberschrift" ],
+          "use" : "Dieser Archetyp kann für die Erstellung einer Abschnittsüberschrift in einem Template verwendet werden. Die Überschrift kann, passend zu dem jeweiligen klinischen Kontext, umbenannt werden. Zum Beispiel: \"Ad hoc Überschrift\" wird umbenannt in \"Untersuchungsergebnisse\".\r\n\r\n",
+          "misuse" : "Die Überschrift sollte in einem Template nicht unverändert verwendet werden.",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "sv" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "sv"
+          },
+          "purpose" : "En allmän avsnittsrubrik som döps om i en openEHR-mall för att passa in i en specifik klinisk kontext.",
+          "keywords" : [ ],
+          "use" : "Används för att skapa en avsnittsrubrik i en openEHR-mall som sedan döps om för att passa in i den specifika kliniska kontexten. Exempelvis \"Rubrik\" döps om till \"Undersökningsfynd\".",
+          "misuse" : "Ska inte lämnas oförändrad i en openEHR-mall.",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "ru" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "ru"
+          },
+          "purpose" : "Базовый заголовок раздела, должен быть переименован в локальном шаблоне ",
+          "keywords" : [ "раздел", "шаблон", "заготовка", "название", "образец" ],
+          "use" : "используется для создания и именования разделов в локальных шаблонах",
+          "misuse" : "*Not to be left unchanged in a template.(en)",
+          "copyright" : "© openEHR Foundation",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "nb" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "nb"
+          },
+          "purpose" : "Brukes som en generisk seksjonsoverskrift som skal gis nytt navn i en templat for å passe i en gitt klinisk kontekst.",
+          "keywords" : [ ],
+          "use" : "Brukes til å lage en seksjonsoverskrift i en templat, hvis navn deretter endres for å passe i den aktuelle kliniske konteksten. For eksempel: \"Templat-overskrift\" endret til \"Funn ved undersøkelse\", \"Anamnese\", \"Personopplysninger\" eller \"Oppsummering\".",
+          "misuse" : "Skal ikke stå med uendret navn i en templat.",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "es-ar" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "es-ar"
+          },
+          "purpose" : "Proporcionar un encabezado de sección de tipo genérico que será renombrado en una plantilla para su empleo en un contexto clínico específico.",
+          "keywords" : [ ],
+          "use" : "Utilizar para construir un encabezado de sección en una plantilla y que será renombrado para su empleo en un contexto clínico específico. Por ejemplo, \"Encabezado ad hoc\" puede renombrarse como \"Hallazgos de examen\".",
+          "misuse" : "No debe mantenerse sin cambios en una plantilla.",
+          "copyright" : "© openEHR Foundation",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "pt-br" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "pt-br"
+          },
+          "purpose" : "Oferecer um cabeçalho de uma sessão genérica que será renomeado no template para adequar-se a um contexto clínico específico.",
+          "keywords" : [ "cabeçalho" ],
+          "use" : "Utilize para construir um cabeçalho de uma sessão (de um template) que será renomeada para adequar-se a um contexto clínico específico. Por exemplo: \"cabeçalho Ad hoc\" renomeado para \"Achados de exame\".",
+          "misuse" : "Não deve manter a configuração original no template.",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "en" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "en"
+          },
+          "purpose" : "To provide a generic section header which will be renamed in a template to suit a specific clinical context.",
+          "keywords" : [ ],
+          "use" : "Use to construct a section heading in a template that will be renamed to suit the specific clinical context. For example: \"Ad hoc heading\" renamed to \"Examination findings\".",
+          "misuse" : "Not to be left unchanged in a template.",
+          "copyright" : "© openEHR Foundation",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "sl" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "sl"
+          },
+          "purpose" : "*To provide a generic section header which will be renamed in a template to suit a specific clinical context.(en)",
+          "keywords" : [ ],
+          "use" : "*Use to construct a section heading in a template that will be renamed to suit the specific clinical context. For example: \"Ad hoc heading\" renamed to \"Examination findings\".(en)",
+          "misuse" : "*Not to be left unchanged in a template.(en)",
+          "copyright" : "© openEHR Foundation",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "it" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "it"
+          },
+          "purpose" : "Fornire un'intestazione generica della sezione che sarà rinominata in un template per adattarsi ad uno specifico contesto clinico.",
+          "keywords" : [ ],
+          "use" : "Usato per costruire un'intestazione di sezione in un template che sarà rinominato in base al contesto clinico specifico. Per esempio: \"Intestazione ad hoc\" rinominata in \"Risultati dell'esame\".",
+          "misuse" : "Non deve essere lasciato invariato in un template.",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "fr" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "fr"
+          },
+          "purpose" : "*To provide a generic section header which will be renamed in a template to suit a specific clinical context.(en)",
+          "keywords" : [ ],
+          "use" : "*Use to construct a section heading in a template that will be renamed to suit the specific clinical context. For example: \"Ad hoc heading\" renamed to \"Examination findings\".(en)",
+          "misuse" : "*Not to be left unchanged in a template.(en)",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        }
+      }
     },
     "parentArchetypeId" : "openEHR-EHR-SECTION.adhoc.v1",
     "differential" : true,
@@ -587,7 +742,178 @@
       "otherDetails" : {
         "PARENT:MD5-CAM-1.0.1" : "367B17CB3B1709A6BDF8A32723647224"
       },
-      "details" : { }
+      "details" : {
+        "de" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "de"
+          },
+          "purpose" : "Zur Dokumentation der Frequenz und der zugehörigen Attribute einer Puls- oder Herzfrequenz.",
+          "keywords" : [ "Frequenz", "Herzfrequenz", "Rhythmus", "Herzschlag", "Puls", "Pulsfrequenz", "Pulsschlag", "Blutdruck", "Vitalparameter", "Vitalzeichen" ],
+          "use" : "Zur allgemeinen Dokumentation der vorhandenen oder nicht vorhandenen Puls- oder Herzfrequenz.\r\n\r\nIn der Praxis werden die Begriffe \"Herzfrequenz\" und \"Pulsfrequenz\" oft synonym verwendet, obwohl sie an verschiedenen Körperstellen gemessen werden können. Dieser Archetyp ist für beide Begriffe vorgesehen, wobei das Element \"Körperstelle\" der Unterscheidung dient.\r\n\r\nZur Dokumentation der Puls- oder Herzfrequenz und dessen Eigenschaften, sowie der klinischen Interpretationen der Messergebnisse.\r\n\r\nMessungen, wie die maximale Pulsfrequenz oder die maximale Herzfrequenz, die über eine gewisse Zeit gemessen werden, können im Feature \"Event\" mit der Bezeichnung \"Maximum\" dokumentiert werden. Andere zeitpunkt- oder intervallbezogene Ereignisse können innerhalb des Templates oder zur Laufzeit angegeben werden.\r\n\r\nBei der Entwicklung dieses Archetyps gab es einige Unstimmigkeiten zu der Darstellung der Regelmäßigkeit der Puls- oder der Herzfrequenz. Dieser Archetyp stellt die relevanten Datenpunkte separat dar: zunächst wird \"Regelmäßig\" vs. \"Unregelmäßig\" festgelegt und dann, wenn die Messung \"Unregelmäßig\" ist, können weitere Optionen von \"Normal unregelmäßig\" und \"Ungleichmäßig Unregelmäßig\" angegeben werden. In der Praxis könnten klinische Systeme den Nutzern eine Kombination der Werte aus den beiden Datenelementen \"Regelmäßig\" und \"Unregelmäßig\" anbieten - zum Beispiel \"Regelmäßig\", \"Regelmäßig unregelmäßig\" und \"Ungleichmäßig unregelmäßig\", die aus diesen beiden Datenelementen stammen. Die Daten können entgegen einander aufgezeichnet werden, mit der Annahme, dass bei der Angabe einer unregelmäßigen Herzfrequenz auch der Wert \"Unregelmäßig\" im Datenelement \"Regelmäßigkeit\" automatisch ausgewählt wird.\r\n\r\nIn bestimmten Situationen ist es wichtig, sehr spezifisch zu sein, damit eine an einer peripheren Körperstelle gemessene Frequenz, wie beispielsweise der Arteria radialis, von der Herzfrequenz unterschieden werden kann. Um ein Pulsdefizit aufzuzeichnen, zeichnen Sie die Messung der mechanischen Herzfrequenz und einer peripheren Pulsfrequenz separat in diesem Archetyp auf - der Unterschied zwischen diesen Messungen ist das Pulsdefizit. Das tatsächliche Pulsdefizit wird in einem separaten OBSERVATION-Archetyp aufgezeichnet.",
+          "misuse" : "Nicht zur Dokumentation einer Herzfrequenz, errechnet aus dem RR-Intervall einer EKG-Messung - der Archetyp OBSERVATION.ecg_result soll für diesen Zweck verwendet werden.\r\n\r\nNicht zur Dokumentation von Details einer Kardiovaskulären Untersuchung oder Bewertung verwenden. Andere spezifische CLUSTER-Archetypen werden verwendet, um Merkmale wie den Herzspitzenstoß, Herzspitzengeräusche und allgemeine Herzgeräusche oder auskultatorische Befunde aufzuzeichnen.\r\n\r\nInsbesondere ist dieser Archetyp nicht dazu gedacht, die Beurteilung einer peripheren Gefäßerkrankung aufzuzeichnen, die eine Dokumentation des Vorhandenseins und der Stärke jeder peripheren Pulsfrequenz erfordert. Ein spezifischer CLUSTER-Archetyp wird verwendet, um die allgemeinen Ergebnisse der Untersuchung von peripheren Pulsfrequenzen zu erfassen.\r\n\r\nNicht zur Dokumentation des fetalen Blutdrucks verwenden - der Archetyp OBSERVATION.fetal_heart soll für diesen Zweck verwendet werden.\r\n\r\nNicht zur Dokumentation des Pulsdefizits verwenden - für diesen Zweck soll ein spezifischer OBSERVATION-Archetyp verwendet werden.\r\n\r\nKonzepte, wie die Zielherzfrequenz, sollen im Zusammenhang mit dessen Zielen und Trainingsbewertungen in separaten EVALUATION-Archetypen erfasst werden.",
+          "copyright" : "© openEHR Foundation",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "fi" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "fi"
+          },
+          "purpose" : "*To record details about the rate and associated attributes for a pulse or heart beat.(en)",
+          "keywords" : [ "*rate(en)", "*rhythm(en)", "*beat(en)", "*pulse(en)", "*heart(en)", "*vital(en)", "*sign(en)" ],
+          "use" : "*Use to record the presence or absence of a pulse or heart beat.\r\n\r\nIn practice, the terms 'heart rate' and 'pulse rate' are often used interchangeably, although they may be measured at different body sites. This archetype allows either term to be used when the measurement site is not specified, to suit clinician preferences.\r\n\r\nUse to record the measurement of the pulse rate, or heart rate, observations about the associated pattern and character, and clinical interpretation of the findings.\r\n\r\nMeasurements such as the maximum pulse or heart rate over an interval of time can be recorded using 'Maximum' event. Others point-in-time or interval events may be specified within a template or at run-time.\r\n\r\nIn development of this archetype, there has been some tension around representation of the regularity of the pulse or heart beat. This archetype represents the relevant data points separately: firstly establishing 'Regular' vs 'Irregular' and then, if 'Irregular', further options of 'Regularly irregular' and 'Irregularly irregular'. In practice, clinical systems could offer users a combination of the values from the 'Regular?' and 'Irregular type' - for example, 'Regular', 'Regularly irregular' and 'Irregularly irregular' drawn from these two data elements. Data could be recorded against both data elements with the assumption that if one of the irregular types are selected, then the 'Irregular' value in the 'Regular?' data element is also automatically selected.\r\n\r\nIn certain situations it is important to be very specific so that a rate observed at a peripheral body site, such as the radial artery, can be differentiated from the rate of the heart. To record a pulse deficit, record the measurements of the mechanical heart rate and a peripheral pulse rate in two instances of this archetype - the difference between these measurments is the pulse deficit. The actual pulse deficit will be recorded in a separate OBSERVATION archetype.(en)",
+          "misuse" : "*Not to be used to record the R-R rate in the context of an Electrocardiograph report - use the OBSERVATION.ecg archetypefor this purpose.\r\n\r\nNot to be used to record other details of the full cardiovascular examination or assessment. Other specific CLUSTER archetypes will be used to record characteristics such as apex beat, murmurs and bruits, or auscultatory findings.\r\n\r\nIn particular, this archetype is not intended to record the assessment of peripheral vascular disease, which requires documentation of the presence and strength of each peripheral pulse.  A specific CLUSTER archetype will be used to record the general findings on examination of peripheral pulses.  \r\n\r\nNot to be used to record fetal heart rate - use the OBSERVATION.fetal_heart archetype for this purpose.\r\n\r\nNot to be used to record the pulse deficit - use a specific OBSERVATION archetype for this purpose.\r\n\r\nConcepts such as Target Heart Rate should be recorded in separate EVALUATION archetypes related to goals and exercise assessment.(en)",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "sv" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "sv"
+          },
+          "purpose" : "Att mäta puls eller hjärtfrekvens och beskriva relaterade egenskaper.",
+          "keywords" : [ "frekvens", "rytm", "slag", "puls", "hjärta", "vitaltecken" ],
+          "use" : "Används för att registrera närvaro eller frånvaro av puls eller hjärtslag.\r\n\r\nAnvänds för att registrera puls eller hjärtfrekvens samt relaterade observationer avseende deras mönster och karaktär samt för att dokumentera den kliniska tolkningen av fynd.\r\n\r\nI praktiken används termerna puls och hjärtfrekvens ofta i samma betydelse. För att tillgodose klinikers skiftande preferenser tillåter den här arketypen användning av båda termerna i de fall mätplatsen är ospecificerad.\r\n\r\nMätningar såsom maxpuls eller hjärtfrekvens i ett tidsintervall kan registreras i en \"Maximum\"-händelse. Andra enstaka händelser eller intervallhändelser kan specificeras i en mall, eller genereras automatiskt av vissa IT-system.\r\n\r\nI vissa fall är det dock viktigt att skilja pulsmätning i en perifer artär, exempelvis ett radialt kärl, från mätning av den centrala hjärtfrekvensen. Den här arketypen tillåter ytterst specifika data och gör åtskillnad mellan central hjärtfrekvens och puls som mäts i en specifik artär. För att registrera pulsdeficit, registrera mätningar av den mekaniska hjärtfrekvensen och en perifer pulsfrekvens i två fält i denna arketyp. Skillnaden mellan dessa mätvärden är pulsdeficiten. Den aktuella pulsdeficiten kommer att registreras i en separat OBSERVATION arketyp.\r\n\r\nI utvecklingen av denna arketyp har det varit en viss spänning kring presentationen av pulsens eller hjärtslagets regelbundenhet. Denna arketyp presenterar de relevanta datapunkterna separat: Först fastställda \"Regelbunden\" och \"Oregelbunden\" och sedan ytterligare alternativ om \"Oregelbunden\" väljs dvs. \"regelbundet oregelbunden\" och \"oregelbundet oregelbunden\".\r\n\r\nI praktiken skulle de kliniska systemen kunna erbjuda användarna en kombination av värdena från den \"regelbundna\" och \"oregelbundna typen\"- exempelvis \"regelbunden\", \"regelbundet oregelbunden\" och \"oregelbundet oregelbunden\" som hämtas från dessa två fält. Data kan registreras mot båda fälten med antagandet att om en av de oregelbundna typerna väljs, så är det \"oregelbundna\" värdet i dataelementet \"regelbunden\" också automatiskt markerat.",
+          "misuse" : "Ska inte användas för att registrera andningsfrekvens i samband med EKG-rapporter. Till detta ska arketypen OBSERVATION.ecg användas.\r\n\r\nSka inte användas för att registrera andra delar av en kardiovaskulär undersökning eller värdering. Till det ska speciella CLUSTER-arketyper användas, exempelvis för att registrera egenskaper såsom hjärtspetsstöt, blåsljud och *bruits* samt auskultatoriska fynd.\r\n\r\nSka i synnerhet inte användas för att registrera värdering av perifera vaskulära sjukdomar. Dessa kräver att närvaron av och styrkan hos varje perifer puls dokumenteras. Till detta ska en speciell CLUSTER-arketyp användas.\r\n\r\nSka inte användas för att registrera hjärtfrekvensen hos foster. Till detta ska arketypen OBSERVATION.fetal_heart användas.\r\n\r\nSka inte användas för att registrera pulsdeficit. Till detta ska en särskild OBSERVATION-arketyp användas.\r\n\r\nSka inte användas när hjärtfrekvens är ett behandlingsmål. Till det ändamålet ska EVALUATION-arketyper som är till för mål och värdering av träning användas.\r\n",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "ru" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "ru"
+          },
+          "purpose" : "Для записи информации о частоте  и ритме  сердцечных сокращений.",
+          "keywords" : [ "ЧСС", "ритм", "сердечный ритм", "частотат сердечных сокращений" ],
+          "use" : "Используется для записи измеренных характеристик, связанных с темпом и ритма сердца, в том числе простая констатация наличия сердечного ритма. Эти характеристики не регистрируются путем прямого наблюдения самого сердца, а подразумевают альтернативные источники, включая прямую аускультацию сердца или электрокардиограф, отражающий электрическую активность сердца.\r\nЧастота и ритм сердечных сокращений  (или специализация этого архетипа - Пульс), как правило, регистрируются в качестве одного из компонентов жизненно важных признаков - включая кровяное давление, дыхание, температуру и оксиметрию. Для каждого из этих понятий существуют специальные архетипы. ",
+          "misuse" : "Не следует использовать для записи выводов о измеряемых частоте и ритме сердечных сокращений. Такого рода заявления, как, например, пациент находится в состоянии фибрилляция предсердий или тахикардии, должны быть записаны в других специальных архетипах, относящихся к категории ОЦЕНКА.\r\nНе следует использовать для записи механической частоты сердечных сокращений, ритма и связанные с ними характеристик - это записывается используя специализацию этого архетипа - OBSERVATION.heart_rate-pulse.\r\nНе используется для записи другой информации обширной системы обследования или оценки сердечно-сосудистой системы. Другие специфические архетипы используются для записи таких характеристик, как верхушечный толчок, шумы, результаты аускультаци и т.д.\r\nТакие понятия, как максимальная или целевая частота сердечных сокращений, должны записываться в отдельных архетипах, предназначенных специально для осуществления оценки.",
+          "copyright" : "© openEHR Foundation",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "nb" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "nb"
+          },
+          "purpose" : "For å registrere detaljer om frekvens og tilhørende egenskaper for puls eller hjertefrekvens.",
+          "keywords" : [ "frekvens", "rytme", "slag", "puls", "hjerte", "pulsslag", "hjerteslag", "hjertefrekvens" ],
+          "use" : "Brukes til å registrere tilstedeværelse eller fravær av puls eller hjerteslag.\r\n\r\nBrukes til å registrere en måling av pulsfrekvensen eller hjertefrekvensen, med tilhørende observasjoner rundt rytmen.\r\n\r\nMålinger som makspuls over et tidsintervall kan registreres ved å bruke en intervallhendelse med en \"maksimum\"-funksjon. Andre tidspunkts- eller intervallhendelser kan spesifiseres i en template eller i applikasjonen.\r\n\r\nI praksis brukes begrepene hjertefrekvens og pulsfrekvens mye om hverandre. Denne arketypen tillater uspesifikke registreringer når målestedet ikke er oppgitt, for å best mulig kunne tilpasses klinikernes preferanser.\r\n\r\nI noen situasjoner er det imidlertid viktig å skille mellom en pulsfrekvens målt ved en perifer arterie som f.eks. arteria radialis, og den sentralt målte hjertefrekvensen. Denne arketypen tillater svært spesifikke data, inkludert en strukturert differensiering mellom sentral hjertefrekvens og perifer pulsfrekvens.\r\n\r\nUnder utviklingen av denne arketypen har det vært diskusjon rundt representasjon av regelmessighet av puls og hjerteslag. Denne arketypen representerer de relevante informasjonselementer separat; Først ved å etablere regelmessig kontra uregelmessig, og hvis uregelmessig så kan det videre beskrives hvilken form for uregelmessighet, hhv. 'Regelmessig uregelmessig' og 'Uregelmessig uregelmessig'. I praksis kan kliniske systemer tilby en kombinasjon av verdiene fra 'Regelmessig' og 'Type uregelmessighet' - for eksempel, 'Regelmessig, 'Regelmessig uregelmessig' og 'Uregelmessig uregelmessig' bli utledet fra disse to dataelementene. Data kan lagres i begge dataelementene med antakelsen om at hvis en av verdiene i 'Type uregelmessighet' er registrert, vil verdien for 'Uregelmessig' i dataelementet 'Rytme' automatisk bli valgt.\r\n\r\nVed å bruke to separate instanser kan arketypen benyttes til å registrere målingene av hjertefrekvens og pulsfrekvens som ligger til grunn for en registrering av pulsdeficit. Selve registreringen av pulsdeficitt gjøres imidlertid i en egen OBSERVATION-arketype.",
+          "misuse" : "Brukes ikke til å registrere R-R-frekvens i sammenheng med en EKG-rapport, til dette brukes \"OBSERVATION.ecg\"-arketypen.\r\n\r\nSkal ikke brukes til å registrere andre deler av en full kardiovaskulær undersøkelse eller vurdering. Til dette brukes spesifikke CLUSTER-arketyper for å registrere andre egenskaper som hjertespisstøt, bilyder og auskultatoriske funn.\r\n\r\nArketypen er ikke ment til å registrere vurderingen av perifer karsykdom der det er nødvendig å dokumentere tilstedeværelsen og styrken av hver enkelt perifere puls. Til dette brukes en spesifikk CLUSTER-arketype.\r\n\r\nSkal ikke brukes til å registrere hjertefrekvensen til et foster, dette gjøres ved hjelp av arketypen \"OBSERVATION.fetal_heart\".\r\n\r\nSkal ikke brukes til å registrere pulsdeficit - bruk en spesifik OBSERVATION arketype til dette formålet.\r\n\r\nHjertefrekvens som et mål for behandling registreres i egne EVALUATION-arketyper relatert til mål og vurdering av trening.",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "pt-br" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "pt-br"
+          },
+          "purpose" : "Para gravar detalhes sobre a frequência e os atributos associados ao pulso ou batimento cardíaco.",
+          "keywords" : [ "frequência", "ritmo", "batimento", "pulso", "coração", "vital", "sinal" ],
+          "use" : "Use para registrar a presença ou ausência de pulso ou batimento cardíaco.\r\n\r\nNa prática, os termos \"frequência cardíaca\" e \"frequência do pulso\" são frequentemente utilizados indistintamente, embora possam ser medidos em diferentes locais do corpo. Este arquétipo permite que qualquer termo seja usado quando o local da medição não é especificado, de acordo com as preferências clínicas.\r\n\r\nUse para registrar a medida da freqüência do pulso, ou freqüência cardíaca, observações sobre o padrão e caráter associados e interpretação clínica dos achados.\r\n\r\nMedições como o pulso máximo ou freqüência cardíaca durante um intervalo de tempo podem ser gravadas usando o evento \"Máximo\". Outros eventos pontuais ou intervalados podem ser especificados dentro de um modelo ou em tempo de execução.\r\n\r\nNo desenvolvimento deste arquétipo, houve alguma tensão em torno da representação da regularidade do pulso ou batimento cardíaco. Este arquétipo representa os pontos de dados relevantes separadamente: primeiro estabelecendo 'Regular' vs 'Irregular' e, em seguida, 'Irregular', outras opções de 'Regularmente irregular' e 'Irregularmente irregular'. Na prática, os sistemas clínicos poderiam oferecer aos usuários uma combinação dos valores do \"Regular?\" E 'Tipo irregular' - por exemplo, 'Regular', 'Regularmente irregular' e 'Irregularmente irregular' extraídos destes dois elementos de dados. Os dados poderiam ser registrados contra os dois elementos de dados com a suposição de que, se um dos tipos irregulares for selecionado, então o valor 'Irregular' no elemento de dados 'Regular?' também é automaticamente selecionado.\r\n\r\nUse para registrar a presença ou ausência de pulso ou batimento cardíaco.\r\n\r\nNa prática, os termos \"frequência cardíaca\" e \"frequência de pulso\" são frequentemente utilizados indistintamente, embora possam ser medidos em diferentes locais do corpo. Este arquétipo permite que qualquer termo seja usado quando o local da medição não é especificado, de acordo com as preferências clínicas.\r\n\r\nUse para registrar a medida da freqüência do pulso, ou freqüência cardíaca, observações sobre o padrão e caráter associados e interpretação clínica dos achados.\r\n\r\nMedições como o pulso máximo ou freqüência cardíaca durante um intervalo de tempo podem ser gravadas usando o evento \"Máximo\". Outros eventos pontuais ou intervalados podem ser especificados dentro de um modelo ou em tempo de execução.\r\n\r\nNo desenvolvimento deste arquétipo, houve alguma tensão em torno da representação da regularidade do pulso ou batimento cardíaco. Este arquétipo representa os pontos de dados relevantes separadamente: primeiro estabelecendo 'Regular' vs 'Irregular' e, em seguida, 'Irregular', outras opções de 'Regularmente irregular' e 'Irregularmente irregular'. Na prática, os sistemas clínicos poderiam oferecer aos usuários uma combinação dos valores do \"Regular?\" E 'Tipo irregular' - por exemplo, 'Regular', 'Regularmente irregular' e 'Irregularmente irregular' extraídos destes dois elementos de dados. Os dados poderiam ser registrados contra os dois elementos de dados com a suposição de que, se um dos tipos irregulares for selecionado, então o valor 'Irregular' no elemento de dados 'Regular?' também é automaticamente selecionado.\r\n\r\nEm certas situações, é importante ser muito específico para que uma frequência observada num local do corpo periférico, tal como a artéria radial, possa ser diferenciada da frequência do coração. Para registrar um déficit de pulso, registre as medidas da freqüência cardíaca mecânica e uma frequência de pulso periférico em duas instâncias deste arquétipo - a diferença entre essas medições é o déficit de pulso. O déficit de pulso real será registrado em um arquétipo OBSERVATION separado.",
+          "misuse" : "Não deve ser utilizado para registrar a taxa R-R no contexto de um relatório de eletrocardiografia - use o arquétipo OBSERVATION.ecg para este fim.\r\n\r\nNão deve ser utilizado para registrar outros detalhes do exame ou avaliação cardiovascular completa. Outros arquétipos CLUSTER específicos serão usados para registrar características como a batida do ápice, murmúrios e sopros, ou achados na ausculta.\r\n\r\nEm particular, este arquétipo não pretende registar a avaliação da doença vascular periférica, que requer documentação da presença e da força de cada pulso periférico. Um arquétipo CLUSTER específico será usado para registrar os achados gerais no exame de pulsos periféricos.\r\n\r\nNão deve ser usado para registrar a freqüência cardíaca fetal - use o arquétipo OBSERVATION.fetal_heart para esta finalidade.\r\n\r\nNão deve ser usado para registrar o déficit de pulso - use um arquétipo OBSERVATION específico para este fim.\r\n\r\nConceitos como a Frequência Cardíaca-alvo devem ser registrados em arquétipos de EVALUATION separados relacionados com as metas e a avaliação do exercício.\r\n\r\n",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "ar-sy" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "ar-sy"
+          },
+          "purpose" : "لتسجيل تفاصيل حول معدل و نظم القلب.",
+          "keywords" : [ "المعدل", "معدل القلب", "النظم" ],
+          "use" : "يستخدم لتسجيل الخصائص التي تم قياسها فيما يتعلق بمعدل و نظم القلب, بما في ذلك بيان بسيط حول وجود نبض و معدل ضربات القلب. و لا يتم استخدام هذه القراءات بالملاحظة المباشرة للقلب ذاته, و إنما يتنم استنباطها من مصادر بديلة تتضمن التسمع المباشر للقلب أو تخطيط كهربية القلب بما يعكس النشاط الكهربي للقلب.\r\nمعدل و نظم القلب ( أو تخصيصهما إلى النبض) عادة ما يتم تسجيلهم على أنهم يمثلون واحدا من العلامات الحياتية – و التي تتكون من ضغط الدم, التنفس, درجة الحرارة, و قياس التأكسج. و يوجد نماذج إضافية مخصصة لكل نوع من هذه المفاهيم.",
+          "misuse" : "لا يستخدم لتسجيل استنتاجات حول معدل و نظم القلب الذي تم قياسهما. و ينبغي تسجيل بيانات مثل (المريض يعاني من الرجفان الأذيني) أو (يعاني من تسرع ضربات القلب) في نماذج أخرى مخصصة و متعلقة بتقييم حالة المريض.\r\nلا تستخدم لتسجيل معدل القلب الميكانيكي, أو النظم أو الخصائص الأخرى – و يتم تسجيل ذلك باستخدام تخصيص لهذا النموذج يسمى ملاحظة. معدل القلب – النبض.\r\nلا يستخدم لتسجيل تفاصيل فحص أو تقييم أكثر شمولا للجهاز القلبي الوريدي. و يمكن أن تستخدم نماذج معينة أخرى لتسجيل خصائص مثل نبض قمة القلب, النفخات, و الموجودات عند التسمع, إلى آخره.\r\nالمفاهيم الأخرى مثل أقصى معدل للقلب, أو معدل القلب المستهدف ينبغي أن يتم تسجيلها في نماذج أخرى متعلقة بتقييم المجهود.",
+          "copyright" : "© openEHR Foundation",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "en" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "en"
+          },
+          "purpose" : "To record details about the rate and associated attributes for a pulse or heart beat.",
+          "keywords" : [ "rate", "rhythm", "beat", "pulse", "heart", "vital", "sign" ],
+          "use" : "Use to record the presence or absence of a pulse or heart beat.\r\n\r\nIn practice, the terms 'heart rate' and 'pulse rate' are often used interchangeably, although they may be measured at different body sites. This archetype is intended to be used for either term and the measurement site element is used to differentiate them.\r\n\r\nUse to record the measurement of the pulse rate, or heart rate, observations about the associated pattern and character, and clinical interpretation of the findings.\r\n\r\nMeasurements such as the maximum pulse or heart rate over an interval of time can be recorded using 'Maximum' event. Others point-in-time or interval events may be specified within a template or at run-time.\r\n\r\nIn development of this archetype, there has been some tension around representation of the regularity of the pulse or heart beat. This archetype represents the relevant data points separately: firstly establishing 'Regular' vs 'Irregular' and then, if 'Irregular', further options of 'Regularly irregular' and 'Irregularly irregular'. In practice, clinical systems could offer users a combination of the values from the 'Regularity' and 'Irregular type' - for example, 'Regular', 'Regularly irregular' and 'Irregularly irregular' drawn from these two data elements. Data could be recorded against both data elements with the assumption that if one of the irregular types are selected, then the 'Irregular' value in the 'Regularity' data element is also automatically selected.\r\n\r\nIn certain situations it is important to be very specific so that a rate observed at a peripheral body site, such as the radial artery, can be differentiated from the rate of the heart. To record a pulse deficit, record the measurements of the mechanical heart rate and a peripheral pulse rate in two instances of this archetype - the difference between these measurments is the pulse deficit. The actual pulse deficit will be recorded in a separate OBSERVATION archetype.",
+          "misuse" : "Not to be used to record the R-R rate in the context of an Electrocardiograph report - use the OBSERVATION.ecg archetype for this purpose.\r\n\r\nNot to be used to record other details of the full cardiovascular examination or assessment. Other specific CLUSTER archetypes will be used to record characteristics such as apex beat, murmurs and bruits, or auscultatory findings.\r\n\r\nIn particular, this archetype is not intended to record the assessment of peripheral vascular disease, which requires documentation of the presence and strength of each peripheral pulse. A specific CLUSTER archetype will be used to record the general findings on examination of peripheral pulses. \r\n\r\nNot to be used to record fetal heart rate - use the OBSERVATION.fetal_heart archetype for this purpose.\r\n\r\nNot to be used to record the pulse deficit - use a specific OBSERVATION archetype for this purpose.\r\n\r\nConcepts such as Target Heart Rate should be recorded in separate EVALUATION archetypes related to goals and exercise assessment.",
+          "copyright" : "© openEHR Foundation",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "nl" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "nl"
+          },
+          "purpose" : "Voor het vastleggen van de frequentie en andere eigenschappen van de pols of de hartslag.",
+          "keywords" : [ "frequentie", "ritme", "slag", "pols", "hart", "vitaal", "teken" ],
+          "use" : "Gebruik voor het vastleggen van de aanwezigheid of afwezigheid van een pols of hartslag.\r\n\r\nIn de praktijk worden de termen hart frequentie and polsfrequentie vaak door elkaar gebruikt, hoewel ze op andere locaties op het lichaam gemeten kunnen worden. Dit archetype is bedoeld om gebruikt te worden voor beide termen en het element meetlocatie wordt gebruikt om ze te onderscheiden.\r\n\r\nGebruik voor het vastleggen van een meting van de polsfrequentie of de hartfrequentie, observaties over het bijbehorende patroon, karakter en de klinische interpretatie van de bevindingen.\r\n\r\nMetingen zoals de maximale pols- of hartfrequentie gedurende een interval kunnen worden vastgelegd met behulp van 'maximum' gebeurtenis. Andere momenten of interval gebeurtenissen kunnen gespecificieerd worden in een template of terwijl de applicatie loopt.\r\n\r\nTijdens de ontwikkeling van dit archetype is er spanning geweest rond het vastleggen van de regulariteit van de pols- of hartfreqeuntie. Dit archetype legt de relevante data apart vast: ten eerste door het vastleggen van 'regulair' of 'irregulair' en vervolgens, indien 'irregulair', de extra opties 'regelmatig irregulair' en 'onregelmatig irregulair'. In d praktijk kunnen klinische systemen een combinatie tonen aan de gebruiker van de waardes van de 'regulariteit' en 'irregulair type' - bijvoorbeeld, 'regulair', 'regemlatig irregulair' en 'onregelmatig irregulair' gekozen uit deze twee data elementen. Data kan vastgelegd worden in beide elementen onder de aanname dat wanneer een van de irregulaire types gekozen wordt, dat automatisch de waarde 'irregulair' wordt gekozen in het data element 'regulariteit'.\r\n\r\nIn bepaalde situaties is het belangrijk om heel specifiek te zijn zodat de frequentie, geobserveerd aan een perifeer lichaamslocatie, zoals de arteria radialis, onderscheiden kan worden van de hartfrequentie. Om een polsdeficit vast te leggen, dient de meting van de mechanische hartfrequentie en een perifere hartfrequentie in twee aparte versies van dit archetype vastgelegd te worden - het verschil tussen deze metingen is het polsdeficit. Het daadwerkelijke polsdeficit wordt in een apart OBSERVATION archetype vastgelegd.",
+          "misuse" : "Niet te gebruiken voor het vastleggen van de R-R frequentie in de context van een electrocardiogram verslag - gebruik voor dat doel het OBSERVATION.ecg archetype.\r\n\r\nNiet te gebruiken voor het vastleggen van andere details van een volledig cardiovasculair onderzoek of beoordeling. Andere specifieke CLUSTER archetypes worden gebruikt voor het vastleggen van eigenschappen als apexhartslag, geruizen en bevindingen bij auscultatie. \r\n\r\nIn het bijzonder, is dit archetype niet bedoeld voor het vastleggen van een beoordeling van perifere vaculaire ziekte, die verslaglegging vereisen van de aanwezigheid of kracht van elke individuele perifere pols. Een specifiek CLUSTER archetype wordt gebruikt voor het vastleggen van bevindingen bij onderzoek van de perifere hartslag.\r\n\r\nNiet te gebruiken voor het vastleggen van foetale hartfrequentie - gebruik voor dat doel het OBSERVATION.fetal_heart archetype.\r\n\r\nNiet te gebruiken voor het vastleggen van het polsdeficit - gebruik voor dat doel een specifiek OBSERVATION archetype.\r\n\r\nConcepten zoals streef hart frequentie dienen vastgelegd te worden in een apart EVALUATION archetype gerelateerd aan doelen en inspannings beoordeling.",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "es" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "es"
+          },
+          "purpose" : "Para registrar la frecuencia del pulso o latidos del corazón, y la descripción asociada a sus características como componente de los signos vitales",
+          "keywords" : [ "frecuencia, ritmo, latido, pulso, corazón, signo, signos vitales" ],
+          "use" : "Utilizar para registrar la presencia o ausencia de pulso o latidos del corazón.\r\n\r\nUtilizar para registrar la frecuencia del pulso o latidos del corazón, y observaciones sobre el ritmo.\r\n\r\nUtilizar para registrar la descripción de las características asociadas al pulso o latidos del corazón, comunmente registradas por parte de los signos vitales.\r\n\r\nMedidas como el pulso o latidos máximos en un intervalo de tiempo puede ser registrado en un evento de intervalo asociado a la función 'máximo'.\r\nOtros eventos puntuales o intervaloes pueden ser especificados dentro de una plantilla o en tiempo de ejecución.\r\n\r\nEn la práctica los términos pulso y latidos del corazón son intercambiables. Este arquetipo permite especificar el término que se desea utilizar para nombrar a la medida cuando no se especifica la localización corporal donde se realiza la medida.\r\n\r\nEn algunas situaciones, es importante diferenciar la frecuencia del pulso en una arteria periférica, como la arteria radial, en contraste con los latidos del corazón medidos centralmente. Este arquetipo permite registrar datos específicos y diferenciar entre frecuencia cardiaca central, y pulso medido sobre una arteria específica.",
+          "misuse" : "No debe ser utilizado para el cálculo de intervalos RR para l frecuencia cardiaca en el contexto de un estudio electrocardiográfico, para eso utilizar el arquetipo OBSERVATION.ecg.\r\n         \r\nNo debe ser utilizado para registrar otros detalles de la examiniación o evaluación cardiovascular.\r\nPara registrar características como latido apexiano, solplos, murmullos y hallazgos específicos, pueden utilizarse otros arquetipos CLUSTER.\r\n\r\nEste arquetipo no fue diseñado para el registro de la evaluación de enfermedad vascular periférica, la cual requiere documentación sobre la presencia e intensidad de cada pulso periférico. Un CLUSTER específico debe utilizarse para registrar hallazgos generales en la examinación de pulsos periféricos.\r\n\r\nNo debe ser utilizado para registrar la frecuencia cardiaca fetal, esto se registra en el arquetipo OBSERVATION.fetal_heart.\r\n\r\nConceptos como la frecuencia cardiaca objetivo deben ser registrados en arquetipos EVALUATION relacionados a objetivos sobre signos vitales y ejercicio.",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "es-co" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "es-co"
+          },
+          "purpose" : "Registrar la medida de la frecuencia de pulso, la frecuencia cardiaca, y la descripción de las características asociadas como uno de los componentes de las observación de signos vitales",
+          "keywords" : [ ],
+          "use" : "*Use to record the presence or absence of a pulse rate or heart rate. \r\n\r\nUse to record the measurement of the pulse rate, or heart rate, and observation about the associated rhythm.\r\n\r\nUse to record a simple description of characteristics that are associated with the pulse or heart beat, that might be commonly recorded as part of a vital signs obervation.\r\n\r\nMeasurements such as the maximum pulse or heart rate over an interval of time can be recorded using \"Maximum' event. Others point-in-time or interval events may be specified within a template or at run-time.\r\n\r\nIn practice, the terms heart rate and pulse rate are often used interchangeably. This archetype allows either term to be used when the measurement site is not specified, to suit clincian preferences.\r\n\r\nIn certain situations, however, it is important to differentiate between a pulse rate observed at a peripheral artery, such as the radial artery, in contrast to the centrally observed heart rate. This archetype allows the data to be very specific and differentiate between central heart rate and the pulse rate recorded at a specified artery.(en)",
+          "misuse" : "*Not to be used to record the R-R rate in the context of an Electrocardiograph report - this is to be recorded using the OBSERVATION.ecg archetype.\r\n\r\nNot to be used to record other details of the full cardiovascular examination or assessment. Other specific CLUSTER archetypes will be used to record characteristics such as apex beat, murmurs and bruits, auscultatory findings,\r\n\r\nIn particular, this archetype is not intended to record the assessment of peripheral vascular disease, which requires documentation of the presence and strength of each peripheral pulse.  A specific CLUSTER archetype will be used to record the general findings on examiantion of peripheral pulses.  \r\n\r\nNot to be used to record fetal heart rate - this is recorded using the OBSERVATION.fetal_heart archetype.\r\n\r\nConcepts such as Target Heart Rate should be recorded in separate EVALUATION archetypes related to goals and exercise assessment.(en)",
+          "copyright" : "© openEHR Foundation",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        }
+      }
     },
     "parentArchetypeId" : "openEHR-EHR-OBSERVATION.pulse.v2",
     "differential" : true,
@@ -642,6 +968,27 @@
               "nodeId" : "at1036.1",
               "attributes" : [ {
                 "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "math_function",
+                "children" : [ {
+                  "@type" : "C_COMPLEX_OBJECT",
+                  "rmTypeName" : "DV_CODED_TEXT",
+                  "attributes" : [ {
+                    "@type" : "C_ATTRIBUTE",
+                    "rmAttributeName" : "defining_code",
+                    "children" : [ {
+                      "@type" : "C_TERMINOLOGY_CODE",
+                      "rmTypeName" : "TERMINOLOGY_CODE",
+                      "occurrences" : "1..1",
+                      "terminologyId" : {
+                        "value" : "openehr"
+                      },
+                      "constraint" : [ "144" ]
+                    } ]
+                  } ],
+                  "attributeTuples" : [ ]
+                } ]
+              }, {
+                "@type" : "C_ATTRIBUTE",
                 "rmAttributeName" : "data",
                 "children" : [ {
                   "@type" : "C_COMPLEX_OBJECT",
@@ -660,26 +1007,6 @@
                   "nodeId" : "at0012.2",
                   "targetPath" : "/data[at0002]/events[at0003]/state[at0012.1]",
                   "attributes" : [ ],
-                  "attributeTuples" : [ ]
-                } ]
-              }, {
-                "@type" : "C_ATTRIBUTE",
-                "rmAttributeName" : "math_function",
-                "children" : [ {
-                  "@type" : "C_COMPLEX_OBJECT",
-                  "rmTypeName" : "DV_CODED_TEXT",
-                  "attributes" : [ {
-                    "@type" : "C_ATTRIBUTE",
-                    "rmAttributeName" : "defining_code",
-                    "children" : [ {
-                      "@type" : "C_TERMINOLOGY_CODE",
-                      "rmTypeName" : "TERMINOLOGY_CODE",
-                      "terminologyId" : {
-                        "value" : "openehr"
-                      },
-                      "constraint" : [ "144" ]
-                    } ]
-                  } ],
                   "attributeTuples" : [ ]
                 } ]
               } ],
@@ -874,7 +1201,162 @@
       "otherDetails" : {
         "PARENT:MD5-CAM-1.0.1" : "8FE80F3E80C594AAF99D3BA540A53D73"
       },
-      "details" : { }
+      "details" : {
+        "de" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "de"
+          },
+          "purpose" : "Eine generische Abschnittsüberschrift eines Templates, welche entsprechend dem spezifischen klinischen Kontext umbenannt werden sollte.",
+          "keywords" : [ "Abschnitt", "Template", "Überschrift", "Ad hoc", "Abschnittsüberschrift" ],
+          "use" : "Dieser Archetyp kann für die Erstellung einer Abschnittsüberschrift in einem Template verwendet werden. Die Überschrift kann, passend zu dem jeweiligen klinischen Kontext, umbenannt werden. Zum Beispiel: \"Ad hoc Überschrift\" wird umbenannt in \"Untersuchungsergebnisse\".\r\n\r\n",
+          "misuse" : "Die Überschrift sollte in einem Template nicht unverändert verwendet werden.",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "sv" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "sv"
+          },
+          "purpose" : "En allmän avsnittsrubrik som döps om i en openEHR-mall för att passa in i en specifik klinisk kontext.",
+          "keywords" : [ ],
+          "use" : "Används för att skapa en avsnittsrubrik i en openEHR-mall som sedan döps om för att passa in i den specifika kliniska kontexten. Exempelvis \"Rubrik\" döps om till \"Undersökningsfynd\".",
+          "misuse" : "Ska inte lämnas oförändrad i en openEHR-mall.",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "ru" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "ru"
+          },
+          "purpose" : "Базовый заголовок раздела, должен быть переименован в локальном шаблоне ",
+          "keywords" : [ "раздел", "шаблон", "заготовка", "название", "образец" ],
+          "use" : "используется для создания и именования разделов в локальных шаблонах",
+          "misuse" : "*Not to be left unchanged in a template.(en)",
+          "copyright" : "© openEHR Foundation",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "nb" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "nb"
+          },
+          "purpose" : "Brukes som en generisk seksjonsoverskrift som skal gis nytt navn i en templat for å passe i en gitt klinisk kontekst.",
+          "keywords" : [ ],
+          "use" : "Brukes til å lage en seksjonsoverskrift i en templat, hvis navn deretter endres for å passe i den aktuelle kliniske konteksten. For eksempel: \"Templat-overskrift\" endret til \"Funn ved undersøkelse\", \"Anamnese\", \"Personopplysninger\" eller \"Oppsummering\".",
+          "misuse" : "Skal ikke stå med uendret navn i en templat.",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "es-ar" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "es-ar"
+          },
+          "purpose" : "Proporcionar un encabezado de sección de tipo genérico que será renombrado en una plantilla para su empleo en un contexto clínico específico.",
+          "keywords" : [ ],
+          "use" : "Utilizar para construir un encabezado de sección en una plantilla y que será renombrado para su empleo en un contexto clínico específico. Por ejemplo, \"Encabezado ad hoc\" puede renombrarse como \"Hallazgos de examen\".",
+          "misuse" : "No debe mantenerse sin cambios en una plantilla.",
+          "copyright" : "© openEHR Foundation",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "pt-br" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "pt-br"
+          },
+          "purpose" : "Oferecer um cabeçalho de uma sessão genérica que será renomeado no template para adequar-se a um contexto clínico específico.",
+          "keywords" : [ "cabeçalho" ],
+          "use" : "Utilize para construir um cabeçalho de uma sessão (de um template) que será renomeada para adequar-se a um contexto clínico específico. Por exemplo: \"cabeçalho Ad hoc\" renomeado para \"Achados de exame\".",
+          "misuse" : "Não deve manter a configuração original no template.",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "en" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "en"
+          },
+          "purpose" : "To provide a generic section header which will be renamed in a template to suit a specific clinical context.",
+          "keywords" : [ ],
+          "use" : "Use to construct a section heading in a template that will be renamed to suit the specific clinical context. For example: \"Ad hoc heading\" renamed to \"Examination findings\".",
+          "misuse" : "Not to be left unchanged in a template.",
+          "copyright" : "© openEHR Foundation",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "sl" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "sl"
+          },
+          "purpose" : "*To provide a generic section header which will be renamed in a template to suit a specific clinical context.(en)",
+          "keywords" : [ ],
+          "use" : "*Use to construct a section heading in a template that will be renamed to suit the specific clinical context. For example: \"Ad hoc heading\" renamed to \"Examination findings\".(en)",
+          "misuse" : "*Not to be left unchanged in a template.(en)",
+          "copyright" : "© openEHR Foundation",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "it" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "it"
+          },
+          "purpose" : "Fornire un'intestazione generica della sezione che sarà rinominata in un template per adattarsi ad uno specifico contesto clinico.",
+          "keywords" : [ ],
+          "use" : "Usato per costruire un'intestazione di sezione in un template che sarà rinominato in base al contesto clinico specifico. Per esempio: \"Intestazione ad hoc\" rinominata in \"Risultati dell'esame\".",
+          "misuse" : "Non deve essere lasciato invariato in un template.",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "fr" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "fr"
+          },
+          "purpose" : "*To provide a generic section header which will be renamed in a template to suit a specific clinical context.(en)",
+          "keywords" : [ ],
+          "use" : "*Use to construct a section heading in a template that will be renamed to suit the specific clinical context. For example: \"Ad hoc heading\" renamed to \"Examination findings\".(en)",
+          "misuse" : "*Not to be left unchanged in a template.(en)",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        }
+      }
     },
     "parentArchetypeId" : "openEHR-EHR-SECTION.adhoc.v1",
     "differential" : true,
@@ -1140,7 +1622,84 @@
       "otherDetails" : {
         "PARENT:MD5-CAM-1.0.1" : "6909F693B43BB74AC5EDB3156A12598B"
       },
-      "details" : { }
+      "details" : {
+        "de" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "de"
+          },
+          "purpose" : "Zur Repräsentation der gemessenen oder berechneten Oberfläche des menschlichen Körpers.",
+          "keywords" : [ "Körper", "Oberfläche", "Fläche", "Körperoberfläche", "KOF", "BSA" ],
+          "use" : "Zur Repräsentation der gemessenen oder berechneten Oberfläche des menschlichen Körpers.\r\n\r\nKOF bzw. BSA kann zur Unterstützung der klinischen Entscheidungsfindung verwendet werden, einschließlich, aber nicht beschränkt auf:\r\n- die Bestimmung der Dosierung der Chemotherapie und anderer Medikamente mit einem engen therapeutischen Index;\r\n- der Berechnung des Herzindex; und\r\n- der Berechnung des intravenösen Flüssigkeitsbedarfs.",
+          "misuse" : "Nicht zur Repräsentation des prozentualen Anteils der Körperoberfläche, der an Verbrennungen oder anderen Hautschäden usw. beteiligt ist. Diese Informationen sollten in separaten spezifischen Archetypen zur Beurteilung von Verbrennungen erfasst werden.\r\n\r\nNicht zu verwenden, um die angepasste Körperoberflächenfläche aufzuzeichnen, z.B. eine Berechnung der KOF/BSA einer Person mit Gliedmaßenamputation, basierend auf anderen Körperteilmessungen und einem Algorithmus - verwenden Sie OBSERVATION.body_surface_area-adjusted.",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "sv" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "sv"
+          },
+          "purpose" : "Att registrera arean av en människas uppmätta eller beräknade kroppsyta.",
+          "keywords" : [ "kropp", "yta", "area", "kroppsyta" ],
+          "use" : "Används för att registrera arean av en människas uppmätta eller beräknade kroppsyta.\r\nKan användas som beslutsstöd i kliniska sammanhang, exempelvis:\r\n- avgöra dosering av cellgifter och andra läkemedel med ett lågt terapeutiskt index\r\n- beräkning av hjärtminutvolym (indexerat)\r\n- beräkning av krav på intravenösa vätskor",
+          "misuse" : "Ska inte användas för att registrera hur stor del i procent av kroppsytan som rör brännskada eller annan hudskada. Sådan information registreras i arketyper som är särskilt utformade för bedömning av brännskada.\r\n",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "fi" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "fi"
+          },
+          "purpose" : "*To record the measured or calculated surface area of a human body.(en)",
+          "keywords" : [ "*body(en)", "*surface(en)", "*area(en)", "*BSA(en)", "*surface area(en)" ],
+          "use" : "*Use to record the measured or calculated surface area of a human body. \r\n\r\nBSA can be used to support clinical decision-making, including but not limited to:\r\n- determine the dosage of chemotherapy and other drugs with a narrow therapeutic index; \r\n- calculation of the cardiac index; and\r\n- calculation of intravenous fluid requirements.(en)",
+          "misuse" : "*Not to be used to record the percentage of body surface area involvement in burns or other skin damage etc. This information should be carried in separate specific archetypes related to burns assessment.\r\n\r\nNot to be used to record the adjusted Body surface area eg a calculation of the BSA of a person with limb amputation, based on other body part measurements and an algorithm - use OBSERVATION.body_surface_area-adjusted.(en)",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "nb" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "nb"
+          },
+          "purpose" : "For å registrere måling eller beregning av en persons kroppsoverflate.",
+          "keywords" : [ "kropp", "overflate", "areal", "BSA" ],
+          "use" : "Brukes for å registrere måling eller beregning av en persons kroppsoverflate.\r\n\r\nKroppsoverflaten kan brukes for å understøtte kliniske beslutninger som for eksempel:\r\n- å beregne riktig dose av et legemiddel som har smal terapeutisk indeks som f.eks kjemoterapeutiske medikamenter \r\n- beregning av minuttvolum per overflate (Cardiac Index)\r\n- beregning av behov for intravenøse væsker",
+          "misuse" : "Brukes ikke for å registrere prosentandel av kroppsoverflaten som er påvirket av brannskade eller andre skader i huden. Dette registreres i egne arketyper som er relatert til vurdering av brannskader eller sår.\r\n\r\nBrukes ikke for å registrere justert kroppsoverflate, for eksempel en utregning av kroppsoverflate hos en person som har amputert en kroppsdel. Bruk arketypen OBSERVATION.body_surface_area-adjusted.",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "en" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "en"
+          },
+          "purpose" : "To record the measured or calculated surface area of a human body.",
+          "keywords" : [ "body", "surface", "area", "BSA", "surface area" ],
+          "use" : "Use to record the measured or calculated surface area of a human body. \r\n\r\nBSA can be used to support clinical decision-making, including but not limited to:\r\n- determine the dosage of chemotherapy and other drugs with a narrow therapeutic index; \r\n- calculation of the cardiac index; and\r\n- calculation of intravenous fluid requirements.",
+          "misuse" : "Not to be used to record the percentage of body surface area involvement in burns or other skin damage etc. This information should be carried in separate specific archetypes related to burns assessment.\r\n\r\nNot to be used to record the adjusted Body surface area eg a calculation of the BSA of a person with limb amputation, based on other body part measurements and an algorithm - use OBSERVATION.body_surface_area-adjusted.",
+          "copyright" : "© openEHR Foundation",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        }
+      }
     },
     "parentArchetypeId" : "openEHR-EHR-OBSERVATION.body_surface_area.v1",
     "differential" : true,
