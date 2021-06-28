@@ -42,5 +42,6 @@ SELECT e/ehr_id/value AS ehr_id,
        e/ehr_status/other_details/items[at0001]/value/value as sex,
        e/ehr_status/other_details/items[at0002]/value/value as date_of_birth
 FROM EHR e
+ORDER BY date_of_birth DESCENDING
 ```
 An example result file (.csv) is provided in this directory.
