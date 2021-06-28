@@ -1,6 +1,17 @@
 AQL queries can either be added to this document or uploaded as text files to this directory
 
-## Experiments extracting SNOMED CT coded data
+### Demographic base data from Better EHRScape
+The info about date_of_birth and sex may be different (or absent) in EHRbase and other implementations
+```
+SELECT e/ehr_id/value AS ehr_id,
+       e/ehr_status/Subject/external_ref/id/value AS patient_id,
+       e/ehr_status/other_details/items[at0001]/value/value as sex,
+       e/ehr_status/other_details/items[at0002]/value/value as date_of_birth
+FROM EHR e
+ORDER BY date_of_birth DESCENDING
+```
+
+### Experiment extracting SNOMED CT coded data
 
 Remove the -- (comment marker on AQL) to include the entire composition object in the response
 
