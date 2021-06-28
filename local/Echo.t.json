@@ -27,7 +27,7 @@
       "MD5-CAM-1.0.1" : "d512e5719f516273aab220cfa24b79b0",
       "PARENT:MD5-CAM-1.0.1" : "641B268BE8805CEB8DC21AB82C53AB3F",
       "sem_ver" : "12.0.0",
-      "build_uid" : "56e5e75a-ec2b-4fc9-b84e-c28b8c35b012"
+      "build_uid" : "b5c52b35-4af5-4501-9f97-42ad642ddd1b"
     },
     "details" : {
       "en" : {
@@ -39,8 +39,9 @@
           "codeString" : "en"
         },
         "purpose" : "Das Template Echokardiographie dient der Dokumentation von Echokardiographie Daten von Patienten mit Herzinsuffizienz. Dieses Template wird im Rahmen des Projektes HiGHmed genutzt.",
-        "use" : "",
-        "misuse" : "",
+        "keywords" : [ "test" ],
+        "use" : "test",
+        "misuse" : "test",
         "originalResourceUri" : { },
         "otherDetails" : { }
       },
@@ -52,6 +53,9 @@
           },
           "codeString" : "de"
         },
+        "purpose" : "test",
+        "keywords" : [ "test" ],
+        "use" : "test",
         "originalResourceUri" : { },
         "otherDetails" : {
           "notes" : "Generated automatically by Adl Designer"
@@ -185,6 +189,7 @@
         "purpose" : "Generisk containerarketyp för att hålla information som behöver delas med andra.",
         "keywords" : [ "rapport" ],
         "use" : "Använd som en generisk arketyp för att hålla information som behöver delas med andra.\r\n\r\nVanliga användningsfall är: dokumentera ett svar på en förfrågan om information; resultatet av ett test; aktiviteter som har utförts; eller händelser som har inträffat.\r\n\r\nDen huvudsakliga sektionen/innehållskomponenten har medvetet lämnats obegränsad. Detta gör att den kan fyllas med alla SECTION- eller ENTRY-arketyper som är lämpliga för det kliniska syftet i en template.",
+        "misuse" : "test",
         "originalResourceUri" : { },
         "otherDetails" : { }
       }
