@@ -32,3 +32,16 @@ CONTAINS (OBSERVATION a[openEHR-EHR-OBSERVATION.pulse.v2] and CLUSTER l[openEHR-
 WHERE l/items[at0001]/items[at0015]/value/defining_code/terminology_id/value = 'http://snomed.info/sct/'
 OFFSET 0 LIMIT 10
 ```
+
+# Saker att bygga frågor för
+
+När det gäller ”prototyp-registret har jag 2 sorters frågor: en som gäller t.ex. 
+* "Hur många i registret har en aortaflödeshastighet som överskrider 3.5 m/s?” Denna fråga kan identifiera alla dem som troligen har en aortastenos som blir behandlingskrävande inom det närmaste året. När frågan ställs på nytt efter 6-12 månader kan vi hitta dem som är nydiagnosticerade inom ett visst intervall och utifrån ett sådant svar kan vi beräkna det årliga tillskottet av patienter med behandlingskrävande aortastenos.
+
+För den enskilde individen vill man kunna avgöra progress, t.ex. definierad som ökning av aortaflödeshastigheten med >0.5 m/s på 2 år.
+
+På motsvarande sätt vill vi ställa frågan: 
+* ”Hur många i registret har en beräknad ejektionsfraktion <40%?
+
+En individuell fråga kan vara: har denna patient uppvisat försämring, definierat som sänkning av ejektionsfraktionen med >5% under en 1 års-period (här kan man för onkologpatienter som kontrolleras var 3:e månad använda 5% sänkning mellan varje konsultationstillfälle.
+
