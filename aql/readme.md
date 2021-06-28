@@ -33,7 +33,32 @@ WHERE l/items[at0001]/items[at0015]/value/defining_code/terminology_id/value = '
 OFFSET 0 LIMIT 10
 ```
 
-# Saker att bygga frågor för
+# Alla imaging_result
+
+SELECT b/items[at0001]/items[at0002]/value AS Resultat,
+       b/items[at0001]/items[at0002]/value/magnitude AS Resultat_magn,
+       b/items[at0001]/items[at0002]/value AS Resultat,
+       b/items[at0001]/items[at0002]/value AS Resultat_kod,
+FROM EHR e
+CONTAINS COMPOSITION c[openEHR-EHR-COMPOSITION.report.v1] 
+CONTAINS CLUSTER b[openEHR-EHR-CLUSTER.imaging_result.v0] 
+OFFSET 0 LIMIT 100
+
+### vänster kammares ejektionsfraktion (SCT ID = 250908004)
+
+SELECT b/items[at0001]/items[at0002]/value AS Resultat,
+       b/items[at0001]/items[at0002]/value/magnitude AS Resultat_magn,
+       b/items[at0001]/items[at0015]/value AS Resultatets_namn,
+       b/items[at0001]/items[at0015]/value/defining_code/code_string AS Resultat_kod,
+       b/items[at0001]/items[at0015]/value/defining_code/terminology_id/value AS Resultat_termionologi
+FROM EHR e
+CONTAINS COMPOSITION c[openEHR-EHR-COMPOSITION.report.v1] 
+CONTAINS CLUSTER b[openEHR-EHR-CLUSTER.imaging_result.v0] 
+WHERE Resultat_kod = '250908004' AND Resultat_termionologi = 'http://snomed.info/sct/'
+OFFSET 0 LIMIT 100
+
+
+### Saker att bygga frågor för
 
 När det gäller ”prototyp-registret har jag 2 sorters frågor: en som gäller t.ex. 
 * "Hur många i registret har en aortaflödeshastighet som överskrider 3.5 m/s?” Denna fråga kan identifiera alla dem som troligen har en aortastenos som blir behandlingskrävande inom det närmaste året. När frågan ställs på nytt efter 6-12 månader kan vi hitta dem som är nydiagnosticerade inom ett visst intervall och utifrån ett sådant svar kan vi beräkna det årliga tillskottet av patienter med behandlingskrävande aortastenos.
