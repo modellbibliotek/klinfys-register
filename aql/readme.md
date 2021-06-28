@@ -1,5 +1,7 @@
 AQL queries can either be added to this document or uploaded as text files to this directory
 
+Hint: If your AQL query API does not support CSV export, tnen the raw standard openEHR JSON format can be converted to CSV e.g using https://konklone.io/json/ or libraries like https://csvkit.readthedocs.io/en/latest/
+
 ### Demographic base data from Better EHRScape
 The info about date_of_birth and sex may be different (or absent) in EHRbase and other implementations
 ```
