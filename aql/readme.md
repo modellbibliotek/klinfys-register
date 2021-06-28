@@ -47,6 +47,28 @@ CONTAINS COMPOSITION c[openEHR-EHR-COMPOSITION.report.v1]
 CONTAINS CLUSTER b[openEHR-EHR-CLUSTER.imaging_result.v0] 
 OFFSET 0 LIMIT 100
 ```
+### Experiment extracting SNOMED CT coded data from CLUSTER.imaging_result clusters inside OBSERVATION.imaging_exam_result
+
+```
+SELECT img_cl/items[at0001]/items[at0002]/value AS Resultat,
+       img_cl/items[at0001]/items[at0002]/value/magnitude AS magn,
+       img_cl/items[at0001]/items[at0015]/value/value AS Snomed_CT_description,
+       img_cl/items[at0001]/items[at0015]/value/defining_code/code_string AS Snomed_CT_code,
+       img_cl/items[at0001]/items[at0015]/value/defining_code/terminology_id/value AS terminology_id,
+       o/data[at0001]/events[at0002]/data[at0003]/items[at0004]/value AS Undersökning,
+       o/data[at0001]/events[at0002]/data[at0003]/items[at0004]/value/defining_code/code_string AS  Undersökning_kod,
+       o/data[at0001]/events[at0002]/data[at0003]/items[at0055]/value AS Anatomisk_lokalisation,
+       o/data[at0001]/events[at0002]/data[at0003]/items[at0005] AS Modalitet,
+       c/uid/value AS composition_id,
+      e/ehr_id/value AS ehr_id
+FROM EHR e
+CONTAINS COMPOSITION c 
+CONTAINS OBSERVATION o[openEHR-EHR-OBSERVATION.imaging_exam_result.v0] 
+CONTAINS CLUSTER img_cl[openEHR-EHR-CLUSTER.imaging_result.v0] 
+WHERE terminology_id = 'http://snomed.info/sct/'
+ORDER BY ehr_id
+OFFSET 0 LIMIT 50
+```
 
 ### vänster kammares ejektionsfraktion (SCT ID = 250908004)
 
