@@ -3,7 +3,10 @@
   "uid" : "6ef62da7-5dbd-4d4d-bb8d-bdd16d69c171",
   "description" : {
     "@type" : "RESOURCE_DESCRIPTION",
-    "originalAuthor" : { },
+    "originalAuthor" : {
+      "name" : "Erik Sundvall",
+      "organisation" : "Linköping University & Region Östergötland"
+    },
     "otherContributors" : [ ],
     "lifecycleState" : {
       "codeString" : "unmanaged"
@@ -24,7 +27,7 @@
       "Sign off" : "",
       "Speciality" : "",
       "User roles" : "",
-      "MD5-CAM-1.0.1" : "d512e5719f516273aab220cfa24b79b0",
+      "MD5-CAM-1.0.1" : "3a131eee5d2712905585c270d566faf4",
       "PARENT:MD5-CAM-1.0.1" : "641B268BE8805CEB8DC21AB82C53AB3F",
       "sem_ver" : "12.0.0",
       "build_uid" : "b5c52b35-4af5-4501-9f97-42ad642ddd1b"
@@ -2975,18 +2978,6 @@
                           "@type" : "C_COMPLEX_OBJECT",
                           "rmTypeName" : "DV_CODED_TEXT",
                           "occurrences" : "1..1",
-                          "defaultValue" : {
-                            "defining_code" : {
-                              "terminology_id" : {
-                                "value" : "http://snomed.info/sct/",
-                                "@type" : "TERMINOLOGY_ID"
-                              },
-                              "code_string" : "80891009",
-                              "@type" : "CODE_PHRASE"
-                            },
-                            "value" : "hjärta, struktur",
-                            "@type" : "DV_CODED_TEXT"
-                          },
                           "attributes" : [ {
                             "@type" : "C_ATTRIBUTE",
                             "rmAttributeName" : "defining_code",
@@ -18776,7 +18767,9 @@
       },
       "codeString" : "fi"
     },
-    "author" : { },
+    "author" : {
+      "name" : "..."
+    },
     "otherDetails" : { }
   }, {
     "@type" : "TRANSLATION_DETAILS",
