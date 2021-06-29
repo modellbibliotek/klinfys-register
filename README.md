@@ -28,7 +28,7 @@ Make sure you are logged in to Archetype designer using GitHub first:
 * Set up a project (you can have several) in our case let's use the shared SFMI tutorial/course account at EHRscape as backend (Only fake patient data allowed - no clinical use!)
     * Project name: *whatever you like to call it* 
     * EHR Server URL: https://rest.ehrscape.com/
-    * EHR Server username: sfmi
+    * EHR Server username: sfmi (_not_ capital SFMI as in the somewhat faulty screenshot below)
     * EHR Server password: *the password used in the course - see invitation email or ask colleague*
 
 ![image](https://user-images.githubusercontent.com/1034001/121383318-a69b7900-c947-11eb-8962-0ab98b3ea384.png)
