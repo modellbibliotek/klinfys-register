@@ -2,7 +2,7 @@ AQL queries can either be added to this document or uploaded as text files to th
 
 Hint: If your AQL query API does not support CSV export, tnen the raw standard openEHR JSON format can be converted to CSV e.g using https://konklone.io/json/ or libraries like https://csvkit.readthedocs.io/en/latest/
 
-### Demographic base data from Better EHRScape
+### 1. Demographic base data from Better EHRScape
 The info about date_of_birth and sex may be different (or absent) in EHRbase and other implementations
 ```
 SELECT e/ehr_id/value AS ehr_id,
@@ -13,7 +13,7 @@ FROM EHR e
 ORDER BY date_of_birth DESCENDING
 ```
 
-### Experiment extracting SNOMED CT coded data
+### 2. Experiment extracting SNOMED CT coded data
 
 Remove the -- (comment marker on AQL) to include the entire composition object in the response
 
@@ -37,7 +37,7 @@ ORDER BY ehr_id
 OFFSET 0 LIMIT 10
 ```
 
-### all imaging_result clusters
+### 3. all imaging_result clusters
 
 ```
 SELECT b/items[at0001]/items[at0002]/value AS Resultat,
@@ -49,7 +49,7 @@ CONTAINS COMPOSITION c[openEHR-EHR-COMPOSITION.report.v1]
 CONTAINS CLUSTER b[openEHR-EHR-CLUSTER.imaging_result.v0] 
 OFFSET 0 LIMIT 100
 ```
-### Experiment extracting SNOMED CT coded data from CLUSTER.imaging_result clusters inside OBSERVATION.imaging_exam_result
+### 4. Experiment extracting SNOMED CT coded data from CLUSTER.imaging_result clusters inside OBSERVATION.imaging_exam_result
 
 ```
 SELECT img_cl/items[at0001]/items[at0002]/value AS Resultat,
@@ -72,7 +72,7 @@ ORDER BY ehr_id
 OFFSET 0 LIMIT 50
 ```
 
-### vänster kammares ejektionsfraktion (SCT ID = 250908004)
+### 5. vänster kammares ejektionsfraktion (SCT ID = 250908004)
 
 ```
 SELECT b/items[at0001]/items[at0002]/value AS Resultat,
@@ -86,6 +86,32 @@ CONTAINS CLUSTER b[openEHR-EHR-CLUSTER.imaging_result.v0]
 WHERE Resultat_kod = '250908004' AND Resultat_termionologi = 'http://snomed.info/sct/'
 OFFSET 0 LIMIT 100
 ```
+### 6. Lista alla mätningar för alla patienter där vänster kammares ejektionsfraktion (SCT ID = 250908004) < 40%
+
+```
+SELECT b/items[at0001]/items[at0002]/value/magnitude AS Resultat_magnitud,
+       b/items[at0001]/items[at0015]/value AS Resultatets_namn,
+       b/items[at0001]/items[at0015]/value/defining_code/code_string AS Resultat_kod,
+       b/items[at0001]/items[at0015]/value/defining_code/terminology_id/value AS Resultat_termionologi,
+       e/ehr_id/value,
+       c/context/start_time/value AS besökstid
+FROM EHR e
+CONTAINS COMPOSITION c
+CONTAINS CLUSTER b[openEHR-EHR-CLUSTER.imaging_result.v0] 
+WHERE Resultat_kod = '250908004' AND Resultat_termionologi = 'http://snomed.info/sct/' AND Resultat_magnitud < 40
+OFFSET 0 LIMIT 100
+```
+
+### 7. Räkna hur många journaler som har minst en mätning där vänster kammares ejektionsfraktion (SCT ID = 250908004) < 40%
+```
+SELECT COUNT(DISTINCT e/ehr_id/value) AS number_of_matching_EHRs 
+FROM EHR e
+CONTAINS COMPOSITION c
+CONTAINS CLUSTER b[openEHR-EHR-CLUSTER.imaging_result.v0] 
+WHERE b/items[at0001]/items[at0015]/value/defining_code/code_string = '250908004' -- Resultat_kod
+  AND b/items[at0001]/items[at0015]/value/defining_code/terminology_id/value  = 'http://snomed.info/sct/'--Resultat_termionologi
+  AND b/items[at0001]/items[at0002]/value/magnitude < 40 -- Resultat_magnitud
+```
 
 ## Exempel på relevanta frågor för klinfys
 
@@ -98,6 +124,7 @@ För den enskilde individen vill man kunna avgöra **progress**, t.ex. definiera
 
 På motsvarande sätt vill vi ställa frågan: 
 * ”Hur många i registret har en beräknad ejektionsfraktion <40%?
+     * Besvaras med AQL-fråga nr 7 ovan
 
 En individuell fråga kan vara: 
 * "har denna patient uppvisat försämring, definierat som sänkning av ejektionsfraktionen med >5% under en 1 års-period"
