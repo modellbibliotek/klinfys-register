@@ -36,7 +36,7 @@ b3f1f51636ee   ehrbase/ehrbase-postgres:latest   "docker-entrypoint.s…"   6 mi
 ## Import the Postman collection
 
 ## Create a new EHR
-send the saved POST request _ehr/Create a new EHR_. If successful, copy the ehr_id/value and store it in your environment variable _ehrId_
+send the saved POST request _ehr/Create a new EHR_ from the imported Postman collection. If successful, copy the ehr_id/value and store it in your environment variable _ehr_id_
 ```json
 ...
 "ehr_id": {
@@ -45,8 +45,8 @@ send the saved POST request _ehr/Create a new EHR_. If successful, copy the ehr_
 },
 ...
 ```
-## Fetch an EHR by EHR ID
-Send the saved GET request _ehr/Fetch EHR by ehrId_. The response should look like the previous one
+## Fetch an EHR by ehr id
+Send the saved GET request _ehr/Fetch EHR by ehr_id_. The response should look like the previous one
 ```json
 ...
 {
@@ -57,3 +57,15 @@ Send the saved GET request _ehr/Fetch EHR by ehrId_. The response should look li
   ...
 }
 ```
+## Upload a new template
+Send the saved POST request _definition/Upload a template_. The body XML is taken from an OPT file. The response body should be similar to the request body.
+
+## List all uploaded templates
+Send the saved GET requst _definition/List templates_
+
+Store the value for the key _template_id_ from the response as your environment variable _template_id_
+
+## Retrieve a specified template
+
+Send the saved GET request _definition/Retrieve a template_
+
