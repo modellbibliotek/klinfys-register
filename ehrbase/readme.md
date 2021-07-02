@@ -28,14 +28,14 @@ CONTAINER ID   IMAGE                             COMMAND                  CREATE
 b3f1f51636ee   ehrbase/ehrbase-postgres:latest   "docker-entrypoint.s…"   6 minutes ago   Up 8 seconds    0.0.0.0:5432->5432/tcp, :::5432->5432/tcp   ehrbase_ehrdb_1
 0dd30f478f11   ehrbase/ehrbase:next              "/bin/sh -c ./docker…"   6 minutes ago   Up 11 seconds   0.0.0.0:8080->8080/tcp, :::8080->8080/tcp   ehrbase_ehrbase_1
 ```
-# OpenEHR REST API
+## OpenEHR REST API
 
-## Prerequisites
+### Prerequisites
 - Postman must be installed on your computer
 
-## Import the Postman collection
+### Import the Postman collection
 
-## Create a new EHR
+### Create a new EHR
 send the saved POST request _ehr/Create a new EHR_ from the imported Postman collection. If successful, copy the ehr_id/value and store it in your environment variable _ehr_id_
 ```json
 ...
@@ -45,7 +45,7 @@ send the saved POST request _ehr/Create a new EHR_ from the imported Postman col
 },
 ...
 ```
-## Fetch an EHR by ehr id
+### Fetch an EHR by ehr id
 Send the saved GET request _ehr/Fetch EHR by ehr_id_. The response should look like the previous one
 ```json
 ...
@@ -57,15 +57,15 @@ Send the saved GET request _ehr/Fetch EHR by ehr_id_. The response should look l
   ...
 }
 ```
-## Upload a new template
+### Upload a new template
 Send the saved POST request _definition/Upload a template_. The body XML is taken from an OPT file. The response body should be similar to the request body.
 
-## List all uploaded templates
+### List all uploaded templates
 Send the saved GET requst _definition/List templates_
 
 Store the value for the key _template_id_ from the response as your environment variable _template_id_
 
-## Retrieve a specified template
+### Retrieve a specified template
 
 Send the saved GET request _definition/Retrieve a template_
 
