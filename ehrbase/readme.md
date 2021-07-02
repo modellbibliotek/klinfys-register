@@ -28,13 +28,14 @@ CONTAINER ID   IMAGE                             COMMAND                  CREATE
 b3f1f51636ee   ehrbase/ehrbase-postgres:latest   "docker-entrypoint.s…"   6 minutes ago   Up 8 seconds    0.0.0.0:5432->5432/tcp, :::5432->5432/tcp   ehrbase_ehrdb_1
 0dd30f478f11   ehrbase/ehrbase:next              "/bin/sh -c ./docker…"   6 minutes ago   Up 11 seconds   0.0.0.0:8080->8080/tcp, :::8080->8080/tcp   ehrbase_ehrbase_1
 ```
-## OpenEHR REST API
+# REST API
 
-### Prerequisites
+## Prerequisites
 - Postman must be installed on your computer
-
+- Postman collection
 ### Import the Postman collection
 
+## Postman collection requests
 ### Create a new EHR
 send the saved POST request _ehr/Create a new EHR_ from the imported Postman collection. If successful, copy the ehr_id/value and store it in your environment variable _ehr_id_
 ```json
