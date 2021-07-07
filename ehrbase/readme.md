@@ -70,3 +70,15 @@ Store the value for the key _template_id_ from the response as your environment 
 
 Send the saved GET request _definition/Retrieve a template_
 
+# FLAT Format
+POST http://localhost:8080/ehrbase/rest/ecis/v1/composition/?ehrId={{ehr_id}}&templateId={{template_id}}&format=FLAT
+```JSON
+{
+"ctx/language": "en",
+"pulstest/cirkulation/pulse_heart_beat/any_event:0/rate|magnitude": 69,
+"pulstest/cirkulation/pulse_heart_beat/any_event:0/rate|unit": "/min",
+"pulstest/territory|code": "SE",
+"pulstest/territory|terminology": "ISO_3166-1",
+"pulstest/composer|name": "Sebastian"
+}
+```
