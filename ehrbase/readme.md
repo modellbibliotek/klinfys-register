@@ -70,7 +70,7 @@ Store the value for the key _template_id_ from the response as your environment 
 
 Send the saved GET request _definition/Retrieve a template_
 
-# FLAT Format
+## FLAT Format
 POST http://localhost:8080/ehrbase/rest/ecis/v1/composition/?ehrId={{ehr_id}}&templateId={{template_id}}&format=FLAT
 ```JSON
 {
