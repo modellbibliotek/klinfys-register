@@ -103,6 +103,9 @@ OFFSET 0 LIMIT 100
 
 --Absolute paths + no comments + no line breaks
 SELECT b/items[at0001]/items[at0002]/value/magnitude AS Resultat_magnitud, b/items[at0001]/items[at0015]/value AS Resultatets_namn, b/items[at0001]/items[at0015]/value/defining_code/code_string AS Resultat_kod, b/items[at0001]/items[at0015]/value/defining_code/terminology_id/value AS Resultat_termionologi, e/ehr_id/value FROM EHR e CONTAINS COMPOSITION c CONTAINS CLUSTER b[openEHR-EHR-CLUSTER.imaging_result.v0] WHERE b/items[at0001]/items[at0015]/value/defining_code/code_string = '250908004' AND b/items[at0001]/items[at0015]/value/defining_code/terminology_id/value = 'http://snomed.info/sct/' AND b/items[at0001]/items[at0002]/value/magnitude < 40
+
+--Result + ehr_id
+SELECT b/items[at0001]/items[at0002]/value/magnitude AS Resultat_magnitud, e/ehr_id/value FROM EHR e CONTAINS COMPOSITION c CONTAINS CLUSTER b[openEHR-EHR-CLUSTER.imaging_result.v0] WHERE b/items[at0001]/items[at0015]/value/defining_code/code_string = '250908004' AND b/items[at0001]/items[at0015]/value/defining_code/terminology_id/value = 'http://snomed.info/sct/' AND b/items[at0001]/items[at0002]/value/magnitude < 40
 ```
 
 ### 7. Räkna hur många journaler som har minst en mätning där vänster kammares ejektionsfraktion (SCT ID = 250908004) < 40%
