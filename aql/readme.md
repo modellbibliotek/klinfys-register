@@ -4,7 +4,7 @@ Hint: If your AQL query API does not support CSV export, tnen the raw standard o
 
 ### 1. Demographic base data from Better EHRScape
 The info about date_of_birth and sex may be different (or absent) in EHRbase and other implementations
-```
+```SQL
 SELECT e/ehr_id/value AS ehr_id,
        e/ehr_status/Subject/external_ref/id/value AS patient_id,
        e/ehr_status/other_details/items[at0001]/value/value as sex,
@@ -17,7 +17,7 @@ ORDER BY date_of_birth DESCENDING
 
 Remove the -- (comment marker on AQL) to include the entire composition object in the response
 
-```
+```SQL
 SELECT pul/data[at0002]/events[at0003]/data[at0001]/items[at0004]/value AS frekvens,
        pul/data[at0002]/events[at0003]/data[at0001]/items[at1023]/value AS Rytm,
        img_cl/items[at0001]/items[at0002]/value/magnitude AS Resultat,
@@ -39,7 +39,7 @@ OFFSET 0 LIMIT 10
 
 ### 3. all imaging_result clusters
 
-```
+```SQL
 SELECT b/items[at0001]/items[at0002]/value AS Resultat,
        b/items[at0001]/items[at0002]/value/magnitude AS Resultat_magn,
        b/items[at0001]/items[at0002]/value AS Resultat,
@@ -51,7 +51,7 @@ OFFSET 0 LIMIT 100
 ```
 ### 4. Experiment extracting SNOMED CT coded data from CLUSTER.imaging_result clusters inside OBSERVATION.imaging_exam_result
 
-```
+```SQL
 SELECT img_cl/items[at0001]/items[at0002]/value AS Resultat,
        img_cl/items[at0001]/items[at0002]/value/magnitude AS magn,
        img_cl/items[at0001]/items[at0015]/value/value AS Snomed_CT_description,
@@ -74,7 +74,7 @@ OFFSET 0 LIMIT 50
 
 ### 5. vänster kammares ejektionsfraktion (SCT ID = 250908004)
 
-```
+```SQL
 SELECT b/items[at0001]/items[at0002]/value AS Resultat,
        b/items[at0001]/items[at0002]/value/magnitude AS Resultat_magn,
        b/items[at0001]/items[at0015]/value AS Resultatets_namn,
@@ -88,7 +88,7 @@ OFFSET 0 LIMIT 100
 ```
 ### 6. Lista alla mätningar för alla patienter där vänster kammares ejektionsfraktion (SCT ID = 250908004) < 40%
 
-```
+```SQL
 SELECT b/items[at0001]/items[at0002]/value/magnitude AS Resultat_magnitud,
        b/items[at0001]/items[at0015]/value AS Resultatets_namn,
        b/items[at0001]/items[at0015]/value/defining_code/code_string AS Resultat_kod,
@@ -100,10 +100,13 @@ CONTAINS COMPOSITION c
 CONTAINS CLUSTER b[openEHR-EHR-CLUSTER.imaging_result.v0] 
 WHERE Resultat_kod = '250908004' AND Resultat_termionologi = 'http://snomed.info/sct/' AND Resultat_magnitud < 40
 OFFSET 0 LIMIT 100
+
+--Absolute paths + no comments + no line breaks
+SELECT b/items[at0001]/items[at0002]/value/magnitude AS Resultat_magnitud, b/items[at0001]/items[at0015]/value AS Resultatets_namn, b/items[at0001]/items[at0015]/value/defining_code/code_string AS Resultat_kod, b/items[at0001]/items[at0015]/value/defining_code/terminology_id/value AS Resultat_termionologi, e/ehr_id/value FROM EHR e CONTAINS COMPOSITION c CONTAINS CLUSTER b[openEHR-EHR-CLUSTER.imaging_result.v0] WHERE b/items[at0001]/items[at0015]/value/defining_code/code_string = '250908004' AND b/items[at0001]/items[at0015]/value/defining_code/terminology_id/value = 'http://snomed.info/sct/' AND b/items[at0001]/items[at0002]/value/magnitude < 40
 ```
 
 ### 7. Räkna hur många journaler som har minst en mätning där vänster kammares ejektionsfraktion (SCT ID = 250908004) < 40%
-```
+```SQL
 SELECT COUNT(DISTINCT e/ehr_id/value) AS number_of_matching_EHRs 
 FROM EHR e
 CONTAINS COMPOSITION c
