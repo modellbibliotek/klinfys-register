@@ -21,9 +21,10 @@ docker-compose up
 #### 2. The container should now be running, test this by running ```docker ps```.
 
 ```bash
-CONTAINER ID   IMAGE                             COMMAND                  CREATED         STATUS          PORTS                                       NAMES
-b3f1f51636ee   ehrbase/ehrbase-postgres:latest   "docker-entrypoint.s…"   6 minutes ago   Up 8 seconds    0.0.0.0:5432->5432/tcp, :::5432->5432/tcp   ehrbase_ehrdb_1
-0dd30f478f11   ehrbase/ehrbase:next              "/bin/sh -c ./docker…"   6 minutes ago   Up 11 seconds   0.0.0.0:8080->8080/tcp, :::8080->8080/tcp   ehrbase_ehrbase_1
+CONTAINER ID   IMAGE                             COMMAND                  CREATED       STATUS       PORTS                                       NAMES
+bd1edb8daf68   ehrbase/fhir-bridge:next          "/cnb/process/web"       3 hours ago   Up 3 hours   0.0.0.0:8888->8888/tcp, :::8888->8888/tcp   docker_fhir-bridge_1
+8da79eb3ceb2   ehrbase/ehrbase:next              "/bin/sh -c ./docker…"   3 hours ago   Up 3 hours   0.0.0.0:8080->8080/tcp, :::8080->8080/tcp   docker_ehrbase_1
+f1164611dfc1   ehrbase/ehrbase-postgres:latest   "docker-entrypoint.s…"   3 hours ago   Up 3 hours   0.0.0.0:5432->5432/tcp, :::5432->5432/tcp   docker_ehrbase-db_1
 ```
 ## REST API
 
