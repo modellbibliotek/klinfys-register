@@ -1,3 +1,7 @@
+- [x] Create a composition example
+- [x] AQL Example
+- [ ] HL7 bridge example
+
 # Docker EHRBase App + EHRBase DB
 
 ## Prerequisites
@@ -6,37 +10,29 @@
 
 ## Docker container installation
 
-### 1. Clone or download this repository
-```
+#### 1. Clone/download and compose this repository
+```bash
 git clone https://github.com/modellbibliotek/klinfys-register.git
-```
-
-### 2. Go to the ehrbase directory
-```
 cd klinfys-register/ehrbase
-```
-
-### 3. Compose the multi-application container (App + DB)
-```
 docker-compose up
 ```
 
-### 4. The container should now be running, test this by running ```docker ps```.
+#### 2. The container should now be running, test this by running ```docker ps```.
 
-```
+```bash
 CONTAINER ID   IMAGE                             COMMAND                  CREATED         STATUS          PORTS                                       NAMES
 b3f1f51636ee   ehrbase/ehrbase-postgres:latest   "docker-entrypoint.s…"   6 minutes ago   Up 8 seconds    0.0.0.0:5432->5432/tcp, :::5432->5432/tcp   ehrbase_ehrdb_1
 0dd30f478f11   ehrbase/ehrbase:next              "/bin/sh -c ./docker…"   6 minutes ago   Up 11 seconds   0.0.0.0:8080->8080/tcp, :::8080->8080/tcp   ehrbase_ehrbase_1
 ```
-# REST API
+## REST API
 
-## Prerequisites
+### Prerequisites
 - Postman must be installed on your computer
 - Postman collection
 ### Import the Postman collection
 
 ## Postman collection requests
-### Create a new EHR
+#### Create a new EHR
 send the saved POST request _ehr/Create a new EHR_ from the imported Postman collection. If successful, copy the ehr_id/value and store it in your environment variable _ehr_id_
 ```json
 ...
@@ -46,7 +42,8 @@ send the saved POST request _ehr/Create a new EHR_ from the imported Postman col
 },
 ...
 ```
-### Fetch an EHR by ehr id
+---
+#### Fetch an EHR by ehr id
 Send the saved GET request _ehr/Fetch EHR by ehr_id_. The response should look like the previous one
 ```json
 ...
@@ -58,20 +55,26 @@ Send the saved GET request _ehr/Fetch EHR by ehr_id_. The response should look l
   ...
 }
 ```
-### Upload a new template
+---
+
+#### Upload a new template  
 Send the saved POST request _definition/Upload a template_. The body XML is taken from an OPT file. The response body should be similar to the request body.
 
-### List all uploaded templates
-Send the saved GET requst _definition/List templates_
+---
 
+#### List all uploaded templates  
+Send the saved GET requst _definition/List templates_
 Store the value for the key _template_id_ from the response as your environment variable _template_id_
 
-### Retrieve a specified template
+---
+
+#### Retrieve a specified template
 
 Send the saved GET request _definition/Retrieve a template_
 
-## FLAT Format
-POST http://localhost:8080/ehrbase/rest/ecis/v1/composition/?ehrId={{ehr_id}}&templateId={{template_id}}&format=FLAT
+### FLAT Format
+reference: [simSDT JSON format](https://specifications.openehr.org/releases/ITS-REST/latest/simplified_data_template.html#_json_formats)
+#### POST http://localhost:8080/ehrbase/rest/ecis/v1/composition/?ehrId={{ehr_id}}&templateId={{template_id}}&format=FLAT
 ```JSON
 {
 "ctx/language": "en",
