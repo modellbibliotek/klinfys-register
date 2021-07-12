@@ -30,3 +30,4 @@ b3f1f51636ee   ehrbase/ehrbase-postgres:latest   "docker-entrypoint.s…"   6 mi
 - Postman must be installed on your computer
 
 ### Import the [Postman collection and environment](https://github.com/modellbibliotek/klinfys-register/tree/master/ehrbase/Postman)
+![Postman Screenshot](https://github.com/modellbibliotek/klinfys-register/blob/master/ehrbase/Postman.png)
