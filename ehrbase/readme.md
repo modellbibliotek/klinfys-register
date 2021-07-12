@@ -1,6 +1,7 @@
-- [x] Create a composition example
+- [x] Composition example
 - [x] AQL Example
 - [x] FHIR Bridge example
+- [x] HL7 v2 -> FHIR Bridge example 
 
 # Docker EHRBase App + EHRBase DB + FHIR Bridge
 
