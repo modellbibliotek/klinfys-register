@@ -2,7 +2,7 @@
 - [x] AQL Example
 - [x] FHIR Bridge example
 
-# Docker EHRBase App + EHRBase DB
+# Docker EHRBase App + EHRBase DB + FHIR Bridge
 
 ## Prerequisites
 - Docker must be installed and running on your computer
