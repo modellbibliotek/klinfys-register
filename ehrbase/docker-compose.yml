@@ -38,7 +38,7 @@ services:
       - ehrbase-network
     environment:
       FHIR_BRIDGE_EHRBASE_BASE_URL: http://ehrbase:8080/ehrbase/rest/openehr/v1/
-      SPRING_PROFILES_ACTIVE: dev
+      #SPRING_PROFILES_ACTIVE: dev
     depends_on:
       - ehrbase
 networks:
