@@ -105,7 +105,7 @@ Not to be used to record details related to the overall findings, context or tec
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"fac005820a3b06f77afafa194b9d9a94">
+		["MD5-CAM-1.0.1"] = <"b5ac0cc470517470f19fb36b00844384">
 		["build_uid"] = <"c859c01f-6d83-4584-b571-c44413187401">
 		["revision"] = <"1.0.0">
 		["ip_acknowledgements"] = <"This artefact includes content from SNOMED Clinical Terms® (SNOMED CT®) which is copyrighted material of the International Health Terminology Standards Development Organisation (IHTSDO). Where an implementation of this artefact makes use of SNOMED CT content, the implementer must have the appropriate SNOMED CT Affiliate license - for more information contact https://www.snomed.org/snomed-ct/get-snomed or info@snomed.org.">
@@ -114,9 +114,13 @@ Not to be used to record details related to the overall findings, context or tec
 definition
 	CLUSTER[at0000.1] matches {    -- imaging_exam-heart
 		items cardinality matches {1..*; unordered} matches {
-			ELEMENT[at0001] matches {    -- Body structure
+			ELEMENT[at0001.1] matches {    -- Body structure
 				value matches {
-					DV_TEXT matches {*}
+					DV_CODED_TEXT matches {
+						defining_code matches {
+							[local::at0.10]    -- Heart
+						}
+					}
 				}
 			}
 			ELEMENT[at0002] occurrences matches {0..1} matches {    -- Body site
@@ -340,6 +344,15 @@ ontology
 					text = <"Left atrial end systolic area">
 					description = <"">
 				>
+				["at0001.1"] = <
+					text = <"Body structure">
+					description = <"Identification of the body structure or region examined.">
+					comment = <"For example: 'Liver', 'Right ankle' or 'Lymph node group'. Coding of the body structure with an appropriate terminology, such as SNOMED CT, is recommended.">
+				>
+				["at0.10"] = <
+					text = <"Heart">
+					description = <"The heart was examined">
+				>
 			>
 		>
 		["nb"] = <
@@ -420,6 +433,15 @@ ontology
 					text = <"*Left atrial end systolic area (en)">
 					description = <"">
 				>
+				["at0001.1"] = <
+					text = <"Kroppsstruktur">
+					description = <"Identifisering av organet eller kroppsdelen som svaret gjelder.">
+					comment = <"For eksempel \"Lever\", \"Høyre ankel\" eller \"Lymfeknutegruppe\". Det er anbefalt å kode kroppsstruktur med en passende terminologi, som SNOMED CT.">
+				>
+				["at0.10"] = <
+					text = <"*Heart (en)">
+					description = <"*The heart was examined (en)">
+				>
 			>
 		>
 		["de"] = <
@@ -499,6 +521,15 @@ ontology
 				["at0.9"] = <
 					text = <"*Left atrial end systolic area (en)">
 					description = <"">
+				>
+				["at0001.1"] = <
+					text = <"Körperstruktur">
+					description = <"Identifizierung der untersuchten Körperstruktur oder Region.">
+					comment = <"Zum Beispiel: „Leber“, „Rechtes Fußgelenk“ oder „Lymphknotengruppe“. Es wird empfohlen, die Körperstruktur mit einer geeigneten Terminologie, wie z. B. SNOMED CT, zu codieren.">
+				>
+				["at0.10"] = <
+					text = <"*Heart (en)">
+					description = <"*The heart was examined (en)">
 				>
 			>
 		>
@@ -581,6 +612,15 @@ ontology
 					text = <"*Left atrial end systolic area (en)">
 					description = <"">
 				>
+				["at0001.1"] = <
+					text = <"*Body structure (en)">
+					description = <"*Identification of the body structure or region examined. (en)">
+					comment = <"*For example: 'Liver', 'Right ankle' or 'Lymph node group'. Coding of the body structure with an appropriate terminology, such as SNOMED CT, is recommended. (en)">
+				>
+				["at0.10"] = <
+					text = <"Hjärta">
+					description = <"Hjärtat undersöktes">
+				>
 			>
 		>
 	>
@@ -588,6 +628,7 @@ ontology
 		["SNOMED-CT"] = <
 			items = <
 				["at0.1"] = <[SNOMED-CT::55431000052104]>
+				["at0.10"] = <[SNOMED-CT::80891009]>
 			>
 		>
 	>
