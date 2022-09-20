@@ -105,7 +105,7 @@ Not to be used to record details related to the overall findings, context or tec
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"1592381882c772402ceb76baf5bf2602">
+		["MD5-CAM-1.0.1"] = <"fac005820a3b06f77afafa194b9d9a94">
 		["build_uid"] = <"c859c01f-6d83-4584-b571-c44413187401">
 		["revision"] = <"1.0.0">
 		["ip_acknowledgements"] = <"This artefact includes content from SNOMED Clinical Terms® (SNOMED CT®) which is copyrighted material of the International Health Terminology Standards Development Organisation (IHTSDO). Where an implementation of this artefact makes use of SNOMED CT content, the implementer must have the appropriate SNOMED CT Affiliate license - for more information contact https://www.snomed.org/snomed-ct/get-snomed or info@snomed.org.">
@@ -509,7 +509,7 @@ ontology
 					description = <"*Findings on radiological examination of a specified body structure or region. (en)">
 				>
 				["at0.1"] = <
-					text = <"*Left ventricular internal end diastolic diameter (en)">
+					text = <"Vänster kammares innerdiameter i slutdiastole">
 					description = <"">
 				>
 				["at0.2"] = <
