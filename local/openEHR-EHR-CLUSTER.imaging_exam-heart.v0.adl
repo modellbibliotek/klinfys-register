@@ -25,6 +25,11 @@ language
 				["email"] = <"varntzen@ous-hf.no">
 			>
 		>
+		["sv"] = <
+			language = <[ISO_639-1::sv]>
+			author = <
+			>
+		>
 	>
 
 description
@@ -53,6 +58,10 @@ This archetype and its related family of specialisations are designed to be nest
 			misuse = <"Nicht zur Darstellung von Befunden verwenden, die außerhalb der identifizierten Körperstruktur oder -region beobachtet wurden. Verwenden Sie zu diesem Zweck eine separate Instanz eines oder mehrerer Archetypen aus der Familie CLUSTER.imaging_exam.
 
 Darf nicht verwendet werden, um Details in Bezug auf die Gesamtbefunde, den Kontext oder technische Details in Bezug auf ein vollständiges Testergebnis einer bildgebenden Untersuchung darzustellen. Verwenden Sie zu diesem Zweck das OBSERVATION.imaging_exam_result. Zum Beispiel Kommentare zur Studienqualität, zu Differenzialdiagnosen und zum Gesamteindruck.">
+		>
+		["sv"] = <
+			language = <[ISO_639-1::sv]>
+			copyright = <"© openEHR Foundation">
 		>
 		["nb"] = <
 			language = <[ISO_639-1::nb]>
@@ -96,9 +105,10 @@ Not to be used to record details related to the overall findings, context or tec
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"7f5a5a6fee28a4daed1af538f3c98cf4">
+		["MD5-CAM-1.0.1"] = <"1592381882c772402ceb76baf5bf2602">
 		["build_uid"] = <"c859c01f-6d83-4584-b571-c44413187401">
 		["revision"] = <"1.0.0">
+		["ip_acknowledgements"] = <"This artefact includes content from SNOMED Clinical Terms® (SNOMED CT®) which is copyrighted material of the International Health Terminology Standards Development Organisation (IHTSDO). Where an implementation of this artefact makes use of SNOMED CT content, the implementer must have the appropriate SNOMED CT Affiliate license - for more information contact https://www.snomed.org/snomed-ct/get-snomed or info@snomed.org.">
 	>
 
 definition
@@ -209,10 +219,47 @@ definition
 					>
 				}
 			}
+			ELEMENT[at0.7] occurrences matches {0..1} matches {    -- Tricuspid annular plane systolic excursion
+				value matches {
+					C_DV_QUANTITY <
+						property = <[openehr::122]>
+						list = <
+							["1"] = <
+								units = <"mm">
+							>
+						>
+					>
+				}
+			}
+			ELEMENT[at0.8] occurrences matches {0..1} matches {    -- Left atrium systolic volume
+				value matches {
+					C_DV_QUANTITY <
+						property = <[openehr::129]>
+						list = <
+							["1"] = <
+								units = <"mL">
+							>
+						>
+					>
+				}
+			}
+			ELEMENT[at0.9] occurrences matches {0..1} matches {    -- Left atrial end systolic area
+				value matches {
+					C_DV_QUANTITY <
+						property = <[openehr::335]>
+						list = <
+							["1"] = <
+								units = <"cm2">
+							>
+						>
+					>
+				}
+			}
 		}
 	}
 
 ontology
+	terminologies_available = <"SNOMED-CT", ...>
 	term_definitions = <
 		["en"] = <
 			items = <
@@ -279,6 +326,18 @@ ontology
 				>
 				["at0.6"] = <
 					text = <"Left ventricular ejection fraction">
+					description = <"">
+				>
+				["at0.7"] = <
+					text = <"Tricuspid annular plane systolic excursion">
+					description = <"">
+				>
+				["at0.8"] = <
+					text = <"Left atrium systolic volume">
+					description = <"">
+				>
+				["at0.9"] = <
+					text = <"Left atrial end systolic area">
 					description = <"">
 				>
 			>
@@ -349,6 +408,18 @@ ontology
 					text = <"*Left ventricular ejection fraction (en)">
 					description = <"">
 				>
+				["at0.7"] = <
+					text = <"*Tricuspid annular plane systolic excursion (en)">
+					description = <"">
+				>
+				["at0.8"] = <
+					text = <"*Left atrium systolic volume (en)">
+					description = <"">
+				>
+				["at0.9"] = <
+					text = <"*Left atrial end systolic area (en)">
+					description = <"">
+				>
 			>
 		>
 		["de"] = <
@@ -417,6 +488,106 @@ ontology
 					text = <"*Left ventricular ejection fraction (en)">
 					description = <"">
 				>
+				["at0.7"] = <
+					text = <"*Tricuspid annular plane systolic excursion (en)">
+					description = <"">
+				>
+				["at0.8"] = <
+					text = <"*Left atrium systolic volume (en)">
+					description = <"">
+				>
+				["at0.9"] = <
+					text = <"*Left atrial end systolic area (en)">
+					description = <"">
+				>
+			>
+		>
+		["sv"] = <
+			items = <
+				["at0000.1"] = <
+					text = <"*imaging_exam-heart (en)">
+					description = <"*Findings on radiological examination of a specified body structure or region. (en)">
+				>
+				["at0.1"] = <
+					text = <"*Left ventricular internal end diastolic diameter (en)">
+					description = <"">
+				>
+				["at0.2"] = <
+					text = <"*Interventricular septum end diastolic thickness (en)">
+					description = <"">
+				>
+				["at0.3"] = <
+					text = <"*Left ventricular posterior wall end diastolic thickness (en)">
+					description = <"">
+				>
+				["at0.4"] = <
+					text = <"*Left ventricular end-diastolic cavity size (en)">
+					description = <"">
+				>
+				["at0.5"] = <
+					text = <"*Left ventricular end-systolic cavity size (en)">
+					description = <"">
+				>
+				["at0000"] = <
+					text = <"*Imaging examination of a body structure (en)">
+					description = <"*Findings on radiological examination of a specified body structure or region. (en)">
+				>
+				["at0001"] = <
+					text = <"*Body structure (en)">
+					description = <"*Identification of the body structure or region examined. (en)">
+					comment = <"*For example: 'Liver', 'Right ankle' or 'Lymph node group'. Coding of the body structure with an appropriate terminology, such as SNOMED CT, is recommended. (en)">
+				>
+				["at0002"] = <
+					text = <"*Body site (en)">
+					description = <"*Identification of the area of the body under examination. (en)">
+					comment = <"*For example: a lymph node group (body structure) which found in the 'Right axilla'. Coding of 'Body site' with a terminology, such as SNOMED CT, is desirable. If the body site has been fully identified in the 'Body structure' data element, this data element becomes redundant. (en)">
+				>
+				["at0003"] = <
+					text = <"*Structured body site (en)">
+					description = <"*Structured details about the area of the body under examination. (en)">
+					comment = <"*For example: details about a relative anatomical location, such as '2cm distal to the appendix'. If the body site has been fully identified in the 'Body structure' or 'Body site' data elements, then this SLOT becomes redundant.
+ (en)">
+				>
+				["at0004"] = <
+					text = <"*Imaging findings (en)">
+					description = <"*Narrative description of the imaging findings observed during this examination. (en)">
+				>
+				["at0005"] = <
+					text = <"*Additional details (en)">
+					description = <"*Additional structured details about imaging findings for the identified body structure or region, or findings of related structures. (en)">
+				>
+				["at0006"] = <
+					text = <"*Impression (en)">
+					description = <"*Single word, phrase or brief description that represents the clinical meaning and significance of all imaging findings for the identified body structure. (en)">
+					comment = <"*Also referred to as 'Interpretation' or 'Opinion'. For example: 'No abnormality detected' or 'Free fluid present'. Coding of the 'Impression' with a terminology is permitted, if useful. Multiple occurrences allow for more than one coded impression. A narrative description may include a comparison with previous studies of the identified body structure, if appropriate. (en)">
+				>
+				["at0007"] = <
+					text = <"*Comment (en)">
+					description = <"*Additional narrative about the imaging findings of the body structure, not captured in other fields. (en)">
+				>
+				["at0.6"] = <
+					text = <"*Left ventricular ejection fraction (en)">
+					description = <"">
+				>
+				["at0.7"] = <
+					text = <"*Tricuspid annular plane systolic excursion (en)">
+					description = <"">
+				>
+				["at0.8"] = <
+					text = <"*Left atrium systolic volume (en)">
+					description = <"">
+				>
+				["at0.9"] = <
+					text = <"*Left atrial end systolic area (en)">
+					description = <"">
+				>
+			>
+		>
+	>
+	term_binding = <
+		["SNOMED-CT"] = <
+			items = <
+				["at0.1"] = <[SNOMED-CT::55431000052104]>
 			>
 		>
 	>
