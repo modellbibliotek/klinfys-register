@@ -96,13 +96,13 @@ Not to be used to record details related to the overall findings, context or tec
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"4ab2e0803cbb76d658c71d3a244c08b9">
+		["MD5-CAM-1.0.1"] = <"7f5a5a6fee28a4daed1af538f3c98cf4">
 		["build_uid"] = <"c859c01f-6d83-4584-b571-c44413187401">
 		["revision"] = <"1.0.0">
 	>
 
 definition
-	CLUSTER[at0000.1] matches {    -- imaging_exam
+	CLUSTER[at0000.1] matches {    -- imaging_exam-heart
 		items cardinality matches {1..*; unordered} matches {
 			ELEMENT[at0001] matches {    -- Body structure
 				value matches {
@@ -197,6 +197,18 @@ definition
 					>
 				}
 			}
+			ELEMENT[at0.6] occurrences matches {0..1} matches {    -- Left ventricular ejection fraction
+				value matches {
+					C_DV_QUANTITY <
+						property = <[openehr::380]>
+						list = <
+							["1"] = <
+								units = <"%">
+							>
+						>
+					>
+				}
+			}
 		}
 	}
 
@@ -205,7 +217,7 @@ ontology
 		["en"] = <
 			items = <
 				["at0000.1"] = <
-					text = <"imaging_exam">
+					text = <"imaging_exam-heart">
 					description = <"Findings on radiological examination of a specified body structure or region.">
 				>
 				["at0.1"] = <
@@ -265,12 +277,16 @@ ontology
 					text = <"Comment">
 					description = <"Additional narrative about the imaging findings of the body structure, not captured in other fields.">
 				>
+				["at0.6"] = <
+					text = <"Left ventricular ejection fraction">
+					description = <"">
+				>
 			>
 		>
 		["nb"] = <
 			items = <
 				["at0000.1"] = <
-					text = <"imaging_exam">
+					text = <"*imaging_exam-heart (en)">
 					description = <"Funn eller observasjoner ved radiologisk undersøkelse av et definert organ eller en kroppsdel.">
 				>
 				["at0.1"] = <
@@ -329,12 +345,16 @@ ontology
 					text = <"Kommentar">
 					description = <"Ytterligere fritekst om funn eller observasjoner på bilder av kroppsstrukturen og som ikke er fanget i andre felt.">
 				>
+				["at0.6"] = <
+					text = <"*Left ventricular ejection fraction (en)">
+					description = <"">
+				>
 			>
 		>
 		["de"] = <
 			items = <
 				["at0000.1"] = <
-					text = <"imaging_exam">
+					text = <"*imaging_exam-heart (en)">
 					description = <"Befunde zur radiologischen Untersuchung einer bestimmten Körperstruktur oder -region.">
 				>
 				["at0.1"] = <
@@ -392,6 +412,10 @@ ontology
 				["at0007"] = <
 					text = <"Kommentar">
 					description = <"Zusätzlicher Text über die bildgebenden Befunde der Körperstruktur, der in anderen Bereichen nicht erfasst wurde.">
+				>
+				["at0.6"] = <
+					text = <"*Left ventricular ejection fraction (en)">
+					description = <"">
 				>
 			>
 		>
