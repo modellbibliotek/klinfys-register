@@ -105,7 +105,7 @@ Not to be used to record details related to the overall findings, context or tec
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"5861b7c84e28a79874f3fcb28b411eb8">
+		["MD5-CAM-1.0.1"] = <"3e25c318975553043ab12a2fa64f5244">
 		["build_uid"] = <"c859c01f-6d83-4584-b571-c44413187401">
 		["ip_acknowledgements"] = <"This artefact includes content from SNOMED Clinical Terms® (SNOMED CT®) which is copyrighted material of the International Health Terminology Standards Development Organisation (IHTSDO). Where an implementation of this artefact makes use of SNOMED CT content, the implementer must have the appropriate SNOMED CT Affiliate license - for more information contact https://www.snomed.org/snomed-ct/get-snomed or info@snomed.org.">
 		["revision"] = <"1.0.0">
@@ -151,7 +151,7 @@ definition
 					DV_TEXT matches {*}
 				}
 			}
-			ELEMENT[at0.1] occurrences matches {0..1} matches {    -- Left ventricular internal end diastolic diameter
+			ELEMENT[at0.1] occurrences matches {0..1} matches {    -- Left ventricular internal end diastolic diameter (LVEDd)
 				value matches {
 					C_DV_QUANTITY <
 						property = <[openehr::122]>
@@ -163,7 +163,7 @@ definition
 					>
 				}
 			}
-			ELEMENT[at0.2] occurrences matches {0..1} matches {    -- Interventricular septum end diastolic thickness
+			ELEMENT[at0.2] occurrences matches {0..1} matches {    -- Interventricular septum end diastolic thickness (IVSd)
 				value matches {
 					C_DV_QUANTITY <
 						property = <[openehr::122]>
@@ -175,7 +175,7 @@ definition
 					>
 				}
 			}
-			ELEMENT[at0.3] occurrences matches {0..1} matches {    -- Left ventricular posterior wall end diastolic thickness
+			ELEMENT[at0.3] occurrences matches {0..1} matches {    -- Left ventricular posterior wall end diastolic thickness (LVPWd)
 				value matches {
 					C_DV_QUANTITY <
 						property = <[openehr::122]>
@@ -187,7 +187,7 @@ definition
 					>
 				}
 			}
-			ELEMENT[at0.4] occurrences matches {0..1} matches {    -- Left ventricular end-diastolic cavity size
+			ELEMENT[at0.4] occurrences matches {0..1} matches {    -- Left ventricular end-diastolic cavity size (LVEDV)
 				value matches {
 					C_DV_QUANTITY <
 						property = <[openehr::129]>
@@ -199,7 +199,7 @@ definition
 					>
 				}
 			}
-			ELEMENT[at0.5] occurrences matches {0..1} matches {    -- Left ventricular end-systolic cavity size
+			ELEMENT[at0.5] occurrences matches {0..1} matches {    -- Left ventricular end-systolic cavity size (LVESV)
 				value matches {
 					C_DV_QUANTITY <
 						property = <[openehr::129]>
@@ -211,7 +211,7 @@ definition
 					>
 				}
 			}
-			ELEMENT[at0.6] occurrences matches {0..1} matches {    -- Left ventricular ejection fraction
+			ELEMENT[at0.6] occurrences matches {0..1} matches {    -- Left ventricular ejection fraction (LVEF)
 				value matches {
 					C_DV_QUANTITY <
 						property = <[openehr::380]>
@@ -223,7 +223,19 @@ definition
 					>
 				}
 			}
-			ELEMENT[at0.7] occurrences matches {0..1} matches {    -- Tricuspid annular plane systolic excursion
+			ELEMENT[at0.11] occurrences matches {0..1} matches {    -- Right ventricular inflow tract end diastolic diameter (RVd1)
+				value matches {
+					C_DV_QUANTITY <
+						property = <[openehr::122]>
+						list = <
+							["1"] = <
+								units = <"mm">
+							>
+						>
+					>
+				}
+			}
+			ELEMENT[at0.7] occurrences matches {0..1} matches {    -- Tricuspid annular plane systolic excursion (TAPSE)
 				value matches {
 					C_DV_QUANTITY <
 						property = <[openehr::122]>
@@ -272,31 +284,31 @@ ontology
 					description = <"Findings on radiological examination of a specified body structure or region.">
 				>
 				["at0.1"] = <
-					text = <"Left ventricular internal end diastolic diameter">
+					text = <"Left ventricular internal end diastolic diameter (LVEDd)">
 					description = <"">
 				>
 				["at0.2"] = <
-					text = <"Interventricular septum end diastolic thickness">
+					text = <"Interventricular septum end diastolic thickness (IVSd)">
 					description = <"">
 				>
 				["at0.3"] = <
-					text = <"Left ventricular posterior wall end diastolic thickness">
+					text = <"Left ventricular posterior wall end diastolic thickness (LVPWd)">
 					description = <"">
 				>
 				["at0.4"] = <
-					text = <"Left ventricular end-diastolic cavity size">
+					text = <"Left ventricular end-diastolic cavity size (LVEDV)">
 					description = <"">
 				>
 				["at0.5"] = <
-					text = <"Left ventricular end-systolic cavity size">
+					text = <"Left ventricular end-systolic cavity size (LVESV)">
 					description = <"">
 				>
 				["at0.6"] = <
-					text = <"Left ventricular ejection fraction">
+					text = <"Left ventricular ejection fraction (LVEF)">
 					description = <"">
 				>
 				["at0.7"] = <
-					text = <"Tricuspid annular plane systolic excursion">
+					text = <"Tricuspid annular plane systolic excursion (TAPSE)">
 					description = <"">
 				>
 				["at0.8"] = <
@@ -353,6 +365,10 @@ ontology
 					text = <"Comment">
 					description = <"Additional narrative about the imaging findings of the body structure, not captured in other fields.">
 				>
+				["at0.11"] = <
+					text = <"Right ventricular inflow tract end diastolic diameter (RVd1)">
+					description = <"">
+				>
 			>
 		>
 		["nb"] = <
@@ -362,31 +378,31 @@ ontology
 					description = <"Funn eller observasjoner ved radiologisk undersøkelse av et definert organ eller en kroppsdel.">
 				>
 				["at0.1"] = <
-					text = <"*Left ventricular internal end diastolic diameter (en)">
+					text = <"*Left ventricular internal end diastolic diameter (LVEDd) (en)">
 					description = <"">
 				>
 				["at0.2"] = <
-					text = <"*Interventricular septum end diastolic thickness (en)">
+					text = <"*Interventricular septum end diastolic thickness (IVSd) (en)">
 					description = <"">
 				>
 				["at0.3"] = <
-					text = <"*Left ventricular posterior wall end diastolic thickness (en)">
+					text = <"*Left ventricular posterior wall end diastolic thickness (LVPWd) (en)">
 					description = <"">
 				>
 				["at0.4"] = <
-					text = <"*Left ventricular end-diastolic cavity size (en)">
+					text = <"*Left ventricular end-diastolic cavity size (LVEDV) (en)">
 					description = <"">
 				>
 				["at0.5"] = <
-					text = <"*Left ventricular end-systolic cavity size (en)">
+					text = <"*Left ventricular end-systolic cavity size (LVESV) (en)">
 					description = <"">
 				>
 				["at0.6"] = <
-					text = <"*Left ventricular ejection fraction (en)">
+					text = <"*Left ventricular ejection fraction (LVEF) (en)">
 					description = <"">
 				>
 				["at0.7"] = <
-					text = <"*Tricuspid annular plane systolic excursion (en)">
+					text = <"*Tricuspid annular plane systolic excursion (TAPSE) (en)">
 					description = <"">
 				>
 				["at0.8"] = <
@@ -442,6 +458,10 @@ ontology
 					text = <"Kommentar">
 					description = <"Ytterligere fritekst om funn eller observasjoner på bilder av kroppsstrukturen og som ikke er fanget i andre felt.">
 				>
+				["at0.11"] = <
+					text = <"*Right ventricular inflow tract end diastolic diameter (RVd1) (en)">
+					description = <"">
+				>
 			>
 		>
 		["de"] = <
@@ -451,31 +471,31 @@ ontology
 					description = <"Befunde zur radiologischen Untersuchung einer bestimmten Körperstruktur oder -region.">
 				>
 				["at0.1"] = <
-					text = <"*Left ventricular internal end diastolic diameter (en)">
+					text = <"*Left ventricular internal end diastolic diameter (LVEDd) (en)">
 					description = <"">
 				>
 				["at0.2"] = <
-					text = <"*Interventricular septum end diastolic thickness (en)">
+					text = <"*Interventricular septum end diastolic thickness (IVSd) (en)">
 					description = <"">
 				>
 				["at0.3"] = <
-					text = <"*Left ventricular posterior wall end diastolic thickness (en)">
+					text = <"*Left ventricular posterior wall end diastolic thickness (LVPWd) (en)">
 					description = <"">
 				>
 				["at0.4"] = <
-					text = <"*Left ventricular end-diastolic cavity size (en)">
+					text = <"*Left ventricular end-diastolic cavity size (LVEDV) (en)">
 					description = <"">
 				>
 				["at0.5"] = <
-					text = <"*Left ventricular end-systolic cavity size (en)">
+					text = <"*Left ventricular end-systolic cavity size (LVESV) (en)">
 					description = <"">
 				>
 				["at0.6"] = <
-					text = <"*Left ventricular ejection fraction (en)">
+					text = <"*Left ventricular ejection fraction (LVEF) (en)">
 					description = <"">
 				>
 				["at0.7"] = <
-					text = <"*Tricuspid annular plane systolic excursion (en)">
+					text = <"*Tricuspid annular plane systolic excursion (TAPSE) (en)">
 					description = <"">
 				>
 				["at0.8"] = <
@@ -531,6 +551,10 @@ ontology
 					text = <"Kommentar">
 					description = <"Zusätzlicher Text über die bildgebenden Befunde der Körperstruktur, der in anderen Bereichen nicht erfasst wurde.">
 				>
+				["at0.11"] = <
+					text = <"*Right ventricular inflow tract end diastolic diameter (RVd1) (en)">
+					description = <"">
+				>
 			>
 		>
 		["sv"] = <
@@ -540,23 +564,23 @@ ontology
 					description = <"*Findings on radiological examination of a specified body structure or region. (en)">
 				>
 				["at0.1"] = <
-					text = <"Vänster kammares innerdiameter i slutdiastole">
+					text = <"*Left ventricular internal end diastolic diameter (LVEDd) (en)">
 					description = <"">
 				>
 				["at0.2"] = <
-					text = <"*Interventricular septum end diastolic thickness (en)">
+					text = <"*Interventricular septum end diastolic thickness (IVSd) (en)">
 					description = <"">
 				>
 				["at0.3"] = <
-					text = <"*Left ventricular posterior wall end diastolic thickness (en)">
+					text = <"*Left ventricular posterior wall end diastolic thickness (LVPWd) (en)">
 					description = <"">
 				>
 				["at0.4"] = <
-					text = <"*Left ventricular end-diastolic cavity size (en)">
+					text = <"*Left ventricular end-diastolic cavity size (LVEDV) (en)">
 					description = <"">
 				>
 				["at0.5"] = <
-					text = <"*Left ventricular end-systolic cavity size (en)">
+					text = <"*Left ventricular end-systolic cavity size (LVESV) (en)">
 					description = <"">
 				>
 				["at0000"] = <
@@ -597,11 +621,11 @@ ontology
 					description = <"Additional narrative about the imaging findings of the body structure, not captured in other fields.">
 				>
 				["at0.6"] = <
-					text = <"*Left ventricular ejection fraction (en)">
+					text = <"*Left ventricular ejection fraction (LVEF) (en)">
 					description = <"">
 				>
 				["at0.7"] = <
-					text = <"*Tricuspid annular plane systolic excursion (en)">
+					text = <"*Tricuspid annular plane systolic excursion (TAPSE) (en)">
 					description = <"">
 				>
 				["at0.8"] = <
@@ -621,6 +645,10 @@ ontology
 					text = <"Hjärta">
 					description = <"Hjärtat undersöktes">
 				>
+				["at0.11"] = <
+					text = <"*Right ventricular inflow tract end diastolic diameter (RVd1) (en)">
+					description = <"">
+				>
 			>
 		>
 	>
@@ -629,6 +657,13 @@ ontology
 			items = <
 				["at0.1"] = <[SNOMED-CT::55431000052104]>
 				["at0.10"] = <[SNOMED-CT::80891009]>
+				["at0.2"] = <[SNOMED-CT::55441000052105]>
+				["at0.3"] = <[SNOMED-CT::55451000052108]>
+				["at0.4"] = <[SNOMED-CT::250932006]>
+				["at0.5"] = <[SNOMED-CT::250931004]>
+				["at0.6"] = <[SNOMED-CT::250908004]>
+				["at0.7"] = <[SNOMED-CT::55471000052102]>
+				["at0.11"] = <[SNOMED-CT::55461000052106]>
 			>
 		>
 	>
