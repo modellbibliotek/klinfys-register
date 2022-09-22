@@ -17,17 +17,17 @@ language
 				["email"] = <"Strauch.Natalia@mh-hannover.de">
 			>
 		>
+		["sv"] = <
+			language = <[ISO_639-1::sv]>
+			author = <
+			>
+		>
 		["nb"] = <
 			language = <[ISO_639-1::nb]>
 			author = <
 				["name"] = <"Vebjørn Arntzen">
 				["organisation"] = <"Oslo University Hospital">
 				["email"] = <"varntzen@ous-hf.no">
-			>
-		>
-		["sv"] = <
-			language = <[ISO_639-1::sv]>
-			author = <
 			>
 		>
 	>
@@ -105,14 +105,14 @@ Not to be used to record details related to the overall findings, context or tec
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"b5ac0cc470517470f19fb36b00844384">
+		["MD5-CAM-1.0.1"] = <"5861b7c84e28a79874f3fcb28b411eb8">
 		["build_uid"] = <"c859c01f-6d83-4584-b571-c44413187401">
-		["revision"] = <"1.0.0">
 		["ip_acknowledgements"] = <"This artefact includes content from SNOMED Clinical Terms® (SNOMED CT®) which is copyrighted material of the International Health Terminology Standards Development Organisation (IHTSDO). Where an implementation of this artefact makes use of SNOMED CT content, the implementer must have the appropriate SNOMED CT Affiliate license - for more information contact https://www.snomed.org/snomed-ct/get-snomed or info@snomed.org.">
+		["revision"] = <"1.0.0">
 	>
 
 definition
-	CLUSTER[at0000.1] matches {    -- imaging_exam-heart
+	CLUSTER[at0000.1] matches {    -- imaging examination of the heart
 		items cardinality matches {1..*; unordered} matches {
 			ELEMENT[at0001.1] matches {    -- Body structure
 				value matches {
@@ -268,7 +268,7 @@ ontology
 		["en"] = <
 			items = <
 				["at0000.1"] = <
-					text = <"imaging_exam-heart">
+					text = <"imaging examination of the heart">
 					description = <"Findings on radiological examination of a specified body structure or region.">
 				>
 				["at0.1"] = <
@@ -290,6 +290,31 @@ ontology
 				["at0.5"] = <
 					text = <"Left ventricular end-systolic cavity size">
 					description = <"">
+				>
+				["at0.6"] = <
+					text = <"Left ventricular ejection fraction">
+					description = <"">
+				>
+				["at0.7"] = <
+					text = <"Tricuspid annular plane systolic excursion">
+					description = <"">
+				>
+				["at0.8"] = <
+					text = <"Left atrium systolic volume">
+					description = <"">
+				>
+				["at0.9"] = <
+					text = <"Left atrial end systolic area">
+					description = <"">
+				>
+				["at0001.1"] = <
+					text = <"Body structure">
+					description = <"Identification of the body structure or region examined.">
+					comment = <"For example: 'Liver', 'Right ankle' or 'Lymph node group'. Coding of the body structure with an appropriate terminology, such as SNOMED CT, is recommended.">
+				>
+				["at0.10"] = <
+					text = <"Heart">
+					description = <"The heart was examined">
 				>
 				["at0000"] = <
 					text = <"Imaging examination of a body structure">
@@ -328,37 +353,12 @@ ontology
 					text = <"Comment">
 					description = <"Additional narrative about the imaging findings of the body structure, not captured in other fields.">
 				>
-				["at0.6"] = <
-					text = <"Left ventricular ejection fraction">
-					description = <"">
-				>
-				["at0.7"] = <
-					text = <"Tricuspid annular plane systolic excursion">
-					description = <"">
-				>
-				["at0.8"] = <
-					text = <"Left atrium systolic volume">
-					description = <"">
-				>
-				["at0.9"] = <
-					text = <"Left atrial end systolic area">
-					description = <"">
-				>
-				["at0001.1"] = <
-					text = <"Body structure">
-					description = <"Identification of the body structure or region examined.">
-					comment = <"For example: 'Liver', 'Right ankle' or 'Lymph node group'. Coding of the body structure with an appropriate terminology, such as SNOMED CT, is recommended.">
-				>
-				["at0.10"] = <
-					text = <"Heart">
-					description = <"The heart was examined">
-				>
 			>
 		>
 		["nb"] = <
 			items = <
 				["at0000.1"] = <
-					text = <"*imaging_exam-heart (en)">
+					text = <"*imaging examination of the heart (en)">
 					description = <"Funn eller observasjoner ved radiologisk undersøkelse av et definert organ eller en kroppsdel.">
 				>
 				["at0.1"] = <
@@ -380,6 +380,31 @@ ontology
 				["at0.5"] = <
 					text = <"*Left ventricular end-systolic cavity size (en)">
 					description = <"">
+				>
+				["at0.6"] = <
+					text = <"*Left ventricular ejection fraction (en)">
+					description = <"">
+				>
+				["at0.7"] = <
+					text = <"*Tricuspid annular plane systolic excursion (en)">
+					description = <"">
+				>
+				["at0.8"] = <
+					text = <"*Left atrium systolic volume (en)">
+					description = <"">
+				>
+				["at0.9"] = <
+					text = <"*Left atrial end systolic area (en)">
+					description = <"">
+				>
+				["at0001.1"] = <
+					text = <"Kroppsstruktur">
+					description = <"Identifisering av organet eller kroppsdelen som svaret gjelder.">
+					comment = <"For eksempel \"Lever\", \"Høyre ankel\" eller \"Lymfeknutegruppe\". Det er anbefalt å kode kroppsstruktur med en passende terminologi, som SNOMED CT.">
+				>
+				["at0.10"] = <
+					text = <"*Heart (en)">
+					description = <"*The heart was examined (en)">
 				>
 				["at0000"] = <
 					text = <"Bildediagnostisk undersøkelse - kroppsstruktur">
@@ -417,37 +442,12 @@ ontology
 					text = <"Kommentar">
 					description = <"Ytterligere fritekst om funn eller observasjoner på bilder av kroppsstrukturen og som ikke er fanget i andre felt.">
 				>
-				["at0.6"] = <
-					text = <"*Left ventricular ejection fraction (en)">
-					description = <"">
-				>
-				["at0.7"] = <
-					text = <"*Tricuspid annular plane systolic excursion (en)">
-					description = <"">
-				>
-				["at0.8"] = <
-					text = <"*Left atrium systolic volume (en)">
-					description = <"">
-				>
-				["at0.9"] = <
-					text = <"*Left atrial end systolic area (en)">
-					description = <"">
-				>
-				["at0001.1"] = <
-					text = <"Kroppsstruktur">
-					description = <"Identifisering av organet eller kroppsdelen som svaret gjelder.">
-					comment = <"For eksempel \"Lever\", \"Høyre ankel\" eller \"Lymfeknutegruppe\". Det er anbefalt å kode kroppsstruktur med en passende terminologi, som SNOMED CT.">
-				>
-				["at0.10"] = <
-					text = <"*Heart (en)">
-					description = <"*The heart was examined (en)">
-				>
 			>
 		>
 		["de"] = <
 			items = <
 				["at0000.1"] = <
-					text = <"*imaging_exam-heart (en)">
+					text = <"*imaging examination of the heart (en)">
 					description = <"Befunde zur radiologischen Untersuchung einer bestimmten Körperstruktur oder -region.">
 				>
 				["at0.1"] = <
@@ -469,6 +469,31 @@ ontology
 				["at0.5"] = <
 					text = <"*Left ventricular end-systolic cavity size (en)">
 					description = <"">
+				>
+				["at0.6"] = <
+					text = <"*Left ventricular ejection fraction (en)">
+					description = <"">
+				>
+				["at0.7"] = <
+					text = <"*Tricuspid annular plane systolic excursion (en)">
+					description = <"">
+				>
+				["at0.8"] = <
+					text = <"*Left atrium systolic volume (en)">
+					description = <"">
+				>
+				["at0.9"] = <
+					text = <"*Left atrial end systolic area (en)">
+					description = <"">
+				>
+				["at0001.1"] = <
+					text = <"Körperstruktur">
+					description = <"Identifizierung der untersuchten Körperstruktur oder Region.">
+					comment = <"Zum Beispiel: „Leber“, „Rechtes Fußgelenk“ oder „Lymphknotengruppe“. Es wird empfohlen, die Körperstruktur mit einer geeigneten Terminologie, wie z. B. SNOMED CT, zu codieren.">
+				>
+				["at0.10"] = <
+					text = <"*Heart (en)">
+					description = <"*The heart was examined (en)">
 				>
 				["at0000"] = <
 					text = <"Bildgebende Untersuchung einer Körperstruktur">
@@ -506,37 +531,12 @@ ontology
 					text = <"Kommentar">
 					description = <"Zusätzlicher Text über die bildgebenden Befunde der Körperstruktur, der in anderen Bereichen nicht erfasst wurde.">
 				>
-				["at0.6"] = <
-					text = <"*Left ventricular ejection fraction (en)">
-					description = <"">
-				>
-				["at0.7"] = <
-					text = <"*Tricuspid annular plane systolic excursion (en)">
-					description = <"">
-				>
-				["at0.8"] = <
-					text = <"*Left atrium systolic volume (en)">
-					description = <"">
-				>
-				["at0.9"] = <
-					text = <"*Left atrial end systolic area (en)">
-					description = <"">
-				>
-				["at0001.1"] = <
-					text = <"Körperstruktur">
-					description = <"Identifizierung der untersuchten Körperstruktur oder Region.">
-					comment = <"Zum Beispiel: „Leber“, „Rechtes Fußgelenk“ oder „Lymphknotengruppe“. Es wird empfohlen, die Körperstruktur mit einer geeigneten Terminologie, wie z. B. SNOMED CT, zu codieren.">
-				>
-				["at0.10"] = <
-					text = <"*Heart (en)">
-					description = <"*The heart was examined (en)">
-				>
 			>
 		>
 		["sv"] = <
 			items = <
 				["at0000.1"] = <
-					text = <"*imaging_exam-heart (en)">
+					text = <"*imaging examination of the heart (en)">
 					description = <"*Findings on radiological examination of a specified body structure or region. (en)">
 				>
 				["at0.1"] = <
@@ -560,41 +560,41 @@ ontology
 					description = <"">
 				>
 				["at0000"] = <
-					text = <"*Imaging examination of a body structure (en)">
-					description = <"*Findings on radiological examination of a specified body structure or region. (en)">
+					text = <"Imaging examination of a body structure">
+					description = <"Findings on radiological examination of a specified body structure or region.">
 				>
 				["at0001"] = <
-					text = <"*Body structure (en)">
-					description = <"*Identification of the body structure or region examined. (en)">
-					comment = <"*For example: 'Liver', 'Right ankle' or 'Lymph node group'. Coding of the body structure with an appropriate terminology, such as SNOMED CT, is recommended. (en)">
+					text = <"Body structure">
+					description = <"Identification of the body structure or region examined.">
+					comment = <"For example: 'Liver', 'Right ankle' or 'Lymph node group'. Coding of the body structure with an appropriate terminology, such as SNOMED CT, is recommended.">
 				>
 				["at0002"] = <
-					text = <"*Body site (en)">
-					description = <"*Identification of the area of the body under examination. (en)">
-					comment = <"*For example: a lymph node group (body structure) which found in the 'Right axilla'. Coding of 'Body site' with a terminology, such as SNOMED CT, is desirable. If the body site has been fully identified in the 'Body structure' data element, this data element becomes redundant. (en)">
+					text = <"Body site">
+					description = <"Identification of the area of the body under examination.">
+					comment = <"For example: a lymph node group (body structure) which found in the 'Right axilla'. Coding of 'Body site' with a terminology, such as SNOMED CT, is desirable. If the body site has been fully identified in the 'Body structure' data element, this data element becomes redundant.">
 				>
 				["at0003"] = <
-					text = <"*Structured body site (en)">
-					description = <"*Structured details about the area of the body under examination. (en)">
-					comment = <"*For example: details about a relative anatomical location, such as '2cm distal to the appendix'. If the body site has been fully identified in the 'Body structure' or 'Body site' data elements, then this SLOT becomes redundant.
- (en)">
+					text = <"Structured body site">
+					description = <"Structured details about the area of the body under examination.">
+					comment = <"For example: details about a relative anatomical location, such as '2cm distal to the appendix'. If the body site has been fully identified in the 'Body structure' or 'Body site' data elements, then this SLOT becomes redundant.
+">
 				>
 				["at0004"] = <
-					text = <"*Imaging findings (en)">
-					description = <"*Narrative description of the imaging findings observed during this examination. (en)">
+					text = <"Imaging findings">
+					description = <"Narrative description of the imaging findings observed during this examination.">
 				>
 				["at0005"] = <
-					text = <"*Additional details (en)">
-					description = <"*Additional structured details about imaging findings for the identified body structure or region, or findings of related structures. (en)">
+					text = <"Additional details">
+					description = <"Additional structured details about imaging findings for the identified body structure or region, or findings of related structures.">
 				>
 				["at0006"] = <
-					text = <"*Impression (en)">
-					description = <"*Single word, phrase or brief description that represents the clinical meaning and significance of all imaging findings for the identified body structure. (en)">
-					comment = <"*Also referred to as 'Interpretation' or 'Opinion'. For example: 'No abnormality detected' or 'Free fluid present'. Coding of the 'Impression' with a terminology is permitted, if useful. Multiple occurrences allow for more than one coded impression. A narrative description may include a comparison with previous studies of the identified body structure, if appropriate. (en)">
+					text = <"Impression">
+					description = <"Single word, phrase or brief description that represents the clinical meaning and significance of all imaging findings for the identified body structure.">
+					comment = <"Also referred to as 'Interpretation' or 'Opinion'. For example: 'No abnormality detected' or 'Free fluid present'. Coding of the 'Impression' with a terminology is permitted, if useful. Multiple occurrences allow for more than one coded impression. A narrative description may include a comparison with previous studies of the identified body structure, if appropriate.">
 				>
 				["at0007"] = <
-					text = <"*Comment (en)">
-					description = <"*Additional narrative about the imaging findings of the body structure, not captured in other fields. (en)">
+					text = <"Comment">
+					description = <"Additional narrative about the imaging findings of the body structure, not captured in other fields.">
 				>
 				["at0.6"] = <
 					text = <"*Left ventricular ejection fraction (en)">
