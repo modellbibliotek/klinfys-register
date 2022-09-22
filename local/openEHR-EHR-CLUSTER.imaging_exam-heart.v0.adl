@@ -105,7 +105,7 @@ Not to be used to record details related to the overall findings, context or tec
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"3e25c318975553043ab12a2fa64f5244">
+		["MD5-CAM-1.0.1"] = <"5e57de33175a853a236727938d035559">
 		["build_uid"] = <"c859c01f-6d83-4584-b571-c44413187401">
 		["ip_acknowledgements"] = <"This artefact includes content from SNOMED Clinical Terms® (SNOMED CT®) which is copyrighted material of the International Health Terminology Standards Development Organisation (IHTSDO). Where an implementation of this artefact makes use of SNOMED CT content, the implementer must have the appropriate SNOMED CT Affiliate license - for more information contact https://www.snomed.org/snomed-ct/get-snomed or info@snomed.org.">
 		["revision"] = <"1.0.0">
@@ -247,7 +247,7 @@ definition
 					>
 				}
 			}
-			ELEMENT[at0.8] occurrences matches {0..1} matches {    -- Left atrium systolic volume
+			ELEMENT[at0.8] occurrences matches {0..1} matches {    -- Left atrium systolic volume (LAV)
 				value matches {
 					C_DV_QUANTITY <
 						property = <[openehr::129]>
@@ -259,13 +259,133 @@ definition
 					>
 				}
 			}
-			ELEMENT[at0.9] occurrences matches {0..1} matches {    -- Left atrial end systolic area
+			ELEMENT[at0.9] occurrences matches {0..1} matches {    -- Left atrial end systolic area (LA area)
 				value matches {
 					C_DV_QUANTITY <
 						property = <[openehr::335]>
 						list = <
 							["1"] = <
 								units = <"cm2">
+							>
+						>
+					>
+				}
+			}
+			ELEMENT[at0.12] occurrences matches {0..1} matches {    -- Mitral valve E-wave velocity (E)
+				value matches {
+					C_DV_QUANTITY <
+						property = <[openehr::338]>
+						list = <
+							["1"] = <
+								units = <"m/s">
+							>
+						>
+					>
+				}
+			}
+			ELEMENT[at0.13] occurrences matches {0..1} matches {    -- Mitral valve A-wave velocity (A)
+				value matches {
+					C_DV_QUANTITY <
+						property = <[openehr::338]>
+						list = <
+							["1"] = <
+								units = <"m/s">
+							>
+						>
+					>
+				}
+			}
+			ELEMENT[at0.14] occurrences matches {0..1} matches {    -- Mitral valve E-wave deceleration time (DT)
+				value matches {
+					C_DV_QUANTITY <
+						property = <[openehr::128]>
+						list = <
+							["1"] = <
+								units = <"ms">
+							>
+						>
+					>
+				}
+			}
+			ELEMENT[at0.15] occurrences matches {0..1} matches {    -- Mitral valve septal annulus tissue velocity E-wave (e' sept)
+				value matches {
+					C_DV_QUANTITY <
+						property = <[openehr::338]>
+						list = <
+							["1"] = <
+								units = <"m/s">
+							>
+						>
+					>
+				}
+			}
+			ELEMENT[at0.16] occurrences matches {0..1} matches {    -- Mitral valve lateral annulus tissue velocity E-wave (e' lat)
+				value matches {
+					C_DV_QUANTITY <
+						property = <[openehr::338]>
+						list = <
+							["1"] = <
+								units = <"m/s">
+							>
+						>
+					>
+				}
+			}
+			ELEMENT[at0.17] occurrences matches {0..1} matches {    -- Pulmonary vein systolic flow (PVs)
+				value matches {
+					C_DV_QUANTITY <
+						property = <[openehr::338]>
+						list = <
+							["1"] = <
+								units = <"m/s">
+							>
+						>
+					>
+				}
+			}
+			ELEMENT[at0.18] occurrences matches {0..1} matches {    -- Pulmonary vein diastolic flow (PVd)
+				value matches {
+					C_DV_QUANTITY <
+						property = <[openehr::338]>
+						list = <
+							["1"] = <
+								units = <"m/s">
+							>
+						>
+					>
+				}
+			}
+			ELEMENT[at0.19] occurrences matches {0..1} matches {    -- Peak velocity of tricuspid regurgitation (TI Vmax)
+				value matches {
+					C_DV_QUANTITY <
+						property = <[openehr::338]>
+						list = <
+							["1"] = <
+								units = <"m/s">
+							>
+						>
+					>
+				}
+			}
+			ELEMENT[at0.20] occurrences matches {0..1} matches {    -- Right atrial pressure (RAP)
+				value matches {
+					C_DV_QUANTITY <
+						property = <[openehr::125]>
+						list = <
+							["1"] = <
+								units = <"mm[Hg]">
+							>
+						>
+					>
+				}
+			}
+			ELEMENT[at0.21] occurrences matches {0..1} matches {    -- Left ventricular outflow tract systolic velocity-time integral (LVOT VTI)
+				value matches {
+					C_DV_QUANTITY <
+						property = <[openehr::122]>
+						list = <
+							["1"] = <
+								units = <"cm">
 							>
 						>
 					>
@@ -312,11 +432,11 @@ ontology
 					description = <"">
 				>
 				["at0.8"] = <
-					text = <"Left atrium systolic volume">
+					text = <"Left atrium systolic volume (LAV)">
 					description = <"">
 				>
 				["at0.9"] = <
-					text = <"Left atrial end systolic area">
+					text = <"Left atrial end systolic area (LA area)">
 					description = <"">
 				>
 				["at0001.1"] = <
@@ -369,6 +489,46 @@ ontology
 					text = <"Right ventricular inflow tract end diastolic diameter (RVd1)">
 					description = <"">
 				>
+				["at0.12"] = <
+					text = <"Mitral valve E-wave velocity (E)">
+					description = <"">
+				>
+				["at0.13"] = <
+					text = <"Mitral valve A-wave velocity (A)">
+					description = <"">
+				>
+				["at0.14"] = <
+					text = <"Mitral valve E-wave deceleration time (DT)">
+					description = <"">
+				>
+				["at0.15"] = <
+					text = <"Mitral valve septal annulus tissue velocity E-wave (e' sept)">
+					description = <"">
+				>
+				["at0.16"] = <
+					text = <"Mitral valve lateral annulus tissue velocity E-wave (e' lat)">
+					description = <"">
+				>
+				["at0.17"] = <
+					text = <"Pulmonary vein systolic flow (PVs)">
+					description = <"">
+				>
+				["at0.18"] = <
+					text = <"Pulmonary vein diastolic flow (PVd)">
+					description = <"">
+				>
+				["at0.19"] = <
+					text = <"Peak velocity of tricuspid regurgitation (TI Vmax)">
+					description = <"">
+				>
+				["at0.20"] = <
+					text = <"Right atrial pressure (RAP)">
+					description = <"">
+				>
+				["at0.21"] = <
+					text = <"Left ventricular outflow tract systolic velocity-time integral (LVOT VTI)">
+					description = <"">
+				>
 			>
 		>
 		["nb"] = <
@@ -406,11 +566,11 @@ ontology
 					description = <"">
 				>
 				["at0.8"] = <
-					text = <"*Left atrium systolic volume (en)">
+					text = <"*Left atrium systolic volume (LAV) (en)">
 					description = <"">
 				>
 				["at0.9"] = <
-					text = <"*Left atrial end systolic area (en)">
+					text = <"*Left atrial end systolic area (LA area) (en)">
 					description = <"">
 				>
 				["at0001.1"] = <
@@ -462,6 +622,46 @@ ontology
 					text = <"*Right ventricular inflow tract end diastolic diameter (RVd1) (en)">
 					description = <"">
 				>
+				["at0.12"] = <
+					text = <"*Mitral valve E-wave velocity (E) (en)">
+					description = <"">
+				>
+				["at0.13"] = <
+					text = <"*Mitral valve A-wave velocity (A) (en)">
+					description = <"">
+				>
+				["at0.14"] = <
+					text = <"*Mitral valve E-wave deceleration time (DT) (en)">
+					description = <"">
+				>
+				["at0.15"] = <
+					text = <"*Mitral valve septal annulus tissue velocity E-wave (e' sept) (en)">
+					description = <"">
+				>
+				["at0.16"] = <
+					text = <"*Mitral valve lateral annulus tissue velocity E-wave (e' lat) (en)">
+					description = <"">
+				>
+				["at0.17"] = <
+					text = <"*Pulmonary vein systolic flow (PVs) (en)">
+					description = <"">
+				>
+				["at0.18"] = <
+					text = <"*Pulmonary vein diastolic flow (PVd) (en)">
+					description = <"">
+				>
+				["at0.19"] = <
+					text = <"*Peak velocity of tricuspid regurgitation (TI Vmax) (en)">
+					description = <"">
+				>
+				["at0.20"] = <
+					text = <"*Right atrial pressure (RAP) (en)">
+					description = <"">
+				>
+				["at0.21"] = <
+					text = <"*Left ventricular outflow tract systolic velocity-time integral (LVOT VTI) (en)">
+					description = <"">
+				>
 			>
 		>
 		["de"] = <
@@ -499,11 +699,11 @@ ontology
 					description = <"">
 				>
 				["at0.8"] = <
-					text = <"*Left atrium systolic volume (en)">
+					text = <"*Left atrium systolic volume (LAV) (en)">
 					description = <"">
 				>
 				["at0.9"] = <
-					text = <"*Left atrial end systolic area (en)">
+					text = <"*Left atrial end systolic area (LA area) (en)">
 					description = <"">
 				>
 				["at0001.1"] = <
@@ -553,6 +753,46 @@ ontology
 				>
 				["at0.11"] = <
 					text = <"*Right ventricular inflow tract end diastolic diameter (RVd1) (en)">
+					description = <"">
+				>
+				["at0.12"] = <
+					text = <"*Mitral valve E-wave velocity (E) (en)">
+					description = <"">
+				>
+				["at0.13"] = <
+					text = <"*Mitral valve A-wave velocity (A) (en)">
+					description = <"">
+				>
+				["at0.14"] = <
+					text = <"*Mitral valve E-wave deceleration time (DT) (en)">
+					description = <"">
+				>
+				["at0.15"] = <
+					text = <"*Mitral valve septal annulus tissue velocity E-wave (e' sept) (en)">
+					description = <"">
+				>
+				["at0.16"] = <
+					text = <"*Mitral valve lateral annulus tissue velocity E-wave (e' lat) (en)">
+					description = <"">
+				>
+				["at0.17"] = <
+					text = <"*Pulmonary vein systolic flow (PVs) (en)">
+					description = <"">
+				>
+				["at0.18"] = <
+					text = <"*Pulmonary vein diastolic flow (PVd) (en)">
+					description = <"">
+				>
+				["at0.19"] = <
+					text = <"*Peak velocity of tricuspid regurgitation (TI Vmax) (en)">
+					description = <"">
+				>
+				["at0.20"] = <
+					text = <"*Right atrial pressure (RAP) (en)">
+					description = <"">
+				>
+				["at0.21"] = <
+					text = <"*Left ventricular outflow tract systolic velocity-time integral (LVOT VTI) (en)">
 					description = <"">
 				>
 			>
@@ -629,11 +869,11 @@ ontology
 					description = <"">
 				>
 				["at0.8"] = <
-					text = <"*Left atrium systolic volume (en)">
+					text = <"*Left atrium systolic volume (LAV) (en)">
 					description = <"">
 				>
 				["at0.9"] = <
-					text = <"*Left atrial end systolic area (en)">
+					text = <"*Left atrial end systolic area (LA area) (en)">
 					description = <"">
 				>
 				["at0001.1"] = <
@@ -647,6 +887,46 @@ ontology
 				>
 				["at0.11"] = <
 					text = <"*Right ventricular inflow tract end diastolic diameter (RVd1) (en)">
+					description = <"">
+				>
+				["at0.12"] = <
+					text = <"*Mitral valve E-wave velocity (E) (en)">
+					description = <"">
+				>
+				["at0.13"] = <
+					text = <"*Mitral valve A-wave velocity (A) (en)">
+					description = <"">
+				>
+				["at0.14"] = <
+					text = <"*Mitral valve E-wave deceleration time (DT) (en)">
+					description = <"">
+				>
+				["at0.15"] = <
+					text = <"*Mitral valve septal annulus tissue velocity E-wave (e' sept) (en)">
+					description = <"">
+				>
+				["at0.16"] = <
+					text = <"*Mitral valve lateral annulus tissue velocity E-wave (e' lat) (en)">
+					description = <"">
+				>
+				["at0.17"] = <
+					text = <"*Pulmonary vein systolic flow (PVs) (en)">
+					description = <"">
+				>
+				["at0.18"] = <
+					text = <"*Pulmonary vein diastolic flow (PVd) (en)">
+					description = <"">
+				>
+				["at0.19"] = <
+					text = <"*Peak velocity of tricuspid regurgitation (TI Vmax) (en)">
+					description = <"">
+				>
+				["at0.20"] = <
+					text = <"*Right atrial pressure (RAP) (en)">
+					description = <"">
+				>
+				["at0.21"] = <
+					text = <"*Left ventricular outflow tract systolic velocity-time integral (LVOT VTI) (en)">
 					description = <"">
 				>
 			>
@@ -664,6 +944,18 @@ ontology
 				["at0.6"] = <[SNOMED-CT::250908004]>
 				["at0.7"] = <[SNOMED-CT::55471000052102]>
 				["at0.11"] = <[SNOMED-CT::55461000052106]>
+				["at0.8"] = <[SNOMED-CT::399235004]>
+				["at0.9"] = <[SNOMED-CT::55481000052100]>
+				["at0.12"] = <[SNOMED-CT::55491000052103]>
+				["at0.13"] = <[SNOMED-CT::55501000052106]>
+				["at0.14"] = <[SNOMED-CT::399354002]>
+				["at0.15"] = <[SNOMED-CT::55511000052108]>
+				["at0.16"] = <[SNOMED-CT::55521000052100]>
+				["at0.17"] = <[SNOMED-CT::55531000052103]>
+				["at0.18"] = <[SNOMED-CT::55541000052109]>
+				["at0.19"] = <[SNOMED-CT::250955009]>
+				["at0.20"] = <[SNOMED-CT::276755008]>
+				["at0.21"] = <[SNOMED-CT::55551000052107]>
 			>
 		>
 	>
