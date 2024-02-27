@@ -23,7 +23,7 @@ description
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"b761d4986cc0d471ab931a91350bbd04">
+		["MD5-CAM-1.0.1"] = <"69459853c35a50603647dd58c9d81b4e">
 		["build_uid"] = <"08a44b20-6d17-3fd1-b9c4-88bf6194ff2d">
 	>
 
@@ -49,7 +49,7 @@ definition
 						items cardinality matches {0..*; unordered} matches {
 							allow_archetype CLUSTER[at0017] occurrences matches {0..*} matches {    -- CLUSTER
 								include
-									archetype_id/value matches {/.*/}
+									archetype_id/value matches {/openEHR-EHR-CLUSTER\.datum_och_tid\.v0|openEHR-EHR-CLUSTER\.fasta_varden\.v0/}
 							}
 						}
 					}
