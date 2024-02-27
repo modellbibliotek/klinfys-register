@@ -1,0 +1,65 @@
+archetype (adl_version=1.4; uid=df72a726-5f4f-40a0-a92d-2d6b04a5a351)
+	openEHR-EHR-CLUSTER.fasta_varden.v0
+
+concept
+	[at0000]
+
+language
+	original_language = <[ISO_639-1::en]>
+
+description
+	original_author = <
+		["date"] = <"2024-02-27">
+	>
+	lifecycle_state = <"unmanaged">
+	details = <
+		["en"] = <
+			language = <[ISO_639-1::en]>
+		>
+	>
+	other_details = <
+		["licence"] = <"This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/4.0/.">
+		["custodian_organisation"] = <"openEHR Foundation">
+		["original_namespace"] = <"org.openehr">
+		["original_publisher"] = <"openEHR Foundation">
+		["custodian_namespace"] = <"org.openehr">
+		["MD5-CAM-1.0.1"] = <"9f88d9ec7eec02ccec8d9c94ab956582">
+		["build_uid"] = <"4805bf9c-4158-35c1-b779-870a393af284">
+	>
+
+definition
+	CLUSTER[at0000] matches {    -- Fasta varden
+		items cardinality matches {1..*; unordered} matches {
+			ELEMENT[at0001] occurrences matches {0..1} matches {*}    -- ID
+			ELEMENT[at0002] occurrences matches {0..1} matches {*}    -- Term
+			ELEMENT[at0003] occurrences matches {0..1} matches {    -- Värde
+				value matches {
+					DV_CODED_TEXT matches {*}
+				}
+			}
+		}
+	}
+
+ontology
+	term_definitions = <
+		["en"] = <
+			items = <
+				["at0000"] = <
+					text = <"Fasta varden">
+					description = <"Fasta varden">
+				>
+				["at0001"] = <
+					text = <"ID">
+					description = <"">
+				>
+				["at0002"] = <
+					text = <"Term">
+					description = <"">
+				>
+				["at0003"] = <
+					text = <"Värde">
+					description = <"">
+				>
+			>
+		>
+	>
