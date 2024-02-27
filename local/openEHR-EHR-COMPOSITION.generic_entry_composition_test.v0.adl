@@ -23,7 +23,7 @@ description
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"ffe15c5310260343820e9e79836f7132">
+		["MD5-CAM-1.0.1"] = <"0829024b440b33e88b3510b13ecbc189">
 		["build_uid"] = <"08a44b20-6d17-3fd1-b9c4-88bf6194ff2d">
 	>
 
@@ -40,7 +40,7 @@ definition
 			EVENT_CONTEXT matches {*}
 		}
 		content cardinality matches {1..*; unordered} matches {
-			GENERIC_ENTRY[at0001] occurrences matches {0..1} matches {    -- Generic_entry
+			GENERIC_ENTRY[at0001] occurrences matches {0..1} matches {    -- GENERIC_ENTRY
 				feeder_audit matches {
 					FEEDER_AUDIT[at0003] matches {*}    -- FEEDER_AUDIT
 				}
@@ -67,7 +67,7 @@ ontology
 					description = <"generic_entry_composition_test">
 				>
 				["at0001"] = <
-					text = <"Generic_entry">
+					text = <"GENERIC_ENTRY">
 					description = <"">
 				>
 				["at0002"] = <
