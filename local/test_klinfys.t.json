@@ -1,0 +1,1444 @@
+{
+  "@type" : "TEMPLATE",
+  "uid" : "eb59457c-66fe-463c-adce-4425fff7c538",
+  "description" : {
+    "@type" : "RESOURCE_DESCRIPTION",
+    "originalAuthor" : {
+      "date" : "2022-09-22"
+    },
+    "otherContributors" : [ ],
+    "lifecycleState" : {
+      "codeString" : "unmanaged"
+    },
+    "ipAcknowledgements" : { },
+    "references" : { },
+    "conversionDetails" : { },
+    "otherDetails" : {
+      "licence" : "",
+      "custodian_organisation" : "",
+      "original_namespace" : "",
+      "original_publisher" : "",
+      "custodian_namespace" : "",
+      "sem_ver" : "1.0.0",
+      "build_uid" : "",
+      "MD5-CAM-1.0.1" : "486981c65da19a0523e0b975a568e646",
+      "PARENT:MD5-CAM-1.0.1" : "641B268BE8805CEB8DC21AB82C53AB3F"
+    },
+    "details" : {
+      "de" : {
+        "@type" : "RESOURCE_DESCRIPTION_ITEM",
+        "language" : {
+          "terminologyId" : {
+            "value" : "ISO_639-1"
+          },
+          "codeString" : "de"
+        },
+        "keywords" : [ ],
+        "originalResourceUri" : { },
+        "otherDetails" : { }
+      },
+      "sv" : {
+        "@type" : "RESOURCE_DESCRIPTION_ITEM",
+        "language" : {
+          "terminologyId" : {
+            "value" : "ISO_639-1"
+          },
+          "codeString" : "sv"
+        },
+        "keywords" : [ ],
+        "originalResourceUri" : { },
+        "otherDetails" : { }
+      },
+      "fi" : {
+        "@type" : "RESOURCE_DESCRIPTION_ITEM",
+        "language" : {
+          "terminologyId" : {
+            "value" : "ISO_639-1"
+          },
+          "codeString" : "fi"
+        },
+        "keywords" : [ ],
+        "originalResourceUri" : { },
+        "otherDetails" : { }
+      },
+      "ko" : {
+        "@type" : "RESOURCE_DESCRIPTION_ITEM",
+        "language" : {
+          "terminologyId" : {
+            "value" : "ISO_639-1"
+          },
+          "codeString" : "ko"
+        },
+        "keywords" : [ ],
+        "originalResourceUri" : { },
+        "otherDetails" : { }
+      },
+      "nb" : {
+        "@type" : "RESOURCE_DESCRIPTION_ITEM",
+        "language" : {
+          "terminologyId" : {
+            "value" : "ISO_639-1"
+          },
+          "codeString" : "nb"
+        },
+        "keywords" : [ ],
+        "originalResourceUri" : { },
+        "otherDetails" : { }
+      },
+      "es-ar" : {
+        "@type" : "RESOURCE_DESCRIPTION_ITEM",
+        "language" : {
+          "terminologyId" : {
+            "value" : "ISO_639-1"
+          },
+          "codeString" : "es-ar"
+        },
+        "keywords" : [ ],
+        "originalResourceUri" : { },
+        "otherDetails" : { }
+      },
+      "pt-br" : {
+        "@type" : "RESOURCE_DESCRIPTION_ITEM",
+        "language" : {
+          "terminologyId" : {
+            "value" : "ISO_639-1"
+          },
+          "codeString" : "pt-br"
+        },
+        "keywords" : [ ],
+        "originalResourceUri" : { },
+        "otherDetails" : { }
+      },
+      "en" : {
+        "@type" : "RESOURCE_DESCRIPTION_ITEM",
+        "language" : {
+          "terminologyId" : {
+            "value" : "ISO_639-1"
+          },
+          "codeString" : "en"
+        },
+        "keywords" : [ ],
+        "originalResourceUri" : { },
+        "otherDetails" : { }
+      },
+      "sl" : {
+        "@type" : "RESOURCE_DESCRIPTION_ITEM",
+        "language" : {
+          "terminologyId" : {
+            "value" : "ISO_639-1"
+          },
+          "codeString" : "sl"
+        },
+        "keywords" : [ ],
+        "originalResourceUri" : { },
+        "otherDetails" : { }
+      },
+      "ar-sy" : {
+        "@type" : "RESOURCE_DESCRIPTION_ITEM",
+        "language" : {
+          "terminologyId" : {
+            "value" : "ISO_639-1"
+          },
+          "codeString" : "ar-sy"
+        },
+        "keywords" : [ ],
+        "originalResourceUri" : { },
+        "otherDetails" : { }
+      },
+      "it" : {
+        "@type" : "RESOURCE_DESCRIPTION_ITEM",
+        "language" : {
+          "terminologyId" : {
+            "value" : "ISO_639-1"
+          },
+          "codeString" : "it"
+        },
+        "keywords" : [ ],
+        "originalResourceUri" : { },
+        "otherDetails" : { }
+      },
+      "nl" : {
+        "@type" : "RESOURCE_DESCRIPTION_ITEM",
+        "language" : {
+          "terminologyId" : {
+            "value" : "ISO_639-1"
+          },
+          "codeString" : "nl"
+        },
+        "keywords" : [ ],
+        "originalResourceUri" : { },
+        "otherDetails" : { }
+      }
+    }
+  },
+  "parentArchetypeId" : "openEHR-EHR-COMPOSITION.report.v1",
+  "differential" : true,
+  "archetypeId" : {
+    "@type" : "ARCHETYPE_HRID",
+    "value" : "openEHR-EHR-COMPOSITION.t_report.v1"
+  },
+  "definition" : {
+    "@type" : "C_COMPLEX_OBJECT",
+    "rmTypeName" : "COMPOSITION",
+    "nodeId" : "at0000.1",
+    "attributes" : [ {
+      "@type" : "C_ATTRIBUTE",
+      "rmAttributeName" : "context",
+      "children" : [ {
+        "@type" : "C_COMPLEX_OBJECT",
+        "rmTypeName" : "EVENT_CONTEXT",
+        "attributes" : [ ],
+        "attributeTuples" : [ ]
+      } ]
+    }, {
+      "@type" : "C_ATTRIBUTE",
+      "rmAttributeName" : "content",
+      "existence" : "0..1",
+      "cardinality" : {
+        "@type" : "CARDINALITY",
+        "interval" : "1..*",
+        "ordered" : false,
+        "unique" : false
+      },
+      "children" : [ {
+        "@type" : "C_ARCHETYPE_ROOT",
+        "rmTypeName" : "OBSERVATION",
+        "occurrences" : "0..1",
+        "nodeId" : "at0.7",
+        "attributes" : [ ],
+        "attributeTuples" : [ ],
+        "archetypeRef" : "openEHR-EHR-OBSERVATION.ovl-blood_pressure-001.v2",
+        "referenceType" : "archetypeOverlay"
+      }, {
+        "@type" : "C_ARCHETYPE_ROOT",
+        "rmTypeName" : "OBSERVATION",
+        "occurrences" : "0..1",
+        "nodeId" : "at0.4",
+        "attributes" : [ ],
+        "attributeTuples" : [ ],
+        "archetypeRef" : "openEHR-EHR-OBSERVATION.ovl-imaging_exam_result-001.v1",
+        "referenceType" : "archetypeOverlay"
+      } ]
+    } ],
+    "attributeTuples" : [ ]
+  },
+  "terminology" : {
+    "@type" : "ARCHETYPE_TERMINOLOGY",
+    "conceptCode" : "at0000",
+    "termDefinitions" : {
+      "ar-sy" : {
+        "at0000.1" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0000.1",
+          "text" : "test",
+          "description" : "وثيقة لتوصيل المعلومات للآخرين, عادة كاستجابة لطلب من طرف آخر."
+        }
+      },
+      "sl" : {
+        "at0000.1" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0000.1",
+          "text" : "test",
+          "description" : "*Document to communicate information to others, commonly in response to a request from another party.(en)"
+        }
+      },
+      "en" : {
+        "at0000.1" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0000.1",
+          "text" : "test",
+          "description" : "Document to communicate information to others, commonly in response to a request from another party."
+        }
+      },
+      "es-ar" : {
+        "at0000.1" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0000.1",
+          "text" : "test",
+          "description" : "Documento para comunicar información a otros, comunmente en respuesta a la solicitud de un tercero."
+        }
+      },
+      "pt-br" : {
+        "at0000.1" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0000.1",
+          "text" : "test",
+          "description" : "Documento para comunicar informações a outros, comumente em resposta a uma solicitação de terceiros."
+        }
+      },
+      "nb" : {
+        "at0000.1" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0000.1",
+          "text" : "test",
+          "description" : "Dokument som brukes for å kommunisere informasjon til andre, ofte som svar på en forespørsel."
+        }
+      },
+      "de" : {
+        "at0000.1" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0000.1",
+          "text" : "test",
+          "description" : "Ein Dokument zur Übermittlung von Informationen an andere, meist als Antwort auf eine Anfrage."
+        }
+      },
+      "ko" : {
+        "at0000.1" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0000.1",
+          "text" : "test",
+          "description" : "일반적으로 다른 상대의 요청에 대한 응답으로, 다른 사람들과 정보를 통신하는 문서."
+        }
+      },
+      "fi" : {
+        "at0000.1" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0000.1",
+          "text" : "test",
+          "description" : "Asiakirja tiedon välittämiseksi muille, vastauksena yleensä toisen osapuolen pyyntöön."
+        }
+      },
+      "it" : {
+        "at0000.1" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0000.1",
+          "text" : "test",
+          "description" : "Documento per comunicare informazioni ad altri, comunemente in risposta ad una richiesta di un altro soggetto."
+        }
+      },
+      "nl" : {
+        "at0000.1" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0000.1",
+          "text" : "test",
+          "description" : "Document om informatie met anderen te communiceren, vaak op verzoek van een andere partij."
+        }
+      },
+      "sv" : {
+        "at0000.1" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0000.1",
+          "text" : "test",
+          "description" : "Dokument för att kommunicera information till andra, vanligen som svar på en begäran från en annan part."
+        }
+      }
+    },
+    "termBindings" : { },
+    "terminologyExtracts" : { },
+    "valueSets" : { }
+  },
+  "adlVersion" : "1.4",
+  "buildUid" : "b057d0e0-45b9-3d97-ab87-3004b7f6d386",
+  "rmName" : "openehr",
+  "rmRelease" : "1.1.0",
+  "generated" : true,
+  "templateId" : "test_klinfys",
+  "otherMetaData" : { },
+  "templateOverlays" : [ {
+    "@type" : "TEMPLATE_OVERLAY",
+    "uid" : "f09cb46a-c745-49dd-8e9e-cd115db583b8",
+    "description" : {
+      "@type" : "RESOURCE_DESCRIPTION",
+      "originalAuthor" : { },
+      "otherContributors" : [ ],
+      "ipAcknowledgements" : { },
+      "references" : { },
+      "conversionDetails" : { },
+      "otherDetails" : {
+        "PARENT:MD5-CAM-1.0.1" : "4EEBF60E8DC0E6081786D1F0B30149DA"
+      },
+      "details" : {
+        "de" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "de"
+          },
+          "purpose" : "*To record the findings on imaging examination of a specified body structure or region and their interpretation, using radiological techniques. (en)",
+          "keywords" : [ "*image, radiology, modality, xray, CT, ultrasound, MRI, diagnostic, scan, x-ray, imaging, biomagnetic, densitometry, tomography, radiography, magnetic, resonance, mammography, nuclear, medicine, positron, PET, angiography, fluoroscopy (en)" ],
+          "use" : "*Use to record the findings on imaging examination of a specified body structure or region and their interpretation, using radiological techniques.\r\n\r\nThis archetype has been designed to focus on the reporting of findings and interpretation associated with a single imaging examination (equivalent to a single DICOM study). References to DICOM-related attributes are included but the focus is on the representation of a clinical report from an imaging examination and not on representing DICOM-related attributes that might be expected within a radiology information system. Specific details about the DICOM series can be recorded using the CLUSTER.imaging_series nested within the 'Series details' SLOT.\r\n\r\nDetailed findings observed during an imaging examination and targeting a specified structure or region can be recorded by nesting the CLUSTER.imaging_exam and/or its family of specialised archetypes within the 'Structured imaging findings' SLOT in this archetype. It is intended that over time the specific detail in each specialisation will grow to include findings using all imaging modalities.\r\n\r\nIf an imaging examination is carried out as part of a more complex activity, such as a surgical operation carried out under imaging guidance, the imaging findings should be recorded using this archetype. \r\nStructured details about the surgical procedure and medications or contrast administered should be recorded using the ACTION.procedure and/or ACTION.medication archetypes, respectively. In this situation, it is recommended that all related archetypes should be reported within the same template.\r\n\r\nThis result will normally be reported back to the requesting clinician as one component within the context of an overall COMPOSITION-based report. (en)",
+          "misuse" : "*Not to be used to record findings on physical examination. Use the CLUSTER.exam and/or its family of specialised archetypes for this purpose.\r\n\r\nNot to be used to replicate the functionality or specifications of a radiology information or source system.\r\n\r\nNot to be used to record structured details about any procedure undertaken. Use the specific procedure-related archetypes, such as ACTION.procedure archetype for this purpose.\r\n\r\nNot to be used to record structured details about medications administered during the imaging test. Use specific medication-related archetypes, such as the ACTION.medication archetype for this purpose.\r\n\r\nNot to be used to record photographs or videos  within the health record. Use the CLUSTER.media_file archetype for this purpose. (en)",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "sv" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "sv"
+          },
+          "purpose" : "*To record the findings on imaging examination of a specified body structure or region and their interpretation, using radiological techniques. (en)",
+          "keywords" : [ "*image, radiology, modality, xray, CT, ultrasound, MRI, diagnostic, scan, x-ray, imaging, biomagnetic, densitometry, tomography, radiography, magnetic, resonance, mammography, nuclear, medicine, positron, PET, angiography, fluoroscopy (en)" ],
+          "use" : "*Use to record the findings on imaging examination of a specified body structure or region and their interpretation, using radiological techniques.\r\n\r\nThis archetype has been designed to focus on the reporting of findings and interpretation associated with a single imaging examination (equivalent to a single DICOM study). References to DICOM-related attributes are included but the focus is on the representation of a clinical report from an imaging examination and not on representing DICOM-related attributes that might be expected within a radiology information system. Specific details about the DICOM series can be recorded using the CLUSTER.imaging_series nested within the 'Series details' SLOT.\r\n\r\nDetailed findings observed during an imaging examination and targeting a specified structure or region can be recorded by nesting the CLUSTER.imaging_exam and/or its family of specialised archetypes within the 'Structured imaging findings' SLOT in this archetype. It is intended that over time the specific detail in each specialisation will grow to include findings using all imaging modalities.\r\n\r\nIf an imaging examination is carried out as part of a more complex activity, such as a surgical operation carried out under imaging guidance, the imaging findings should be recorded using this archetype. \r\nStructured details about the surgical procedure and medications or contrast administered should be recorded using the ACTION.procedure and/or ACTION.medication archetypes, respectively. In this situation, it is recommended that all related archetypes should be reported within the same template.\r\n\r\nThis result will normally be reported back to the requesting clinician as one component within the context of an overall COMPOSITION-based report. (en)",
+          "misuse" : "*Not to be used to record findings on physical examination. Use the CLUSTER.exam and/or its family of specialised archetypes for this purpose.\r\n\r\nNot to be used to replicate the functionality or specifications of a radiology information or source system.\r\n\r\nNot to be used to record structured details about any procedure undertaken. Use the specific procedure-related archetypes, such as ACTION.procedure archetype for this purpose.\r\n\r\nNot to be used to record structured details about medications administered during the imaging test. Use specific medication-related archetypes, such as the ACTION.medication archetype for this purpose.\r\n\r\nNot to be used to record photographs or videos  within the health record. Use the CLUSTER.media_file archetype for this purpose. (en)",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "nb" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "nb"
+          },
+          "purpose" : "For å registrere funn på og tolkning av bilder som er gjort ved radiologiske metoder på spesifikke strukturer eller regioner i kroppen.",
+          "keywords" : [ "bilde", "radiologi", "modalitet", "røntgen", "CT", "ultralyd", "MR", "diagnostisk", "biomagnetisk", "densitometri", "tomografi", "radiografi", "nukleær", "positron", "PET", "fluoroskopi", "bildeveiledet", "gjennomlysning", "nukleærmedisinsk", "angiografi" ],
+          "use" : "Brukes for å registrere funn på og tolkning av bilder som er gjort ved radiologiske metoder på spesifikke strukturer eller regioner i kroppen.\r\n\r\nDenne arketypen har blitt laget med fokus på svarrapportering av funn og tolkning en enkelt bildediagnostisk undersøkelse (tilsvarende en enkelt \"DICOM Study\"). Referanser til DICOM-relaterte attributter er inkludert, men fokuset er på representasjonen av en klinisk rapport fra en bildeundersøkelse og ikke på å representere DICOM-relaterte attributter som kan forventes i et radiologiinformasjonssystem (RIS/PACS). Spesifikke detaljer om DICOM-serien kan registreres ved å nøste arketypen CLUSTER.imaging_study_details i SLOT'et \"Detaljer om undersøkelsesserier\".\r\n\r\nDetaljerte funn som er gjort ved en bildediagnostisk undersøkelse som er rettet mot en spesifikk struktur eller region i kroppen, kan registreres ved å nøste CLUSTER.imaging_exam (Bildediagnostisk undersøkelse - kroppsstruktur) eller en av de spesialiserte CLUSTER.imaging_exam arketypene i SLOT'et \"Strukturerte funn\" i denne arketypen. Det er tenkt at det over tid vil det bli utviklet slike spesialiseringer som hver for seg omhandler funn fra alle modaliteter.\r\n\r\nHvis den bildediagnostiske undersøkelsen er en del av en mer kompleks prosedyre, som en kirurgisk operasjon som utføres under bildeveiledning, skal de radiologiske funn og observasjoner bli registrert i denne arketypen. Strukturerte detaljer om den kirurgiske prosedyren og administrasjon av medikasjon eller kontrast bør registreres i henholdsvis ACTION.procedure (Prosedyre) og/eller ACTION.medication (Legemiddelhåndtering). I dette tilfelle anbefales det at alle relaterte arketyper, som detaljer om prosedyren eller administrasjon av medikasjon/kontrast bør samles i det samme templatet.\r\n\r\nSvaret på bildediagnostikken vil normalt sett bli rapportert tilbake til den bestillende kliniker som en komponent innenfor rammen av en samlet COMPOSITION-basert rapport.",
+          "misuse" : "Skal ikke brukes til funn ved fysiske undersøkelser. Bruk CLUSTER.exam (Undersøkelsesfunn) eller dennes gruppe av spesialiserte arketyper for dette formålet.\r\n\r\nSkal ikke brukes til å replikere funksjonaliteten til et radiologi informasjonssystem (RIS/PACS) eller kildesystem.\r\n\r\nSkal ikke brukes til å registrere strukturerte detaljer om en klinisk prosedyre som er gjennomført. Bruk da de spesifikke arketypene for prosedyre-relatert innhold, for eksempel ACTION.procedure (Prosedyre).\r\n\r\nBrukes ikke til å registrere informasjon om legemidlene som administreres under en bildediagnostisk undersøkelse. Bruk da de spesifikke legemiddelrelaterte arketypene, for eksempel ACTION.medication (Legemiddelhåndtering).\r\n\r\nSkal ikke brukes til å lagre fotografier eller video i den elektroniske journalen. Bruk arketypen CLUSTER.media_file (Mediafil) for dette formålet.",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "en" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "en"
+          },
+          "purpose" : "To record the findings on imaging examination of a specified body structure or region and their interpretation, using radiological techniques.",
+          "keywords" : [ "image, radiology, modality, xray, CT, ultrasound, MRI, diagnostic, scan, x-ray, imaging, biomagnetic, densitometry, tomography, radiography, magnetic, resonance, mammography, nuclear, medicine, positron, PET, angiography, fluoroscopy" ],
+          "use" : "Use to record the findings on imaging examination of a specified body structure or region and their interpretation, using radiological techniques.\r\n\r\nThis archetype has been designed to focus on the reporting of findings and interpretation associated with a single imaging examination (equivalent to a single DICOM study). References to DICOM-related attributes are included but the focus is on the representation of a clinical report from an imaging examination and not on representing DICOM-related attributes that might be expected within a radiology information system. Specific details about the DICOM series can be recorded using the CLUSTER.imaging_series nested within the 'Series details' SLOT.\r\n\r\nDetailed findings observed during an imaging examination and targeting a specified structure or region can be recorded by nesting the CLUSTER.imaging_exam and/or its family of specialised archetypes within the 'Structured imaging findings' SLOT in this archetype. It is intended that over time the specific detail in each specialisation will grow to include findings using all imaging modalities.\r\n\r\nIf an imaging examination is carried out as part of a more complex activity, such as a surgical operation carried out under imaging guidance, the imaging findings should be recorded using this archetype. \r\nStructured details about the surgical procedure and medications or contrast administered should be recorded using the ACTION.procedure and/or ACTION.medication archetypes, respectively. In this situation, it is recommended that all related archetypes should be reported within the same template.\r\n\r\nThis result will normally be reported back to the requesting clinician as one component within the context of an overall COMPOSITION-based report.",
+          "misuse" : "Not to be used to record findings on physical examination. Use the CLUSTER.exam and/or its family of specialised archetypes for this purpose.\r\n\r\nNot to be used to replicate the functionality or specifications of a radiology information or source system.\r\n\r\nNot to be used to record structured details about any procedure undertaken. Use the specific procedure-related archetypes, such as ACTION.procedure archetype for this purpose.\r\n\r\nNot to be used to record structured details about medications administered during the imaging test. Use specific medication-related archetypes, such as the ACTION.medication archetype for this purpose.\r\n\r\nNot to be used to record photographs or videos  within the health record. Use the CLUSTER.media_file archetype for this purpose.",
+          "copyright" : "© openEHR Foundation",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        }
+      }
+    },
+    "parentArchetypeId" : "openEHR-EHR-OBSERVATION.imaging_exam_result.v1",
+    "differential" : true,
+    "archetypeId" : {
+      "@type" : "ARCHETYPE_HRID",
+      "value" : "openEHR-EHR-OBSERVATION.ovl-imaging_exam_result-001.v1"
+    },
+    "definition" : {
+      "@type" : "C_COMPLEX_OBJECT",
+      "rmTypeName" : "OBSERVATION",
+      "nodeId" : "at0000.1",
+      "attributes" : [ {
+        "@type" : "C_ATTRIBUTE",
+        "rmAttributeName" : "data",
+        "children" : [ {
+          "@type" : "C_COMPLEX_OBJECT",
+          "rmTypeName" : "HISTORY",
+          "nodeId" : "at0001",
+          "attributes" : [ {
+            "@type" : "C_ATTRIBUTE",
+            "rmAttributeName" : "events",
+            "children" : [ {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "EVENT",
+              "nodeId" : "at0002",
+              "attributes" : [ {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "data",
+                "children" : [ {
+                  "@type" : "C_COMPLEX_OBJECT",
+                  "rmTypeName" : "ITEM_TREE",
+                  "nodeId" : "at0003",
+                  "attributes" : [ {
+                    "@type" : "C_ATTRIBUTE",
+                    "rmAttributeName" : "items",
+                    "children" : [ {
+                      "@type" : "C_ARCHETYPE_ROOT",
+                      "rmTypeName" : "CLUSTER",
+                      "occurrences" : "0..1",
+                      "nodeId" : "at0044.1",
+                      "attributes" : [ ],
+                      "attributeTuples" : [ ],
+                      "archetypeRef" : "openEHR-EHR-CLUSTER.ovl-imaging_exam-heart-001.v0",
+                      "referenceType" : "archetypeOverlay"
+                    } ]
+                  } ],
+                  "attributeTuples" : [ ]
+                } ]
+              } ],
+              "attributeTuples" : [ ]
+            } ]
+          } ],
+          "attributeTuples" : [ ]
+        } ]
+      } ],
+      "attributeTuples" : [ ]
+    },
+    "terminology" : {
+      "@type" : "ARCHETYPE_TERMINOLOGY",
+      "conceptCode" : "at0000",
+      "termDefinitions" : {
+        "en" : { },
+        "nb" : { },
+        "de" : { },
+        "sv" : { }
+      },
+      "termBindings" : { },
+      "terminologyExtracts" : { },
+      "valueSets" : { }
+    },
+    "adlVersion" : "1.4",
+    "buildUid" : "6f4078eb-58c1-48f0-be94-d047cda9601b",
+    "rmName" : "openehr",
+    "rmRelease" : "1.1.0",
+    "generated" : true,
+    "otherMetaData" : { },
+    "originalLanguage" : {
+      "terminologyId" : {
+        "value" : "ISO_639-1"
+      },
+      "codeString" : "en"
+    },
+    "translations" : [ {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "de"
+      },
+      "author" : {
+        "application" : "Adl Designer",
+        "name" : "Natalia Strauch",
+        "organisation" : "Medizinische Hochschule Hannover",
+        "email" : "Strauch.Natalia@mh-hannover.de"
+      },
+      "otherDetails" : {
+        "notes" : "Generated automatically by Adl Designer"
+      }
+    }, {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "sv"
+      },
+      "author" : {
+        "name" : "Linda Aulin",
+        "organisation" : "Region Stockholm",
+        "email" : "linda.aulin@sll.se"
+      },
+      "otherDetails" : { }
+    }, {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "nb"
+      },
+      "author" : {
+        "name" : "Vebjørn Arntzen, Liv Laugen",
+        "organisation" : "​Oslo University Hospital, Norway",
+        "email" : "varntzen@ous-hf.no, liv.laugen@ous-hf.no"
+      },
+      "otherDetails" : { }
+    } ]
+  }, {
+    "@type" : "TEMPLATE_OVERLAY",
+    "uid" : "7586d064-ff1f-44cb-8fa2-8ce45bc8100d",
+    "description" : {
+      "@type" : "RESOURCE_DESCRIPTION",
+      "originalAuthor" : { },
+      "otherContributors" : [ ],
+      "ipAcknowledgements" : { },
+      "references" : { },
+      "conversionDetails" : { },
+      "otherDetails" : {
+        "PARENT:MD5-CAM-1.0.1" : "51dfeba59009e0982047a1f358c7d7ea"
+      },
+      "details" : {
+        "de" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "de"
+          },
+          "purpose" : "Zur Darstellung der Befunde einer radiologischen Untersuchung einer bestimmten Körperstruktur oder -region und deren Interpretation.",
+          "keywords" : [ "*finding, imaging, body, system, structure, region, observation, diagnostic, radiology, image (en)" ],
+          "use" : "*Use to record the findings on radiological examination of a specified body structure or region, and their interpretation.\n\nIn practice, the design intent is for the CLUSTER.imaging_exam family of archetypes to be used to record all detailed findings on radiological examination. The family of specialised archetypes are derived from this generic parent archetype, CLUSTER.imaging_exam, designed as a universal pattern for recording any findings in any specified body structure or region and using any modality.\n\nEach structure- or region-specific specialisation of this parent archetype is intended to be inclusive of all reasonably anticipated and relevant findings. For example, the CLUSTER.imaging_exam-ovary will support recording of all findings that would be expected in reporting on imaging of the ovary using any radiological modality, including the size of the ovary, largest follicle size and the diameter and description of specific follicles. Similarly, CLUSTER.imaging_exam-lymph_node_group will contain data elements required to record specific findings of a lymph node group, including its precise or relative location in the body and the number of lymph nodes in the group. \n\nIf an appropriate specialisation is not available for a body structure or region, this archetype can be used to record all relevant findings related to the structure or region. \n\nThis archetype and its related family of specialisations are designed to be nested within the 'Structured imaging findings' SLOT in the OBSERVATION.imaging_exam_result or within other relevant CLUSTER.imaging_exam archetypes, but can also be used within other ENTRY or CLUSTER archetypes, where clinically appropriate. If this archetype of its specialisations need to be extended with further levels of detailed findings, additional instances of the CLUSTER.imaging_exam or its specialisations can be nested in the 'Additional details' SLOT. (en)",
+          "misuse" : "Nicht zur Darstellung von Befunden verwenden, die außerhalb der identifizierten Körperstruktur oder -region beobachtet wurden. Verwenden Sie zu diesem Zweck eine separate Instanz eines oder mehrerer Archetypen aus der Familie CLUSTER.imaging_exam.\n\nDarf nicht verwendet werden, um Details in Bezug auf die Gesamtbefunde, den Kontext oder technische Details in Bezug auf ein vollständiges Testergebnis einer bildgebenden Untersuchung darzustellen. Verwenden Sie zu diesem Zweck das OBSERVATION.imaging_exam_result. Zum Beispiel Kommentare zur Studienqualität, zu Differenzialdiagnosen und zum Gesamteindruck.",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "sv" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "sv"
+          },
+          "keywords" : [ "*finding, imaging, body, system, structure, region, observation, diagnostic, radiology, image (en)" ],
+          "copyright" : "© openEHR Foundation",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "nb" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "nb"
+          },
+          "purpose" : "For å registrere funn og tolkning av radiologisk undersøkelse av et definert organ eller en kroppsdel.",
+          "keywords" : [ "*finding, imaging, body, system, structure, region, observation, diagnostic, radiology, image (en)" ],
+          "use" : "Bruk for å registrere funn og tolkning av radiologisk undersøkelse av et definert organ eller en kroppsdel.\n\nFormålet med designet på hele gruppen av arketyper innen CLUSTER.imaging_exam (Bildediagnostisk undersøkelse - kroppsstruktur) er å kunne registrere alle detaljerte funn og observasjoner ved radiologiske undersøkelser. Gruppen av spesialiserte arketyper er avledet fra denne generiske forelder-arketypen, CLUSTER.imaging_exam (Bildediagnostisk undersøkelse - kroppsstruktur), og har et universelt design for å registrere ethvert funn i ethvert organ eller kroppsdel og ved bruk av enhver modalitet.\n\nHver slik spesialisering av denne forelder-arketypen er tenkt å dekke alle rimelige og forventede funn og observasjoner for sitt/sin respektive organ- eller kroppsdel. For eksempel vil CLUSTER.imaging_exam-overy (Bildediagnostisk undersøkelse - eggstokk) dekke registrering av alle funn eller observasjoner som man forventer å finne ved radiologisk undersøkelse av eggstokk, uavhengig av modalitet. Dette inkluderer størrelse av eggstokk, dimensjonen av den største follikkelen og diameter og beskrivelse av spesifikke follikler. På samme måte vil CLUSTER.imaging_exam-lymph_node_group (Bildediagnostisk undersøkelse - lymfeknutegruppe) inneholde dataelementer som er nødvendig for å registrere spesifikke funn av en lymfeknutegruppe, inkludert den presise og relative plassering i kroppen og antall lymfeknuter i gruppen.\n\nDersom det ikke er tilgjengelig en passende spesialisering for et organ eller kroppsdel, kan denne arketypen bli brukt for å registrere alle relevante finn som er knyttet til organet eller kroppsdelen.\n\nDenne arketypen og de tilhørende spesialiseringene er designet for å bli nøstet i SLOT'et \"Strukturerte bildefunn\" i arketypen OBSERVATION.imaging_exam_result (Bildediagnostisk svar), eller inn i en annen relevant CLUSTER.imaging_exam (Bildediagnostisk undersøkelse - kroppsstruktur). Men den kan også brukes i enhver annen ENTRY- eller CLUSTER-arketype der det er klinisk passende. Hvis denne arketypen, eller en spesialisering av denne, trenger å bli utvidet med flere nivå med detaljerte funn eller observasjoner, kan det legges til en eller flere instanser av arketypen eller en spesialisering av den ved å nøste den i SLOT'et \"Ytterligere detaljer\".",
+          "misuse" : "Skal ikke brukes til å registrere funn som er gjort utenom det definerte organet eller den definerte kroppsdelen. Bruk en egen instans av en eller flere arketyper innen gruppen av CLUSTER.imaging_exam - arketyper (Undersøkelsesfunn) for dette formålet.\n\nSkal ikke brukes til å registrere overordnede undersøkelsesfunn, kontekst eller tekniske detaljer relatert til bildeundersøkelsen. Bruk arketypen OBSERVATION.imaging_exam_result (Bildediagnostisk svar) for å registrere for eksempel kommentar om undersøkelseskvalitet, differensialdiagnose og overordnet konklusjon.",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "en" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "en"
+          },
+          "purpose" : "To record the findings on radiological examination of a specified body structure or region, and their interpretation.",
+          "keywords" : [ "finding, imaging, body, system, structure, region, observation, diagnostic, radiology, image" ],
+          "use" : "Use to record the findings on radiological examination of a specified body structure or region, and their interpretation.\n\nIn practice, the design intent is for the CLUSTER.imaging_exam family of archetypes to be used to record all detailed findings on radiological examination. The family of specialised archetypes are derived from this generic parent archetype, CLUSTER.imaging_exam, designed as a universal pattern for recording any findings in any specified body structure or region and using any modality.\n\nEach structure- or region-specific specialisation of this parent archetype is intended to be inclusive of all reasonably anticipated and relevant findings. For example, the CLUSTER.imaging_exam-ovary will support recording of all findings that would be expected in reporting on imaging of the ovary using any radiological modality, including the size of the ovary, largest follicle size and the diameter and description of specific follicles. Similarly, CLUSTER.imaging_exam-lymph_node_group will contain data elements required to record specific findings of a lymph node group, including its precise or relative location in the body and the number of lymph nodes in the group. \n\nIf an appropriate specialisation is not available for a body structure or region, this archetype can be used to record all relevant findings related to the structure or region. \n\nThis archetype and its related family of specialisations are designed to be nested within the 'Structured imaging findings' SLOT in the OBSERVATION.imaging_exam_result or within other relevant CLUSTER.imaging_exam archetypes, but can also be used within other ENTRY or CLUSTER archetypes, where clinically appropriate. If this archetype or its specialisations need to be extended with further levels of detailed findings, additional instances of the CLUSTER.imaging_exam or its specialisations can be nested in the 'Additional details' SLOT.",
+          "misuse" : "Not to be used to record findings observed outside the identified body structure or region. Use a separate instance of one or more archetypes from the CLUSTER.imaging_exam family for this purpose.\n\nNot to be used to record details related to the overall findings, context or technical details related to a complete imaging examination test result. Use the OBSERVATION.imaging_exam_result for this purpose. For example, comments on the study quality, differential diagnoses, and overall impression.",
+          "copyright" : "© openEHR Foundation",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        }
+      }
+    },
+    "parentArchetypeId" : "openEHR-EHR-CLUSTER.imaging_exam-heart.v0",
+    "differential" : true,
+    "archetypeId" : {
+      "@type" : "ARCHETYPE_HRID",
+      "value" : "openEHR-EHR-CLUSTER.ovl-imaging_exam-heart-001.v0"
+    },
+    "definition" : {
+      "@type" : "C_COMPLEX_OBJECT",
+      "rmTypeName" : "CLUSTER",
+      "nodeId" : "at0000.1.1",
+      "attributes" : [ ],
+      "attributeTuples" : [ ]
+    },
+    "terminology" : {
+      "@type" : "ARCHETYPE_TERMINOLOGY",
+      "conceptCode" : "at0000.1",
+      "termDefinitions" : {
+        "en" : {
+          "at0003" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0003",
+            "text" : "Structured body site",
+            "description" : "Structured details about the area of the body under examination.",
+            "comment" : "For example: details about a relative anatomical location, such as '2cm distal to the appendix'. If the body site has been fully identified in the 'Body structure' or 'Body site' data elements, then this SLOT becomes redundant.\r\n"
+          }
+        },
+        "nb" : { },
+        "de" : { },
+        "sv" : {
+          "at0003" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0003",
+            "text" : "Structured body site",
+            "description" : "Structured details about the area of the body under examination.",
+            "comment" : "For example: details about a relative anatomical location, such as '2cm distal to the appendix'. If the body site has been fully identified in the 'Body structure' or 'Body site' data elements, then this SLOT becomes redundant.\r\n"
+          }
+        }
+      },
+      "termBindings" : { },
+      "terminologyExtracts" : { },
+      "valueSets" : { }
+    },
+    "adlVersion" : "1.4",
+    "buildUid" : "c859c01f-6d83-4584-b571-c44413187401",
+    "rmName" : "openehr",
+    "rmRelease" : "1.1.0",
+    "generated" : true,
+    "otherMetaData" : { },
+    "originalLanguage" : {
+      "terminologyId" : {
+        "value" : "ISO_639-1"
+      },
+      "codeString" : "en"
+    },
+    "translations" : [ {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "de"
+      },
+      "author" : {
+        "name" : "Natalia Strauch",
+        "organisation" : "Medizinische Hochschule Hannover",
+        "email" : "Strauch.Natalia@mh-hannover.de"
+      },
+      "otherDetails" : { }
+    }, {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "sv"
+      },
+      "author" : { },
+      "otherDetails" : { }
+    }, {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "nb"
+      },
+      "author" : {
+        "name" : "Vebjørn Arntzen",
+        "organisation" : "Oslo University Hospital",
+        "email" : "varntzen@ous-hf.no"
+      },
+      "otherDetails" : { }
+    } ]
+  }, {
+    "@type" : "TEMPLATE_OVERLAY",
+    "uid" : "2f6522d2-bef1-43d1-be4a-7a7f59ab2b01",
+    "description" : {
+      "@type" : "RESOURCE_DESCRIPTION",
+      "originalAuthor" : { },
+      "otherContributors" : [ ],
+      "ipAcknowledgements" : { },
+      "references" : { },
+      "conversionDetails" : { },
+      "otherDetails" : {
+        "PARENT:MD5-CAM-1.0.1" : "170F2F8FCE46E22662FC61919622AE21"
+      },
+      "details" : {
+        "de" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "de"
+          },
+          "purpose" : "Dient der Dokumentation des systemischen arteriellen Blutdrucks einer Person.",
+          "keywords" : [ "Beobachtungen", "Messungen", "Vitalparameter", "Mittlerer arterieller Druck", "Pulsdruck", "systolisch", "diastolisch", "RR", "Riva-Rocci", "NIBP" ],
+          "use" : "Alle Blutdruckmessungen werden unter Zuhilfenahme dieses Archetypen dokumentiert, unabhängig davon, welche Methode oder Körperstelle zur Messung benutzt wurden. Der Archetyp dient der Dokumentation des Blutdrucks in alle klinischen Szenarien - z.B. durch eine Blutdruckmaschine zuhause; eine Notfallmessung durch Palpation und ein Sphygmomanometer; Messungen beim Hausarzt oder im Rahmen von Belastungstests; sowie einer Serie von Messungen durch eine Maschine auf der Intensivstation.\r\nDer Archetyp beinhaltet ein umfassendes Status-Modell, das die Interpretation der Messung unterstützt, indem Position, Anstrengung, Einflussfaktoren, Neigungswinkel angegeben werden können.\r\nBenannte Ereignisse wurden auf den 24-stündigen Durchschnitt beschränkt, jedoch können Templates jederzeit das standardmäßig vorhandene Ereignis ('any event') weiter einschränken, um spezifischen Anforderungen gerecht zu werden, wie z.B. der Messung zu bestimmten Zeitpunkten, oder über eine Anzahl von Intervallen (+/- mathematische Funktionen).",
+          "misuse" : "Nicht benutzen zur Dokumentation des intravenösen Drucks.\r\nNicht benutzen zur Dokumentation des arteriellen Blutdrucks, welcher KEIN Surrogat für den arteriellen Druck in der systemischen Zirkluation ist, z.B. die spezifische Messung des rechten pulmonaren Arteriendrucks.\r\nIn diesem Fall sollte der OBSERVATION.intravascular_pressure Archetyp bzw. dessen Spezialisierungen verwendet werden.",
+          "copyright" : "© openEHR Foundation",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "fi" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "fi"
+          },
+          "purpose" : "Yksilön verenpaineen kirjaamista varten.",
+          "keywords" : [ "havainnot, mittaus, verenpaine, vitaalit, keskimääräinen valtimopaine, pulssipaine, systolinen, diastolinen, RR, NIBP" ],
+          "use" : "Käytetään kirjattaessa kaikki systeemisen valtimoverenpaineen mittauksen esitystavat riippumatta siitä, mitä menetelmää tai kehon sijaintia käytetään sen tallentamiseen.\r\n\r\nArkkityypin tarkoituksena on kerätä verenpainemittauksia kaikissa kliinisissä skenaarioissa - esimerkiksi:\r\n- itsemittaus kotona; \r\n- systolisen hätäarviointi palpaatiosta ja sfygmomanometristä; \r\n- kliinisen konsultaation tai stressitestissä tehdyt mittaustulokset; ja\r\n- tehohoidossa tehdyt koneelliset mittaustulokset   \r\n\r\nTietomallissa on rikas tilamalli, joka tukee mittausten tulkintaa tunnistamalla potilaan asentoa, liikuntaa, sekoittavia tekijöitä ja tutkittavan kulmaa tutkimuksen aikana.\r\n\r\nNimettyjen tapahtumien määrä on rajoitettu 24 tunnin aikaiseen keskiarvoon, mutta templaateilla voidaan edelleen rajoittaa oletusarvoista \"mitä tahansa tapahtumaa\", joka vastaa erityisiä vaatimuksia verenpainemittauksille, kuten verenpaineen tallentaminen tiettyihin ajankohtiin tai tietyin väliajoin (+/- matemaattiset funktiot).",
+          "misuse" : "Ei saa käyttää valtimoverenpaineen mittauksen kirjaamiseen, joka ei ole systeemisen verenkierron verenpaineen korvike, esim. Oikean keuhkovaltimon paineen erityinen mittaus. Käytä tässä tilanteessa OBSERVATION.intrcularcular_pressure arkkityyppiä.\r\nEi saa käyttää laskimonsisäisen paineen mittaamiseen. Käytä tässä tilanteessa OBSERVATION.intravascular_pressure -arkkityyppiin sopivia spesiliaatioita.",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "sv" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "sv"
+          },
+          "purpose" : "Att mäta en individs systemiska arteriella blodtryck.",
+          "keywords" : [ "observationer", "mätning", "blodtryck", "vitaltecken", "medelartärtryck", "pulstryck", "systoliskt", "diastoliskt", "RR", "NIBP" ],
+          "use" : "Används för att mäta alla systemiskt arteriella blodtryck, oavsett vilka metoder som använts och var på kroppen mätningen gjordes. Arketypen är avsedd för blodtrycksmätningar i alla vårdscenarion exemelvis för egna mätningar i hemmet med blodtrycksmätare, för akutbedömningar av det systoliska blodtrycket med hjälp av palpation och en blodtrycksmätare, för mätningar gjorda vid vårdkonsultationer eller stresstest, för seriemätningar med blodtrycksmaskiner på Intensivvårdsavdelningar.\r\nDet finns en omfattande tillståndsmodell som stödjer tolkningen av mätningar genom identifiering av patientens ställning, ansträngning, påverkande faktorer och vinkel på tippbräda vid undersökning. Namngivna händelser har begränsats till ett genomsnitt under en 24-timmarsperiod, men mallar kan ytterligare avgränsa standardinställningen i \"Ospecificerad händelse\" för att möta specifika krav på blodtrycksmätningar, exempelvis mätningar av blodtryck vid specifika tidpunkter eller i ett tidsintervall med matematiska funktioner.\r\n",
+          "misuse" : "Ska inte användas för intravenöst tryck.\r\n\r\nSka inte användas för mätning av arteriellt blodtryck som INTE är ett surrogat för artärtryck i systemcirkulationen eller för specifika mätningar som exempelvis höger lungartärtryck.\r\n\r\nAnvänd i dessa fall istället OBSERVATION.intravascular_pressure och relaterade specialiseringsarketyper.",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "ru" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "ru"
+          },
+          "purpose" : "Для записи системного артериального давления крови человека.",
+          "keywords" : [ "обследование", "измерение", "артериальное давление", "диастолическое", "систолическое" ],
+          "use" : "Используется для записи всех представлений измерения системного артериального  кровяного давления, независимо от используемого метода или расположения тела пациента. Архетип предназначен для записи измерений давления во всех клинических сценариях - например, самостоятельное измерение давления крови домашним автоматическим манометром, в чрезвычайной  ситуации использование  пальпации пульсовой волны и сфигмоманометр; измерений в ходе клинических консультаций или в ходе осуществления стресс-тестирования, а также серии измерений, выполненных аппаратом в реанимации.\r\nПоддерживает интерпретацию измерений путем определения позиции пациента, физические упражнения, осложняющих факторов и угла наклона стола в научных исследованиях.\r\nПредполаагется интервал между измерениями 24 часа, однако может быть дополнено событиями (по умолчанию \"любое событие\") для удовлетворения специфических требований для измерения кровяного давления, такие как записи в отношении кровяного давления конкретные моменты времени, или в диапазоне интервалов.",
+          "misuse" : "Не следует использовать для внутривенного давления.\r\nНе следует использовать для измерения артериального давления, которое не является суррогатом артериального давления в системном кровотоке, например, конкретные измерения давления в легочной артерии.\r\nИспользовать OBSERVATION.intravascular_pressure и смежных специальностей в обоих этих ситуациях.\r\n",
+          "copyright" : "© openEHR Foundation",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "ko" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "ko"
+          },
+          "purpose" : "개인의 체동맥혈압 기록",
+          "keywords" : [ "*관찰(ko)", "*측정(ko)", "*혈압(ko)", "*생체징후(ko)", "*평균 동맥 혈압(ko)", "*맥압(ko)", "*수축기의(ko)", "*이완기의(ko)", "*호흡수(ko)", "*비침습적 혈압(ko)" ],
+          "use" : "전신 동맥혈압측정의 모든 표현들을 저장하는데 사용, 어떤 방법 또는 신체부위와 관계없이 기록하는데 사용된다. 이 archetype은 모든 임상 시나리오에서 동맥혈압을 획득하기 위한 것이다 - 예를 들어, 가정 혈압기기를 이용한 자가 측정; 타진과 혈압계를 이용한 수축기의 응급평가; 임상 의뢰 또는 운동부하검사에서의 측정; 그리고 중환자실에서 기계에 의한 일련의 측정.\r\n\r\n여기에는 환자 자세, 운동, 혼란 변수 그리고 연구에서 틸트테이블의 각도를 통한 측정의 해석을 지원하는 풍부한 상태 모델(state model)이 있음.\r\n\r\n명명된 events는 24시간 동안의 평균에 제한되어 있지만 templates는 특정 시각 또는 기간(+/- 수학 함수)에 대한 혈압의 기록과 같은 혈압 측정을 위한 특정한 요구사항을 제공하기 위해서 default 'any event'에 추가적인 constrain을 할 수 있음.",
+          "misuse" : "정맥혈압 측정을 위해서 사용되지 않음.\r\n\r\n예를 들어 우폐동맥압과 같은 특별한 측정과 같이 체순환에서의 동맥압을 대신하지 않는 동맥혈압의 측정을 위해 사용되지 않음.\r\n\r\n위의 2가지 상황에서는 OBSERVATION.intravascular_pressure와 관련된 specialisations를 사용해야 함.",
+          "copyright" : "© openEHR Foundation",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "pt-br" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "pt-br"
+          },
+          "purpose" : "Para registrar a pressão arterial sistêmica de um indivíduo.",
+          "keywords" : [ "observações", "medidas", "PA", "pressão sanguínea", "sinais vitais", "Pressão arterial média", "Pressão de Pulso", "sistólica", "diástólica" ],
+          "use" : "Usado para registrar todas as representações da medida da pressão areterial sistêmica, não importando qual método ou localização corporal usada para registrá-la. O objetivo do arquétipo é capturar a pressão sanguínea em todos os cenários clínicos - por exemplo, auto-medida com um aparelho de pressão caseiro; um avaliação de emergência da pressão sistólica usando palpação e esfigmomanômetro; medidas realizadas em consultas clínicas ou durante testes de esforço; e uma série de medidas feitas por uma máquina em uma Unidade de Terapia Intensiva.\r\nExiste um modelo rico que apoia a interpretação de medidas através da identificação da posição do paciente, nível exercício, gatores confundidores e ângulo de uma mesa de inclinação em uma pesquisa.\r\nEventos nomeados têm sido limitados em médica a um período de 24 horas, entretanto templates podem, posteriormente, restringir o padrão predeterminado 'qualquer evento' para atender a requisitos específicos registro de medida de pressão sanguínea em pontos no tempo específicos, ou em faixas de intervalos (+/-funções matemáticas).",
+          "misuse" : "Não deve ser usada para registrar pressão intravenosa.\r\nNão deve ser usada para medida da pressão arterial que NÃO é um substituto da pressão arterial na circulação sistêmica, por exemplo, medida específica da pressão da artéria Pulmonar direita.\r\nEm ambas situações use OBSERVATION.intravascular_pressure e especializações relacionadas.",
+          "copyright" : "© openEHR Foundation",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "en" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "en"
+          },
+          "purpose" : "To record the systemic arterial blood pressure of an individual.",
+          "keywords" : [ "observations", "measurement", "bp", "vital signs", "mean arterial pressure", "pulse pressure", "systolic", "diastolic", "RR", "NIBP" ],
+          "use" : "Use to record all representations of systemic arterial blood pressure measurement, no matter which method or body location is used to record it. \r\n\r\nThe archetype is intended to capture blood pressure measurements in all clinical scenarios - for example:\r\n- self-measurement with a home blood pressure machine; \r\n- an emergency assessment of systolic using palpation and a sphygmomanometer; \r\n- measurements taken in clinical consultations or during exercise stress testing; and \r\n- a series of measurements made by a machine in Intensive Care.   \r\n\r\nThere is a rich state model that supports interpretation of measurements through identifying patient position, exercise, confounding factors and angle of a tilt table in research. \r\n\r\nNamed events have been limited to average over a 24 hour period, however templates can further constrain the default 'any event' to cater for specific requirements for blood pressure measurements such as recording Blood Pressure against specific points in time, or over a range of intervals (+/- mathematical functions).",
+          "misuse" : "Not to be used to record the measurement of arterial blood pressure which is NOT a surrogate for arterial pressure in the systemic circulation eg specific measurement of right pulmonary artery pressure. Use OBSERVATION.intravascular_pressure in this situation.  \r\n\r\nNot to be used to record measurements of intravenous pressure. Use the appropriate specialisations of OBSERVATION.intravascular_pressure in this situation.",
+          "copyright" : "© openEHR Foundation",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "ar-sy" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "ar-sy"
+          },
+          "purpose" : "لتسجيل ضغط الدم الشرياني النظامي للشخص",
+          "keywords" : [ "الملاحظات", "القياس", "ضغط الدم", "العلامات الحياتية", "متوسط الضغط الشرياني", "الضغط عند النبض", "الانقباضي", "الانبساطي", "معدل التنفس", "قياس ضغط الدم غير الباضع" ],
+          "use" : "يستخدم لتسجيل جميع طرق عرض ضغط الدم الشرايني النظامي, بغض النظر عن الطريقة أو الموضع من الجسم المستخدم في التسجيل.\r\n\r\nيستخدم هذا النموذج لالتقاط قياسات ضغط الدم في جميع السيناريوهات السريرية - مثلا, قياس ضغط الدم بواسطة الشخص لنفسه باستخدام آلة القياس المنزلية, تقييم الضغط الانقباضي في حالة الطوارئ باستخدام المجس و مقياس الضغط الزئبقي, القياسات التي تم أخذها في الاستشارات السريرية أو في أثناء اختبار الضغط البدني, و سلسلة من القياسات التي تتم باستخدام آلات العناية المركزة.\r\n\r\nيستخدم هذا النموذج الغني في تسجيل حالات القياس من خلال تفسيره في ضوء وضع المريض عند القياس, المجهود البدني, العوامل المربكة, و زاوية انحناء الطاولة المستخدمة عند القياس.\r\n\r\nتم تحديد بعض الوقائع إلى المتوسط خلال 24 ساعة, إلا أن القوالب تستطيع تقييد الاختيار التلقائي (إحدى الوقائع) لمتطلبات معينة حول قياسات ضغط الدم مثل تسجيل ضغط الدم في نقاط زمنية معينة أو خلال مدى من الفواصل الزمنية - زائد أو ناقص دوال حسابية",
+          "misuse" : "لا يستخدم لتسجيل الضغط داخل الوريد.\r\nلا يستخدم لقياس ضغط الدم الشرياني الذي لا يحل بديلا عن ضغط الدم الشرياني في الدورة الجهازية مثل قياسات معينة لضغط الشريان الرئوي الأيمن.\r\nاستخدم نموذج ملاحظة. الضغط داخل الأوعية الدموية , و التخصيصات المتعلقة في كل من هذين الموقفين.",
+          "copyright" : "© openEHR Foundation",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "zh-cn" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "zh-cn"
+          },
+          "purpose" : "旨在记录一个人的体循环血压（systemic blood pressure，全身血压，系统血压）。此测量结果原始型记录的是收缩压和舒张压，所采取的记录方式适合于视为代表全身体循环血压的结果。",
+          "keywords" : [ "观察", "观测", "观察指标", "观测指标", "观察结果", "观测结果", "观察项目", "观测项目", "检测", "测量", "测定", "检测指标", "测量指标", "测定指标", "检测结果", "测量结果", "测定结果", "检测项目", "测量项目", "测定项目", "血压", "blood pressure", "bp", "生命体征", "体征", "平均动脉压", "脉压", "脉搏压", "收缩压", "舒张压", "收缩期", "舒张期", "RR", "无创性测压法", "non-invasive blood pressure", "NIBP" ],
+          "use" : "用于记录体循环血压测量结果的所有表达形式，无论其用于记录结果的究竟是什么方法或身体位置。本原始型旨在采集所有临床场景下的血压测量结果；例如，采用家用血压测量仪进行的自助检测、采用触诊方法和血压计进行的收缩压紧急评估、临床会诊或运动负荷试验过程中进行的测量以及重症监护过程中利用仪器所完成的一系列测量。\r\n这是一个丰富的状态模型，支持通过确定患者体位、运动情况、干扰因素以及研究工作所采用的倾斜工作台的角度，来解释测量结果。\r\n具名事件（named events）仅限于24小时期间的均值；不过，可以利用模板来进一步约束默认的“any event”（任何事件），以满足关于血压测量的具体需要，诸如按具体的时间点（时刻）来记录血压，或者是记录为变化范围（+/-数学函数）。",
+          "misuse" : "并不用于静脉内血压。\r\n并不用于并非代表体循环动脉压的动脉血压的测量，如右肺动脉压的专用测量指标。\r\n在上述这两种情况下，请采用血管内压力观察指标原始型（OBSERVATION.intravascular_pressure）及相关的特化形式。",
+          "copyright" : "© openEHR Foundation",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "es" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "es"
+          },
+          "purpose" : "Registro de la presión arterial de un paciente.",
+          "keywords" : [ "observaciones", "medidas", "pa", "pas", "pad", "signos vitales", "presión arterial", "presión del pulso", "sistólica", "diastólica" ],
+          "use" : "Registro de la presión arterial independientemente del método y localización de la zona de la medida, para cualquier escenario clínico.",
+          "misuse" : "No se debe usar para presión intravenosa.\r\n\r\nNo se debe usar para presión arterial que no sea sistémica, por ejemplo presión de la arteria pulmonar derecha.\r\n\r\nEn estos casos utilizar el arquetipo OBSERVATION.intravascular_pressure.",
+          "copyright" : "© openEHR Foundation",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "nb" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "nb"
+          },
+          "purpose" : "For registrering av et individs systemiske arterielle blodtrykk.",
+          "keywords" : [ "BT", "NIBP", "pulstrykk", "pulsamplitude", "MAP", "IBP", "IBPM", "ABP", "ambulatorisk", "24t", "BP", "ikke-invasivt", "invasivt", "NIBPS", "NIBPD", "NIBPM", "middelarterietrykk", "SAP", "DAP", "PP", "systolisk", "diastolisk", "blodtrykk" ],
+          "use" : "Brukes til å registrere alle typer av systemisk arteriell blodtrykksmåling, uansett hvilken metode eller kroppsplassering som anvendes. Arketypen er ment for registrering av blodtrykksmåling i alle kliniske scenarier - for eksempel selvmåling med blodtrykksapparat hjemme, akutt måling av det systoliske blodtrykket ved radialispalpasjon og et sfygmomanometer, målinger tatt i kliniske konsultasjoner eller under trening/stresstesting, eller en serie med invasive eller noninvasive målinger i en intensivavdeling.\r\n\r\nArketypen understøtter registrering av målinger tatt under de fleste forhold med hensyn til individets stilling (liggende/sittende/stående osv.), under trening inklusiv kompliserende faktorer som for eksempel vinkelen på leiet i forbindelse med forskning.\r\n\r\nSpesifiserte hendelser er begrenset til gjennomsnittstrykket gjennom en periode på 24 timer, men i templates kan man ved hjelp av \"uspesifisert hendelse\" oppfylle spesifikke krav til blodtrykksmåling, som registrering av blodtrykk på bestemte tidspunkter, serier av målinger, eller over en periode (med eller uten matematiske funksjoner som minimum eller maksimum).",
+          "misuse" : "Anvendes ikke til sentralvenøst trykk. \r\n\r\nAnvendes ikke til måling av arterielle blodtrykk som ikke representerer et systemisk arterielt trykk f.eks spesifikk måling av pulmonalt arterietrykk.\r\n\r\nBruk OBSERVATION.intravascular_pressure og relaterte spesialiseringer i disse situasjonene.",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "es-ar" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "es-ar"
+          },
+          "purpose" : "Registrar la presión arterial sistémica de un individuo",
+          "keywords" : [ "observaciones(sp)", "mediciones(sp)", "presión arterial(sp)", "signos vitales(sp)", "presión arterial media(sp)", "presión pulso(sp)", "sistólica(sp)", "diastólica(sp)", "RR(en)", "Presión Arterial No Invasiva(sp)", "PANI(sp)" ],
+          "use" : "Usar para registrar todas las representaciones de la presión arterial sistémica, sin importar que método o localización del cuerpo se use para el registro. El arquetipo se usa para capturar la medida de la presión arterial en todos los escenarios clínicos - por ejemplo: automedición con un tensiómetro de uso domiciliario; la evaluación en situación de emergencia, de la sistólica usando palpación y un esfingomanómetro; medidas tomadas durante la consulta clínica o durante la prueba de esfuerzo (ergometría); y la serie de medidas automáticas hechas en la Unidad de Cuidados Intensivos.\r\nExiste un variado modelo de situaciones que soporta la interpretación de mediciones a través de la interpretación de la posición del paciente, ejercicio, factores confluentes y el ángulo de inclinación de la camilla en situaciones de investigación.\r\nLos eventos se han limitado a promediarse sobre un intervalo de 24 horas, sin embargo plantillas pueden acotar la medida por defecto 'cualquier evento' para ajustarse a requerimientos específicos de medida de la presión arterial como el Registro de la Tensión Arterial durante momentos específicos de tiempo, o sobre un rango de intervalos (+/- funciones matemáticas)\r\n\r\n ",
+          "misuse" : "No debe usarse para la presión intravenosa\r\nNo debe usarse para la medida de la presión arterial que NO deriva de la presión arterial de la circulación sistémica ej: la medida específica de la presión de la arteria Pulmonar (presión capilar)\r\nUsen Observación.presión_intravascular y especializaciones relacionadas para estas dos situaciones en particular.\r\n",
+          "copyright" : "© openEHR Foundation",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "ja" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "ja"
+          },
+          "purpose" : "個人の全身における動脈血圧を記録するためのもの。",
+          "keywords" : [ "観察", "測定", "血圧", "バイタルサイン", "平均動脈圧", "脈圧", "収縮期", "拡張期", "RR間隔", "非観血血圧" ],
+          "use" : "測定方法や身体部位を問わず、すべての血圧についての表現を記録するために使用される。このアーキタイプはすべての臨床シナリオを網羅することを目指している。たとえば、家庭用の血圧計で自己測定した血圧や、集中治療において機械的に計測された一連の血圧などである。\r\n患者の体位や運動負荷、交絡因子やティルト台の角度など識別することにより、研究にて計測状態の解釈を手助けする豊富なステートモデルもある。\r\n24時間平均血圧だけが特定のイベントとして名前がつけられているが、テンプレートではデフォルトの「任意のイベント」にさらなる制約を加えることで、特定の時間や間隔を指定したり（数学的機能を追加したり、削除して）、血圧を記録するように、血圧測定に対する特定の要求を行ったイベントを指定することができる。",
+          "misuse" : "静脈内圧の測定には使用されない\r\nたとえば、右肺動脈の計測といった特定の動脈圧の計測を全身を循環している動脈圧の代用として用いるようなことはしてはいけない。\r\nこのような場合には、関連した特殊化であるOBSERVATION.intravascular_pressureを利用すること。",
+          "copyright" : "© openEHR Foundation",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "fa" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "fa"
+          },
+          "purpose" : "ثبت نمودن فشار خون وریدی کل یک فرد",
+          "keywords" : [ "مشاهدات", "اندازه گیری", "فشار خون", "علایم حیاتی", "میانگین فشار وریدی", "فشار نبض", "سیستولیک", "دیاستولیک", "تنفسهای سریع", "فشار خون غیر تهاجمی" ],
+          "use" : "برای ثبت هر چیز نشاندهنده اندازه گیری فشاره خون وریدی کل، جدا از ابنکه برای ثبت آن از چه شیوه ای یا کدام بخش از بدن استفاده شده باشد، بکار می رود. این الگوساز برای گردآوری اندازه گیری فشار خون در همه سناریوهای بالینی طراحی شده است، مانند اندازه گیری توسط خود فرد بوسیله دستگاه فشار خون خانگی، ارزیابی اورژانسی سیستولیک با لمس نبض و یک \"فشارسنج خون\"، اندازه گیریهای انجام گرفته در مشاوره بالینی یا حین تست ورزشی، و یا یک رشته از اندازه گیریهای دستگاه مراقبت های ویژه.\r\nمدل حالت توانمندی وجود دارد که تفسیر اندازه گیری ها را از طریق شناسایی موقعیت بیمار، ورزش، فاکتورهای مبهم و تست تخت شیبدار، پشتیبانی می کند.\r\nرویدادهای نام گذاری شده بگونه ای محدود شده اند که روی یک دوره 24 ساعته میانگین گیری کنند هر چند که الگو ها می توانند پیش فرض -هر گونه  رویداد- را برای فراهم کردن خواسته های خاص از اندازه گیری فشار خون، با محدودیتهایی نظیر ثبت فشار خون سر وقت یا روی رنجی از فاصله های زمانی (با عمل جمع یا منها)، بیشتر محدود کنند \r\n",
+          "misuse" : "برای فشار داخل وریدی استفاده نشود.\r\nبرای اندازه گیری فشار خون وریدی نباید استفاده شود که جایگزینی برای فشار وریدی در گردش خون کلی نیست، بعنوان مثال اندازه گیری خاص فشار وریدی ریه راست.\r\n\r\n و تخصص های مربوطه برای موارد بالا بکار رود\"OBSERVATION.intravascular_pressure\"\r\n \r\n",
+          "copyright" : "© openEHR Foundation",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "nl" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "nl"
+          },
+          "purpose" : "Het registreren van de systemische arteriële bloeddruk van een individu.",
+          "keywords" : [ "observaties", "meting", "blddr", "vitale functies", "gemiddelde arteriële druk", "polsdruk", "systolisch", "diastolisch", "RR", "NIBP", "tensie" ],
+          "use" : "Wordt gebruikt om alle weergaven van de systemische bloeddruk te registreren, ongeacht welke methode of welke lichaamslocatie is gebruikt om de meting te doen. \r\n\r\nHet archetype is bedoeld om bloeddruk metingen in alle klinische scenario's vast te leggen - bijvoorbeeld:\r\n- zelf-meting met een thuis bloeddrukmeter; \r\n- een nood beoordeling van de systolische bloeddruk met behulp van palpatie en een drukmanchet; \r\n- metingen tijdens consulten, overleg of tijdens inspannings stress testen, en \r\n- een reeks van metingen die door een apparaat zijn gedaan in de intensieve zorg.\r\n\r\nEr is een uitgebreid status model dat interpretatie van metingen ondersteunt, door patiënt positie, inspanning, beïnvloedende factoren en de hoek/het aantal graden waarin de onderzoekstafel staat, te specificeren.\r\n\r\nGenoemde gebeurtenissen zijn gelimiteerd tot een gemiddelde over een periode van 24 uur, maar templates kunnen de standaard 'iedere gebeurtenis' verder vernauwen om specifieke eisen voor de bloeddrukmeting, zoals registreren van de bloeddruk op een specifiek tijdsmoment, of over een reeks van intervallen (+/- statistisch gebruik) te faciliteren.\r\n",
+          "misuse" : "Niet te gebruiken voor de meting van de arteriële bloeddruk welke geen surrogaat is voor de arteriële druk in de systemische circulatie, bv de specifieke meting van de rechter arterie pulmonalis druk.\r\nGebruik OBSERVATION.intravascular_pressure in deze situatie.\r\n\r\nNiet te gebruiken voor intraveneuze druk. Gebruik een van de OBSERVATION.intravascular_pressure specialisaties in deze situatie.",
+          "copyright" : "© openEHR Foundation",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        }
+      }
+    },
+    "parentArchetypeId" : "openEHR-EHR-OBSERVATION.blood_pressure.v2",
+    "differential" : true,
+    "archetypeId" : {
+      "@type" : "ARCHETYPE_HRID",
+      "value" : "openEHR-EHR-OBSERVATION.ovl-blood_pressure-001.v2"
+    },
+    "definition" : {
+      "@type" : "C_COMPLEX_OBJECT",
+      "rmTypeName" : "OBSERVATION",
+      "nodeId" : "at0000.1",
+      "attributes" : [ {
+        "@type" : "C_ATTRIBUTE",
+        "rmAttributeName" : "data",
+        "children" : [ {
+          "@type" : "C_COMPLEX_OBJECT",
+          "rmTypeName" : "HISTORY",
+          "nodeId" : "at0001",
+          "attributes" : [ {
+            "@type" : "C_ATTRIBUTE",
+            "rmAttributeName" : "events",
+            "children" : [ {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "EVENT",
+              "nodeId" : "at0006",
+              "attributes" : [ {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "data",
+                "children" : [ {
+                  "@type" : "C_COMPLEX_OBJECT",
+                  "rmTypeName" : "ITEM_TREE",
+                  "nodeId" : "at0003.1",
+                  "attributes" : [ ],
+                  "attributeTuples" : [ ]
+                } ]
+              }, {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "state",
+                "children" : [ {
+                  "@type" : "C_COMPLEX_OBJECT",
+                  "rmTypeName" : "ITEM_TREE",
+                  "nodeId" : "at0007.1",
+                  "attributes" : [ ],
+                  "attributeTuples" : [ ]
+                } ]
+              } ],
+              "attributeTuples" : [ ]
+            }, {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "INTERVAL_EVENT",
+              "nodeId" : "at1042",
+              "attributes" : [ {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "math_function",
+                "children" : [ {
+                  "@type" : "C_COMPLEX_OBJECT",
+                  "rmTypeName" : "DV_CODED_TEXT",
+                  "attributes" : [ {
+                    "@type" : "C_ATTRIBUTE",
+                    "rmAttributeName" : "defining_code",
+                    "children" : [ {
+                      "@type" : "C_TERMINOLOGY_CODE",
+                      "rmTypeName" : "CODE_PHRASE",
+                      "occurrences" : "1..1",
+                      "terminologyId" : {
+                        "value" : "openehr"
+                      },
+                      "constraint" : [ "146" ]
+                    } ]
+                  } ],
+                  "attributeTuples" : [ ]
+                } ]
+              }, {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "width",
+                "children" : [ {
+                  "@type" : "C_COMPLEX_OBJECT",
+                  "rmTypeName" : "DV_DURATION",
+                  "attributes" : [ {
+                    "@type" : "C_ATTRIBUTE",
+                    "rmAttributeName" : "value",
+                    "children" : [ {
+                      "@type" : "C_DURATION",
+                      "rmTypeName" : "DURATION",
+                      "occurrences" : "1..1",
+                      "constraint" : [ {
+                        "lower" : "PT24H",
+                        "upper" : "PT24H",
+                        "lowerIncluded" : true,
+                        "upperIncluded" : true,
+                        "lowerUnbounded" : false,
+                        "upperUnbounded" : false
+                      } ]
+                    } ]
+                  } ],
+                  "attributeTuples" : [ ]
+                } ]
+              }, {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "data",
+                "children" : [ {
+                  "@type" : "C_COMPLEX_OBJECT",
+                  "rmTypeName" : "ITEM_TREE",
+                  "nodeId" : "at0003.2",
+                  "targetPath" : "/data[at0001]/events[at0006]/data[at0003.1]",
+                  "attributes" : [ ],
+                  "attributeTuples" : [ ]
+                } ]
+              }, {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "state",
+                "children" : [ {
+                  "@type" : "C_COMPLEX_OBJECT",
+                  "rmTypeName" : "ITEM_TREE",
+                  "nodeId" : "at0007.2",
+                  "targetPath" : "/data[at0001]/events[at0006]/state[at0007.1]",
+                  "attributes" : [ ],
+                  "attributeTuples" : [ ]
+                } ]
+              } ],
+              "attributeTuples" : [ ]
+            } ]
+          } ],
+          "attributeTuples" : [ ]
+        } ]
+      } ],
+      "attributeTuples" : [ ]
+    },
+    "terminology" : {
+      "@type" : "ARCHETYPE_TERMINOLOGY",
+      "conceptCode" : "at0000",
+      "termDefinitions" : {
+        "en" : { },
+        "ja" : { },
+        "de" : { },
+        "zh-cn" : { },
+        "nl" : { },
+        "ru" : { },
+        "fa" : { },
+        "ar-sy" : { },
+        "es-ar" : { },
+        "pt-br" : { },
+        "ko" : { },
+        "es" : { },
+        "nb" : { },
+        "sv" : { },
+        "fi" : { }
+      },
+      "termBindings" : {
+        "SNOMED-CT" : {
+          "at0000.1" : "term:SNOMED-CT(2003)::364090009"
+        }
+      },
+      "terminologyExtracts" : { },
+      "valueSets" : { }
+    },
+    "adlVersion" : "1.4",
+    "buildUid" : "54dfbb26-2c00-4001-b720-e0014a3dfb0f",
+    "rmName" : "openehr",
+    "rmRelease" : "1.1.0",
+    "generated" : true,
+    "otherMetaData" : { },
+    "originalLanguage" : {
+      "terminologyId" : {
+        "value" : "ISO_639-1"
+      },
+      "codeString" : "en"
+    },
+    "translations" : [ {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "de"
+      },
+      "author" : {
+        "name" : "Sebastian Garde, Jasmin Buck",
+        "organisation" : "Ocean Informatics, University of Heidelberg"
+      },
+      "otherDetails" : { }
+    }, {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "ru"
+      },
+      "author" : {
+        "name" : "Igor Lizunov",
+        "email" : "i.lizunov@infinnity.ru"
+      },
+      "otherDetails" : { }
+    }, {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "sv"
+      },
+      "author" : {
+        "name" : "Kirsi Poikela, Sofia Janstad",
+        "organisation" : "Tieto Sweden AB, SLL",
+        "email" : "ext.kirsi.poikela@tieto.com, sofia.lang-janstad@sll.se"
+      },
+      "otherDetails" : { }
+    }, {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "fi"
+      },
+      "author" : {
+        "name" : "Vesa Peltola",
+        "organisation" : "Tieto Finland",
+        "email" : "vesa.peltola@tieto.com"
+      },
+      "otherDetails" : { }
+    }, {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "ko"
+      },
+      "author" : {
+        "name" : "Seung-Jong Yu",
+        "organisation" : "NOUSCO Co.,Ltd.",
+        "email" : "seungjong.yu@gmail.com"
+      },
+      "accreditation" : "Certified Board of Family Medicine in South Korea",
+      "otherDetails" : { }
+    }, {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "pt-br"
+      },
+      "author" : {
+        "name" : "Jussara Rözsch",
+        "organisation" : "OpenEHR Foundation",
+        "email" : "jussara.macedo@gmail.com"
+      },
+      "accreditation" : "Medical Doctor, Psychiarist, Clinical Modeller, openEHR Diretor, ehealth infostructuture WG ccoordinator- brazilian ehealth program",
+      "otherDetails" : { }
+    }, {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "ar-sy"
+      },
+      "author" : {
+        "name" : "Mona Saleh"
+      },
+      "otherDetails" : { }
+    }, {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "zh-cn"
+      },
+      "author" : {
+        "name" : "Chunlan Ma; Lin Zhang",
+        "organisation" : "Ocean Informatics; Taikang Insurance Group",
+        "email" : "chunlan.ma@oceaninformatics.com; linforest@163.com"
+      },
+      "otherDetails" : { }
+    }, {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "es"
+      },
+      "author" : {
+        "name" : "Pablo Pazos",
+        "organisation" : "CaboLabs"
+      },
+      "accreditation" : "Computer Engineer",
+      "otherDetails" : { }
+    }, {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "es-ar"
+      },
+      "author" : {
+        "name" : "Domingo Liotta",
+        "organisation" : "Universidad de Morón",
+        "email" : "domingo_liotta@hotmail.com"
+      },
+      "accreditation" : "Universidad de Morón",
+      "otherDetails" : { }
+    }, {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "nb"
+      },
+      "author" : {
+        "name" : "Lars Bitsch-Larsen",
+        "organisation" : "Haukeland Uinversity Hospital, Bergen, Norway",
+        "email" : "lbla@helse-bergen.no"
+      },
+      "accreditation" : "MD, DEAA. specialist in anaesthesia and tropical medicine.",
+      "otherDetails" : { }
+    }, {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "ja"
+      },
+      "author" : {
+        "name" : "Shinji Kobayashi",
+        "organisation" : "Kyoto University",
+        "email" : "skoba@moss.gr.jp"
+      },
+      "otherDetails" : { }
+    }, {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "fa"
+      },
+      "author" : {
+        "name" : "Shahla Foozonkhah",
+        "organisation" : "Ocean Informatics",
+        "email" : "shahla.foozonkhah@oceaninformatics.com"
+      },
+      "otherDetails" : { }
+    }, {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "nl"
+      },
+      "author" : {
+        "name" : "Marja Buur, Sebastian Iancu",
+        "organisation" : "M.C.A., Code24 BV",
+        "email" : "m.buur-krom@mca.nl, sebastian@code24.nl"
+      },
+      "otherDetails" : { }
+    } ]
+  } ],
+  "originalLanguage" : {
+    "terminologyId" : {
+      "value" : "ISO_639-1"
+    },
+    "codeString" : "en"
+  },
+  "translations" : [ {
+    "@type" : "TRANSLATION_DETAILS",
+    "language" : {
+      "terminologyId" : {
+        "value" : "ISO_639-1"
+      },
+      "codeString" : "de"
+    },
+    "author" : { },
+    "otherDetails" : { }
+  }, {
+    "@type" : "TRANSLATION_DETAILS",
+    "language" : {
+      "terminologyId" : {
+        "value" : "ISO_639-1"
+      },
+      "codeString" : "fi"
+    },
+    "author" : { },
+    "otherDetails" : { }
+  }, {
+    "@type" : "TRANSLATION_DETAILS",
+    "language" : {
+      "terminologyId" : {
+        "value" : "ISO_639-1"
+      },
+      "codeString" : "sv"
+    },
+    "author" : { },
+    "otherDetails" : { }
+  }, {
+    "@type" : "TRANSLATION_DETAILS",
+    "language" : {
+      "terminologyId" : {
+        "value" : "ISO_639-1"
+      },
+      "codeString" : "es-ar"
+    },
+    "author" : { },
+    "otherDetails" : { }
+  }, {
+    "@type" : "TRANSLATION_DETAILS",
+    "language" : {
+      "terminologyId" : {
+        "value" : "ISO_639-1"
+      },
+      "codeString" : "nb"
+    },
+    "author" : { },
+    "otherDetails" : { }
+  }, {
+    "@type" : "TRANSLATION_DETAILS",
+    "language" : {
+      "terminologyId" : {
+        "value" : "ISO_639-1"
+      },
+      "codeString" : "ko"
+    },
+    "author" : { },
+    "otherDetails" : { }
+  }, {
+    "@type" : "TRANSLATION_DETAILS",
+    "language" : {
+      "terminologyId" : {
+        "value" : "ISO_639-1"
+      },
+      "codeString" : "pt-br"
+    },
+    "author" : { },
+    "otherDetails" : { }
+  }, {
+    "@type" : "TRANSLATION_DETAILS",
+    "language" : {
+      "terminologyId" : {
+        "value" : "ISO_639-1"
+      },
+      "codeString" : "sl"
+    },
+    "author" : { },
+    "otherDetails" : { }
+  }, {
+    "@type" : "TRANSLATION_DETAILS",
+    "language" : {
+      "terminologyId" : {
+        "value" : "ISO_639-1"
+      },
+      "codeString" : "ar-sy"
+    },
+    "author" : { },
+    "otherDetails" : { }
+  }, {
+    "@type" : "TRANSLATION_DETAILS",
+    "language" : {
+      "terminologyId" : {
+        "value" : "ISO_639-1"
+      },
+      "codeString" : "it"
+    },
+    "author" : { },
+    "otherDetails" : { }
+  }, {
+    "@type" : "TRANSLATION_DETAILS",
+    "language" : {
+      "terminologyId" : {
+        "value" : "ISO_639-1"
+      },
+      "codeString" : "nl"
+    },
+    "author" : { },
+    "otherDetails" : { }
+  } ]
+}
