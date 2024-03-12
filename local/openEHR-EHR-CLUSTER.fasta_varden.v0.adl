@@ -23,7 +23,7 @@ description
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"44e4d555913980d535af0b7afbd54bca">
+		["MD5-CAM-1.0.1"] = <"915c42f4a8263f6da3de287af41c44a8">
 		["build_uid"] = <"4805bf9c-4158-35c1-b779-870a393af284">
 	>
 
@@ -50,7 +50,7 @@ definition
 					DV_TEXT matches {*}
 				}
 			}
-			ELEMENT[at0003] occurrences matches {0..1} matches {    -- Värde
+			ELEMENT[at0003] occurrences matches {0..1} matches {    -- Value
 				value matches {
 					DV_TEXT matches {*}
 				}
@@ -75,7 +75,7 @@ ontology
 					description = <"">
 				>
 				["at0003"] = <
-					text = <"Värde">
+					text = <"Value">
 					description = <"">
 				>
 				["at0004"] = <
