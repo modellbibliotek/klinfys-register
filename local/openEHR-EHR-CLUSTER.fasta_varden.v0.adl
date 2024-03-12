@@ -23,15 +23,33 @@ description
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"9f88d9ec7eec02ccec8d9c94ab956582">
+		["MD5-CAM-1.0.1"] = <"833a147c9e6d7dd98e20387abefb1a47">
 		["build_uid"] = <"4805bf9c-4158-35c1-b779-870a393af284">
 	>
 
 definition
 	CLUSTER[at0000] matches {    -- Fasta varden
 		items cardinality matches {1..*; unordered} matches {
-			ELEMENT[at0001] occurrences matches {0..1} matches {*}    -- ID
-			ELEMENT[at0002] occurrences matches {0..1} matches {*}    -- Term
+			ELEMENT[at0001] occurrences matches {0..1} matches {    -- ID
+				value matches {
+					DV_TEXT matches {*}
+				}
+			}
+			ELEMENT[at0002] occurrences matches {0..1} matches {    -- Term
+				value matches {
+					DV_TEXT matches {*}
+				}
+			}
+			ELEMENT[at0004] occurrences matches {0..1} matches {    -- Terminology
+				value matches {
+					DV_TEXT matches {*}
+				}
+			}
+			ELEMENT[at0005] occurrences matches {0..1} matches {    -- Concept
+				value matches {
+					DV_TEXT matches {*}
+				}
+			}
 			ELEMENT[at0003] occurrences matches {0..1} matches {    -- Värde
 				value matches {
 					DV_CODED_TEXT matches {*}
@@ -58,6 +76,14 @@ ontology
 				>
 				["at0003"] = <
 					text = <"Värde">
+					description = <"">
+				>
+				["at0004"] = <
+					text = <"Terminology">
+					description = <"">
+				>
+				["at0005"] = <
+					text = <"Concept">
 					description = <"">
 				>
 			>
