@@ -44,58 +44,63 @@ description
 	details = <
 		["de"] = <
 			language = <[ISO_639-1::de]>
-			purpose = <"Zur Darstellung der Befunde einer radiologischen Untersuchung einer bestimmten Körperstruktur oder -region und deren Interpretation.">
-			keywords = <"*finding, imaging, body, system, structure, region, observation, diagnostic, radiology, image (en)", ...>
-			use = <"*Use to record the findings on radiological examination of a specified body structure or region, and their interpretation.
+			purpose = <"*To record the findings on radiological examination of the heart, and their interpretation. (en)">
+			keywords = <"*heart, left ventricle, right ventricle, left atrium, pulmonary vein, diastolic, systolic, end diastolic, end systolic (en)", ...>
+			use = <"*Use to record the findings on radiological examination of the heart, and their interpretation.
 
 In practice, the design intent is for the CLUSTER.imaging_exam family of archetypes to be used to record all detailed findings on radiological examination. The family of specialised archetypes are derived from this generic parent archetype, CLUSTER.imaging_exam, designed as a universal pattern for recording any findings in any specified body structure or region and using any modality.
 
-Each structure- or region-specific specialisation of this parent archetype is intended to be inclusive of all reasonably anticipated and relevant findings. For example, the CLUSTER.imaging_exam-ovary will support recording of all findings that would be expected in reporting on imaging of the ovary using any radiological modality, including the size of the ovary, largest follicle size and the diameter and description of specific follicles. Similarly, CLUSTER.imaging_exam-lymph_node_group will contain data elements required to record specific findings of a lymph node group, including its precise or relative location in the body and the number of lymph nodes in the group. 
+The intended scope for this archetype is to eventually record all detailed findings on radiological examination of the uterus using any modality. It is anticipated that further data elements may be added as requirements are identified and confirmed.
 
-If an appropriate specialisation is not available for a body structure or region, this archetype can be used to record all relevant findings related to the structure or region. 
+This archetype and its related family of specialisations are designed to be nested within the 'Structured imaging findings' SLOT in the OBSERVATION.imaging_exam_result or within other relevant CLUSTER.imaging_exam archetypes, but can also be used within other ENTRY or CLUSTER archetypes, where clinically appropriate. If this archetype or its specialisations need to be extended with further levels of detailed findings, additional instances of the CLUSTER.imaging_exam or its specialisations can be nested in the 'Additional details' SLOT. (en)">
+			misuse = <"*Not to be used to record imaging examination findings for any body structure or region other than the heart. Use other archetypes from the CLUSTER.imaging_exam family for this purpose.
 
-This archetype and its related family of specialisations are designed to be nested within the 'Structured imaging findings' SLOT in the OBSERVATION.imaging_exam_result or within other relevant CLUSTER.imaging_exam archetypes, but can also be used within other ENTRY or CLUSTER archetypes, where clinically appropriate. If this archetype of its specialisations need to be extended with further levels of detailed findings, additional instances of the CLUSTER.imaging_exam or its specialisations can be nested in the 'Additional details' SLOT. (en)">
-			misuse = <"Nicht zur Darstellung von Befunden verwenden, die außerhalb der identifizierten Körperstruktur oder -region beobachtet wurden. Verwenden Sie zu diesem Zweck eine separate Instanz eines oder mehrerer Archetypen aus der Familie CLUSTER.imaging_exam.
-
-Darf nicht verwendet werden, um Details in Bezug auf die Gesamtbefunde, den Kontext oder technische Details in Bezug auf ein vollständiges Testergebnis einer bildgebenden Untersuchung darzustellen. Verwenden Sie zu diesem Zweck das OBSERVATION.imaging_exam_result. Zum Beispiel Kommentare zur Studienqualität, zu Differenzialdiagnosen und zum Gesamteindruck.">
+Not to be used to record details related to the overall findings, context or technical details related to a complete imaging examination test result. Use the OBSERVATION.imaging_exam_result for this purpose. For example, comments on the study quality, differential diagnoses, and overall impression. (en)">
 		>
 		["sv"] = <
 			language = <[ISO_639-1::sv]>
-			keywords = <"*finding, imaging, body, system, structure, region, observation, diagnostic, radiology, image (en)", ...>
+			purpose = <"*To record the findings on radiological examination of the heart, and their interpretation. (en)">
+			keywords = <"*heart, left ventricle, right ventricle, left atrium, pulmonary vein, diastolic, systolic, end diastolic, end systolic (en)", ...>
 			copyright = <"© openEHR Foundation">
-		>
-		["nb"] = <
-			language = <[ISO_639-1::nb]>
-			purpose = <"For å registrere funn og tolkning av radiologisk undersøkelse av et definert organ eller en kroppsdel.">
-			keywords = <"*finding, imaging, body, system, structure, region, observation, diagnostic, radiology, image (en)", ...>
-			use = <"Bruk for å registrere funn og tolkning av radiologisk undersøkelse av et definert organ eller en kroppsdel.
-
-Formålet med designet på hele gruppen av arketyper innen CLUSTER.imaging_exam (Bildediagnostisk undersøkelse - kroppsstruktur) er å kunne registrere alle detaljerte funn og observasjoner ved radiologiske undersøkelser. Gruppen av spesialiserte arketyper er avledet fra denne generiske forelder-arketypen, CLUSTER.imaging_exam (Bildediagnostisk undersøkelse - kroppsstruktur), og har et universelt design for å registrere ethvert funn i ethvert organ eller kroppsdel og ved bruk av enhver modalitet.
-
-Hver slik spesialisering av denne forelder-arketypen er tenkt å dekke alle rimelige og forventede funn og observasjoner for sitt/sin respektive organ- eller kroppsdel. For eksempel vil CLUSTER.imaging_exam-overy (Bildediagnostisk undersøkelse - eggstokk) dekke registrering av alle funn eller observasjoner som man forventer å finne ved radiologisk undersøkelse av eggstokk, uavhengig av modalitet. Dette inkluderer størrelse av eggstokk, dimensjonen av den største follikkelen og diameter og beskrivelse av spesifikke follikler. På samme måte vil CLUSTER.imaging_exam-lymph_node_group (Bildediagnostisk undersøkelse - lymfeknutegruppe) inneholde dataelementer som er nødvendig for å registrere spesifikke funn av en lymfeknutegruppe, inkludert den presise og relative plassering i kroppen og antall lymfeknuter i gruppen.
-
-Dersom det ikke er tilgjengelig en passende spesialisering for et organ eller kroppsdel, kan denne arketypen bli brukt for å registrere alle relevante finn som er knyttet til organet eller kroppsdelen.
-
-Denne arketypen og de tilhørende spesialiseringene er designet for å bli nøstet i SLOT'et \"Strukturerte bildefunn\" i arketypen OBSERVATION.imaging_exam_result (Bildediagnostisk svar), eller inn i en annen relevant CLUSTER.imaging_exam (Bildediagnostisk undersøkelse - kroppsstruktur). Men den kan også brukes i enhver annen ENTRY- eller CLUSTER-arketype der det er klinisk passende. Hvis denne arketypen, eller en spesialisering av denne, trenger å bli utvidet med flere nivå med detaljerte funn eller observasjoner, kan det legges til en eller flere instanser av arketypen eller en spesialisering av den ved å nøste den i SLOT'et \"Ytterligere detaljer\".">
-			misuse = <"Skal ikke brukes til å registrere funn som er gjort utenom det definerte organet eller den definerte kroppsdelen. Bruk en egen instans av en eller flere arketyper innen gruppen av CLUSTER.imaging_exam - arketyper (Undersøkelsesfunn) for dette formålet.
-
-Skal ikke brukes til å registrere overordnede undersøkelsesfunn, kontekst eller tekniske detaljer relatert til bildeundersøkelsen. Bruk arketypen OBSERVATION.imaging_exam_result (Bildediagnostisk svar) for å registrere for eksempel kommentar om undersøkelseskvalitet, differensialdiagnose og overordnet konklusjon.">
-		>
-		["en"] = <
-			language = <[ISO_639-1::en]>
-			purpose = <"To record the findings on radiological examination of a specified body structure or region, and their interpretation.">
-			keywords = <"finding, imaging, body, system, structure, region, observation, diagnostic, radiology, image", ...>
-			copyright = <"© openEHR Foundation">
-			use = <"Use to record the findings on radiological examination of a specified body structure or region, and their interpretation.
+			use = <"*Use to record the findings on radiological examination of the heart, and their interpretation.
 
 In practice, the design intent is for the CLUSTER.imaging_exam family of archetypes to be used to record all detailed findings on radiological examination. The family of specialised archetypes are derived from this generic parent archetype, CLUSTER.imaging_exam, designed as a universal pattern for recording any findings in any specified body structure or region and using any modality.
 
-Each structure- or region-specific specialisation of this parent archetype is intended to be inclusive of all reasonably anticipated and relevant findings. For example, the CLUSTER.imaging_exam-ovary will support recording of all findings that would be expected in reporting on imaging of the ovary using any radiological modality, including the size of the ovary, largest follicle size and the diameter and description of specific follicles. Similarly, CLUSTER.imaging_exam-lymph_node_group will contain data elements required to record specific findings of a lymph node group, including its precise or relative location in the body and the number of lymph nodes in the group. 
+The intended scope for this archetype is to eventually record all detailed findings on radiological examination of the uterus using any modality. It is anticipated that further data elements may be added as requirements are identified and confirmed.
 
-If an appropriate specialisation is not available for a body structure or region, this archetype can be used to record all relevant findings related to the structure or region. 
+This archetype and its related family of specialisations are designed to be nested within the 'Structured imaging findings' SLOT in the OBSERVATION.imaging_exam_result or within other relevant CLUSTER.imaging_exam archetypes, but can also be used within other ENTRY or CLUSTER archetypes, where clinically appropriate. If this archetype or its specialisations need to be extended with further levels of detailed findings, additional instances of the CLUSTER.imaging_exam or its specialisations can be nested in the 'Additional details' SLOT. (en)">
+			misuse = <"*Not to be used to record imaging examination findings for any body structure or region other than the heart. Use other archetypes from the CLUSTER.imaging_exam family for this purpose.
+
+Not to be used to record details related to the overall findings, context or technical details related to a complete imaging examination test result. Use the OBSERVATION.imaging_exam_result for this purpose. For example, comments on the study quality, differential diagnoses, and overall impression. (en)">
+		>
+		["nb"] = <
+			language = <[ISO_639-1::nb]>
+			purpose = <"*To record the findings on radiological examination of the heart, and their interpretation. (en)">
+			keywords = <"*heart, left ventricle, right ventricle, left atrium, pulmonary vein, diastolic, systolic, end diastolic, end systolic (en)", ...>
+			use = <"*Use to record the findings on radiological examination of the heart, and their interpretation.
+
+In practice, the design intent is for the CLUSTER.imaging_exam family of archetypes to be used to record all detailed findings on radiological examination. The family of specialised archetypes are derived from this generic parent archetype, CLUSTER.imaging_exam, designed as a universal pattern for recording any findings in any specified body structure or region and using any modality.
+
+The intended scope for this archetype is to eventually record all detailed findings on radiological examination of the uterus using any modality. It is anticipated that further data elements may be added as requirements are identified and confirmed.
+
+This archetype and its related family of specialisations are designed to be nested within the 'Structured imaging findings' SLOT in the OBSERVATION.imaging_exam_result or within other relevant CLUSTER.imaging_exam archetypes, but can also be used within other ENTRY or CLUSTER archetypes, where clinically appropriate. If this archetype or its specialisations need to be extended with further levels of detailed findings, additional instances of the CLUSTER.imaging_exam or its specialisations can be nested in the 'Additional details' SLOT. (en)">
+			misuse = <"*Not to be used to record imaging examination findings for any body structure or region other than the heart. Use other archetypes from the CLUSTER.imaging_exam family for this purpose.
+
+Not to be used to record details related to the overall findings, context or technical details related to a complete imaging examination test result. Use the OBSERVATION.imaging_exam_result for this purpose. For example, comments on the study quality, differential diagnoses, and overall impression. (en)">
+		>
+		["en"] = <
+			language = <[ISO_639-1::en]>
+			purpose = <"To record the findings on radiological examination of the heart, and their interpretation.">
+			keywords = <"heart, left ventricle, right ventricle, left atrium, pulmonary vein, diastolic, systolic, end diastolic, end systolic", ...>
+			copyright = <"© openEHR Foundation">
+			use = <"Use to record the findings on radiological examination of the heart, and their interpretation.
+
+In practice, the design intent is for the CLUSTER.imaging_exam family of archetypes to be used to record all detailed findings on radiological examination. The family of specialised archetypes are derived from this generic parent archetype, CLUSTER.imaging_exam, designed as a universal pattern for recording any findings in any specified body structure or region and using any modality.
+
+The intended scope for this archetype is to eventually record all detailed findings on radiological examination of the uterus using any modality. It is anticipated that further data elements may be added as requirements are identified and confirmed.
 
 This archetype and its related family of specialisations are designed to be nested within the 'Structured imaging findings' SLOT in the OBSERVATION.imaging_exam_result or within other relevant CLUSTER.imaging_exam archetypes, but can also be used within other ENTRY or CLUSTER archetypes, where clinically appropriate. If this archetype or its specialisations need to be extended with further levels of detailed findings, additional instances of the CLUSTER.imaging_exam or its specialisations can be nested in the 'Additional details' SLOT.">
-			misuse = <"Not to be used to record findings observed outside the identified body structure or region. Use a separate instance of one or more archetypes from the CLUSTER.imaging_exam family for this purpose.
+			misuse = <"Not to be used to record imaging examination findings for any body structure or region other than the heart. Use other archetypes from the CLUSTER.imaging_exam family for this purpose.
 
 Not to be used to record details related to the overall findings, context or technical details related to a complete imaging examination test result. Use the OBSERVATION.imaging_exam_result for this purpose. For example, comments on the study quality, differential diagnoses, and overall impression.">
 		>
@@ -106,7 +111,7 @@ Not to be used to record details related to the overall findings, context or tec
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"51dfeba59009e0982047a1f358c7d7ea">
+		["MD5-CAM-1.0.1"] = <"95f817c6887ed433c49f6005fafdefe6">
 		["build_uid"] = <"c859c01f-6d83-4584-b571-c44413187401">
 		["ip_acknowledgements"] = <"This artefact includes content from SNOMED Clinical Terms® (SNOMED CT®) which is copyrighted material of the International Health Terminology Standards Development Organisation (IHTSDO). Where an implementation of this artefact makes use of SNOMED CT content, the implementer must have the appropriate SNOMED CT Affiliate license - for more information contact https://www.snomed.org/snomed-ct/get-snomed or info@snomed.org.">
 		["revision"] = <"1.0.0">
@@ -402,7 +407,7 @@ ontology
 			items = <
 				["at0000.1"] = <
 					text = <"imaging examination of the heart">
-					description = <"Findings on radiological examination of a specified body structure or region.">
+					description = <"Findings on radiological examination of the heart.">
 				>
 				["at0.1"] = <
 					text = <"Left ventricular internal end diastolic diameter (LVEDd)">
@@ -536,7 +541,7 @@ ontology
 			items = <
 				["at0000.1"] = <
 					text = <"*imaging examination of the heart (en)">
-					description = <"Funn eller observasjoner ved radiologisk undersøkelse av et definert organ eller en kroppsdel.">
+					description = <"*Findings on radiological examination of the heart. (en)">
 				>
 				["at0.1"] = <
 					text = <"*Left ventricular internal end diastolic diameter (LVEDd) (en)">
@@ -669,7 +674,7 @@ ontology
 			items = <
 				["at0000.1"] = <
 					text = <"*imaging examination of the heart (en)">
-					description = <"Befunde zur radiologischen Untersuchung einer bestimmten Körperstruktur oder -region.">
+					description = <"*Findings on radiological examination of the heart. (en)">
 				>
 				["at0.1"] = <
 					text = <"*Left ventricular internal end diastolic diameter (LVEDd) (en)">
@@ -802,7 +807,7 @@ ontology
 			items = <
 				["at0000.1"] = <
 					text = <"*imaging examination of the heart (en)">
-					description = <"*Findings on radiological examination of a specified body structure or region. (en)">
+					description = <"*Findings on radiological examination of the heart. (en)">
 				>
 				["at0.1"] = <
 					text = <"*Left ventricular internal end diastolic diameter (LVEDd) (en)">
